@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>GrandCloud&#39;s blog</title>
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://igrandcloud.github.io/"/>
   <updated>2016-03-31T07:25:03.317Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://igrandcloud.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Hongyun Zhang</name>
     
   </author>
   
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/03/31/hello-world/"/>
-    <id>http://yoursite.com/2016/03/31/hello-world/</id>
+    <link href="http://igrandcloud.github.io/2016/03/31/hello-world/"/>
+    <id>http://igrandcloud.github.io/2016/03/31/hello-world/</id>
     <published>2016-03-31T07:25:03.297Z</published>
     <updated>2016-03-31T07:25:03.317Z</updated>
     
