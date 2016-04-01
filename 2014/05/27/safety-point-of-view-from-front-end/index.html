@@ -3,32 +3,32 @@
 <head>
   <meta charset="utf-8">
   
-  <title>前端安全冷门知识杂谈 | Litten的博客</title>
+  <title>前端安全冷门知识杂谈 | Hongyun的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="###零、概述提起web前端安全，大家都会想到两个名词：xss和csrf。抛去这最常见，最被广泛应用的两者，我想谈谈一些难以觉察的，比较偏门的安全关注点。大概分为以下章节：
 
 盗取无法用js读写的Cookie删不掉的本地存储函数覆写监听上报内存Cookie与硬盘CookieCSS带来的点击量泄露JSONP回调函数与UTF-7编码过滤与代码混淆心理学与社会工程学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前端安全冷门知识杂谈">
-<meta property="og:url" content="http://litten.github.io/2014/05/27/safety-point-of-view-from-front-end/index.html">
-<meta property="og:site_name" content="Litten的博客">
+<meta property="og:url" content="http://igrandcloud.github.io/2014/05/27/safety-point-of-view-from-front-end/index.html">
+<meta property="og:site_name" content="Hongyun的博客">
 <meta property="og:description" content="###零、概述提起web前端安全，大家都会想到两个名词：xss和csrf。抛去这最常见，最被广泛应用的两者，我想谈谈一些难以觉察的，比较偏门的安全关注点。大概分为以下章节：
 
 盗取无法用js读写的Cookie删不掉的本地存储函数覆写监听上报内存Cookie与硬盘CookieCSS带来的点击量泄露JSONP回调函数与UTF-7编码过滤与代码混淆心理学与社会工程学">
-<meta property="og:image" content="http://litten.github.io/assets/blogImg/safety_001.jpg">
-<meta property="og:image" content="http://litten.github.io/assets/blogImg/safety_002.jpg">
-<meta property="og:image" content="http://litten.github.io/assets/blogImg/safety_003.jpg">
-<meta property="og:image" content="http://litten.github.io/assets/blogImg/safety_004.jpg">
-<meta property="og:image" content="http://litten.github.io/assets/blogImg/safety_005.jpg">
+<meta property="og:image" content="http://igrandcloud.github.io/assets/blogImg/safety_001.jpg">
+<meta property="og:image" content="http://igrandcloud.github.io/assets/blogImg/safety_002.jpg">
+<meta property="og:image" content="http://igrandcloud.github.io/assets/blogImg/safety_003.jpg">
+<meta property="og:image" content="http://igrandcloud.github.io/assets/blogImg/safety_004.jpg">
+<meta property="og:image" content="http://igrandcloud.github.io/assets/blogImg/safety_005.jpg">
 <meta property="og:updated_time" content="2015-07-06T08:40:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端安全冷门知识杂谈">
 <meta name="twitter:description" content="###零、概述提起web前端安全，大家都会想到两个名词：xss和csrf。抛去这最常见，最被广泛应用的两者，我想谈谈一些难以觉察的，比较偏门的安全关注点。大概分为以下章节：
 
 盗取无法用js读写的Cookie删不掉的本地存储函数覆写监听上报内存Cookie与硬盘CookieCSS带来的点击量泄露JSONP回调函数与UTF-7编码过滤与代码混淆心理学与社会工程学">
-<meta name="twitter:image" content="http://litten.github.io/assets/blogImg/safety_001.jpg">
+<meta name="twitter:image" content="http://igrandcloud.github.io/assets/blogImg/safety_001.jpg">
   
-    <link rel="alternative" href="/atom.xml" title="Litten的博客" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Hongyun的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -57,11 +57,11 @@
 		</a>
 
 		<hgroup>
-		  <h1 class="header-author"><a href="/">Litten</a></h1>
+		  <h1 class="header-author"><a href="/">Grandcloud</a></h1>
 		</hgroup>
 
 		
-		<p class="header-subtitle">热爱大海与冷笑话的黎小腾君</p>
+		<p class="header-subtitle">爱着小水的卧龙君</p>
 		
 
 		
@@ -118,7 +118,7 @@
 					<nav class="header-nav">
 						<div class="social">
 							
-								<a class="github" target="_blank" href="https://github.com/litten" title="github">github</a>
+								<a class="github" target="_blank" href="https://github.com/iGrandCloud" title="github">github</a>
 					        
 								<a class="weibo" target="_blank" href="http://weibo.com/litten225" title="weibo">weibo</a>
 					        
@@ -154,7 +154,7 @@
       <nav id="mobile-nav">
   	<div class="overlay">
   		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">Litten</h1>
+  		<h1 class="header-author js-mobile-header hide">Grandcloud</h1>
   	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
@@ -162,10 +162,10 @@
 				<img lazy-src="/assets/blogImg/litten.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author">Litten</h1>
+			  <h1 class="header-author">Grandcloud</h1>
 			</hgroup>
 			
-			<p class="header-subtitle">热爱大海与冷笑话的黎小腾君</p>
+			<p class="header-subtitle">爱着小水的卧龙君</p>
 			
 			<nav class="header-menu">
 				<ul>
@@ -184,7 +184,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="https://github.com/litten" title="github">github</a>
+						<a class="github" target="_blank" href="https://github.com/iGrandCloud" title="github">github</a>
 			        
 						<a class="weibo" target="_blank" href="http://weibo.com/litten225" title="weibo">weibo</a>
 			        
@@ -325,26 +325,6 @@
 
 
 
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="safety-point-of-view-from-front-end" data-title="前端安全冷门知识杂谈" data-url="http://litten.github.io/2014/05/27/safety-point-of-view-from-front-end/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"litten-hexo"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
-
 
 
 </div>
@@ -352,7 +332,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2016 Litten
+    		&copy; 2016 Grandcloud
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
