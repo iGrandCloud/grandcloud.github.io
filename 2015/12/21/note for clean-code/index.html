@@ -3,17 +3,35 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hongyun的博客</title>
+  <title>clean code这本书是程序员必读经典之一 | Hongyun的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="伍伦贡大学PhD在读，研究方向为WBAN协议设计评估。非专业Geek。此为博客一枚。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hongyun的博客">
-<meta property="og:url" content="http://igrandcloud.github.io/index.html">
+  <meta name="description" content="我相信大多数程序员都是去找过书的，网上有好多人都列了程序员必读经典，csapp，sicp，龙书，code complete是大家熟悉的几本经典。
+我这里介绍的clean code其实被收入必读经典的频率其实也相当高，但是没有我刚列举的那些有名。但这本书对于没有好的编码风格的人来说绝对是非常重要的，并且容易习得。
+适合人群
+能熟练使用一门编程语言。
+编码风格存在缺陷的程序员。
+想花一星期时间来提高的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="clean code这本书是程序员必读经典之一">
+<meta property="og:url" content="http://igrandcloud.github.io/2015/12/21/note for clean-code/index.html">
 <meta property="og:site_name" content="Hongyun的博客">
-<meta property="og:description" content="伍伦贡大学PhD在读，研究方向为WBAN协议设计评估。非专业Geek。此为博客一枚。">
+<meta property="og:description" content="我相信大多数程序员都是去找过书的，网上有好多人都列了程序员必读经典，csapp，sicp，龙书，code complete是大家熟悉的几本经典。
+我这里介绍的clean code其实被收入必读经典的频率其实也相当高，但是没有我刚列举的那些有名。但这本书对于没有好的编码风格的人来说绝对是非常重要的，并且容易习得。
+适合人群
+能熟练使用一门编程语言。
+编码风格存在缺陷的程序员。
+想花一星期时间来提高的">
+<meta property="og:image" content="http://7xkpdt.com1.z0.glb.clouddn.com/4fef47adcfb9cd1f6c604eb0367b5837.png">
+<meta property="og:updated_time" content="2016-04-04T12:47:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hongyun的博客">
-<meta name="twitter:description" content="伍伦贡大学PhD在读，研究方向为WBAN协议设计评估。非专业Geek。此为博客一枚。">
+<meta name="twitter:title" content="clean code这本书是程序员必读经典之一">
+<meta name="twitter:description" content="我相信大多数程序员都是去找过书的，网上有好多人都列了程序员必读经典，csapp，sicp，龙书，code complete是大家熟悉的几本经典。
+我这里介绍的clean code其实被收入必读经典的频率其实也相当高，但是没有我刚列举的那些有名。但这本书对于没有好的编码风格的人来说绝对是非常重要的，并且容易习得。
+适合人群
+能熟练使用一门编程语言。
+编码风格存在缺陷的程序员。
+想花一星期时间来提高的">
+<meta name="twitter:image" content="http://7xkpdt.com1.z0.glb.clouddn.com/4fef47adcfb9cd1f6c604eb0367b5837.png">
   
     <link rel="alternative" href="/atom.xml" title="Hongyun的博客" type="application/atom+xml">
   
@@ -30,13 +48,8 @@
   
   <link rel="stylesheet" href="/css/style.css">
   
-      <style> .article { opacity: 0;} </style>
-  
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
-    
-    
   
   
     <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
@@ -46,8 +59,8 @@
       var yiliaConfig = {
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -234,467 +247,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-hexo-browsersync" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/27/hexo-browsersync/" class="article-date">
-      <time datetime="2016-03-26T13:17:50.000Z" itemprop="datePublished">Mar 27</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/27/hexo-browsersync/">Hexo 页面自动刷新与移动端调试</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><h2 id="intro">前言</h2>经常本地调试 Hexo 主题, 如果有工具能监视文件更改幷自动刷新页面，那一定能提高不少效率，<a href="http://www.browsersync.cn/">Browsersync</a> 就是这样一款浏览器同步测试工具。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/术业专攻/">术业专攻</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Browsersync/">Browsersync</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/03/27/hexo-browsersync/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-markdown-table-style" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/04/markdown-table-style/" class="article-date">
-      <time datetime="2016-03-04T09:39:17.000Z" itemprop="datePublished">Mar 4</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/04/markdown-table-style/">Markdown 表格样式调整与自适应优化</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>　　Markdown 写的表格最终会被解析成 HTML 代码，如果使用的编辑器支持自定义 CSS，就能方便的调整样式。如果可以引入 JavaScript，样式自适应也能较好地实现。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/术业专攻/">术业专攻</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Table/">Table</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/03/04/markdown-table-style/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-front-end-tools" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/02/16/front-end-tools/" class="article-date">
-      <time datetime="2016-02-16T07:53:03.000Z" itemprop="datePublished">Feb 16</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/16/front-end-tools/">前端工程化工具初选</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>　　面对日益纷杂的前端工具，作为新人常感无从下手。经过一番检索和简单对比，再结合自己的喜好，筛选了将要学习和使用的工具，以适应日益工程化、专业化的 Web 前端开发工作。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/术业专攻/">术业专攻</a><a class="article-category-link" href="/categories/术业专攻/自用笔记/">自用笔记</a>
-    </div>
-
-
-      
-      
-        <p class="article-more-link">
-          <a href="/2016/02/16/front-end-tools/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo-post-version-control" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/01/10/hexo-post-version-control/" class="article-date">
-      <time datetime="2016-01-10T11:38:01.000Z" itemprop="datePublished">Jan 10</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/10/hexo-post-version-control/">关联 GitHub, 让 Hexo 支持查看文章更新历史</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><h2 id="intro">前言</h2>Hexo 的文章源文件就是一个个 Markdown 文本，自己一直把这些文件备份在 <a href="https://github.com/MOxFIVE/Markdown-Archives-Backup">GitHub</a> 上。渐渐发觉，如果只把 GitHub 当作普通网盘，那真是有点大材小用了。于是稍作折腾，成功地把 GitHub 上的备份关联到主题中。现在，在文章文末版权区，可以很方便地跳转查看文章更新记录、历史版本以及下载源文件。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/术业专攻/">术业专攻</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/01/10/hexo-post-version-control/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo-comments" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/01/02/hexo-comments/" class="article-date">
-      <time datetime="2016-01-01T14:26:48.000Z" itemprop="datePublished">Jan 2</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/02/hexo-comments/">为 Hexo 主题添加评论模块 — Disqus, 多说, 友言</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><h2 id="intro">前言</h2>目前自己的主题 <a href="https://github.com/MOxFIVE/hexo-theme-yelee">Yelee</a> 已支持使用 Disqus, 多说和友言评论，代码逻辑和配置也做了些优化，应该是比较完善了。简单分离整理一下，分享于此，方便大家添加到自己制作或使用的主题中。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/术业专攻/">术业专攻</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/01/02/hexo-comments/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo-config-true-false" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/01/01/hexo-config-true-false/" class="article-date">
-      <time datetime="2016-01-01T12:55:13.000Z" itemprop="datePublished">Jan 1</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/01/hexo-config-true-false/">关于 Hexo 配置文件中的 true 和 false</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>　　在使用文件 “_config.yml” 对 Hexo 进行配置时，大家习惯于填写 true 和 false 来启用/停用某个功能模块。不过还有几种方法可以表示逻辑真假(boolean)，掌握后可以更灵活地进行功能配置。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/术业专攻/">术业专攻</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/01/01/hexo-config-true-false/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-anki-excel-shortcuts" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/22/anki-excel-shortcuts/" class="article-date">
-      <time datetime="2015-12-22T12:15:00.000Z" itemprop="datePublished">Dec 22</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/22/anki-excel-shortcuts/">Anki 记忆库之 Excel 快捷键大全</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><h2 id="intro">前言</h2>如果微软 Office 系列套件里只能保留一个，我会选择保留 Excel。只需要学一点基础的 Excel 知识，就能直观地感受到信息技术所带来的高效生产力。有些软件，掌握了它的快捷键，不仅能较全面地了解它的功能，也能极大地提升使用效率。Excel 就属于这类软件。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/触类旁通/">触类旁通</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Anki/">Anki</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Excel/">Excel</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2015/12/22/anki-excel-shortcuts/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-note for clean-code" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-note for clean-code" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2015/12/21/note for clean-code/" class="article-date">
@@ -710,12 +263,27 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/21/note for clean-code/">clean code这本书是程序员必读经典之一</a>
+    <h1 class="article-title" itemprop="name">
+      clean code这本书是程序员必读经典之一
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/读书笔记/">读书笔记</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/management/">management</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -874,27 +442,96 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/读书笔记/">读书笔记</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/management/">management</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2015/12/22/anki-excel-shortcuts/">
+                    Anki 记忆库之 Excel 快捷键大全
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2015/12/21/common-hexo-commands/">
+                    Hexo 最常用的几个命令
+                </a>
+            </div>
+        
+    </nav>
+
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#适合人群"><span class="toc-number">1.</span> <span class="toc-text">适合人群</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于编码风格"><span class="toc-number">2.</span> <span class="toc-text">关于编码风格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#编码风格的重要性"><span class="toc-number">3.</span> <span class="toc-text">编码风格的重要性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#编程是一门艺术"><span class="toc-number">4.</span> <span class="toc-text">编程是一门艺术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#然后关于阅读笔记"><span class="toc-number">5.</span> <span class="toc-text">然后关于阅读笔记</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#命名"><span class="toc-number"></span> <span class="toc-text">命名</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#命名要有意义"><span class="toc-number">1.</span> <span class="toc-text">命名要有意义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#做有意义的区分"><span class="toc-number">2.</span> <span class="toc-text">做有意义的区分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#尽可能避免使用的编码习惯"><span class="toc-number">3.</span> <span class="toc-text">尽可能避免使用的编码习惯</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他细节"><span class="toc-number">4.</span> <span class="toc-text">其他细节</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编写函数的规范"><span class="toc-number"></span> <span class="toc-text">编写函数的规范</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本规范（重要）"><span class="toc-number">1.</span> <span class="toc-text">基本规范（重要）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数参数"><span class="toc-number">2.</span> <span class="toc-text">函数参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数的抽象层（重点，也称作粒度）"><span class="toc-number">3.</span> <span class="toc-text">函数的抽象层（重点，也称作粒度）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数编写细则"><span class="toc-number">4.</span> <span class="toc-text">函数编写细则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-number">5.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#类"><span class="toc-number"></span> <span class="toc-text">类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#类的组织（代码顺序）"><span class="toc-number">1.</span> <span class="toc-text">类的组织（代码顺序）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#类应该短小"><span class="toc-number">2.</span> <span class="toc-text">类应该短小</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修进类的技巧"><span class="toc-number">3.</span> <span class="toc-text">修进类的技巧</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <li id="bds_twi"><a href="#" class="bds_twi" data-cmd="twi" title="分享到推特"></a></li>
+            <li id="bds_tsina"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></li>
+            <li id="bds_sqq"><a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a></li>
+            <li id="bds_copy"><a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a></li>
+            <li id="bds_mail"><a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a></li>
+            <li id="bds_weixin"><a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a></li>
+            <li id="bds_more"><a href="#" class="bds_more" data-cmd="more"></i></a></li>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"clean code这本书是程序员必读经典之一　| Hongyun的博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
 
 
 
@@ -902,13 +539,35 @@
 
 
 
+    
 
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
-  
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2015/12/22/anki-excel-shortcuts/" title="上一篇: Anki 记忆库之 Excel 快捷键大全">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2015/12/21/common-hexo-commands/" title="下一篇: Hexo 最常用的几个命令">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/27/hexo-browsersync/">Hexo 页面自动刷新与移动端调试</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/04/markdown-table-style/">Markdown 表格样式调整与自适应优化</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/16/front-end-tools/">前端工程化工具初选</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/10/hexo-post-version-control/">关联 GitHub, 让 Hexo 支持查看文章更新历史</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/02/hexo-comments/">为 Hexo 主题添加评论模块 — Disqus, 多说, 友言</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/01/hexo-config-true-false/">关于 Hexo 配置文件中的 true 和 false</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/22/anki-excel-shortcuts/">Anki 记忆库之 Excel 快捷键大全</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/note for clean-code/">clean code这本书是程序员必读经典之一</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/common-hexo-commands/">Hexo 最常用的几个命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/09/css-font-family/">CSS font-family 网页字体使用小结</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/30/sublime-config/">Sublime Text 3 使用配置与插件安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/23/anki-templates/">Anki 自用卡片模板分享</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/23/git-command/">Git 基础命令与相关术语</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/16/png-gif-transparency/">制作透明背景 PNG 图片和 GIF 动图的几种方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/09/web-style-guide/">Web Style Guide 前端代码规范</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/04/hexo-deployment/">将 Hexo 博客部署到 GitHub 和 GitCafe</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/31/excel-markdown-table/">用 Excel 生成和管理 Markdown 表格</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/25/hexo-tag-cloud/">让 Hexo 自动生成 Tag Cloud 标签云页面</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/16/hexo-404-page/">在 Hexo 中创建匹配主题的404页面</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/29/duoshuo-style/">多说样式折腾记录 — 添加 UA 浏览器标识、旋转头像等</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/20/windows-mac-software/">自用 Windows 和 Mac 软件推荐</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/30/EndNote-Markdown/">EndNote 与 Markdown 结合 — 为网文快速添加 Reference</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/28/Front-End-Study/">个人 Web 前端学习路线</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/20/blog-building/">个人博客站点建设历程</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/19/2015-08-19.hello-world/">Hello World</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
