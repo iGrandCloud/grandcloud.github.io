@@ -292,220 +292,6 @@
   </entry>
   
   <entry>
-    <title>markdown语法简介</title>
-    <link href="http://igrandcloud.github.io/2016/04/04/markdow_intrduce/"/>
-    <id>http://igrandcloud.github.io/2016/04/04/markdow_intrduce/</id>
-    <published>2016-04-04T13:50:55.000Z</published>
-    <updated>2016-04-04T13:50:55.000Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Markdown-是什么&quot;&gt;&lt;a href=&quot;#Markdown-是什么&quot; class=&quot;headerlink&quot; title=&quot;Markdown 是什么&quot;&gt;&lt;/a&gt;Markdown 是什么&lt;/h2&gt;&lt;h3 id=&quot;Markdown-是一种轻量级标记语言。&quot;&gt;&lt;a href=&quot;#Markdown-是一种轻量级标记语言。&quot; class=&quot;headerlink&quot; title=&quot;Markdown 是一种轻量级标记语言。&quot;&gt;&lt;/a&gt;Markdown 是一种轻量级标记语言。&lt;/h3&gt;&lt;h4 id=&quot;它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML-或者HTML-文档”。&quot;&gt;&lt;a href=&quot;#它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML-或者HTML-文档”。&quot; class=&quot;headerlink&quot; title=&quot;它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。&quot;&gt;&lt;/a&gt;它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。&lt;/h4&gt;&lt;h4 id=&quot;Markdown-吸收了很多在电子邮件中已有的纯文本标记的特性。&quot;&gt;&lt;a href=&quot;#Markdown-吸收了很多在电子邮件中已有的纯文本标记的特性。&quot; class=&quot;headerlink&quot; title=&quot;Markdown 吸收了很多在电子邮件中已有的纯文本标记的特性。&quot;&gt;&lt;/a&gt;Markdown 吸收了很多在电子邮件中已有的纯文本标记的特性。&lt;/h4&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;../public/images/markdownSample.jpg&quot; alt=&quot;这是一个Markdown的对比图&quot; title=&quot;Markdown的原码和展示对比&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Markdown有什么优点&quot;&gt;&lt;a href=&quot;#Markdown有什么优点&quot; class=&quot;headerlink&quot; title=&quot;Markdown有什么优点&quot;&gt;&lt;/a&gt;Markdown有什么优点&lt;/h3&gt;&lt;h4 id=&quot;特点：&quot;&gt;&lt;a href=&quot;#特点：&quot; class=&quot;headerlink&quot; title=&quot;特点：&quot;&gt;&lt;/a&gt;特点：&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;「易读易写」&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt; 兼容 HTML&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;../public/images/markdown_html.png&quot; alt=&quot;这是一个Markdown 兼容HTML的效果图&quot; title=&quot;Markdown 兼容HTML的效果图&quot;&gt;&lt;/p&gt;
-&lt;h4 id=&quot;Markdown的目标是：成为一种适用于网络的书写语言。&quot;&gt;&lt;a href=&quot;#Markdown的目标是：成为一种适用于网络的书写语言。&quot; class=&quot;headerlink&quot; title=&quot;Markdown的目标是：成为一种适用于网络的书写语言。&quot;&gt;&lt;/a&gt;Markdown的目标是：成为一种适用于网络的书写语言。&lt;/h4&gt;&lt;h2 id=&quot;Markdown的基本语法-区块元素&quot;&gt;&lt;a href=&quot;#Markdown的基本语法-区块元素&quot; class=&quot;headerlink&quot; title=&quot;Markdown的基本语法-区块元素&quot;&gt;&lt;/a&gt;Markdown的基本语法-区块元素&lt;/h2&gt;&lt;h3 id=&quot;段落和换行&quot;&gt;&lt;a href=&quot;#段落和换行&quot; class=&quot;headerlink&quot; title=&quot;段落和换行&quot;&gt;&lt;/a&gt;段落和换行&lt;/h3&gt;&lt;p&gt;一个 Markdown段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行。&lt;strong&gt;普通段落不该用空格或制表符来缩进。&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Code:&lt;/p&gt;
-&lt;p&gt;  这是一个段落。&lt;/p&gt;
-&lt;p&gt;  这是另一个段落。&lt;br&gt;  这不是另一个段落。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;View：&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这是一个段落。&lt;/p&gt;
-&lt;p&gt;这是另一个段落。&lt;br&gt;这不是另一个段落。&lt;/p&gt;
-&lt;h3 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot; title=&quot;标题&quot;&gt;&lt;/a&gt;标题&lt;/h3&gt;&lt;p&gt;Markdown 支持两种标题的语法，类 Setext 和类 Atx 形式。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;code：&lt;br&gt;  类 Setext:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;This is an H1
-=============
-
-This is an H2
--------------
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  类 Atx：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#### 这是 H4
-
-##### 这是 H5
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;view：&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;这是-H4&quot;&gt;&lt;a href=&quot;#这是-H4&quot; class=&quot;headerlink&quot; title=&quot;这是 H4&quot;&gt;&lt;/a&gt;这是 H4&lt;/h4&gt;&lt;h5 id=&quot;这是-H5&quot;&gt;&lt;a href=&quot;#这是-H5&quot; class=&quot;headerlink&quot; title=&quot;这是 H5&quot;&gt;&lt;/a&gt;这是 H5&lt;/h5&gt;&lt;h3 id=&quot;列表&quot;&gt;&lt;a href=&quot;#列表&quot; class=&quot;headerlink&quot; title=&quot;列表&quot;&gt;&lt;/a&gt;列表&lt;/h3&gt;&lt;h4 id=&quot;无序列表&quot;&gt;&lt;a href=&quot;#无序列表&quot; class=&quot;headerlink&quot; title=&quot;无序列表&quot;&gt;&lt;/a&gt;无序列表&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;无序列表使用星号、加号或是减号作为列表标记：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;code：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;无序列表1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;无序列表2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;无序列表3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;view：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Red    *   Green    -   Blue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;有序列表。&quot;&gt;&lt;a href=&quot;#有序列表。&quot; class=&quot;headerlink&quot; title=&quot;有序列表。&quot;&gt;&lt;/a&gt;有序列表。&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;有序列表则使用数字接着一个英文句点&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;code：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1. Bird
-2. McHale
-- Parish
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;view：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Bird&lt;/li&gt;
-&lt;li&gt;McHale&lt;/li&gt;
-&lt;li&gt;Parish  &lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;代码区块&quot;&gt;&lt;a href=&quot;#代码区块&quot; class=&quot;headerlink&quot; title=&quot;代码区块&quot;&gt;&lt;/a&gt;代码区块&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以，例如，下面的输入&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;code：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;这是一个普通段落。
-
-&amp;lt;table&amp;gt;
-    &amp;lt;tr&amp;gt;
-        &amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt;
-    &amp;lt;/tr&amp;gt;
-&amp;lt;/table&amp;gt;
-
-这是另一个普通段落
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;view：&lt;/p&gt;
-&lt;p&gt;  这是一个普通段落。&lt;/p&gt;
-&lt;p&gt;  &lt;table&gt;&lt;/table&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;tr&amp;gt;
-    &amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt;
-&amp;lt;/tr&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  &lt;br&gt;  这是另一个普通段落。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;Markdown的基本语法-区段元素&quot;&gt;&lt;a href=&quot;#Markdown的基本语法-区段元素&quot; class=&quot;headerlink&quot; title=&quot;Markdown的基本语法-区段元素&quot;&gt;&lt;/a&gt;Markdown的基本语法-区段元素&lt;/h2&gt;&lt;h3 id=&quot;强调：&quot;&gt;&lt;a href=&quot;#强调：&quot; class=&quot;headerlink&quot; title=&quot;强调：&quot;&gt;&lt;/a&gt;强调：&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Markdown 使用星号（*）和底线（_）作为标记强调字词的符号&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;code：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;test
-
-*stest*
-
-__test__
-
-**_test_**
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;view：&lt;/p&gt;
-&lt;p&gt;  test&lt;/p&gt;
-&lt;p&gt;  &lt;em&gt;test&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;  &lt;strong&gt;test&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;  &lt;strong&gt;&lt;em&gt;test&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;链接&quot;&gt;&lt;a href=&quot;#链接&quot; class=&quot;headerlink&quot; title=&quot;链接&quot;&gt;&lt;/a&gt;链接&lt;/h3&gt;&lt;p&gt;Markdown 支持两种形式的链接语法： 行内式和参考式两种形式。不管是哪一种，链接文字都是用 [方括号] 来标记。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;code：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;行内式：
-    [This link](http://blog.bihe0832.com/) has no title attribute.
-参考式：
-    This is [an example][id] reference-style link.
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;[id]: http://blog.bihe0832.com  &amp;quot;Optional Title Here&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;view：&lt;/p&gt;
-&lt;p&gt;  行内式：&lt;/p&gt;
-&lt;p&gt;  &lt;a href=&quot;http://blog.bihe0832.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;This link&lt;/a&gt; has no title attribute.&lt;/p&gt;
-&lt;p&gt;  参考式：&lt;/p&gt;
-&lt;p&gt;  This is [an example] [1] reference-style link.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;[1]: http://blog.bihe0832.com/ &amp;quot;Optional Title Here&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;代码片段：&quot;&gt;&lt;a href=&quot;#代码片段：&quot; class=&quot;headerlink&quot; title=&quot;代码片段：&quot;&gt;&lt;/a&gt;代码片段：&lt;/h3&gt;&lt;p&gt;如果要标记一小段行内代码，你可以用反引号把它包起来（`）&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Code：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Use the `printf()` function.
-
-A backtick-delimited string in a code span: `` `foo` ``
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;View：&lt;/p&gt;
-&lt;p&gt;  Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
-&lt;p&gt;  A backtick-delimited string in a code span: &lt;code&gt;`foo` &lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;图片：&quot;&gt;&lt;a href=&quot;#图片：&quot; class=&quot;headerlink&quot; title=&quot;图片：&quot;&gt;&lt;/a&gt;图片：&lt;/h3&gt;&lt;p&gt;Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： 行内式和参考式。&lt;/p&gt;
-&lt;h4 id=&quot;行内式的图片语法：&quot;&gt;&lt;a href=&quot;#行内式的图片语法：&quot; class=&quot;headerlink&quot; title=&quot;行内式的图片语法：&quot;&gt;&lt;/a&gt;行内式的图片语法：&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Code：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;![Alt text](../public/images/img1.png &amp;quot;Optional title&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;View：&lt;/p&gt;
-&lt;p&gt;  &lt;img src=&quot;../public/images/img1.png&quot; alt=&quot;Alt text&quot; title=&quot;Optional title&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;参考式的图片语法：&quot;&gt;&lt;a href=&quot;#参考式的图片语法：&quot; class=&quot;headerlink&quot; title=&quot;参考式的图片语法：&quot;&gt;&lt;/a&gt;参考式的图片语法：&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Code：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;![Alt text][2]
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;[2]: ../public/images/img1.png  &amp;quot;Optional title attribute&amp;quot; 
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;View：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;../public/images/img1.png&quot; alt=&quot;Alt text&quot; title=&quot;Optional title attribute&quot;&gt;&lt;/p&gt;
-&lt;p&gt;到目前为止， Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的 &lt;img&gt; 标签。&lt;/p&gt;
-&lt;h3 id=&quot;转义字符：&quot;&gt;&lt;a href=&quot;#转义字符：&quot; class=&quot;headerlink&quot; title=&quot;转义字符：&quot;&gt;&lt;/a&gt;转义字符：&lt;/h3&gt;&lt;p&gt;Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号。Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;\   反斜线
-`   反引号
-*   星号
-_   底线
-{}  花括号
-[]  方括号
-()  括弧
-#   井字号
-+   加号
--   减号
-.   英文句点
-!   惊叹号
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;Markdown-免费编辑器&quot;&gt;&lt;a href=&quot;#Markdown-免费编辑器&quot; class=&quot;headerlink&quot; title=&quot;Markdown 免费编辑器&quot;&gt;&lt;/a&gt;Markdown 免费编辑器&lt;/h2&gt;&lt;h4 id=&quot;Windows-平台&quot;&gt;&lt;a href=&quot;#Windows-平台&quot; class=&quot;headerlink&quot; title=&quot;Windows 平台&quot;&gt;&lt;/a&gt;Windows 平台&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;MarkdownPad： &lt;a href=&quot;http://markdownpad.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://markdownpad.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;MarkPad： &lt;a href=&quot;http://code52.org/DownmarkerWPF&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://code52.org/DownmarkerWPF&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;Mac-平台&quot;&gt;&lt;a href=&quot;#Mac-平台&quot; class=&quot;headerlink&quot; title=&quot;Mac 平台&quot;&gt;&lt;/a&gt;Mac 平台&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Mou：&lt;/strong&gt; &lt;a href=&quot;http://mouapp.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://mouapp.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;在线编辑器&quot;&gt;&lt;a href=&quot;#在线编辑器&quot; class=&quot;headerlink&quot; title=&quot;在线编辑器&quot;&gt;&lt;/a&gt;在线编辑器&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;Markable.in： &lt;a href=&quot;http://markable.in&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://markable.in&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Dillinger.io：&lt;a href=&quot;http://dillinger.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://dillinger.io&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;stackedit.io：&lt;a href=&quot;https://stackedit.io/editor&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://stackedit.io/editor&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;浏览器插件&quot;&gt;&lt;a href=&quot;#浏览器插件&quot; class=&quot;headerlink&quot; title=&quot;浏览器插件&quot;&gt;&lt;/a&gt;浏览器插件&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;MaDe (Chrome)：&lt;a href=&quot;https://chrome.google.com/webstore/detail/oknndfeeopgpibecfjljjfanledpbkog&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MaDe&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;马克飞象：&lt;a href=&quot;http://maxiang.info/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://maxiang.info/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;参考文章：&quot;&gt;&lt;a href=&quot;#参考文章：&quot; class=&quot;headerlink&quot; title=&quot;参考文章：&quot;&gt;&lt;/a&gt;参考文章：&lt;/h2&gt;&lt;h5 id=&quot;Markdown-介绍PPT：http-show-bihe0832-com-markdown-html&quot;&gt;&lt;a href=&quot;#Markdown-介绍PPT：http-show-bihe0832-com-markdown-html&quot; class=&quot;headerlink&quot; title=&quot;Markdown 介绍PPT：http://show.bihe0832.com/markdown.html&quot;&gt;&lt;/a&gt;Markdown 介绍PPT：&lt;a href=&quot;http://show.bihe0832.com/markdown.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://show.bihe0832.com/markdown.html&lt;/a&gt;&lt;/h5&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Markdown-是什么&quot;&gt;&lt;a href=&quot;#Markdown-是什么&quot; class=&quot;headerlink&quot; title=&quot;Markdown 是什么&quot;&gt;&lt;/a&gt;Markdown 是什么&lt;/h2&gt;&lt;h3 id=&quot;Markdown-是一种轻量级标记语言。&quot;&gt;&lt;a href=&quot;#Markdown-是一种轻量级标记语言。&quot; class=&quot;headerlink&quot; title=&quot;Markdown 是一种轻量级标记语言。&quot;&gt;&lt;/a&gt;Markdown 是一种轻量级标记语言。&lt;/h3&gt;&lt;h4 id=&quot;它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML-或者HTML-文档”。&quot;&gt;&lt;a href=&quot;#它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML-或者HTML-文档”。&quot; class=&quot;headerlink&quot; title=&quot;它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。&quot;&gt;&lt;/a&gt;它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。&lt;/h4&gt;&lt;h4 id=&quot;Markdown-吸收了很多在电子邮件中已有的纯文本标记的特性。&quot;&gt;&lt;a href=&quot;#Markdown-吸收了很多在电子邮件中已有的纯文本标记的特性。&quot; class=&quot;headerlink&quot; title=&quot;Markdown 吸收了很多在电子邮件中已有的纯文本标记的特性。&quot;&gt;&lt;/a&gt;Markdown 吸收了很多在电子邮件中已有的纯文本标记的特性。&lt;/h4&gt;
-    
-    </summary>
-    
-      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
-    
-    
-      <category term="Markdown" scheme="http://igrandcloud.github.io/tags/Markdown/"/>
-    
-      <category term="Tool" scheme="http://igrandcloud.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Markdown 表格样式调整与自适应优化</title>
     <link href="http://igrandcloud.github.io/2016/03/04/markdown-table-style/"/>
     <id>http://igrandcloud.github.io/2016/03/04/markdown-table-style/</id>
@@ -1105,97 +891,6 @@ _   底线
   </entry>
   
   <entry>
-    <title>mac 教程</title>
-    <link href="http://igrandcloud.github.io/2015/12/21/mac-tutorial/"/>
-    <id>http://igrandcloud.github.io/2015/12/21/mac-tutorial/</id>
-    <published>2015-12-21T11:12:04.000Z</published>
-    <updated>2016-04-04T13:49:53.000Z</updated>
-    
-    <content type="html">&lt;p&gt;想要把 mac 使用的优雅，那么一定要学会会折腾，mac 下的工具生产力工具特别棒，而且好看。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;然后觉得不错的，大家自行搜索下载吧。&lt;/p&gt;
-&lt;p&gt;有的效果演示我就直接放链接了，自己写还没他们写的好。&lt;/p&gt;
-&lt;h2 id=&quot;我所使用的我喜欢的软件&quot;&gt;&lt;a href=&quot;#我所使用的我喜欢的软件&quot; class=&quot;headerlink&quot; title=&quot;我所使用的我喜欢的软件&quot;&gt;&lt;/a&gt;我所使用的我喜欢的软件&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;zhihu-rss(我开发的知乎非官方客户端，专为 osx 适配,详情见 &lt;a href=&quot;https://github.com/SimplyY/zhihu-rss&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimplyY/zhihu-rss&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;keka&lt;/li&gt;
-&lt;li&gt;iterm2(最好用的终端)&lt;/li&gt;
-&lt;li&gt;xmind(思维导图, &lt;a href=&quot;http://www.52mac.com/soft/6452-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.52mac.com/soft/6452-1-1.html&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;dash（mac 下最棒的查文档利器, &lt;a href=&quot;http://bbs.feng.com/read-htm-tid-8661137.html）&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://bbs.feng.com/read-htm-tid-8661137.html）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;alfred（几乎无所不能的神器）&lt;br&gt;效果如图：&lt;br&gt;我的所有的 workflow&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675053/01aa0e08-52eb-11e5-9d37-1655cc12f93f.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;workflow,大家自行搜索下载吧。&lt;br&gt;查文档(要使用 dash 的 workflow)&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675073/58745d56-52eb-11e5-9fe1-f11e1325ba11.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
-&lt;li&gt;Bartender(效果如图)&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675088/aa24e1c0-52eb-11e5-9462-6204b86fef1a.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
-&lt;li&gt;moom(&lt;a href=&quot;http://www.macappbox.com/software/Moom/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.macappbox.com/software/Moom/&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;github-pluse&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675098/e888808e-52eb-11e5-85f1-a55c0b94ff99.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
-&lt;li&gt;macdown(写 markdown 用的并且支持导成 pdf)&lt;/li&gt;
-&lt;li&gt;atom(写 markdown 非常非常方便，写代码神器,尤其前端方面，只要你会用)&lt;/li&gt;
-&lt;li&gt;MPlayerX (mac 下几乎最好的视频播放软件，可以播放几乎任何格式的视频)&lt;/li&gt;
-&lt;li&gt;iStat Menus(可以在 menubar 里随时看到网速、cpu 温度、风扇转速，并且控制转速)&lt;/li&gt;
-&lt;li&gt;Snagit(电脑录屏软件)&lt;/li&gt;
-&lt;li&gt;licecap （电脑录屏软件，直接录成 gif）&lt;/li&gt;
-&lt;li&gt;Snip(比自带的截图方便，可以设置快捷键、是否保存在桌面、是否截取高清图)&lt;/li&gt;
-&lt;li&gt;Unclutter (&lt;a href=&quot;http://maoshu.cc/2923.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://maoshu.cc/2923.html&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Pocket(&lt;a href=&quot;http://sspai.com/19450&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sspai.com/19450&lt;/a&gt;) 除了浏览器插件以及它还有 mac 下的客户端，手机端&lt;/li&gt;
-&lt;li&gt;todoist&lt;/li&gt;
-&lt;li&gt;Go2Shell&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;如何优雅使用软件&quot;&gt;&lt;a href=&quot;#如何优雅使用软件&quot; class=&quot;headerlink&quot; title=&quot;如何优雅使用软件&quot;&gt;&lt;/a&gt;如何优雅使用软件&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;使用 spotlight 或者 arfred 来打开他们&lt;/li&gt;
-&lt;li&gt;每一个软件下下来后，多实验一下它的功能，熟悉一下&lt;/li&gt;
-&lt;li&gt;然后定制，改快捷键等&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;mac-入门教程：日常使用篇&quot;&gt;&lt;a href=&quot;#mac-入门教程：日常使用篇&quot; class=&quot;headerlink&quot; title=&quot;mac 入门教程：日常使用篇&quot;&gt;&lt;/a&gt;mac 入门教程：日常使用篇&lt;/h1&gt;&lt;p&gt;想当年被蛇神安利了 osx 后，mac 买到家的一瞬间的心情很爽，那么优雅的电脑，然后苦逼的发现一个事实&lt;/p&gt;
-&lt;p&gt;特么我不怎么会用。&lt;/p&gt;
-&lt;p&gt;比如各种快捷键都不一样了（小提示，所有复制粘贴全选之类都是 cmd + 字母，而不是 ctrl）&lt;/p&gt;
-&lt;p&gt;后来蛇神带着我折腾了两天，于是就爽了，当然日后我自己也少说也折腾过上十个小时，&lt;br&gt;也对 osx 的优雅有了自己的独特的见解，在此写此文，向蛇神学习，带着大家把 osx 用的如丝般顺滑。&lt;/p&gt;
-&lt;h2 id=&quot;入门篇&quot;&gt;&lt;a href=&quot;#入门篇&quot; class=&quot;headerlink&quot; title=&quot;入门篇&quot;&gt;&lt;/a&gt;入门篇&lt;/h2&gt;&lt;p&gt;osx 和 win 的设计很不同，不要把 osx 当 win 用。mac 机器装 win 实在是浪费。&lt;br&gt;而且 osx 基本上都有 win 的替代方案，比如 word 什么的，有免费版，ps 也可以去下破解版，，&lt;br&gt;说实话我 win 的虚拟机一开始时用来准备打游戏的，然后把它卸了。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.zhihu.com/question/30714820/answer/49149283&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.zhihu.com/question/30714820/answer/49149283&lt;/a&gt; 这里写了 mac 的一些优势，欢迎点赞。&lt;/p&gt;
-&lt;h3 id=&quot;osx-的基本知识和使用&quot;&gt;&lt;a href=&quot;#osx-的基本知识和使用&quot; class=&quot;headerlink&quot; title=&quot;osx 的基本知识和使用&quot;&gt;&lt;/a&gt;osx 的基本知识和使用&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;安装 app：将 app 拖动至 aplication 即可。而且只要几秒钟一个 1g 以内的程序就能安装好。&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;卸载：有两种方式，直接删除 app，或者使用 cleanmymac2 等卸载软件，方法2会卸载掉用户信息和缓存等。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;工作区概念（超级推荐,神器）：全屏程序（ctrl + cmd + f）即可创建一个工作区，&lt;br&gt;四指上滑可以查看所有工作区以及运行软件，这个状态下鼠标移动右上角，有神奇功能（点击即可创建新的工作区）&lt;br&gt;效果图：&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296594/0c37ddf4-44c3-11e5-9f3b-15b996a34a43.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;触摸板（超级推荐,神器）：先去点击左上角的苹果里的系统设置，点击触控板，轻点一定要打勾，不然太不优雅。&lt;br&gt;示例图：&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296612/7a68d198-44c3-11e5-884a-b0a3353b41cd.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
-&lt;li&gt;触摸板特别棒的手势推荐(我所有手势都打勾了，记不住不要紧，一个一个试着用，你就发现你以后除了打游戏&lt;br&gt; 看网页就不需要鼠标了，网页需要手势，当然其实也可以快捷键)，下面是一些我常用的。&lt;ul&gt;
-&lt;li&gt;四指横向滑动，切换工作区。&lt;/li&gt;
-&lt;li&gt;两指轻点，右键.&lt;/li&gt;
-&lt;li&gt;对文本，三指轻点，查字典.&lt;/li&gt;
-&lt;li&gt;显示桌面&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;spotlight（真奥义神器，也是在系统设置里面设置）&lt;ul&gt;
-&lt;li&gt;快速打开软件(输入软件名，比如优雅的打开 qq，支持缩写)&lt;/li&gt;
-&lt;li&gt;快速查找文件(输入软件名，支持缩写)&lt;/li&gt;
-&lt;li&gt;查字典（这样你再也不担心有单词不认识了，或者变量命名纠结了）等（设置里面好多）&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296716/8a0ff7f0-44c5-11e5-90fb-a49f5d23ce90.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296720/963a6722-44c5-11e5-8db2-3b707a9c243a.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;注意定义就是词典词条，默认在后面，但是这是个常用功能，所以我一般把他放到第二个&lt;br&gt;（越前面，搜索出现位置越早），大家也可以根据自己需求来定制。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;dock，我一般放一些特别常用的软件，和名字不好记的常用软件（好记得用 spotlight&lt;br&gt;打开才是真正优雅）右键 图标可以选择移出 dock 或者保留在 dock&lt;/li&gt;
-&lt;li&gt;其他的一些系统自带软件(强烈推荐)：&lt;ul&gt;
-&lt;li&gt;数码测色计(取色神器，用完记得关，不然长时间耗电大，你鼠标移到哪他就不停取色)&lt;/li&gt;
-&lt;li&gt;活动监视器(osx下的任务管理器，超级美,但是名字有点奇怪我放进 dock 里面了) &lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296851/489194ac-44c8-11e5-8b3a-74d31f2aadec.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
-&lt;li&gt;日历（优雅哭了的自带软件，win 下我找了一个多小时都没找到能和它匹敌的），邮件&lt;/li&gt;
-&lt;li&gt;预览（看 pdf 神器）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;office &lt;a href=&quot;http://www.52mac.com/soft/6615-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.52mac.com/soft/6615-1-1.html&lt;/a&gt;我用的是2011，自动破解，无需手动，然后很不错，支持 retina（或许要更新才支持）。&lt;/li&gt;
-&lt;li&gt;系统设置里面的安全和隐私的通用里下载应用程序要允许任何来源。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;入门篇到此为止，进阶篇我在聊一聊 osx 下的超级棒的非系统自带的软件们以及完爆 win 下 cmd 的&lt;br&gt;终端iterm2。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;想要把 mac 使用的优雅，那么一定要学会会折腾，mac 下的工具生产力工具特别棒，而且好看。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
-    
-    
-      <category term="Resource" scheme="http://igrandcloud.github.io/tags/Resource/"/>
-    
-  </entry>
-  
-  <entry>
     <title>开发中常用的一些知识检索链接（Markdown、SVN、Git等）</title>
     <link href="http://igrandcloud.github.io/2015/12/21/tools-website-for-developer/"/>
     <id>http://igrandcloud.github.io/2015/12/21/tools-website-for-developer/</id>
@@ -1225,86 +920,6 @@ _   底线
     
     
       <category term="Resource" scheme="http://igrandcloud.github.io/tags/Resource/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 最常用的几个命令</title>
-    <link href="http://igrandcloud.github.io/2015/12/21/common-hexo-commands/"/>
-    <id>http://igrandcloud.github.io/2015/12/21/common-hexo-commands/</id>
-    <published>2015-12-21T11:12:04.000Z</published>
-    <updated>2016-04-04T13:34:37.000Z</updated>
-    
-    <content type="html">&lt;style&gt;
-    .article-entry h2 {
-        border-bottom: none;
-    }
-&lt;/style&gt;
-
-&lt;p&gt;　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: &lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;hexo-s&quot;&gt;&lt;a href=&quot;#hexo-s&quot; class=&quot;headerlink&quot; title=&quot;hexo s&quot;&gt;&lt;/a&gt;hexo s&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo &lt;span class=&quot;keyword&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;启动本地服务器，用于预览主题。默认地址： &lt;a href=&quot;http://localhost:4000/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4000/&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hexo s&lt;/code&gt; 是 &lt;code&gt;hexo server&lt;/code&gt; 的缩写，命令效果一致；&lt;/li&gt;
-&lt;li&gt;预览的同时可以修改文章内容或主题代码，保存后刷新页面即可；&lt;/li&gt;
-&lt;li&gt;对 Hexo 根目录 &lt;code&gt;_config.yml&lt;/code&gt; 的修改，需要重启本地服务器后才能预览效果。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-n&quot;&gt;&lt;a href=&quot;#hexo-n&quot; class=&quot;headerlink&quot; title=&quot;hexo n&quot;&gt;&lt;/a&gt;hexo n&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; n &lt;span class=&quot;string&quot;&gt;&quot;学习笔记  六&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;新建一篇标题为 &lt;code&gt;学习笔记  六&lt;/code&gt; 的文章，因为标题里有空格，所以加上了引号。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;文章标题可以在对应 md 文件里改，新建时标题可以写的简单些；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo n&lt;/code&gt; 是 &lt;code&gt;hexo new&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-d&quot;&gt;&lt;a href=&quot;#hexo-d&quot; class=&quot;headerlink&quot; title=&quot;hexo d&quot;&gt;&lt;/a&gt;hexo d&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo &lt;span class=&quot;keyword&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;自动生成网站静态文件，并部署到设定的仓库。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hexo d&lt;/code&gt; 是 &lt;code&gt;hexo deploy&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-clean&quot;&gt;&lt;a href=&quot;#hexo-clean&quot; class=&quot;headerlink&quot; title=&quot;hexo clean&quot;&gt;&lt;/a&gt;hexo clean&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; clean&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;清除缓存文件 &lt;code&gt;db.json&lt;/code&gt; 和已生成的静态文件 &lt;code&gt;public&lt;/code&gt;。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;网站显示异常时可以执行这条命令试试。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-g&quot;&gt;&lt;a href=&quot;#hexo-g&quot; class=&quot;headerlink&quot; title=&quot;hexo g&quot;&gt;&lt;/a&gt;hexo g&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;生成网站静态文件到默认设置的 &lt;code&gt;public&lt;/code&gt; 文件夹。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;便于查看网站生成的静态文件或者手动部署网站；&lt;/li&gt;
-&lt;li&gt;如果使用自动部署，不需要先执行该命令；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo g&lt;/code&gt; 是 &lt;code&gt;hexo generate&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-n-page&quot;&gt;&lt;a href=&quot;#hexo-n-page&quot; class=&quot;headerlink&quot; title=&quot;hexo n page&quot;&gt;&lt;/a&gt;hexo n page&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; n page aboutme&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;新建一个标题为 &lt;code&gt;aboutme&lt;/code&gt; 的页面，默认链接地址为 &lt;code&gt;主页地址/aboutme/&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;标题可以为中文，但一般习惯用英文；&lt;/li&gt;
-&lt;li&gt;页面标题和文章一样可以随意修改；&lt;/li&gt;
-&lt;li&gt;页面不会出现在首页文章列表和归档中，也不支持设置分类和标签。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;常用组合&quot;&gt;&lt;a href=&quot;#常用组合&quot; class=&quot;headerlink&quot; title=&quot;常用组合&quot;&gt;&lt;/a&gt;常用组合&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo clean &amp;amp;&amp;amp; hexo &lt;span class=&quot;keyword&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo clean &amp;amp;&amp;amp; hexo &lt;span class=&quot;keyword&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;可以用输入法等软件为这些命令设置快捷键，方便调用。&lt;/p&gt;
-&lt;h2 id=&quot;相关说明&quot;&gt;&lt;a href=&quot;#相关说明&quot; class=&quot;headerlink&quot; title=&quot;相关说明&quot;&gt;&lt;/a&gt;相关说明&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;以上命令使用基于 Hexo 3.1.1 版本；&lt;/li&gt;
-&lt;li&gt;需要删掉用命令新建的文章或页面时，只需要进入 Hexo 根目录下的 &lt;code&gt;source&lt;/code&gt; 文件夹，删除对应文件或文件夹即可；&lt;/li&gt;
-&lt;li&gt;更多命令用法请查询 &lt;a href=&quot;https://hexo.io/zh-cn/docs/commands.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档&lt;/a&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;style&gt;
-    .article-entry h2 {
-        border-bottom: none;
-    }
-&lt;/style&gt;
-
-&lt;p&gt;　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
-    
-    
-      <category term="resource" scheme="http://igrandcloud.github.io/tags/resource/"/>
     
   </entry>
   
@@ -1477,6 +1092,177 @@ _   底线
     
     
       <category term="Management" scheme="http://igrandcloud.github.io/tags/Management/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 最常用的几个命令</title>
+    <link href="http://igrandcloud.github.io/2015/12/21/common-hexo-commands/"/>
+    <id>http://igrandcloud.github.io/2015/12/21/common-hexo-commands/</id>
+    <published>2015-12-21T11:12:04.000Z</published>
+    <updated>2016-04-04T13:34:37.000Z</updated>
+    
+    <content type="html">&lt;style&gt;
+    .article-entry h2 {
+        border-bottom: none;
+    }
+&lt;/style&gt;
+
+&lt;p&gt;　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: &lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;hexo-s&quot;&gt;&lt;a href=&quot;#hexo-s&quot; class=&quot;headerlink&quot; title=&quot;hexo s&quot;&gt;&lt;/a&gt;hexo s&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo &lt;span class=&quot;keyword&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;启动本地服务器，用于预览主题。默认地址： &lt;a href=&quot;http://localhost:4000/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4000/&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hexo s&lt;/code&gt; 是 &lt;code&gt;hexo server&lt;/code&gt; 的缩写，命令效果一致；&lt;/li&gt;
+&lt;li&gt;预览的同时可以修改文章内容或主题代码，保存后刷新页面即可；&lt;/li&gt;
+&lt;li&gt;对 Hexo 根目录 &lt;code&gt;_config.yml&lt;/code&gt; 的修改，需要重启本地服务器后才能预览效果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;hexo-n&quot;&gt;&lt;a href=&quot;#hexo-n&quot; class=&quot;headerlink&quot; title=&quot;hexo n&quot;&gt;&lt;/a&gt;hexo n&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; n &lt;span class=&quot;string&quot;&gt;&quot;学习笔记  六&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;新建一篇标题为 &lt;code&gt;学习笔记  六&lt;/code&gt; 的文章，因为标题里有空格，所以加上了引号。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;文章标题可以在对应 md 文件里改，新建时标题可以写的简单些；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hexo n&lt;/code&gt; 是 &lt;code&gt;hexo new&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;hexo-d&quot;&gt;&lt;a href=&quot;#hexo-d&quot; class=&quot;headerlink&quot; title=&quot;hexo d&quot;&gt;&lt;/a&gt;hexo d&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo &lt;span class=&quot;keyword&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;自动生成网站静态文件，并部署到设定的仓库。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hexo d&lt;/code&gt; 是 &lt;code&gt;hexo deploy&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;hexo-clean&quot;&gt;&lt;a href=&quot;#hexo-clean&quot; class=&quot;headerlink&quot; title=&quot;hexo clean&quot;&gt;&lt;/a&gt;hexo clean&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; clean&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;清除缓存文件 &lt;code&gt;db.json&lt;/code&gt; 和已生成的静态文件 &lt;code&gt;public&lt;/code&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;网站显示异常时可以执行这条命令试试。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;hexo-g&quot;&gt;&lt;a href=&quot;#hexo-g&quot; class=&quot;headerlink&quot; title=&quot;hexo g&quot;&gt;&lt;/a&gt;hexo g&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;生成网站静态文件到默认设置的 &lt;code&gt;public&lt;/code&gt; 文件夹。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;便于查看网站生成的静态文件或者手动部署网站；&lt;/li&gt;
+&lt;li&gt;如果使用自动部署，不需要先执行该命令；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hexo g&lt;/code&gt; 是 &lt;code&gt;hexo generate&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;hexo-n-page&quot;&gt;&lt;a href=&quot;#hexo-n-page&quot; class=&quot;headerlink&quot; title=&quot;hexo n page&quot;&gt;&lt;/a&gt;hexo n page&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; n page aboutme&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;新建一个标题为 &lt;code&gt;aboutme&lt;/code&gt; 的页面，默认链接地址为 &lt;code&gt;主页地址/aboutme/&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;标题可以为中文，但一般习惯用英文；&lt;/li&gt;
+&lt;li&gt;页面标题和文章一样可以随意修改；&lt;/li&gt;
+&lt;li&gt;页面不会出现在首页文章列表和归档中，也不支持设置分类和标签。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;常用组合&quot;&gt;&lt;a href=&quot;#常用组合&quot; class=&quot;headerlink&quot; title=&quot;常用组合&quot;&gt;&lt;/a&gt;常用组合&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo clean &amp;amp;&amp;amp; hexo &lt;span class=&quot;keyword&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo clean &amp;amp;&amp;amp; hexo &lt;span class=&quot;keyword&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;可以用输入法等软件为这些命令设置快捷键，方便调用。&lt;/p&gt;
+&lt;h2 id=&quot;相关说明&quot;&gt;&lt;a href=&quot;#相关说明&quot; class=&quot;headerlink&quot; title=&quot;相关说明&quot;&gt;&lt;/a&gt;相关说明&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;以上命令使用基于 Hexo 3.1.1 版本；&lt;/li&gt;
+&lt;li&gt;需要删掉用命令新建的文章或页面时，只需要进入 Hexo 根目录下的 &lt;code&gt;source&lt;/code&gt; 文件夹，删除对应文件或文件夹即可；&lt;/li&gt;
+&lt;li&gt;更多命令用法请查询 &lt;a href=&quot;https://hexo.io/zh-cn/docs/commands.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;style&gt;
+    .article-entry h2 {
+        border-bottom: none;
+    }
+&lt;/style&gt;
+
+&lt;p&gt;　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
+    
+    
+      <category term="resource" scheme="http://igrandcloud.github.io/tags/resource/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mac 教程</title>
+    <link href="http://igrandcloud.github.io/2015/12/21/mac-tutorial/"/>
+    <id>http://igrandcloud.github.io/2015/12/21/mac-tutorial/</id>
+    <published>2015-12-21T11:12:04.000Z</published>
+    <updated>2016-04-04T13:49:53.000Z</updated>
+    
+    <content type="html">&lt;p&gt;想要把 mac 使用的优雅，那么一定要学会会折腾，mac 下的工具生产力工具特别棒，而且好看。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;然后觉得不错的，大家自行搜索下载吧。&lt;/p&gt;
+&lt;p&gt;有的效果演示我就直接放链接了，自己写还没他们写的好。&lt;/p&gt;
+&lt;h2 id=&quot;我所使用的我喜欢的软件&quot;&gt;&lt;a href=&quot;#我所使用的我喜欢的软件&quot; class=&quot;headerlink&quot; title=&quot;我所使用的我喜欢的软件&quot;&gt;&lt;/a&gt;我所使用的我喜欢的软件&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;zhihu-rss(我开发的知乎非官方客户端，专为 osx 适配,详情见 &lt;a href=&quot;https://github.com/SimplyY/zhihu-rss&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimplyY/zhihu-rss&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;keka&lt;/li&gt;
+&lt;li&gt;iterm2(最好用的终端)&lt;/li&gt;
+&lt;li&gt;xmind(思维导图, &lt;a href=&quot;http://www.52mac.com/soft/6452-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.52mac.com/soft/6452-1-1.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;dash（mac 下最棒的查文档利器, &lt;a href=&quot;http://bbs.feng.com/read-htm-tid-8661137.html）&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://bbs.feng.com/read-htm-tid-8661137.html）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;alfred（几乎无所不能的神器）&lt;br&gt;效果如图：&lt;br&gt;我的所有的 workflow&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675053/01aa0e08-52eb-11e5-9d37-1655cc12f93f.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;workflow,大家自行搜索下载吧。&lt;br&gt;查文档(要使用 dash 的 workflow)&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675073/58745d56-52eb-11e5-9fe1-f11e1325ba11.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
+&lt;li&gt;Bartender(效果如图)&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675088/aa24e1c0-52eb-11e5-9462-6204b86fef1a.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
+&lt;li&gt;moom(&lt;a href=&quot;http://www.macappbox.com/software/Moom/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.macappbox.com/software/Moom/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;github-pluse&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675098/e888808e-52eb-11e5-85f1-a55c0b94ff99.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
+&lt;li&gt;macdown(写 markdown 用的并且支持导成 pdf)&lt;/li&gt;
+&lt;li&gt;atom(写 markdown 非常非常方便，写代码神器,尤其前端方面，只要你会用)&lt;/li&gt;
+&lt;li&gt;MPlayerX (mac 下几乎最好的视频播放软件，可以播放几乎任何格式的视频)&lt;/li&gt;
+&lt;li&gt;iStat Menus(可以在 menubar 里随时看到网速、cpu 温度、风扇转速，并且控制转速)&lt;/li&gt;
+&lt;li&gt;Snagit(电脑录屏软件)&lt;/li&gt;
+&lt;li&gt;licecap （电脑录屏软件，直接录成 gif）&lt;/li&gt;
+&lt;li&gt;Snip(比自带的截图方便，可以设置快捷键、是否保存在桌面、是否截取高清图)&lt;/li&gt;
+&lt;li&gt;Unclutter (&lt;a href=&quot;http://maoshu.cc/2923.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://maoshu.cc/2923.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Pocket(&lt;a href=&quot;http://sspai.com/19450&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sspai.com/19450&lt;/a&gt;) 除了浏览器插件以及它还有 mac 下的客户端，手机端&lt;/li&gt;
+&lt;li&gt;todoist&lt;/li&gt;
+&lt;li&gt;Go2Shell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;如何优雅使用软件&quot;&gt;&lt;a href=&quot;#如何优雅使用软件&quot; class=&quot;headerlink&quot; title=&quot;如何优雅使用软件&quot;&gt;&lt;/a&gt;如何优雅使用软件&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;使用 spotlight 或者 arfred 来打开他们&lt;/li&gt;
+&lt;li&gt;每一个软件下下来后，多实验一下它的功能，熟悉一下&lt;/li&gt;
+&lt;li&gt;然后定制，改快捷键等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;mac-入门教程：日常使用篇&quot;&gt;&lt;a href=&quot;#mac-入门教程：日常使用篇&quot; class=&quot;headerlink&quot; title=&quot;mac 入门教程：日常使用篇&quot;&gt;&lt;/a&gt;mac 入门教程：日常使用篇&lt;/h1&gt;&lt;p&gt;想当年被蛇神安利了 osx 后，mac 买到家的一瞬间的心情很爽，那么优雅的电脑，然后苦逼的发现一个事实&lt;/p&gt;
+&lt;p&gt;特么我不怎么会用。&lt;/p&gt;
+&lt;p&gt;比如各种快捷键都不一样了（小提示，所有复制粘贴全选之类都是 cmd + 字母，而不是 ctrl）&lt;/p&gt;
+&lt;p&gt;后来蛇神带着我折腾了两天，于是就爽了，当然日后我自己也少说也折腾过上十个小时，&lt;br&gt;也对 osx 的优雅有了自己的独特的见解，在此写此文，向蛇神学习，带着大家把 osx 用的如丝般顺滑。&lt;/p&gt;
+&lt;h2 id=&quot;入门篇&quot;&gt;&lt;a href=&quot;#入门篇&quot; class=&quot;headerlink&quot; title=&quot;入门篇&quot;&gt;&lt;/a&gt;入门篇&lt;/h2&gt;&lt;p&gt;osx 和 win 的设计很不同，不要把 osx 当 win 用。mac 机器装 win 实在是浪费。&lt;br&gt;而且 osx 基本上都有 win 的替代方案，比如 word 什么的，有免费版，ps 也可以去下破解版，，&lt;br&gt;说实话我 win 的虚拟机一开始时用来准备打游戏的，然后把它卸了。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.zhihu.com/question/30714820/answer/49149283&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.zhihu.com/question/30714820/answer/49149283&lt;/a&gt; 这里写了 mac 的一些优势，欢迎点赞。&lt;/p&gt;
+&lt;h3 id=&quot;osx-的基本知识和使用&quot;&gt;&lt;a href=&quot;#osx-的基本知识和使用&quot; class=&quot;headerlink&quot; title=&quot;osx 的基本知识和使用&quot;&gt;&lt;/a&gt;osx 的基本知识和使用&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;安装 app：将 app 拖动至 aplication 即可。而且只要几秒钟一个 1g 以内的程序就能安装好。&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;卸载：有两种方式，直接删除 app，或者使用 cleanmymac2 等卸载软件，方法2会卸载掉用户信息和缓存等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;工作区概念（超级推荐,神器）：全屏程序（ctrl + cmd + f）即可创建一个工作区，&lt;br&gt;四指上滑可以查看所有工作区以及运行软件，这个状态下鼠标移动右上角，有神奇功能（点击即可创建新的工作区）&lt;br&gt;效果图：&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296594/0c37ddf4-44c3-11e5-9f3b-15b996a34a43.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;触摸板（超级推荐,神器）：先去点击左上角的苹果里的系统设置，点击触控板，轻点一定要打勾，不然太不优雅。&lt;br&gt;示例图：&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296612/7a68d198-44c3-11e5-884a-b0a3353b41cd.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
+&lt;li&gt;触摸板特别棒的手势推荐(我所有手势都打勾了，记不住不要紧，一个一个试着用，你就发现你以后除了打游戏&lt;br&gt; 看网页就不需要鼠标了，网页需要手势，当然其实也可以快捷键)，下面是一些我常用的。&lt;ul&gt;
+&lt;li&gt;四指横向滑动，切换工作区。&lt;/li&gt;
+&lt;li&gt;两指轻点，右键.&lt;/li&gt;
+&lt;li&gt;对文本，三指轻点，查字典.&lt;/li&gt;
+&lt;li&gt;显示桌面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;spotlight（真奥义神器，也是在系统设置里面设置）&lt;ul&gt;
+&lt;li&gt;快速打开软件(输入软件名，比如优雅的打开 qq，支持缩写)&lt;/li&gt;
+&lt;li&gt;快速查找文件(输入软件名，支持缩写)&lt;/li&gt;
+&lt;li&gt;查字典（这样你再也不担心有单词不认识了，或者变量命名纠结了）等（设置里面好多）&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296716/8a0ff7f0-44c5-11e5-90fb-a49f5d23ce90.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296720/963a6722-44c5-11e5-8db2-3b707a9c243a.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;注意定义就是词典词条，默认在后面，但是这是个常用功能，所以我一般把他放到第二个&lt;br&gt;（越前面，搜索出现位置越早），大家也可以根据自己需求来定制。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;dock，我一般放一些特别常用的软件，和名字不好记的常用软件（好记得用 spotlight&lt;br&gt;打开才是真正优雅）右键 图标可以选择移出 dock 或者保留在 dock&lt;/li&gt;
+&lt;li&gt;其他的一些系统自带软件(强烈推荐)：&lt;ul&gt;
+&lt;li&gt;数码测色计(取色神器，用完记得关，不然长时间耗电大，你鼠标移到哪他就不停取色)&lt;/li&gt;
+&lt;li&gt;活动监视器(osx下的任务管理器，超级美,但是名字有点奇怪我放进 dock 里面了) &lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296851/489194ac-44c8-11e5-8b3a-74d31f2aadec.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
+&lt;li&gt;日历（优雅哭了的自带软件，win 下我找了一个多小时都没找到能和它匹敌的），邮件&lt;/li&gt;
+&lt;li&gt;预览（看 pdf 神器）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;office &lt;a href=&quot;http://www.52mac.com/soft/6615-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.52mac.com/soft/6615-1-1.html&lt;/a&gt;我用的是2011，自动破解，无需手动，然后很不错，支持 retina（或许要更新才支持）。&lt;/li&gt;
+&lt;li&gt;系统设置里面的安全和隐私的通用里下载应用程序要允许任何来源。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;入门篇到此为止，进阶篇我在聊一聊 osx 下的超级棒的非系统自带的软件们以及完爆 win 下 cmd 的&lt;br&gt;终端iterm2。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;想要把 mac 使用的优雅，那么一定要学会会折腾，mac 下的工具生产力工具特别棒，而且好看。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
+    
+    
+      <category term="Resource" scheme="http://igrandcloud.github.io/tags/Resource/"/>
     
   </entry>
   
@@ -3341,7 +3127,7 @@ _   底线
     <link href="http://igrandcloud.github.io/2015/08/30/EndNote-Markdown/"/>
     <id>http://igrandcloud.github.io/2015/08/30/EndNote-Markdown/</id>
     <published>2015-08-29T14:00:00.000Z</published>
-    <updated>2016-04-04T13:36:33.000Z</updated>
+    <updated>2016-04-04T14:37:39.000Z</updated>
     
     <content type="html">&lt;p&gt;　　最近正在学习用 Markdown 写文章，网上搜了一圈，没找到称心的插入参考资料列表 Reference 的方法。想起自己一直在用 EndNote 管理文献，索性网络博文的文献也用 EndNote 管理好了。&lt;/p&gt;
 &lt;p&gt;　　参考 Markdown 的语法，修改了 EndNote 文献的导出格式，生成的列表较简洁，样式自定义，排序和维护都比较方便，基本满足了自己的要求。&lt;/p&gt;
@@ -3354,13 +3140,13 @@ _   底线
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&quot;导入与配置&quot;&gt;&lt;a href=&quot;#导入与配置&quot; class=&quot;headerlink&quot; title=&quot;导入与配置&quot;&gt;&lt;/a&gt;导入与配置&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;配置文件下载：→ &lt;a href=&quot;/resources/EndNote-MOxFIVE.zip&quot;&gt;EndNote-MOxFIVE.zip&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;/resources/EndNote-files.jpg&quot; alt=&quot;EndNote-files&quot;&gt;&lt;/li&gt;
-&lt;li&gt;如下图获取 Style Folder 路径然后在资源管理器里打开 → 把下载解压得到的两个 ens 格式拷入其中;&lt;br&gt;&lt;img src=&quot;/resources/EndNote-Style.gif&quot; alt=&quot;EndNote-Style&quot;&gt;&lt;/li&gt;
-&lt;li&gt;如下图打开样式管理器，找到并勾选新添加的两种样式；&lt;br&gt;&lt;img src=&quot;/resources/EndNote-add.gif&quot; alt=&quot;EndNote-add&quot;&gt;&lt;/li&gt;
-&lt;li&gt;打开 EndNote → Preferences → 导入下载的 Reference Type.xml → 默认 type 选择“1.web” → 点确定退出；&lt;br&gt;&lt;img src=&quot;/resources/Reference-Type.gif&quot; alt=&quot;Reference-Type&quot;&gt; &lt;/li&gt;
+&lt;li&gt;配置文件下载：→ &lt;a href=&quot;/assets/blogImg/EndNote-MOxFIVE.zip&quot;&gt;EndNote-MOxFIVE.zip&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;/assets/blogImg/EndNote-files.jpg&quot; alt=&quot;EndNote-files&quot;&gt;&lt;/li&gt;
+&lt;li&gt;如下图获取 Style Folder 路径然后在资源管理器里打开 → 把下载解压得到的两个 ens 格式拷入其中;&lt;br&gt;&lt;img src=&quot;/assets/blogImg/EndNote-Style.gif&quot; alt=&quot;EndNote-Style&quot;&gt;&lt;/li&gt;
+&lt;li&gt;如下图打开样式管理器，找到并勾选新添加的两种样式；&lt;br&gt;&lt;img src=&quot;/assets/blogImg/EndNote-add.gif&quot; alt=&quot;EndNote-add&quot;&gt;&lt;/li&gt;
+&lt;li&gt;打开 EndNote → Preferences → 导入下载的 Reference Type.xml → 默认 type 选择“1.web” → 点确定退出；&lt;br&gt;&lt;img src=&quot;/assets/blogImg/Reference-Type.gif&quot; alt=&quot;Reference-Type&quot;&gt; &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&quot;生成列表&quot;&gt;&lt;a href=&quot;#生成列表&quot; class=&quot;headerlink&quot; title=&quot;生成列表&quot;&gt;&lt;/a&gt;生成列表&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;如下图，下拉列表切换为 Markdown List 样式，点新建文献按钮，填入作者、标题、日期和链接后保存；&lt;br&gt;&lt;img src=&quot;/resources/EndNote-item.jpg&quot; alt=&quot;EndNote-item&quot;&gt;&lt;/li&gt;
+&lt;li&gt;如下图，下拉列表切换为 Markdown List 样式，点新建文献按钮，填入作者、标题、日期和链接后保存；&lt;br&gt;&lt;img src=&quot;/assets/blogImg/EndNote-item.jpg&quot; alt=&quot;EndNote-item&quot;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;选取添加好的文献，右键选 Copy Formatted，在 Markdown 正文末尾加一个标题，把列表粘贴其下；&lt;/p&gt;
 &lt;figure class=&quot;highlight markdown&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;section&quot;&gt;### 参考资料:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;bullet&quot;&gt;1. &lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;***认识与入门 Markdown**&lt;/span&gt;&lt;span class=&quot;bullet&quot;&gt;* by *&lt;/span&gt;&lt;span class=&quot;emphasis&quot;&gt;*Te_Lee*&lt;/span&gt;* on &amp;lt;code&amp;gt;2014/04/17&amp;lt;/code&amp;gt;: &amp;lt;http://sspai.com/25137&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;bullet&quot;&gt;1. &lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;***Markdown 语法说明**&lt;/span&gt;&lt;span class=&quot;bullet&quot;&gt;* by *&lt;/span&gt;&lt;span class=&quot;emphasis&quot;&gt;*riku*&lt;/span&gt;* on &amp;lt;code&amp;gt;2012&amp;lt;/code&amp;gt;: &amp;lt;http://wowubuntu.com/markdown/&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;bullet&quot;&gt;1. &lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;***使用 GitHub 和 Hexo 搭建免费静态 Blog**&lt;/span&gt;&lt;span class=&quot;bullet&quot;&gt;* by *&lt;/span&gt;&lt;span class=&quot;emphasis&quot;&gt;*wsgzao*&lt;/span&gt;* on &amp;lt;code&amp;gt;2015/03/23&amp;lt;/code&amp;gt;: &amp;lt;https://www.v2ex.com/t/178642&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;~~~~~~~~~&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;section&quot;&gt;##### 上面是文章List样式，单一主页的样式先切换到Markdown Homepage再复制; &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;bullet&quot;&gt;1. &lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;**GitHub**&lt;/span&gt;: &amp;lt;https://github.com/MOxFIVE&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
@@ -3406,7 +3192,7 @@ _   底线
     <link href="http://igrandcloud.github.io/2015/08/14/blog-use-Hexo-and-Github/"/>
     <id>http://igrandcloud.github.io/2015/08/14/blog-use-Hexo-and-Github/</id>
     <published>2015-08-14T06:53:00.000Z</published>
-    <updated>2016-04-04T13:33:25.000Z</updated>
+    <updated>2016-04-04T14:39:10.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;自从投身于互联网学习的怀抱中后，一直想搭建一个属于自己的个人博客。了解过WordPress&lt;br&gt;，不过因为不懂服务器的知识只得暂时作罢;也看过csdn、博客园等，方便是方便，不过主题样式无法个人定制，这对于美工出身的我简直无法忍受。听朋友说起hexo，并且能够部署在github上，甚是方便，照着教程，一步一步搭建了这个博客。在搭建博客过程中遇到了很多问题，写下这篇教程的原因就是希望能够给需要的人些许帮助。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;hexo简介&quot;&gt;&lt;a href=&quot;#hexo简介&quot; class=&quot;headerlink&quot; title=&quot;hexo简介&quot;&gt;&lt;/a&gt;hexo简介&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Hexo&lt;/strong&gt; 是一个快速、简洁且高效的博客框架。出自台湾大学生&lt;a href=&quot;http://twitter.com/tommy351&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;tommy351&lt;/a&gt; 之手，是一个基于Node.js的静态博客程序。Hexo 使用 &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Markdown&lt;/a&gt;（关于markdown在后面会有更详细的介绍）或其他渲染引擎解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p&gt;
@@ -3436,7 +3222,7 @@ _   底线
 &lt;blockquote&gt;
 &lt;p&gt;若您的网站存放在子目录中，例如 &lt;code&gt;http://yoursite.com/blog&lt;/code&gt;，则请将您的 url 设为 &lt;code&gt;http://yoursite.com/blog&lt;/code&gt; 并把 root 设为 &lt;code&gt;/blog/&lt;/code&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;目录&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;/images/20150814/config3.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;文章&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;/images/20150814/config4.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;分类 &amp;amp; 标签&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;/images/20150814/config5.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;日期/时间格式&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;/images/20150814/config6.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;分页&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;/images/20150814/config7.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;扩展&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;/images/20150814/config8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目录&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;/assets/blogImg/20150814/config3.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;文章&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;/assets/blogImg/20150814/config4.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;分类 &amp;amp; 标签&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;/assets/blogImg/20150814/config5.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;日期/时间格式&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;/assets/blogImg/20150814/config6.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;分页&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;/assets/blogImg/20150814/config7.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;扩展&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;/assets/blogImg/20150814/config8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;hexo指令&quot;&gt;&lt;a href=&quot;#hexo指令&quot; class=&quot;headerlink&quot; title=&quot;hexo指令&quot;&gt;&lt;/a&gt;hexo指令&lt;/h2&gt;&lt;h3 id=&quot;init&quot;&gt;&lt;a href=&quot;#init&quot; class=&quot;headerlink&quot; title=&quot;init&quot;&gt;&lt;/a&gt;init&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo init [folder]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;新建一个网站，也可以先进入目录，再&lt;code&gt;hexo init&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&quot;new&quot;&gt;&lt;a href=&quot;#new&quot; class=&quot;headerlink&quot; title=&quot;new&quot;&gt;&lt;/a&gt;new&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new [layout] &amp;lt;title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -3505,7 +3291,7 @@ _   底线
 &lt;h3 id=&quot;网站图标&quot;&gt;&lt;a href=&quot;#网站图标&quot; class=&quot;headerlink&quot; title=&quot;网站图标&quot;&gt;&lt;/a&gt;网站图标&lt;/h3&gt;&lt;p&gt;将你的&lt;code&gt;favicon.ico&lt;/code&gt;放到&lt;code&gt;source&lt;/code&gt;目录下即可&lt;br&gt;图标的制作可以在 &lt;a href=&quot;http://www.bitbug.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;比特虫&lt;/a&gt;网站制作&lt;/p&gt;
 &lt;h2 id=&quot;后记&quot;&gt;&lt;a href=&quot;#后记&quot; class=&quot;headerlink&quot; title=&quot;后记&quot;&gt;&lt;/a&gt;后记&lt;/h2&gt;&lt;p&gt;因为我的博客&lt;a href=&quot;http://blog.waydrow.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.waydrow.com&lt;/a&gt;基本是免费做出来的，所以写下这篇博文，希望可以帮助到其他人，也感谢此开源项目的贡献！&lt;br&gt;&lt;strong&gt;参考资料&lt;/strong&gt;&lt;br&gt;&lt;a href=&quot;http://blog.fens.me/hexo-blog-github/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.fens.me/hexo-blog-github/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.tuicool.com/articles/AfQnQjy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.tuicool.com/articles/AfQnQjy&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://blog.lmintlcx.com/post/blog-with-hexo.html#绑定顶级域名&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.lmintlcx.com/post/blog-with-hexo.html#绑定顶级域名&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如有问题，欢迎留言或者发送邮件到&lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#87;&amp;#x61;&amp;#x79;&amp;#x64;&amp;#114;&amp;#x6f;&amp;#119;&amp;#64;&amp;#49;&amp;#x36;&amp;#x33;&amp;#x2e;&amp;#99;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#87;&amp;#x61;&amp;#x79;&amp;#x64;&amp;#114;&amp;#x6f;&amp;#119;&amp;#64;&amp;#49;&amp;#x36;&amp;#x33;&amp;#x2e;&amp;#99;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如有问题，欢迎留言或者发送邮件到&lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#116;&amp;#x6f;&amp;#58;&amp;#87;&amp;#x61;&amp;#x79;&amp;#x64;&amp;#114;&amp;#111;&amp;#x77;&amp;#64;&amp;#49;&amp;#x36;&amp;#51;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#109;&quot;&gt;&amp;#87;&amp;#x61;&amp;#x79;&amp;#x64;&amp;#114;&amp;#111;&amp;#x77;&amp;#64;&amp;#49;&amp;#x36;&amp;#51;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#109;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
@@ -3718,7 +3504,7 @@ _   底线
     <link href="http://igrandcloud.github.io/2015/07/30/anki-excel-shortcuts/"/>
     <id>http://igrandcloud.github.io/2015/07/30/anki-excel-shortcuts/</id>
     <published>2015-07-30T01:25:44.000Z</published>
-    <updated>2016-04-04T13:32:24.000Z</updated>
+    <updated>2016-04-04T14:42:49.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;/p&gt;&lt;h2 id=&quot;intro&quot;&gt;前言&lt;/h2&gt;如果微软 Office 系列套件里只能保留一个，我会选择保留 Excel。只需要学一点基础的 Excel 知识，就能直观地感受到信息技术所带来的高效生产力。有些软件，掌握了它的快捷键，不仅能较全面地了解它的功能，也能极大地提升使用效率。Excel 就属于这类软件。&lt;p&gt;&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -3726,7 +3512,7 @@ _   底线
 &lt;blockquote&gt;
 &lt;p&gt;下载: &lt;a href=&quot;/resources/Excel-Shortcut-keys.apkg&quot;&gt;Excel 快捷键大全 (Windows) for Anki&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;释义默认中英对照显示，可按需隐藏。&lt;br&gt;&lt;img src=&quot;/resources/Anki-a1.png&quot; alt=&quot;Anki-a1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;释义默认中英对照显示，可按需隐藏。&lt;br&gt;&lt;img src=&quot;/assets/blogImg/Anki-a1.png&quot; alt=&quot;Anki-a1&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;常用快捷键&quot;&gt;&lt;a href=&quot;#常用快捷键&quot; class=&quot;headerlink&quot; title=&quot;常用快捷键&quot;&gt;&lt;/a&gt;常用快捷键&lt;/h2&gt;&lt;p&gt;列出自己平时使用最频繁的10个 Excel 快捷键。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
