@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+  
+  <title>用 Travis CI 自动部署Hexo博客到 GitHub | Hongyun的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="前言使用hexo静态博客已经半年多了，总体感觉挺好用的。但是有一点一直让我很苦恼，由于这是静态博客，所以每次写完博客都需要先generate,再发布deploy。而且博客的基本配置信息没办法同时更新到github，还需要我再push上去，这样一番下来，虽然花费不了太长时间，但是时间长了就比较难以忍受了。特别是重装系统之后或者用别人的电脑，需要重新搭建环境，对像我这种喜欢捣腾系统的人，简直了…前几天">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用 Travis CI 自动部署Hexo博客到 GitHub">
+<meta property="og:url" content="http://igrandcloud.github.io/2016/02/01/travis-ci-for-hexo/index.html">
+<meta property="og:site_name" content="Hongyun的博客">
+<meta property="og:description" content="前言使用hexo静态博客已经半年多了，总体感觉挺好用的。但是有一点一直让我很苦恼，由于这是静态博客，所以每次写完博客都需要先generate,再发布deploy。而且博客的基本配置信息没办法同时更新到github，还需要我再push上去，这样一番下来，虽然花费不了太长时间，但是时间长了就比较难以忍受了。特别是重装系统之后或者用别人的电脑，需要重新搭建环境，对像我这种喜欢捣腾系统的人，简直了…前几天">
+<meta property="og:image" content="http://7xqoa3.com1.z0.glb.clouddn.com/images%2Ftravis-hexo-flowing.png">
+<meta property="og:image" content="http://7xqoa3.com1.z0.glb.clouddn.com/images%2Fdeploy-key.png">
+<meta property="og:image" content="http://7xqoa3.com1.z0.glb.clouddn.com/images%2F2016-02-01_221125.png">
+<meta property="og:image" content="http://7xqoa3.com1.z0.glb.clouddn.com/images%2F2016-02-01_221211.png">
+<meta property="og:updated_time" content="2016-04-04T14:04:13.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="用 Travis CI 自动部署Hexo博客到 GitHub">
+<meta name="twitter:description" content="前言使用hexo静态博客已经半年多了，总体感觉挺好用的。但是有一点一直让我很苦恼，由于这是静态博客，所以每次写完博客都需要先generate,再发布deploy。而且博客的基本配置信息没办法同时更新到github，还需要我再push上去，这样一番下来，虽然花费不了太长时间，但是时间长了就比较难以忍受了。特别是重装系统之后或者用别人的电脑，需要重新搭建环境，对像我这种喜欢捣腾系统的人，简直了…前几天">
+<meta name="twitter:image" content="http://7xqoa3.com1.z0.glb.clouddn.com/images%2Ftravis-hexo-flowing.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Hongyun的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  
+  
+      <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+      <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false,
+      }
+  </script>
+
+  
+      <script>
+          yiliaConfig.rootUrl = "/";
+      </script>
+  
+
+  
+
+  
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/assets/blogImg/choppe.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">Grandcloud</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">爱着小水的卧龙君</p>
+        
+                
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <li id="新浪微博"><a class="新浪微博" target="_blank" href="http://weibo.com/igrandcloud" title="新浪微博"></a></li>
+                            
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/iGrandCloud" title="GitHub"></a></li>
+                            
+                                <li id="RSS"><a class="RSS" target="_blank" href="/atom.xml" title="RSS"></a></li>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/Blog/" style="font-size: 10px;">Blog</a> <a href="/tags/ChickenSoup/" style="font-size: 12.86px;">ChickenSoup</a> <a href="/tags/Chrome/" style="font-size: 10px;">Chrome</a> <a href="/tags/EndNote/" style="font-size: 10px;">EndNote</a> <a href="/tags/Excel/" style="font-size: 11.43px;">Excel</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Github/" style="font-size: 12.86px;">Github</a> <a href="/tags/Google/" style="font-size: 10px;">Google</a> <a href="/tags/Hexo/" style="font-size: 18.57px;">Hexo</a> <a href="/tags/Life/" style="font-size: 18.57px;">Life</a> <a href="/tags/Mac/" style="font-size: 11.43px;">Mac</a> <a href="/tags/Management/" style="font-size: 15.71px;">Management</a> <a href="/tags/Markdown/" style="font-size: 17.14px;">Markdown</a> <a href="/tags/Program/" style="font-size: 10px;">Program</a> <a href="/tags/Programing/" style="font-size: 10px;">Programing</a> <a href="/tags/Resource/" style="font-size: 14.29px;">Resource</a> <a href="/tags/Sublime/" style="font-size: 12.86px;">Sublime</a> <a href="/tags/Tool/" style="font-size: 20px;">Tool</a> <a href="/tags/Ubuntu/" style="font-size: 12.86px;">Ubuntu</a> <a href="/tags/Windows/" style="font-size: 11.43px;">Windows</a> <a href="/tags/Yilia/" style="font-size: 10px;">Yilia</a> <a href="/tags/resource/" style="font-size: 10px;">resource</a> <a href="/tags/travis-ci/" style="font-size: 10px;">travis ci</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Grandcloud</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/assets/blogImg/choppe.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Grandcloud</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">爱着小水的卧龙君</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <li id="新浪微博"><a class="新浪微博" target="_blank" href="http://weibo.com/igrandcloud" title="新浪微博"></a></li>
+                            
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/iGrandCloud" title="GitHub"></a></li>
+                            
+                                <li id="RSS"><a class="RSS" target="_blank" href="/atom.xml" title="RSS"></a></li>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-travis-ci-for-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/02/01/travis-ci-for-hexo/" class="article-date">
+      <time datetime="2016-02-01T10:22:51.000Z" itemprop="datePublished">Feb 1</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      用 Travis CI 自动部署Hexo博客到 GitHub
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Collection/">Collection</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tool/">Tool</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/travis-ci/">travis ci</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>使用hexo静态博客已经半年多了，总体感觉挺好用的。但是有一点一直让我很苦恼，由于这是静态博客，所以每次写完博客都需要先<code>generate</code>,再发布<code>deploy</code>。而且博客的基本配置信息没办法同时更新到github，还需要我再<code>push</code>上去，这样一番下来，虽然花费不了太长时间，但是时间长了就比较难以忍受了。<br>特别是重装系统之后或者用别人的电脑，需要重新搭建环境，对像我这种喜欢捣腾系统的人，简直了…<br>前几天偶然看到了<code>Travis CI</code>，可以用来自动部署博客，心甚喜之，来与大家分享。<br><a id="more"></a></p>
+<blockquote>
+<p>注：个人建议使用<code>Linux</code>来搭建下面的环境，在win下我尝试了很多次，有很多问题<br>以下教程使用环境: <code>Ubuntu 14.04 LTS</code></p>
+</blockquote>
+<h2 id="Travis-CI"><a href="#Travis-CI" class="headerlink" title="Travis CI"></a>Travis CI</h2><p>先简单介绍一下持续集成，这是一种软件开发实践。在持续集成中，团队成员频繁集成他们的工作成果，每人每天可能集成一次，甚至多次。每次集成会经过自动构建（包括自动测试）的检验，以尽快发现集成错误。许多团队发现这种方法可以显著减少集成引起的问题，并可以加快团队合作软件开发的速度。<br>自动构建工具则是持续集成的一种出色实践。代码提交后，由软件自动完成代码的测试、构建，并将过程中状态与构建物产出才是持续集成的意义。<br>Travis CI就是一个在线的、分布式的持续集成服务，用来构建及测试在GitHub托管的代码。利用Travis CI 会在每一次push后生成一个虚拟机来执行事先安排好的自动构建任务，从来进行发布。</p>
+<h2 id="构思"><a href="#构思" class="headerlink" title="构思"></a>构思</h2><p>Travis CI 自动构建 Hexo 的工作流的构思是：<br>本地向 Github 上 push 代码后，如果该代码属于目标源（我们暂时称它为 dev repo），Travis CI 就自动构建 Hexo 环境编译它，并将产出的静态博客 push 回我们的 Github pages 源（我们就称它为 pages repo）。然后即可在 pages 上查看新发布的博客。<br>如下图：<br><img src="http://7xqoa3.com1.z0.glb.clouddn.com/images%2Ftravis-hexo-flowing.png" alt=""></p>
+<p>下面分解一下：</p>
+<ol>
+<li><p>User - push -&gt; Dev repo<br>事先在 Github 上建立好 repository 即可, 我所采用的方案是建立 <code>username.github.io</code> 源，将<code>master</code>分支作为 Dev repo. 而 <code>gh-pages</code> 分支就是 Pages repo. 这样的好处是只用维护一个 repository.</p>
+</li>
+<li><p>Dev repo - sync -&gt; Travis CI<br>在 Travis CI 中开启 Dev repo 的同步开关，然后在 Dev repo 中添加 <code>.travis.yml</code> 文件。这样 Travis CI 就能自动同步之后 push 的代码了。<br>另外记得在 Travis CI 的同步设置中启用 <code>Build only if .travis.yml is present</code> 项，这样能在 repository 中有多个 branch 时，让 Travis CI 只构建放置了<code>.travis.yml</code> 文件的 branch.</p>
+</li>
+<li><p>Travis CI - build and push -&gt; Pages repo<br>这里再分解为 build 和 push 两步：</p>
+</li>
+</ol>
+<ul>
+<li>build<br>Travis CI 的自动化构建完全依靠唯一的 <code>.travis.yml</code> 脚本文件。需要在此文件中添加构建环境、构建 Hexo、生成博客及后续 push 到 Pages repo 的全部脚本。</li>
+<li>push<br>这一步是最麻烦的。要做到 <code>Travis CI</code> 向 Pages repo 自动推送就必须用到 <code>Github SSH Key</code>. 但是如果直接放置 SSH 私钥在 Dev repo 中，等于向所有人开放了代码仓库的提交权限！<br>没有一点点防备，也没有一丝顾虑，你就这样出现在我的世界里，带给我惊喜——大概就会出现这种状况。<br>这不符合程序员的严谨美学（即使这个项目除了自己外根本无人 care)。<br>我们要把私钥加密并上传到 Travis CI. 然后会得到一个加密过得公钥和一段解密脚本。这个公钥只能被 Travis CI 解密，所以可以放心地把公钥放置于 Dev repo 中。<br>在 <code>.travis.yml</code> 中添加解密公钥、SSH 加密 push 等步骤的脚本。</li>
+</ul>
+<h2 id="准备-Dev-repo-与-Pages-repo"><a href="#准备-Dev-repo-与-Pages-repo" class="headerlink" title="准备 Dev repo 与 Pages repo"></a>准备 Dev repo 与 Pages repo</h2><p>如果你已经在使用hexo博客，可以将<code>master</code>分支作为<code>Dev repo</code>, <code>gh-pages</code>作为<code>Pages repo</code>。建立Hexo博客的方法可以参照我的另一篇文章<a href="http://blog.waydrow.com/2015/08/14/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8Github%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">使用Hexo在Github上搭建你的博客</a><br><!-- more --></p>
+<h2 id="Deploy-Key"><a href="#Deploy-Key" class="headerlink" title="Deploy Key"></a>Deploy Key</h2><p>生成ssh-key请参见官网教程：<a href="https://help.github.com/articles/generating-an-ssh-key/" target="_blank" rel="external">Generating an SSH key</a><br>这里我们假设生成的两个文件名为<code>id_rsa.pub</code> 和 <code>id_rsa</code>，其中<code>.pub</code>是公钥，我们需要将其添加到github上。<br>注意：这个 SSH key 不应成为你账号的全局 SSH key（因为这样 Travis CI 就获得了你所有代码库的提交权限，这是不严谨的），而应该添加至 <a href="https://github.com/username/username.github.io/settings/keys" target="_blank" rel="external">https://github.com/username/username.github.io/settings/keys</a> ，这样能更好的限制 Travis CI 的提交权限。即下图所示位置：<br><img src="http://7xqoa3.com1.z0.glb.clouddn.com/images%2Fdeploy-key.png" alt=""></p>
+<h2 id="申请Travis-CI"><a href="#申请Travis-CI" class="headerlink" title="申请Travis CI"></a>申请Travis CI</h2><p>在<a href="https://travis-ci.org/" target="_blank" rel="external">https://travis-ci.org/</a>,用github帐号登录，找到你的博客仓库，开启Travis CI服务，如下图：<br><img src="http://7xqoa3.com1.z0.glb.clouddn.com/images%2F2016-02-01_221125.png" alt=""><br>在其中的设置页面作如下设置：<br><img src="http://7xqoa3.com1.z0.glb.clouddn.com/images%2F2016-02-01_221211.png" alt=""></p>
+<h2 id="加密-Private-Key"><a href="#加密-Private-Key" class="headerlink" title="加密 Private Key"></a>加密 Private Key</h2><p>下面的操作需要 Ruby 和 gem 环境，<code>Windows</code>下配置有很多问题，建议在<code>Linux下</code>，下面以<code>Ubuntu 14.04 LTS</code>为例来向大家介绍</p>
+<h3 id="安裝-Travis"><a href="#安裝-Travis" class="headerlink" title="安裝 Travis"></a>安裝 Travis</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ gem <span class="keyword">install</span> travis</span><br></pre></td></tr></table></figure>
+<p>这个时候你可能会发现好久没有响应，或者出现提示说连接错误。<br>这便是由于我们伟大的<strong>墙</strong>了，可以采用下面的方法解决<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ gem sources --<span class="built_in">add</span> http<span class="variable">s:</span>//<span class="keyword">ruby</span>.taobao.org/ --<span class="built_in">remove</span> http<span class="variable">s:</span>//rubygems.org/</span><br><span class="line">$ gem sources -<span class="keyword">l</span></span><br><span class="line">*** CURRENT SOURCES ***</span><br><span class="line"></span><br><span class="line">http<span class="variable">s:</span>//<span class="keyword">ruby</span>.taobao.org</span><br><span class="line"># 请确保只有 <span class="keyword">ruby</span>.taobao.org</span><br></pre></td></tr></table></figure></p>
+<p>我们将gem包的镜像源换为国内的即可，然后再运行<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem <span class="keyword">install</span> travis</span><br></pre></td></tr></table></figure></p>
+<h3 id="命令行登录Travis-CI"><a href="#命令行登录Travis-CI" class="headerlink" title="命令行登录Travis CI"></a>命令行登录Travis CI</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ travis login <span class="comment">--auto</span></span><br></pre></td></tr></table></figure>
+<p>会让你输入github帐号</p>
+<p>如此一来，我们就能通过 Travis 提供的命令列工具加密刚刚所制作的 Private key，并把它上传到 Travis 上供日後使用。</p>
+<h3 id="建立文件"><a href="#建立文件" class="headerlink" title="建立文件"></a>建立文件</h3><p>将一开始得到的<code>id_rsa</code>文件复制到<code>Dev repo</code>下，并建立<code>.travis.yml</code>文件，内容暂时为空即可</p>
+<h3 id="加密私钥并上传至-Travis-CI"><a href="#加密私钥并上传至-Travis-CI" class="headerlink" title="加密私钥并上传至 Travis CI."></a>加密私钥并上传至 Travis CI.</h3><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ travis <span class="built_in">encrypt</span>-<span class="built_in">file</span> id_rsa <span class="comment">--add</span></span><br></pre></td></tr></table></figure>
+<p>成功后会生成<code>id_rsa.enc</code>文件，我们就可以将<code>id_rsa</code>文件手动删除，保证安全，同时上述指令还会在<code>.travis.yml</code>文件中插入解密指令：<br>`</p>
+<ul>
+<li>openssl aes-256-cbc -K $encrypted_xxxxxxxxxx_key -iv $encrypted_xxxxxxxxxx_iv<br>-in id_rsa.enc -out id_rsa -d<br>`<br>其中xxxxxxxxxx部分便是你的解密参数，不要去改动它</li>
+</ul>
+<h3 id="修改-travis-yml文件"><a href="#修改-travis-yml文件" class="headerlink" title="修改.travis.yml文件"></a>修改<code>.travis.yml</code>文件</h3><p>`</p>
+<ul>
+<li>openssl aes-256-cbc -K $encrypted_xxxxxxxxxx_key -iv $encrypted_xxxxxxxxxx_iv<br>-in id_rsa.enc -out ~/.ssh/id_rsa -d<br>`</li>
+</ul>
+<h2 id="建立ssh-config文件"><a href="#建立ssh-config文件" class="headerlink" title="建立ssh_config文件"></a>建立ssh_config文件</h2><p>内容为：<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">  <span class="keyword">User</span> <span class="title">git</span></span><br><span class="line">  StrictHostKeyChecking no</span><br><span class="line">  IdentityFile ~/.ssh/id_rsa</span><br><span class="line">  IdentitiesOnly yes</span><br></pre></td></tr></table></figure></p>
+<h2 id="完善-Travis-CI-的脚本文件-travis-yml"><a href="#完善-Travis-CI-的脚本文件-travis-yml" class="headerlink" title="完善 Travis CI 的脚本文件 .travis.yml"></a>完善 Travis CI 的脚本文件 <code>.travis.yml</code></h2><p>下面对 .travis.yml 文件各块添加了注释。有几个地方必须要修改：<br>两处 xxxxxxxxxx 修改为你之前获得的解密参数；你的姓名 和 你的邮箱 与你 Github 上的信息保持一致。<br>同时附上本博客的 <code>.travis.yml</code> 源文件，以供参考：<a href="https://github.com/Waydrow/My-Blog/blob/master/.travis.yml" target="_blank" rel="external">.travis.yml</a></p>
+<figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"># 指定环境</span><br><span class="line">language: node_js</span><br><span class="line"></span><br><span class="line">node_js:</span><br><span class="line">-<span class="ruby"> <span class="string">'0.12'</span> <span class="comment">#指定使用 node.js 最新的稳定版0.12</span></span><br><span class="line"></span></span><br><span class="line"># 指定分支</span><br><span class="line">branches:</span><br><span class="line">  only:</span><br><span class="line">  -<span class="ruby"> master <span class="comment">#这个分支应当使用自己的 Dev repo</span></span><br><span class="line"></span></span><br><span class="line">before_install: </span><br><span class="line">#注意将xxxx内容修改为你之前获得的解密参数</span><br><span class="line">-<span class="ruby"> openssl aes-<span class="number">256</span>-cbc -K $encrypted_xxxxxxxxxx_key -iv $encrypted_xxxxxxxxxx_iv </span><br><span class="line"></span>  -<span class="ruby"><span class="keyword">in</span> id_rsa.enc -out ~<span class="regexp">/.ssh/id</span>_rsa -d</span><br><span class="line"></span>-<span class="ruby"> chmod <span class="number">600</span> ~<span class="regexp">/.ssh/id</span>_rsa /<span class="regexp">/修改目录权限</span><br><span class="line"></span></span>-<span class="ruby"><span class="regexp"> eval $(ssh-agent)/</span><span class="regexp">/将密钥加入系统</span><br><span class="line"></span></span>-<span class="ruby"><span class="regexp"> ssh-add ~/</span>.ssh/id_rsa</span><br><span class="line"></span>-<span class="ruby"> cp ssh_config ~<span class="regexp">/.ssh/config</span> /<span class="regexp">/修改 git 信息</span><br><span class="line"></span></span>-<span class="ruby"><span class="regexp"> git config --global user.name "你的姓名"</span><br><span class="line"></span></span>-<span class="ruby"><span class="regexp"> git config --global user.email 你的邮箱</span><br><span class="line"></span></span></span><br><span class="line"># 配置 Hexo</span><br><span class="line">install:</span><br><span class="line">-<span class="ruby"><span class="regexp"> npm install hexo-cli -g</span><br><span class="line"></span></span>-<span class="ruby"><span class="regexp"> npm install</span><br><span class="line"></span></span>-<span class="ruby"><span class="regexp"> npm install hexo-generator-feed --save</span><br><span class="line"></span></span>-<span class="ruby"><span class="regexp"> npm install hexo-generator-sitemap --save</span><br><span class="line"></span></span>-<span class="ruby"><span class="regexp"> npm install hexo-deployer-git --save</span><br><span class="line"></span></span></span><br><span class="line"># 执行 Hexo 的编译操作</span><br><span class="line">script:</span><br><span class="line">-<span class="ruby"><span class="regexp"> hexo clean</span><br><span class="line"></span></span>-<span class="ruby"><span class="regexp"> hexo g</span><br><span class="line"></span></span>-<span class="ruby"><span class="regexp"> hexo d</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="Push-到-Dev-repo"><a href="#Push-到-Dev-repo" class="headerlink" title="Push 到 Dev repo"></a>Push 到 Dev repo</h2><p>将改动push到Dev repo上，在<a href="https://travis-ci.org" target="_blank" rel="external">https://travis-ci.org</a>页面可以查看构建状态，<br>如果成功的话就能在自己的 pages 上查看刚生成的博客了；如构建失败，Travis CI 会显示出哪步脚本导致了构建失败，本地源里修改它，然后再次 push 即可。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这样一来，我们以后写博客或者改配置，只需要push即可，Travis CI会帮助我们自动部署，是不是比较方便？<br>其实我感觉这样最大的好处重装系统之后不需要重新配置hexo环境了，直接clone到本地，就可以了。</p>
+<p>如有问题欢迎在下面留言<br>或者直接联系我：<a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#58;&#87;&#97;&#x79;&#100;&#x72;&#x6f;&#119;&#64;&#x31;&#x36;&#x33;&#46;&#x63;&#111;&#x6d;">&#87;&#97;&#x79;&#100;&#x72;&#x6f;&#119;&#64;&#x31;&#x36;&#x33;&#46;&#x63;&#111;&#x6d;</a><br>我会在第一时间回复</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/02/01/travis-ci-for-hexo/">用 Travis CI 自动部署Hexo博客到 GitHub</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Grandcloud</a></p>
+        <p><span>发布时间:</span>2016-02-01, 21:22:51</p>
+        <p><span>最后更新:</span>2016-04-05, 00:04:13</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/02/01/travis-ci-for-hexo/" title="用 Travis CI 自动部署Hexo博客到 GitHub">http://igrandcloud.github.io/2016/02/01/travis-ci-for-hexo/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://igrandcloud.github.io/2016/02/01/travis-ci-for-hexo/　　作者: Grandcloud" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/03/04/markdown-table-style/">
+                    Markdown 表格样式调整与自适应优化
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/01/19/chrome-plug/">
+                    前端Chrome插件
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Travis-CI"><span class="toc-number">2.</span> <span class="toc-text">Travis CI</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#构思"><span class="toc-number">3.</span> <span class="toc-text">构思</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准备-Dev-repo-与-Pages-repo"><span class="toc-number">4.</span> <span class="toc-text">准备 Dev repo 与 Pages repo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Deploy-Key"><span class="toc-number">5.</span> <span class="toc-text">Deploy Key</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#申请Travis-CI"><span class="toc-number">6.</span> <span class="toc-text">申请Travis CI</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#加密-Private-Key"><span class="toc-number">7.</span> <span class="toc-text">加密 Private Key</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安裝-Travis"><span class="toc-number">7.1.</span> <span class="toc-text">安裝 Travis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#命令行登录Travis-CI"><span class="toc-number">7.2.</span> <span class="toc-text">命令行登录Travis CI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#建立文件"><span class="toc-number">7.3.</span> <span class="toc-text">建立文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#加密私钥并上传至-Travis-CI"><span class="toc-number">7.4.</span> <span class="toc-text">加密私钥并上传至 Travis CI.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改-travis-yml文件"><span class="toc-number">7.5.</span> <span class="toc-text">修改.travis.yml文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#建立ssh-config文件"><span class="toc-number">8.</span> <span class="toc-text">建立ssh_config文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#完善-Travis-CI-的脚本文件-travis-yml"><span class="toc-number">9.</span> <span class="toc-text">完善 Travis CI 的脚本文件 .travis.yml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Push-到-Dev-repo"><span class="toc-number">10.</span> <span class="toc-text">Push 到 Dev repo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-number">11.</span> <span class="toc-text">后记</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <li id="bds_twi"><a href="#" class="bds_twi" data-cmd="twi" title="分享到推特"></a></li>
+            <li id="bds_tsina"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></li>
+            <li id="bds_sqq"><a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a></li>
+            <li id="bds_copy"><a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a></li>
+            <li id="bds_mail"><a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a></li>
+            <li id="bds_weixin"><a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a></li>
+            <li id="bds_more"><a href="#" class="bds_more" data-cmd="more"></i></a></li>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"用 Travis CI 自动部署Hexo博客到 GitHub　| Hongyun的博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/03/04/markdown-table-style/" title="上一篇: Markdown 表格样式调整与自适应优化">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/01/19/chrome-plug/" title="下一篇: 前端Chrome插件">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/04/04/resume/">一份阿里员工的简历</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/04/recomd-dev-utils/">日常优秀工具秘籍</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/04/microsoft-windows-skills/">【高效工作】Windows系统下的奇技淫巧大汇总</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/04/markdown-use-tips/">使用Markdown写博过程中存在的问题及解决方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/04/markdow_intrduce/">markdown语法简介</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/04/markdown-table-style/">Markdown 表格样式调整与自适应优化</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/01/travis-ci-for-hexo/">用 Travis CI 自动部署Hexo博客到 GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/19/chrome-plug/">前端Chrome插件</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/15/Hexo-Theme/">Hexo 主题：SPFK</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/27/Hexo-plug/">Hexo插件安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/25/Hexo/">Hexo的使用介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/24/markdown/">Markdown使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/mac-tutorial/">mac 教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/tools-website-for-developer/">开发中常用的一些知识检索链接（Markdown、SVN、Git等）</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/common-hexo-commands/">Hexo 最常用的几个命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/note-for-clean-code/">clean code这本书是程序员必读经典之一</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/subline-best/">Sublime Text历练</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/sublime-package/">Sublime插件</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/30/sublime-config/">Sublime Text 3 使用配置与插件安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/23/git-command/">Git 基础命令与相关术语</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/04/hexo-deployment/">将 Hexo 博客部署到 GitHub 和 GitCafe</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/10/31/excel-markdown-table/">用 Excel 生成和管理 Markdown 表格</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/20/windows-mac-software/">自用 Windows 和 Mac 软件推荐</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/30/EndNote-Markdown/">EndNote 与 Markdown 结合 — 为网文快速添加 Reference</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/14/blog-use-Hexo-and-Github/">使用Hexo在Github上搭建你的博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/04/shortcut-in-Ubuntu/">Ubuntu下为软件创建快捷方式</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/04/install-ubuntu-in-win8/">猴子也能看懂的UEFI下Win8+Ubuntu双系统安装(Lenovo xiaoxin V4000)</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/31/screeshot-in-ubuntu/">ubuntu小巧好用的类似QQ截图的软件DeepinScrot</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/30/anki-excel-shortcuts/">Anki 记忆库之 Excel 快捷键大全</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/30/gain-from-ali-interview/">阿里实习生前端面试心得</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/30/mac-control-all/">Mac使用操作大全</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/30/learning-programing/">在线编程资源</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/30/danamic-or-static-language/">静态语言 or 动态语言</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/30/how-to-use-Google/">如何用好 Google 等搜索引擎？</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/30/hexo-blog/">hexo搭建博客之环境搭建和配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/30/about-interview/">关于阿里面试</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/30/about-10000-hours-law/">有关10000小时定律</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/30/Ubuntu-Hexo-GithubPages/">Hexo+Ubuntu+GithubPages搭建个人博客(基础篇)</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/07/30/Internet-professional-words/">电商、营销、移动互联网等专业词汇大全</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/02/23/yilia-on-mobile/">hexo主题Yilia在移动端适配的一些事</a></li><li class="post-list-item"><a class="post-list-link" href="/2013/11/07/something-about-immersion/">谈谈人为何会沉迷游戏？</a></li><li class="post-list-item"><a class="post-list-link" href="/2013/09/10/my-fairy-tale2/">【梦中的小偷】【织梦人的表白】</a></li><li class="post-list-item"><a class="post-list-link" href="/2013/08/20/oauth-rabbit/">兔子，胡萝卜与OAuth的故事</a></li><li class="post-list-item"><a class="post-list-link" href="/2013/04/30/my-fairy-tale1/">【裁缝的工具】【天气精灵】【匠人与万能胶水】</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 Grandcloud
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题">Yelee</a> by MOxFIVE
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >本站到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.1.22/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
