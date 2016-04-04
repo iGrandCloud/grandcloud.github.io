@@ -145,7 +145,7 @@ require([], function (){
     var colorList = ["#CC6666", "#4d4d4d"];
     var id = Math.ceil(Math.random()*(colorList.length-1));
     //PC
-    //$("#container .left-col .overlay").css({"background-color": colorList[id],"opacity": .3});
+    $("#container .left-col .overlay").css({"background-color": colorList[id],"opacity": .3});
     //移动端
     $("#container #mobile-nav .overlay").css({"background-color": colorList[id],"opacity": .7});
 
