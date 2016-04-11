@@ -175,6 +175,7 @@ require([], function (){
             error: function() {
                 var setUrl = "url(" + yiliaConfig.rootUrl + "img/github.png)"
                 $("#GitHub").css("background-image", setUrl);
+                $("#header #GitHub").css("background-image", setUrl);
             }
         });
     }
