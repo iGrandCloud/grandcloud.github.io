@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hongyun的博客</title>
-  <subtitle>爱着小水的卧龙君</subtitle>
+  <title>Hongyun‘s Blog</title>
+  <subtitle>Be the maker of life</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://igrandcloud.github.io/"/>
@@ -9,7 +9,7 @@
   <id>http://igrandcloud.github.io/</id>
   
   <author>
-    <name>Grandcloud</name>
+    <name>GrandCloud</name>
     <email>grandcloud88@gmail.com</email>
   </author>
   
