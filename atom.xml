@@ -454,7 +454,7 @@
 &lt;figure class=&quot;highlight haml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 指定环境&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;language: node_js&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;node_js:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-&lt;span class=&quot;ruby&quot;&gt; &lt;span class=&quot;string&quot;&gt;&#39;0.12&#39;&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;#指定使用 node.js 最新的稳定版0.12&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 指定分支&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;branches:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  only:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  -&lt;span class=&quot;ruby&quot;&gt; master &lt;span class=&quot;comment&quot;&gt;#这个分支应当使用自己的 Dev repo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;before_install: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#注意将xxxx内容修改为你之前获得的解密参数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-&lt;span class=&quot;ruby&quot;&gt; openssl aes-&lt;span class=&quot;number&quot;&gt;256&lt;/span&gt;-cbc -K $encrypted_xxxxxxxxxx_key -iv $encrypted_xxxxxxxxxx_iv &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;  -&lt;span class=&quot;ruby&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; id_rsa.enc -out ~&lt;span class=&quot;regexp&quot;&gt;/.ssh/id&lt;/span&gt;_rsa -d&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;-&lt;span class=&quot;ruby&quot;&gt; chmod &lt;span class=&quot;number&quot;&gt;600&lt;/span&gt; ~&lt;span class=&quot;regexp&quot;&gt;/.ssh/id&lt;/span&gt;_rsa /&lt;span class=&quot;regexp&quot;&gt;/修改目录权限&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;-&lt;span class=&quot;ruby&quot;&gt;&lt;span class=&quot;regexp&quot;&gt; eval $(ssh-agent)/&lt;/span&gt;&lt;span class=&quot;regexp&quot;&gt;/将密钥加入系统&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;-&lt;span class=&quot;ruby&quot;&gt;&lt;span class=&quot;regexp&quot;&gt; ssh-add ~/&lt;/span&gt;.ssh/id_rsa&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;-&lt;span class=&quot;ruby&quot;&gt; cp ssh_config ~&lt;span class=&quot;regexp&quot;&gt;/.ssh/config&lt;/span&gt; /&lt;span class=&quot;regexp&quot;&gt;/修改 git 信息&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;-&lt;span class=&quot;ruby&quot;&gt;&lt;span class=&quot;regexp&quot;&gt; git config --global user.name &quot;你的姓名&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;-&lt;span class=&quot;ruby&quot;&gt;&lt;span class=&quot;regexp&quot;&gt; git config --global user.email 你的邮箱&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 配置 Hexo&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;install:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-&lt;span class=&quot;ruby&quot;&gt;&lt;span class=&quot;regexp&quot;&gt; npm install hexo-cli -g&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;-&lt;span class=&quot;ruby&quot;&gt;&lt;span class=&quot;regexp&quot;&gt; npm install&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;-&lt;span class=&quot;ruby&quot;&gt;&lt;span class=&quot;regexp&quot;&gt; npm install hexo-generator-feed --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;-&lt;span class=&quot;ruby&quot;&gt;&lt;span class=&quot;regexp&quot;&gt; npm install hexo-generator-sitemap --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;-&lt;span class=&quot;ruby&quot;&gt;&lt;span class=&quot;regexp&quot;&gt; npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 执行 Hexo 的编译操作&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;script:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-&lt;span class=&quot;ruby&quot;&gt;&lt;span class=&quot;regexp&quot;&gt; hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;-&lt;span class=&quot;ruby&quot;&gt;&lt;span class=&quot;regexp&quot;&gt; hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/span&gt;-&lt;span class=&quot;ruby&quot;&gt;&lt;span class=&quot;regexp&quot;&gt; hexo d&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;Push-到-Dev-repo&quot;&gt;&lt;a href=&quot;#Push-到-Dev-repo&quot; class=&quot;headerlink&quot; title=&quot;Push 到 Dev repo&quot;&gt;&lt;/a&gt;Push 到 Dev repo&lt;/h2&gt;&lt;p&gt;将改动push到Dev repo上，在&lt;a href=&quot;https://travis-ci.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://travis-ci.org&lt;/a&gt;页面可以查看构建状态，&lt;br&gt;如果成功的话就能在自己的 pages 上查看刚生成的博客了；如构建失败，Travis CI 会显示出哪步脚本导致了构建失败，本地源里修改它，然后再次 push 即可。&lt;/p&gt;
 &lt;h2 id=&quot;后记&quot;&gt;&lt;a href=&quot;#后记&quot; class=&quot;headerlink&quot; title=&quot;后记&quot;&gt;&lt;/a&gt;后记&lt;/h2&gt;&lt;p&gt;这样一来，我们以后写博客或者改配置，只需要push即可，Travis CI会帮助我们自动部署，是不是比较方便？&lt;br&gt;其实我感觉这样最大的好处重装系统之后不需要重新配置hexo环境了，直接clone到本地，就可以了。&lt;/p&gt;
-&lt;p&gt;如有问题欢迎在下面留言&lt;br&gt;或者直接联系我：&lt;a href=&quot;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#x57;&amp;#97;&amp;#121;&amp;#100;&amp;#x72;&amp;#111;&amp;#119;&amp;#x40;&amp;#x31;&amp;#x36;&amp;#51;&amp;#46;&amp;#99;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#x57;&amp;#97;&amp;#121;&amp;#100;&amp;#x72;&amp;#111;&amp;#119;&amp;#x40;&amp;#x31;&amp;#x36;&amp;#51;&amp;#46;&amp;#99;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;br&gt;我会在第一时间回复&lt;/p&gt;
+&lt;p&gt;如有问题欢迎在下面留言&lt;br&gt;或者直接联系我：&lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#108;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#x57;&amp;#x61;&amp;#x79;&amp;#x64;&amp;#114;&amp;#111;&amp;#x77;&amp;#x40;&amp;#49;&amp;#54;&amp;#x33;&amp;#46;&amp;#x63;&amp;#111;&amp;#109;&quot;&gt;&amp;#x57;&amp;#x61;&amp;#x79;&amp;#x64;&amp;#114;&amp;#111;&amp;#x77;&amp;#x40;&amp;#49;&amp;#54;&amp;#x33;&amp;#46;&amp;#x63;&amp;#111;&amp;#109;&lt;/a&gt;&lt;br&gt;我会在第一时间回复&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -901,7 +901,7 @@
 &lt;p&gt;A &lt;a href=&quot;http://www.jianshu.com/p/21d355525bdf#fn_lemma_a&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;a href=&quot;链接地址&quot;&gt;1&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;创建链接&quot;&gt;&lt;a href=&quot;#创建链接&quot; class=&quot;headerlink&quot; title=&quot;创建链接&quot;&gt;&lt;/a&gt;创建链接&lt;/h3&gt;&lt;figure class=&quot;highlight aspectj&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;为输入的URL或邮箱自动创建链接，如test&lt;span class=&quot;meta&quot;&gt;@domain&lt;/span&gt;.com。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Markdown语法：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;test&lt;span class=&quot;meta&quot;&gt;@domain&lt;/span&gt;.com&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;预览效果：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#x74;&amp;#x65;&amp;#x73;&amp;#116;&amp;#x40;&amp;#100;&amp;#111;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#x6e;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x74;&amp;#x65;&amp;#x73;&amp;#116;&amp;#x40;&amp;#100;&amp;#111;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#x6e;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#108;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#x74;&amp;#x65;&amp;#115;&amp;#116;&amp;#x40;&amp;#x64;&amp;#x6f;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6e;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x74;&amp;#x65;&amp;#115;&amp;#116;&amp;#x40;&amp;#x64;&amp;#x6f;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6e;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;转义字符&quot;&gt;&lt;a href=&quot;#转义字符&quot; class=&quot;headerlink&quot; title=&quot;转义字符&quot;&gt;&lt;/a&gt;转义字符&lt;/h3&gt;&lt;figure class=&quot;highlight tex&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;在特殊字符，如*、[、&amp;gt;等前面加&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;可&lt;/span&gt;&lt;/span&gt;使特殊格式字符转换为正常字符打出（有序列表符号如1.，须在. 前加&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;）&lt;/span&gt;&lt;/span&gt;。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Markdown语法：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;\&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;*&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;_&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;[&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;(&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;#&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;!&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;预览效果：&lt;/p&gt;
 &lt;p&gt;\&lt;br&gt;`&lt;br&gt;*&lt;br&gt;_&lt;br&gt;{}&lt;br&gt;[]&lt;br&gt;()&lt;br&gt;#&lt;br&gt;+&lt;br&gt;-&lt;br&gt;.&lt;br&gt;!&lt;/p&gt;
@@ -3331,7 +3331,7 @@
 &lt;h3 id=&quot;网站图标&quot;&gt;&lt;a href=&quot;#网站图标&quot; class=&quot;headerlink&quot; title=&quot;网站图标&quot;&gt;&lt;/a&gt;网站图标&lt;/h3&gt;&lt;p&gt;将你的&lt;code&gt;favicon.ico&lt;/code&gt;放到&lt;code&gt;source&lt;/code&gt;目录下即可&lt;br&gt;图标的制作可以在 &lt;a href=&quot;http://www.bitbug.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;比特虫&lt;/a&gt;网站制作&lt;/p&gt;
 &lt;h2 id=&quot;后记&quot;&gt;&lt;a href=&quot;#后记&quot; class=&quot;headerlink&quot; title=&quot;后记&quot;&gt;&lt;/a&gt;后记&lt;/h2&gt;&lt;p&gt;因为我的博客&lt;a href=&quot;http://blog.waydrow.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.waydrow.com&lt;/a&gt;基本是免费做出来的，所以写下这篇博文，希望可以帮助到其他人，也感谢此开源项目的贡献！&lt;br&gt;&lt;strong&gt;参考资料&lt;/strong&gt;&lt;br&gt;&lt;a href=&quot;http://blog.fens.me/hexo-blog-github/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.fens.me/hexo-blog-github/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.tuicool.com/articles/AfQnQjy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.tuicool.com/articles/AfQnQjy&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://blog.lmintlcx.com/post/blog-with-hexo.html#绑定顶级域名&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.lmintlcx.com/post/blog-with-hexo.html#绑定顶级域名&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如有问题，欢迎留言或者发送邮件到&lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#58;&amp;#x57;&amp;#97;&amp;#x79;&amp;#x64;&amp;#x72;&amp;#111;&amp;#119;&amp;#64;&amp;#x31;&amp;#x36;&amp;#51;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x57;&amp;#97;&amp;#x79;&amp;#x64;&amp;#x72;&amp;#111;&amp;#119;&amp;#64;&amp;#x31;&amp;#x36;&amp;#51;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如有问题，欢迎留言或者发送邮件到&lt;a href=&quot;&amp;#109;&amp;#97;&amp;#105;&amp;#x6c;&amp;#116;&amp;#111;&amp;#58;&amp;#87;&amp;#97;&amp;#121;&amp;#100;&amp;#114;&amp;#111;&amp;#x77;&amp;#x40;&amp;#x31;&amp;#x36;&amp;#x33;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#109;&quot;&gt;&amp;#87;&amp;#97;&amp;#121;&amp;#100;&amp;#114;&amp;#111;&amp;#x77;&amp;#x40;&amp;#x31;&amp;#x36;&amp;#x33;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#109;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
@@ -3540,206 +3540,152 @@
   </entry>
   
   <entry>
-    <title>电商、营销、移动互联网等专业词汇大全</title>
-    <link href="http://igrandcloud.github.io/2015/07/30/Internet-professional-words/"/>
-    <id>http://igrandcloud.github.io/2015/07/30/Internet-professional-words/</id>
+    <title>Hexo+Ubuntu+GithubPages搭建个人博客(基础篇)</title>
+    <link href="http://igrandcloud.github.io/2015/07/30/Ubuntu-Hexo-GithubPages/"/>
+    <id>http://igrandcloud.github.io/2015/07/30/Ubuntu-Hexo-GithubPages/</id>
     <published>2015-07-30T01:25:44.000Z</published>
-    <updated>2016-04-04T13:47:25.000Z</updated>
+    <updated>2016-04-04T13:29:57.000Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5NTk3MTc5Mw==&amp;amp;mid=216284279&amp;amp;idx=2&amp;amp;sn=9278767efdab72d87ef5bd830eddeeca&amp;amp;scene=0#rd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;本文原链接&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&quot;问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&quot;&gt;&lt;a href=&quot;#问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&quot; class=&quot;headerlink&quot; title=&quot;问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&quot;&gt;&lt;/a&gt;问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&lt;/h1&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt; &lt;strong&gt;电子商务模式&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt; B2B（经济组织对经济组织）&lt;/p&gt;
-&lt;p&gt;B2C（经济组织对消费者）&lt;/p&gt;
-&lt;p&gt;B2B2C（企业对企业对消费者）&lt;/p&gt;
-&lt;p&gt;C2B（T）（消费者集合竞价-团购）&lt;/p&gt;
-&lt;p&gt;C2C（消费者对消费者）&lt;/p&gt;
-&lt;p&gt;B2F（企业对家庭）&lt;/p&gt;
-&lt;p&gt;O2O（网上与网下相结合）&lt;/p&gt;
-&lt;p&gt;SaaS（软件服务）&lt;/p&gt;
-&lt;p&gt;PaaS（平台服务）&lt;/p&gt;
-&lt;p&gt;IaaS（基础服务）&lt;/p&gt;
-&lt;p&gt;M-B（移动电子商务）&lt;/p&gt;
-&lt;p&gt;B2G（政府采购）&lt;/p&gt;
-&lt;p&gt;G2B（政府抛售）&lt;/p&gt;
-&lt;p&gt;B2M（面向市场营销的电子商务企业）&lt;/p&gt;
-&lt;p&gt;M2C（生产厂商对消费者）&lt;/p&gt;
-&lt;p&gt;SoLoMo（社交+本地化+移动）&lt;/p&gt;
-&lt;p&gt;ABC（代理商-商家-消费者）&lt;/p&gt;
-&lt;p&gt;BAB（企业-联盟-企业）&lt;/p&gt;
-&lt;p&gt;P2C（生活服务平台）&lt;/p&gt;
-&lt;p&gt;P2P（点对点、渠道对渠道）&lt;/p&gt;
-&lt;p&gt;SNS-EC（社会化网络电子商务）&lt;/p&gt;
-&lt;p&gt;B2S（分享式商务，或体验式商务）&lt;/p&gt;
-&lt;h1 id=&quot;问题二：O2O、C2C、B2B、B2C的区别在哪里？&quot;&gt;&lt;a href=&quot;#问题二：O2O、C2C、B2B、B2C的区别在哪里？&quot; class=&quot;headerlink&quot; title=&quot;问题二：O2O、C2C、B2B、B2C的区别在哪里？&quot;&gt;&lt;/a&gt;问题二：O2O、C2C、B2B、B2C的区别在哪里？&lt;/h1&gt;&lt;p&gt; &lt;strong&gt;1、O2O是online to offline分为四种运营模式：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt; 1）online to offline是线上交易到线下消费体验&lt;/p&gt;
-&lt;p&gt; 2）offline to online是线下营销到线上交易&lt;/p&gt;
-&lt;p&gt; 3）offline to online to offline是线下营销到线上交易再到线下消费体验&lt;/p&gt;
-&lt;p&gt; 4）online to offline to online是线上交易或营销到线下消费体验再到线上消费体验&lt;/p&gt;
-&lt;p&gt; &lt;strong&gt;2、通过举例说区别。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt; 1）O2O，比如：保险直购O2O，苏宁易购O2O，大众点评O2O等&lt;/p&gt;
-&lt;p&gt; 2）C2C是consumer to consumer就是个人对个人的，比如淘宝的小店铺。&lt;/p&gt;
-&lt;p&gt; 3）B2C是business to consumer是商家对个人，这个就很多了卓越、当当、京东等等都是。B2C、C2C很重要的一点是都运用了物流。&lt;/p&gt;
-&lt;p&gt; 4）B2B是business to business是企业间的，比如阿里巴巴。&lt;/p&gt;
-&lt;p&gt; &lt;strong&gt;举例通俗说明一下，就是:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt; 1）C2C就是我卖东西你来买&lt;/p&gt;
-&lt;p&gt; 2）B2C就是我成立个公司卖东西，你来买&lt;/p&gt;
-&lt;p&gt; 3）O2O就是我成立个公司卖东西你来买但是要你自己来拿&lt;/p&gt;
-&lt;p&gt; 4）B2B就是你也成立了公司买我公司的东西&lt;/p&gt;
-&lt;h1 id=&quot;问题三：移动互联网最常出现的名词有哪些？（非专业慎入）&quot;&gt;&lt;a href=&quot;#问题三：移动互联网最常出现的名词有哪些？（非专业慎入）&quot; class=&quot;headerlink&quot; title=&quot;问题三：移动互联网最常出现的名词有哪些？（非专业慎入）&quot;&gt;&lt;/a&gt;问题三：移动互联网最常出现的名词有哪些？（非专业慎入）&lt;/h1&gt;&lt;p&gt; &lt;strong&gt;广告形式&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt; Rich Media：(富媒体)，这种应用采取了所有适合的最先进技术，以最好的传达广告主的信息，甚至与用户进行互动！如视频、flash广告等&lt;br&gt; 植入式广告：在电影或电视剧或者其它场景插入相关的广告。如变形金刚，非诚勿扰等。&lt;/p&gt;
-&lt;p&gt; SEM：Search Engine Marketing的缩写，意即搜索引擎营销。&lt;/p&gt;
-&lt;p&gt; SEO：SearchEngineOptimization，搜索引擎优化。&lt;/p&gt;
-&lt;p&gt; EDM：Electronic Direct Marketing的缩写，就是电子邮件营销。&lt;/p&gt;
-&lt;p&gt; AdWords：Google的关键词竞价广告。&lt;/p&gt;
-&lt;p&gt; Banner：横幅广告&lt;/p&gt;
-&lt;p&gt; Button：图标广告&lt;/p&gt;
-&lt;p&gt; PR推广：软文推广&lt;/p&gt;
-&lt;p&gt; Adertorial：软文广告的一种，即付费文章，故意设计成像一篇普通的文章。&lt;/p&gt;
-&lt;p&gt; Banner Ad：（横幅广告）网页顶部、底部或者侧边的广告展示位置；&lt;/p&gt;
-&lt;p&gt; DSP展示广告：是Demand-Side Platform的缩写，即需求方平台。&lt;/p&gt;
-&lt;p&gt; POP：Point Of Purchase，意为“卖点广告”，又名「店头陈设」。本来是指商业销售中的一种店头促销工具，其型式不拘，但以摆设在店头的展示物为主，如吊牌、海报、小贴纸、纸货架、展示架、纸堆头、大招牌、实物模型、旗帜等等，都是林立在POP的范围内。&lt;/p&gt;
-&lt;p&gt; &lt;strong&gt;推广模式分类&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt; CPS：Cost Per Sales的缩写,即销售分成。&lt;/p&gt;
-&lt;p&gt; CPA ：Cost Per Action，每次动作成本。&lt;/p&gt;
-&lt;p&gt; CPM：Cost Per Mille，或者Cost Per Thousand，即每千人成本。&lt;/p&gt;
-&lt;p&gt; CPC：Cost Per Click；Cost Per Thousand Click-Through，即每点击成本。&lt;/p&gt;
-&lt;p&gt; CPR：Cost Per Response，即每回应成本。&lt;/p&gt;
-&lt;p&gt; CPP：Cost Per Purchase，即每购买成本。&lt;/p&gt;
-&lt;p&gt; &lt;strong&gt;点击及转化&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt; UV： Unique Vister的缩写，独立访客。&lt;/p&gt;
-&lt;p&gt; PV： page view，即网站被浏览的总次数；&lt;/p&gt;
-&lt;p&gt; IP： 即internet protocol,指独立IP数，一天内相同IP地址只被计算一次；&lt;/p&gt;
-&lt;p&gt; PR值： 全称为Pagerank（网页级别），是用于评测一个网页“重要性”的一种方法。&lt;/p&gt;
-&lt;p&gt; Alexa： Alexa.com是专门发布网站世界排名的网站，网站排名有两种：综合排名和分类排名。&lt;/p&gt;
-&lt;p&gt; Click：（点击量/点击次数）即Click through，用户点击广告的次数，评估广告效果的指标之一；&lt;/p&gt;
-&lt;p&gt; Click Rate：（点击率/点进率）即Click through-Rate;即网络广告被点击的次数与访问次数的比例，即clicks/impressions.如果这个页面被访问了100次，而页面上的广告也被点击了20次，那么CTR为20%，CTR是评估广告效果的指标之一。&lt;/p&gt;
-&lt;p&gt; ROI：Return On Investment的缩写，投资报酬率。&lt;/p&gt;
-&lt;p&gt; CR 转化率：Conversion Rate的缩写，是指访问某一网站访客中，转化的访客占全部访客的比例。&lt;/p&gt;
-&lt;p&gt; 二跳率：网站页面展开后，用户在页面上产生的首次点击被称为 “二跳”，二跳的次数即为”二跳量”，二跳量与浏览量的比值称为页面的二跳率。&lt;/p&gt;
-&lt;p&gt; 跳出率： 跳出率是指浏览了一个页面就离开的用户占一组页面或一个页面访问次数的百分比。&lt;/p&gt;
-&lt;p&gt; 人均访问页面：PV总和除以IP=人均访问页面。人均访问页面&amp;gt;=10个，才算优质用户。&lt;/p&gt;
-&lt;p&gt; 重复购买率：指消费者在网站中的重复购买次数；&lt;br&gt; 客单价：是指每一个订单的平均购买商品金额，也就是平均交易金额。&lt;/p&gt;
-&lt;h1 id=&quot;问题四：电商营销方式有哪些？&quot;&gt;&lt;a href=&quot;#问题四：电商营销方式有哪些？&quot; class=&quot;headerlink&quot; title=&quot;问题四：电商营销方式有哪些？&quot;&gt;&lt;/a&gt;问题四：电商营销方式有哪些？&lt;/h1&gt;&lt;p&gt;网络媒体：门户网站广告，客户端软件广告。&lt;/p&gt;
-&lt;p&gt;SEM： 竞价排名，联盟广告。&lt;/p&gt;
-&lt;p&gt;EDM：内部邮件群发，第三方平台，数据库整合营销等方式。&lt;/p&gt;
-&lt;p&gt;社区营销：BBS推广（发帖和活动） SNS（微博、微信、QQ群推广等）。&lt;/p&gt;
-&lt;p&gt;CPS\代销：销售分成（一起发，成果网，创盟）。&lt;/p&gt;
-&lt;p&gt;SEO：搜索引擎优化。&lt;/p&gt;
-&lt;p&gt;积分营销：积分兑换，积分打折，积分购买等。&lt;/p&gt;
-&lt;p&gt;DM目录：传统单张目录，如麦考林，红孩子，凡客。&lt;/p&gt;
-&lt;p&gt;线下活动：会展，体验店等。&lt;/p&gt;
-&lt;p&gt;传统媒体：电视电台，报刊杂志。&lt;/p&gt;
-&lt;h1 id=&quot;问题五：电商营销数字化参照标准有哪些指标？&quot;&gt;&lt;a href=&quot;#问题五：电商营销数字化参照标准有哪些指标？&quot; class=&quot;headerlink&quot; title=&quot;问题五：电商营销数字化参照标准有哪些指标？&quot;&gt;&lt;/a&gt;问题五：电商营销数字化参照标准有哪些指标？&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;[访问页面]：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;网络推广的访问者访问 &amp;gt;=5个页面以上才是有效流量。&lt;/p&gt;
-&lt;p&gt;访问&amp;gt;=10个页面以上是高质量的流量，访问2个以下页面是垃圾流量。&lt;/p&gt;
-&lt;p&gt;访问页面=70%是高质量流量。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;[停留时间]：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;超过3分钟才是有效流量；&lt;/p&gt;
-&lt;p&gt;超过6分钟是高质量流量；&lt;/p&gt;
-&lt;p&gt;小于1分钟的是垃圾流量。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;[二跳率数据]：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;推广来主页二跳率70%以上是高质量流量。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;[转化率数据]：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;推广购买转化率&amp;gt;=1%以上为高质量流量。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;[动销率]：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;商品动销率=动销品种数 ÷ 门店经营总品种数*100% 。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;[动销品种数]：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;门店中所有商品种类中有销售的商品种类总数。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;[商品动销率]&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;商品累计销售数量 ÷商品期末库存数量&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;[流量需要辩别好]：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;真实流量与流量，&lt;/p&gt;
-&lt;p&gt;有效流量与流量，&lt;/p&gt;
-&lt;p&gt;自然流量与购买流量，&lt;/p&gt;
-&lt;p&gt;PV高的流量与PV低的流量，&lt;/p&gt;
-&lt;p&gt;商业流量与娱乐流量。&lt;/p&gt;
-&lt;h1 id=&quot;问题六：数字化工具汇总，我们关注的&quot;&gt;&lt;a href=&quot;#问题六：数字化工具汇总，我们关注的&quot; class=&quot;headerlink&quot; title=&quot;问题六：数字化工具汇总，我们关注的&quot;&gt;&lt;/a&gt;问题六：数字化工具汇总，我们关注的&lt;/h1&gt;&lt;p&gt;访问量查询： alexa，chinaz查询工具。&lt;/p&gt;
-&lt;p&gt;网络流行度： 搜索网站名，搜索结果越多相对来说越流行。&lt;/p&gt;
-&lt;p&gt;行业排名： 查询艾瑞的排名。&lt;/p&gt;
-&lt;p&gt;网络新闻曝光率：用baidu新闻搜索。&lt;/p&gt;
-&lt;p&gt;SEO表现： 收录与PR，排名。&lt;/p&gt;
-&lt;p&gt;百度指数： 百度指数是用以反映关键词在过去30天内的网络曝光率及用&lt;br&gt;户关注度。&lt;/p&gt;
-&lt;p&gt;每天新增注册用户数 ＝UV*1%（参考数据）&lt;/p&gt;
-&lt;p&gt;活跃用户 ＝注册用户/10（参考数据）&lt;/p&gt;
-&lt;p&gt;最高同时在线 ＝活跃用户*20%（参考数据）&lt;/p&gt;
-&lt;p&gt;收费交易客户数 ＝活跃用户*5%（参考数据）&lt;/p&gt;
-&lt;p&gt;销售额： 收费交易客户数*商品平均价格&lt;/p&gt;
-&lt;p&gt;客单价: per customer transaction 零售术语又称ATV，即每位顾客平均购买商品金额&lt;/p&gt;
-&lt;h1 id=&quot;问题七：电子商务公司职位，你想干哪个？（别想歪。。。）&quot;&gt;&lt;a href=&quot;#问题七：电子商务公司职位，你想干哪个？（别想歪。。。）&quot; class=&quot;headerlink&quot; title=&quot;问题七：电子商务公司职位，你想干哪个？（别想歪。。。）&quot;&gt;&lt;/a&gt;问题七：电子商务公司职位，你想干哪个？（别想歪。。。）&lt;/h1&gt;&lt;p&gt;UI 即User Interface（用户界面）的简称。UI设计则是指对软件的人机交互、操作逻辑、界面美观的整体设计.。&lt;/p&gt;
-&lt;p&gt;TD 即技术部研发简称TDD–Technology Development Department&lt;/p&gt;
-&lt;p&gt;JS 即JavaScript 前端开发。&lt;/p&gt;
-&lt;p&gt;DZ 即页面重构，页面制作。&lt;/p&gt;
-&lt;p&gt;PM 即项目经理。&lt;/p&gt;
-&lt;p&gt;PDM 即产品经理。&lt;/p&gt;
-&lt;p&gt;UED 即用户体验设计，交互设计。&lt;/p&gt;
-&lt;p&gt;Operation Manager 即运营经理。&lt;/p&gt;
-&lt;p&gt;问题八：商品物流及客户管理方面专业名词知多少？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;QC&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;即英文Quality Control的简称，中文意义是品质控制，又称质检，即对产品进行一个初步的检验，排除质量问题。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;SKU&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;即英文Stock Keeping Unit的简称，即库存进出计量的单位，可以是以件，盒，托盘等为单位。保存库存控制的最小可用单位。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3PL&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;即第三方物流（Third Party Logistics），电商行业意指快递公司。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;PCS&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;即计量单位的简写，即pieces一块、件、片、篇、张、条、套。多见于外贸交易中，后为书写方便，延伸到其他行业，可代表个、包、袋等表示数量的产品。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;商品编码&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;企业生产商品入库的数字身份证，正规厂家都会有一个全球通用、唯一的商品编码。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;商品条码&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;是由一组按一定规则排列的条、空及对应字符数字组成的用于表示上点自动销售管理系统的信息标记或者对商品分类编码进行表示的标记。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;实际库存&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;实际仓库中的实际库存量。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;虚拟库存&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;即网站前台展示的库存数量，是电商行业特定属性的产物，日常操作中，经常有消费者仙丹后可能不会付款，商品不做时间出库操作，但是前台页面库存已减少，为了不影响前台展现的库存量，因此需要设置一个虚拟库存。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;库存预警&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;库存预警是指设置一个库存警戒线，当仓库实际库存到达仓库警戒线的时候就会提醒你补货，库存警戒线设置可参考该商品平时销量情况考虑。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ITO库存周转率&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Inventory turn over，一般缩写为ITO，一种衡量材料在工厂里或是整条价值流中，流动快慢的标准。最常见的计算库存周转的方法，就是把年度销售产品的成本（不计销售的开支以及管理成本）作为分子，除以年度平均库存价值，即：库存周转率=年度销售产品成本/当年平均库存价值&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;【物流配送】&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;SRM 是Supplier Relationship Management的缩写，即供应商关系管理。&lt;/p&gt;
-&lt;p&gt;ERP 是Enterprise Resource Planning的缩写，即企业资源计划。&lt;/p&gt;
-&lt;p&gt;OMS 是Order Management System的缩写，即订单管理系统。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;【客户管理】&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;CRM&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;是Customer Relationship Management的缩写，即客户关系管理。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;RFM&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;模型是衡量客户价值和客户创利能力的重要工具和手段。该机械模型通过一个客户的近期购买行为、购买的总体频率以及花了多少钱三项指标来描述该客户的价值状况。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;【WEB产品设计】&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;用户界面UI：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;User Interface（用户界面）的简称，UI设计则是指对页面的人机交互、操作逻辑、界面美观的整体设计。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;用户体验UE：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;User Experience（用户体验）的简称。它是指用户访问一个网站或者使用一个产品时的全部体验。&lt;/p&gt;
-&lt;p&gt;问题九：前方高能，你确定你数学学好了？—-数据比例换算公式&lt;/p&gt;
-&lt;p&gt;老客户 =回头率*客户数&lt;/p&gt;
-&lt;p&gt;回头率 =回头客人/店铺总访客数&lt;/p&gt;
-&lt;p&gt;新客户 =客户数-老客户&lt;/p&gt;
-&lt;p&gt;转换率 =客户数/UV&lt;/p&gt;
-&lt;p&gt;点击率 =点击数/页面展现&lt;/p&gt;
-&lt;p&gt;PV利用率 =客户数/PV&lt;/p&gt;
-&lt;p&gt;客户月增长率 =当月客户数/当月客户数— 1&lt;/p&gt;
-&lt;p&gt;客单价 =支付宝成交金额/支付宝成交笔数&lt;/p&gt;
-&lt;p&gt;页面打开率 =从首页点击进入宝贝页的次数/首页浏览量&lt;/p&gt;
-&lt;p&gt;人均访问页面数 =PV/UV（浏览人数/页面总访问人数）&lt;/p&gt;
-&lt;p&gt;人均店内停留时间 =总访问时长/UV&lt;/p&gt;
-&lt;p&gt;收藏率 =当天收藏量/UV&lt;/p&gt;
-&lt;p&gt;宝贝跳失率 =只访问了该宝贝一个页面就离开的访问次数/该宝贝总访问次数&lt;/p&gt;
-&lt;p&gt;库存周转率 =年度销售产品成本/当年平均库存价值&lt;/p&gt;
-&lt;p&gt;商品动销率 =动销品种数 ÷ 门店经营总品种数*100% 。&lt;/p&gt;
-&lt;p&gt;CPC =财务消耗/点击数&lt;/p&gt;
-&lt;p&gt;CPM =财务消耗/广告有效展现量*1000&lt;/p&gt;
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;前言&lt;/strong&gt;&lt;br&gt;最近发生了一些事情，不知道该怎么面对，想让自己忙起来，没有时间去想别的事情。同时，让我对过去进行了一个反思，以及对将来进行了初步的规划，我想改变，也一定会改变，借此博客，记录我成长的点点滴滴。希望我希望看到的人能看到，也希望能给大家带来点帮助。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;第一篇博客就用来记录下我搭建这个独立博客的经过吧&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;##&lt;strong&gt;准备&lt;/strong&gt;##&lt;/p&gt;
+&lt;p&gt;###&lt;strong&gt;静态博客和动态博客&lt;/strong&gt;###&lt;/p&gt;
+&lt;p&gt;所谓静态博客，它是在写好文章后，在本地生成静态页面后再上传到服务器（Jekyll在Github Page上的例子有点特殊，后面会讲到），而不是像传统的Wordpress等基于动态语言、数据库博客那样在访问的时候从数据库读取数据动态生成页面。静态博客最大的优点是速度快，对网站使用的空间要求也不高，想找一个不支持静态页面的空间也是挺难的，缺点嘛，功能没有Wordpress等传统博客那么强。静态博客的”静态”主要体现在浏览者的角度，而不是写作者的角度，其最终的HTML文件，也是计算机生成的。静态博客与动态博客的差别就好像去超市里买一罐咖啡与去咖啡厅点一杯咖啡的差别。&lt;/p&gt;
+&lt;p&gt;在静态博客出现之前，更多的人选择的是传统的动态博客。传统的动态博客一般有2种常见的方法：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;自建博客网站：需要了解数据库、HTML/CSS和PHP等很多Web编程知识&lt;/li&gt;
+&lt;li&gt;注册公共博客：一般要受制于公共博客服务提供商的博客创作工具的写作效率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;实际上大部分博主写博客仅仅是个人性质的，文章数量不多，流量也不大，所以并不需要自己建站那么复杂。但如果注册公共博客，又会非常依赖服务提供商所提供的主题、功能和写作工具，缺少自由度。静态博客就可以很好的弥补两者的缺点。静态博客和传统博客最大的区别就在于写作与发布的过程有所不同。&lt;/p&gt;
+&lt;p&gt;静态博客首先会在本地进行离线写作，然后通过工具将离线本地作品转化为HTML网页发布到在线网站上&lt;br&gt;动态博客首先要建立网站（当然也可以注册一个公共博客服务），然后在线完成博客的编辑和发布&lt;br&gt;静态博客可以让博主更专注于写作，而不是花费很多精力在建站技术和写作工具上：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;博主不需要折腾各种建站技术，任何支持静态网页的主机空间和云存储空间都可以拿来发布博客&lt;/li&gt;
+&lt;li&gt;博主可以自由选择自己喜欢的本地写作工具，而不需要受制于在线博客写作工具的质量火热用户体验&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;!--more--&gt;
+&lt;p&gt;###&lt;strong&gt;GitHub 与 静态博客&lt;/strong&gt;###&lt;/p&gt;
+&lt;p&gt;静态博客是个新生事物。静态博客的流行跟著名的开源社区Github的支持是分不开的。因此，绝大部分静态博客平台设计得还是比较极客，更适合有一定编程技能的人来使用，并不适合完全零起点的完全没有编程知识的普通用户。而Github除提供在线Markdown编辑器之外，还提供了Github Page服务，可以将用户托管在Github上的Markdown博客发布为静态网站。博主完全可以将自己的博客站免费寄放在Github上。此外，通过Github发布博客，还有一个额外的好处，那就是你的博客文章可以用Git来管理，这样你就可以在Github上获得博客文章的完整发布历史（像程序员管理源代码一样），并且可以随时获取历史版本或回退和回退到特定的版本上，相当于有了强大的备份系统。&lt;/p&gt;
+&lt;p&gt;###&lt;strong&gt;Hexo&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;hexo出自台湾大学生tommy351之手，是一个基于Node.js的静态博客程序，其编译上百篇文字只需要几秒。hexo生成的静态网页可以直接放到GitHub Pages，BAE，SAE等平台上。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本着不花钱，爱折腾的原则，本人选择Hexo加上Git Pages 的方法搭建自己的独立博客&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;##&lt;strong&gt;开始&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;###&lt;strong&gt;Hexo环境安装&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在Hexo的&lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官网&lt;/a&gt;详细介绍了Hexo的安装和使用，安装Hexo的前提是需要先安装Node js和Git。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;####&lt;strong&gt;Ubuntu 安装NodeJS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在ubuntu上安装Node.js也有很多方法，最常见的有两种：一种是通过Node.js的&lt;a href=&quot;https://nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官网&lt;/a&gt;下载源码编译安装,另一种就是按照Hexo官网介绍的方法安装,这边以第二中方式为例.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;下载和安装nvm,nvm介绍&lt;a href=&quot;http://weizhifeng.net/node-version-management-via-n-and-nvm.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;请看&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#这边可以使用curl也可以通过wget&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#不过,我只有wget方法能成功&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;nvm安装好了之后,通过nvm安装node.js&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#0.12 为node.js版本,Current Version: v0.12.7&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$nvm&lt;/span&gt; isntall &lt;span class=&quot;number&quot;&gt;0.12&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;至此Nodejs安装完毕,我们可以通过命令查看nodejs 版本&lt;/p&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wyq@wyq-m81 ~ $ node -v&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;v0.&lt;span class=&quot;number&quot;&gt;10.25&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;####&lt;strong&gt;Ubuntu安装Git&lt;/strong&gt;&lt;br&gt;在ubuntu中安装git还是相当简单的,直接使用包管理器进行安装就好:&lt;/p&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$sudo&lt;/span&gt; apt-get install git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$sudo&lt;/span&gt; apt-get install git-core&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Nodejs 和 git都已经安装好了,接下来就可安装我们的主角Hexo了&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install -g hexo-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;安装过程有点慢,这个时候你可以问候一下GFW.&lt;/p&gt;
+&lt;p&gt;###&lt;strong&gt;Github pages 仓库创建&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;安装好Hexo后,就该另一个主角Github pages 登场了.关于Github pages的介绍,请看&lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;,它主要的作用是github给你或你的团队展示你的项目的地方,我们用这个来放我的博客简直再适合不过了.&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog00NewRepo.png&quot; alt=&quot;new repo&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog00GithubIO.png&quot; alt=&quot;new repo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Github pages本质还是你github上的一个repository,只不过它的命名规则是[suername].github.io的形式,并且每个github只能有这么一个这样的仓库.创建好这样的仓库后就可以在浏览器地址栏输入[username].github.io进行访问了.&lt;/p&gt;
+&lt;p&gt;##&lt;strong&gt;执行&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hexo和Github pages 准备好以后,我们就可以正式开始博客建立了.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;###&lt;strong&gt;初始化本地博客目录&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#在home新建一个文件夹,用于本地存放博客&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$mkdir&lt;/span&gt; Blogs&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$cd&lt;/span&gt; Blogs&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#用hexo命令在Blogs目录中初始化环境&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; init&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$npm&lt;/span&gt; install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个时候,其实Hexo为我们生成了一个默认的名为HelloWorld的一篇博客,接下来我们看下这篇博客&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;###&lt;strong&gt;生成静态文件&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#使用hexo generate命令可以将我们编写的markdown文件转换成html文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;###&lt;strong&gt;本地服务开启&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wyq@wyq-m81 ~/Blog $ hexo server&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;INFO  Hexo is running at http://&lt;span class=&quot;number&quot;&gt;0.0&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;0.0&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;4000&lt;/span&gt;/. Press Ctrl+C to stop.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个时候在浏览器地址栏输入localhost:4000就可看到Hexo为我们生成的这边博客了&lt;br&gt;大概就是这个样子(默认的标题和名字已经被我改掉啦)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog00HelloWorld.png&quot; alt=&quot;默认HellowordPost&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;到此我们已经把基本建博客的流程走过一遍了,怎么样,是不是很easy呀.接下来我们完成三个事情:创建一个篇新的博客,给博客换个主题,上传到Github pages.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;###&lt;strong&gt;创建新的博客&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#使用hexo new [postname]新建一篇博客&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; new firstblog&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#完成之后,进入到source/_psots目录就可以看到我们刚才新建的博客了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$cd&lt;/span&gt; source/_posts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ll&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;drwxr-xr-x &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; wyq wyq &lt;span class=&quot;number&quot;&gt;4096&lt;/span&gt; Jul &lt;span class=&quot;number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;25&lt;/span&gt; .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;drwxr-xr-x &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; wyq wyq &lt;span class=&quot;number&quot;&gt;4096&lt;/span&gt; Jul &lt;span class=&quot;number&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;16&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;17&lt;/span&gt; ..&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-rw-r--r-- &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; wyq wyq   &lt;span class=&quot;number&quot;&gt;53&lt;/span&gt; Jul &lt;span class=&quot;number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;25&lt;/span&gt; firstBlog.md&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-rw-r--r-- &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; wyq wyq  &lt;span class=&quot;number&quot;&gt;852&lt;/span&gt; Jul &lt;span class=&quot;number&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;18&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;04&lt;/span&gt; HelloWorld.md&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#firstBlog.md就是我们刚才新建的一篇博客&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;博客文章都是md格式的markdown文件,我们打开来看下&lt;br&gt;&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#Hexo默认为我们生成了三行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;title: firstBlog &lt;span class=&quot;comment&quot;&gt;#这边博客的标题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;date: &lt;span class=&quot;number&quot;&gt;2015&lt;/span&gt;-&lt;span class=&quot;number&quot;&gt;07&lt;/span&gt;-&lt;span class=&quot;number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;25&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;44&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;#博客创建时间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tags: &lt;span class=&quot;comment&quot;&gt;#博客的tag&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;那我们只需要使用markdown语法在这个文件里面写我们的博客就ok了,这里推荐在线markdwon编辑器,&lt;a href=&quot;https://www.zybuluo.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CMD markdown&lt;/a&gt;,至于markdown语法,我们只需要了解常用的就行了,学习成本几乎等于0,&lt;a href=&quot;https://help.github.com/articles/markdown-basics/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github markdown语法&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;###&lt;strong&gt;更改博客主题&lt;/strong&gt;&lt;br&gt;Hexo 有丰富的主题支持,这也是我选择它的原因之一,在&lt;a href=&quot;https://github.com/hexojs/hexo/wiki/Themes&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;列出了所有的Hexo 主题,大家可以选择自己喜欢的使用.我这里以Yilia为例&lt;/p&gt;
+&lt;p&gt;在我们使用&lt;code&gt;hexo init&lt;/code&gt; 初始化本地博客环境后,会看到如下的文件目录结构:&lt;/p&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── _config.yml&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── package.json&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── scaffolds&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── scripts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── source&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|   ├── _drafts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|   └── _posts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;└── themes&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这边先直介绍其中几个:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;_config.yml文件整个博客的配置文件,&lt;/li&gt;
+&lt;li&gt;source/_posts文件夹包含了当前整个博客的所有文章&lt;/li&gt;
+&lt;li&gt;themes 文件夹包含了当前的主题文件.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我们要使用&lt;a href=&quot;https://github.com/litten/hexo-theme-yilia&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Yilia&lt;/a&gt;主题&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在当前目录(这里就是Blogs)中,clone Yilla 代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;*更改_config.yml文件,在最后加入使用主题语句&lt;/p&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;theme: yilia&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;进入到主题目录,编辑主题配置文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$cd&lt;/span&gt; themes/yilia&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$vim&lt;/span&gt; _congif.yml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;主题文件的配置说明&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;57&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# Header&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;menu:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  主页: /&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  所有文章: /archives&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  # 随笔: /tags/随笔&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# SubNav&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;subnav:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  github: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  weibo: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  rss: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  zhihu: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #douban: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #mail: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #facebook: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #google: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #twitter: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #linkedin: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rss: /atom.xml&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# Content&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;excerpt_link: more&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fancybox: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mathjax: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# Miscellaneous&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;google_analytics: &#39;&#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;favicon: /favicon.png&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#你的头像url&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;avatar: &quot;&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#是否开启分享&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;share: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;duoshuo: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#是否开启云标签&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tagcloud: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#是否开启友情链接&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#不开启——&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#friends: false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#开启——&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;friends:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  奥巴马的博客: http://localhost:4000/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  卡卡的美丽传说: http://localhost:4000/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  本泽马的博客: http://localhost:4000/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  吉格斯的博客: http://localhost:4000/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  习大大大不同: http://localhost:4000/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  托蒂的博客: http://localhost:4000/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#是否开启“关于我”。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#不开启——&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#aboutme: false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#开启——&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;###&lt;strong&gt;生成静态文件,在本地预览&lt;/strong&gt;&lt;br&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$hexo generate&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;效果如下&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog00UseYiliaTheme.png&quot; alt=&quot;use yilia theme&quot;&gt;&lt;/p&gt;
+&lt;p&gt;**ok,大功告成,就差把博客部署到github.io了&lt;/p&gt;
+&lt;p&gt;##&lt;strong&gt;将博客部署到github pages中&lt;/strong&gt;&lt;br&gt;在博客配置文件_config.yml中,有个deployment一节,在这边我们进行github pages 的配置&lt;/p&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Deployment&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## Docs: http://hexo.io/docs/deployment.html&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  type: git &lt;span class=&quot;comment&quot;&gt;#注意,这边是git不是github,hexo 3.0以后就要求使用git,不然会出现deploy失败情况.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  repo: https://github.com/YanceyWang/YanceyWang.github.io&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  branch: master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;配置好了之后,就可以吧我们博客deploy到github 上啦.&lt;/p&gt;
+&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; clean&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; generate&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;之后,在地址栏输入[username.github.io] 就可以访问你的博客了.&lt;/p&gt;
+&lt;p&gt;##&lt;strong&gt;使用7牛图床&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;考虑到博客的速度，同时也为了便于博客的迁移，图床是必须的。我墙裂推荐七牛，访问速度极快，支持日志、防盗链和水印。&lt;/p&gt;
+&lt;p&gt;免费用户有每月10GB流量+总空间10GB+PUT/DELETE 10万次请求+GET 100万次请求，这对个人博客来说足够，不够的话点这个活动页面，也可通过邀请好友获得奖励，我也求一下七牛邀请。有一点要说明的是，七牛没有目录的概念，但是文件名可以包含/，比如2013/11/27/reading/photos-0.jpg，参考这里关于key-value存储系统。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;首先要去7牛&lt;a href=&quot;http://www.qiniu.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官网&lt;/a&gt;注册帐号,然后准备好身份证前后照,进行身份验证,不然很多功能无法使用.&lt;/strong&gt;&lt;br&gt;验证好了大概就是这个样子&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog007niuIDvER.png&quot; alt=&quot;身份验证&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;接着就可以创建空间了&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog00CreateRepo.png&quot; alt=&quot;创建空间&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;然后进行图片上传,获取外连&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog007niuouterlink.png&quot; alt=&quot;获取外连&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;还可以新建样式,给图片设置缩放,加水印等.&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog00CreateStyle.png&quot; alt=&quot;新建样式&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;后记&lt;/strong&gt;&lt;br&gt;今天就写到这吧,本来昨天在公司已经配置的差不多了,以为回家能够轻车熟路的在windows上弄好环境,结果是我想多了.在ubuntu上用习惯了命令,在win上真是痛苦啊,想打开终端,&lt;code&gt;CTRL+ALT+T&lt;/code&gt;,结果才发现是在win上,想看目录&lt;code&gt;ll&lt;/code&gt;,结果提示没有这个命令..一气之下下载了Ubuntu 14.04 给PC装了双系统.&lt;br&gt;第一次写博客,肯定有很多不足之处,让大家见笑了,希望您提出您的宝贵意见,我会努力做的越来越好.&lt;br&gt;这篇文章只是Hexo搭博客的基础篇,可能会有进阶篇,会介绍域名购买,评论系统使用以及更多的一些优化.&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5NTk3MTc5Mw==&amp;amp;mid=216284279&amp;amp;idx=2&amp;amp;sn=9278767efdab72d87ef5bd830eddeeca&amp;amp;scene=0#rd&quot;&gt;本文原链接&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&quot;问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&quot;&gt;&lt;a href=&quot;#问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&quot; class=&quot;headerlink&quot; title=&quot;问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&quot;&gt;&lt;/a&gt;问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&lt;/h1&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;前言&lt;/strong&gt;&lt;br&gt;最近发生了一些事情，不知道该怎么面对，想让自己忙起来，没有时间去想别的事情。同时，让我对过去进行了一个反思，以及对将来进行了初步的规划，我想改变，也一定会改变，借此博客，记录我成长的点点滴滴。希望我希望看到的人能看到，也希望能给大家带来点帮助。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;第一篇博客就用来记录下我搭建这个独立博客的经过吧&lt;br&gt;
     
     </summary>
     
       <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
     
     
-      <category term="Life" scheme="http://igrandcloud.github.io/tags/Life/"/>
+      <category term="Hexo" scheme="http://igrandcloud.github.io/tags/Hexo/"/>
+    
+      <category term="Github" scheme="http://igrandcloud.github.io/tags/Github/"/>
     
   </entry>
   
@@ -4848,152 +4794,206 @@
   </entry>
   
   <entry>
-    <title>Hexo+Ubuntu+GithubPages搭建个人博客(基础篇)</title>
-    <link href="http://igrandcloud.github.io/2015/07/30/Ubuntu-Hexo-GithubPages/"/>
-    <id>http://igrandcloud.github.io/2015/07/30/Ubuntu-Hexo-GithubPages/</id>
+    <title>电商、营销、移动互联网等专业词汇大全</title>
+    <link href="http://igrandcloud.github.io/2015/07/30/Internet-professional-words/"/>
+    <id>http://igrandcloud.github.io/2015/07/30/Internet-professional-words/</id>
     <published>2015-07-30T01:25:44.000Z</published>
-    <updated>2016-04-04T13:29:57.000Z</updated>
+    <updated>2016-04-04T13:47:25.000Z</updated>
     
-    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;前言&lt;/strong&gt;&lt;br&gt;最近发生了一些事情，不知道该怎么面对，想让自己忙起来，没有时间去想别的事情。同时，让我对过去进行了一个反思，以及对将来进行了初步的规划，我想改变，也一定会改变，借此博客，记录我成长的点点滴滴。希望我希望看到的人能看到，也希望能给大家带来点帮助。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;第一篇博客就用来记录下我搭建这个独立博客的经过吧&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;##&lt;strong&gt;准备&lt;/strong&gt;##&lt;/p&gt;
-&lt;p&gt;###&lt;strong&gt;静态博客和动态博客&lt;/strong&gt;###&lt;/p&gt;
-&lt;p&gt;所谓静态博客，它是在写好文章后，在本地生成静态页面后再上传到服务器（Jekyll在Github Page上的例子有点特殊，后面会讲到），而不是像传统的Wordpress等基于动态语言、数据库博客那样在访问的时候从数据库读取数据动态生成页面。静态博客最大的优点是速度快，对网站使用的空间要求也不高，想找一个不支持静态页面的空间也是挺难的，缺点嘛，功能没有Wordpress等传统博客那么强。静态博客的”静态”主要体现在浏览者的角度，而不是写作者的角度，其最终的HTML文件，也是计算机生成的。静态博客与动态博客的差别就好像去超市里买一罐咖啡与去咖啡厅点一杯咖啡的差别。&lt;/p&gt;
-&lt;p&gt;在静态博客出现之前，更多的人选择的是传统的动态博客。传统的动态博客一般有2种常见的方法：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;自建博客网站：需要了解数据库、HTML/CSS和PHP等很多Web编程知识&lt;/li&gt;
-&lt;li&gt;注册公共博客：一般要受制于公共博客服务提供商的博客创作工具的写作效率&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;实际上大部分博主写博客仅仅是个人性质的，文章数量不多，流量也不大，所以并不需要自己建站那么复杂。但如果注册公共博客，又会非常依赖服务提供商所提供的主题、功能和写作工具，缺少自由度。静态博客就可以很好的弥补两者的缺点。静态博客和传统博客最大的区别就在于写作与发布的过程有所不同。&lt;/p&gt;
-&lt;p&gt;静态博客首先会在本地进行离线写作，然后通过工具将离线本地作品转化为HTML网页发布到在线网站上&lt;br&gt;动态博客首先要建立网站（当然也可以注册一个公共博客服务），然后在线完成博客的编辑和发布&lt;br&gt;静态博客可以让博主更专注于写作，而不是花费很多精力在建站技术和写作工具上：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;博主不需要折腾各种建站技术，任何支持静态网页的主机空间和云存储空间都可以拿来发布博客&lt;/li&gt;
-&lt;li&gt;博主可以自由选择自己喜欢的本地写作工具，而不需要受制于在线博客写作工具的质量火热用户体验&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;!--more--&gt;
-&lt;p&gt;###&lt;strong&gt;GitHub 与 静态博客&lt;/strong&gt;###&lt;/p&gt;
-&lt;p&gt;静态博客是个新生事物。静态博客的流行跟著名的开源社区Github的支持是分不开的。因此，绝大部分静态博客平台设计得还是比较极客，更适合有一定编程技能的人来使用，并不适合完全零起点的完全没有编程知识的普通用户。而Github除提供在线Markdown编辑器之外，还提供了Github Page服务，可以将用户托管在Github上的Markdown博客发布为静态网站。博主完全可以将自己的博客站免费寄放在Github上。此外，通过Github发布博客，还有一个额外的好处，那就是你的博客文章可以用Git来管理，这样你就可以在Github上获得博客文章的完整发布历史（像程序员管理源代码一样），并且可以随时获取历史版本或回退和回退到特定的版本上，相当于有了强大的备份系统。&lt;/p&gt;
-&lt;p&gt;###&lt;strong&gt;Hexo&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;hexo出自台湾大学生tommy351之手，是一个基于Node.js的静态博客程序，其编译上百篇文字只需要几秒。hexo生成的静态网页可以直接放到GitHub Pages，BAE，SAE等平台上。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;本着不花钱，爱折腾的原则，本人选择Hexo加上Git Pages 的方法搭建自己的独立博客&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;##&lt;strong&gt;开始&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;###&lt;strong&gt;Hexo环境安装&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;在Hexo的&lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官网&lt;/a&gt;详细介绍了Hexo的安装和使用，安装Hexo的前提是需要先安装Node js和Git。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;####&lt;strong&gt;Ubuntu 安装NodeJS&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在ubuntu上安装Node.js也有很多方法，最常见的有两种：一种是通过Node.js的&lt;a href=&quot;https://nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官网&lt;/a&gt;下载源码编译安装,另一种就是按照Hexo官网介绍的方法安装,这边以第二中方式为例.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;下载和安装nvm,nvm介绍&lt;a href=&quot;http://weizhifeng.net/node-version-management-via-n-and-nvm.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;请看&lt;/a&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#这边可以使用curl也可以通过wget&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#不过,我只有wget方法能成功&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;nvm安装好了之后,通过nvm安装node.js&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#0.12 为node.js版本,Current Version: v0.12.7&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$nvm&lt;/span&gt; isntall &lt;span class=&quot;number&quot;&gt;0.12&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;至此Nodejs安装完毕,我们可以通过命令查看nodejs 版本&lt;/p&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wyq@wyq-m81 ~ $ node -v&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;v0.&lt;span class=&quot;number&quot;&gt;10.25&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;####&lt;strong&gt;Ubuntu安装Git&lt;/strong&gt;&lt;br&gt;在ubuntu中安装git还是相当简单的,直接使用包管理器进行安装就好:&lt;/p&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$sudo&lt;/span&gt; apt-get install git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$sudo&lt;/span&gt; apt-get install git-core&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;Nodejs 和 git都已经安装好了,接下来就可安装我们的主角Hexo了&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install -g hexo-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;安装过程有点慢,这个时候你可以问候一下GFW.&lt;/p&gt;
-&lt;p&gt;###&lt;strong&gt;Github pages 仓库创建&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;安装好Hexo后,就该另一个主角Github pages 登场了.关于Github pages的介绍,请看&lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;,它主要的作用是github给你或你的团队展示你的项目的地方,我们用这个来放我的博客简直再适合不过了.&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog00NewRepo.png&quot; alt=&quot;new repo&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog00GithubIO.png&quot; alt=&quot;new repo&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Github pages本质还是你github上的一个repository,只不过它的命名规则是[suername].github.io的形式,并且每个github只能有这么一个这样的仓库.创建好这样的仓库后就可以在浏览器地址栏输入[username].github.io进行访问了.&lt;/p&gt;
-&lt;p&gt;##&lt;strong&gt;执行&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Hexo和Github pages 准备好以后,我们就可以正式开始博客建立了.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;###&lt;strong&gt;初始化本地博客目录&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#在home新建一个文件夹,用于本地存放博客&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$mkdir&lt;/span&gt; Blogs&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$cd&lt;/span&gt; Blogs&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#用hexo命令在Blogs目录中初始化环境&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; init&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$npm&lt;/span&gt; install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这个时候,其实Hexo为我们生成了一个默认的名为HelloWorld的一篇博客,接下来我们看下这篇博客&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;###&lt;strong&gt;生成静态文件&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#使用hexo generate命令可以将我们编写的markdown文件转换成html文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;###&lt;strong&gt;本地服务开启&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wyq@wyq-m81 ~/Blog $ hexo server&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;INFO  Hexo is running at http://&lt;span class=&quot;number&quot;&gt;0.0&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;0.0&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;4000&lt;/span&gt;/. Press Ctrl+C to stop.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这个时候在浏览器地址栏输入localhost:4000就可看到Hexo为我们生成的这边博客了&lt;br&gt;大概就是这个样子(默认的标题和名字已经被我改掉啦)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog00HelloWorld.png&quot; alt=&quot;默认HellowordPost&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;到此我们已经把基本建博客的流程走过一遍了,怎么样,是不是很easy呀.接下来我们完成三个事情:创建一个篇新的博客,给博客换个主题,上传到Github pages.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;###&lt;strong&gt;创建新的博客&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#使用hexo new [postname]新建一篇博客&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; new firstblog&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#完成之后,进入到source/_psots目录就可以看到我们刚才新建的博客了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$cd&lt;/span&gt; source/_posts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ll&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;drwxr-xr-x &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; wyq wyq &lt;span class=&quot;number&quot;&gt;4096&lt;/span&gt; Jul &lt;span class=&quot;number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;25&lt;/span&gt; .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;drwxr-xr-x &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; wyq wyq &lt;span class=&quot;number&quot;&gt;4096&lt;/span&gt; Jul &lt;span class=&quot;number&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;16&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;17&lt;/span&gt; ..&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-rw-r--r-- &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; wyq wyq   &lt;span class=&quot;number&quot;&gt;53&lt;/span&gt; Jul &lt;span class=&quot;number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;25&lt;/span&gt; firstBlog.md&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-rw-r--r-- &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; wyq wyq  &lt;span class=&quot;number&quot;&gt;852&lt;/span&gt; Jul &lt;span class=&quot;number&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;18&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;04&lt;/span&gt; HelloWorld.md&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#firstBlog.md就是我们刚才新建的一篇博客&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;博客文章都是md格式的markdown文件,我们打开来看下&lt;br&gt;&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#Hexo默认为我们生成了三行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;title: firstBlog &lt;span class=&quot;comment&quot;&gt;#这边博客的标题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;date: &lt;span class=&quot;number&quot;&gt;2015&lt;/span&gt;-&lt;span class=&quot;number&quot;&gt;07&lt;/span&gt;-&lt;span class=&quot;number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;25&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;44&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;#博客创建时间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tags: &lt;span class=&quot;comment&quot;&gt;#博客的tag&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;那我们只需要使用markdown语法在这个文件里面写我们的博客就ok了,这里推荐在线markdwon编辑器,&lt;a href=&quot;https://www.zybuluo.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CMD markdown&lt;/a&gt;,至于markdown语法,我们只需要了解常用的就行了,学习成本几乎等于0,&lt;a href=&quot;https://help.github.com/articles/markdown-basics/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github markdown语法&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;###&lt;strong&gt;更改博客主题&lt;/strong&gt;&lt;br&gt;Hexo 有丰富的主题支持,这也是我选择它的原因之一,在&lt;a href=&quot;https://github.com/hexojs/hexo/wiki/Themes&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;列出了所有的Hexo 主题,大家可以选择自己喜欢的使用.我这里以Yilia为例&lt;/p&gt;
-&lt;p&gt;在我们使用&lt;code&gt;hexo init&lt;/code&gt; 初始化本地博客环境后,会看到如下的文件目录结构:&lt;/p&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── _config.yml&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── package.json&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── scaffolds&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── scripts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;├── source&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|   ├── _drafts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|   └── _posts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;└── themes&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;这边先直介绍其中几个:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;_config.yml文件整个博客的配置文件,&lt;/li&gt;
-&lt;li&gt;source/_posts文件夹包含了当前整个博客的所有文章&lt;/li&gt;
-&lt;li&gt;themes 文件夹包含了当前的主题文件.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;我们要使用&lt;a href=&quot;https://github.com/litten/hexo-theme-yilia&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Yilia&lt;/a&gt;主题&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;在当前目录(这里就是Blogs)中,clone Yilla 代码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;*更改_config.yml文件,在最后加入使用主题语句&lt;/p&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;theme: yilia&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;进入到主题目录,编辑主题配置文件&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$cd&lt;/span&gt; themes/yilia&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$vim&lt;/span&gt; _congif.yml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;主题文件的配置说明&lt;/p&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;57&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# Header&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;menu:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  主页: /&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  所有文章: /archives&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  # 随笔: /tags/随笔&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# SubNav&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;subnav:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  github: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  weibo: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  rss: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  zhihu: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #douban: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #mail: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #facebook: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #google: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #twitter: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  #linkedin: &quot;#&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rss: /atom.xml&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# Content&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;excerpt_link: more&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fancybox: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mathjax: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# Miscellaneous&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;google_analytics: &#39;&#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;favicon: /favicon.png&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#你的头像url&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;avatar: &quot;&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#是否开启分享&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;share: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;duoshuo: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#是否开启云标签&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tagcloud: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#是否开启友情链接&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#不开启——&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#friends: false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#开启——&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;friends:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  奥巴马的博客: http://localhost:4000/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  卡卡的美丽传说: http://localhost:4000/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  本泽马的博客: http://localhost:4000/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  吉格斯的博客: http://localhost:4000/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  习大大大不同: http://localhost:4000/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  托蒂的博客: http://localhost:4000/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#是否开启“关于我”。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#不开启——&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#aboutme: false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#开启——&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;###&lt;strong&gt;生成静态文件,在本地预览&lt;/strong&gt;&lt;br&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$hexo generate&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;效果如下&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog00UseYiliaTheme.png&quot; alt=&quot;use yilia theme&quot;&gt;&lt;/p&gt;
-&lt;p&gt;**ok,大功告成,就差把博客部署到github.io了&lt;/p&gt;
-&lt;p&gt;##&lt;strong&gt;将博客部署到github pages中&lt;/strong&gt;&lt;br&gt;在博客配置文件_config.yml中,有个deployment一节,在这边我们进行github pages 的配置&lt;/p&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Deployment&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## Docs: http://hexo.io/docs/deployment.html&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  type: git &lt;span class=&quot;comment&quot;&gt;#注意,这边是git不是github,hexo 3.0以后就要求使用git,不然会出现deploy失败情况.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  repo: https://github.com/YanceyWang/YanceyWang.github.io&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  branch: master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;配置好了之后,就可以吧我们博客deploy到github 上啦.&lt;/p&gt;
-&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; clean&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; generate&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;之后,在地址栏输入[username.github.io] 就可以访问你的博客了.&lt;/p&gt;
-&lt;p&gt;##&lt;strong&gt;使用7牛图床&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;考虑到博客的速度，同时也为了便于博客的迁移，图床是必须的。我墙裂推荐七牛，访问速度极快，支持日志、防盗链和水印。&lt;/p&gt;
-&lt;p&gt;免费用户有每月10GB流量+总空间10GB+PUT/DELETE 10万次请求+GET 100万次请求，这对个人博客来说足够，不够的话点这个活动页面，也可通过邀请好友获得奖励，我也求一下七牛邀请。有一点要说明的是，七牛没有目录的概念，但是文件名可以包含/，比如2013/11/27/reading/photos-0.jpg，参考这里关于key-value存储系统。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;首先要去7牛&lt;a href=&quot;http://www.qiniu.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官网&lt;/a&gt;注册帐号,然后准备好身份证前后照,进行身份验证,不然很多功能无法使用.&lt;/strong&gt;&lt;br&gt;验证好了大概就是这个样子&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog007niuIDvER.png&quot; alt=&quot;身份验证&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;接着就可以创建空间了&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog00CreateRepo.png&quot; alt=&quot;创建空间&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;然后进行图片上传,获取外连&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog007niuouterlink.png&quot; alt=&quot;获取外连&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;还可以新建样式,给图片设置缩放,加水印等.&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;http://7xkr9a.com1.z0.glb.clouddn.com/Blog00CreateStyle.png&quot; alt=&quot;新建样式&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;后记&lt;/strong&gt;&lt;br&gt;今天就写到这吧,本来昨天在公司已经配置的差不多了,以为回家能够轻车熟路的在windows上弄好环境,结果是我想多了.在ubuntu上用习惯了命令,在win上真是痛苦啊,想打开终端,&lt;code&gt;CTRL+ALT+T&lt;/code&gt;,结果才发现是在win上,想看目录&lt;code&gt;ll&lt;/code&gt;,结果提示没有这个命令..一气之下下载了Ubuntu 14.04 给PC装了双系统.&lt;br&gt;第一次写博客,肯定有很多不足之处,让大家见笑了,希望您提出您的宝贵意见,我会努力做的越来越好.&lt;br&gt;这篇文章只是Hexo搭博客的基础篇,可能会有进阶篇,会介绍域名购买,评论系统使用以及更多的一些优化.&lt;/p&gt;
-&lt;/blockquote&gt;
+    <content type="html">&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5NTk3MTc5Mw==&amp;amp;mid=216284279&amp;amp;idx=2&amp;amp;sn=9278767efdab72d87ef5bd830eddeeca&amp;amp;scene=0#rd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;本文原链接&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&quot;&gt;&lt;a href=&quot;#问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&quot; class=&quot;headerlink&quot; title=&quot;问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&quot;&gt;&lt;/a&gt;问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&lt;/h1&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt; &lt;strong&gt;电子商务模式&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; B2B（经济组织对经济组织）&lt;/p&gt;
+&lt;p&gt;B2C（经济组织对消费者）&lt;/p&gt;
+&lt;p&gt;B2B2C（企业对企业对消费者）&lt;/p&gt;
+&lt;p&gt;C2B（T）（消费者集合竞价-团购）&lt;/p&gt;
+&lt;p&gt;C2C（消费者对消费者）&lt;/p&gt;
+&lt;p&gt;B2F（企业对家庭）&lt;/p&gt;
+&lt;p&gt;O2O（网上与网下相结合）&lt;/p&gt;
+&lt;p&gt;SaaS（软件服务）&lt;/p&gt;
+&lt;p&gt;PaaS（平台服务）&lt;/p&gt;
+&lt;p&gt;IaaS（基础服务）&lt;/p&gt;
+&lt;p&gt;M-B（移动电子商务）&lt;/p&gt;
+&lt;p&gt;B2G（政府采购）&lt;/p&gt;
+&lt;p&gt;G2B（政府抛售）&lt;/p&gt;
+&lt;p&gt;B2M（面向市场营销的电子商务企业）&lt;/p&gt;
+&lt;p&gt;M2C（生产厂商对消费者）&lt;/p&gt;
+&lt;p&gt;SoLoMo（社交+本地化+移动）&lt;/p&gt;
+&lt;p&gt;ABC（代理商-商家-消费者）&lt;/p&gt;
+&lt;p&gt;BAB（企业-联盟-企业）&lt;/p&gt;
+&lt;p&gt;P2C（生活服务平台）&lt;/p&gt;
+&lt;p&gt;P2P（点对点、渠道对渠道）&lt;/p&gt;
+&lt;p&gt;SNS-EC（社会化网络电子商务）&lt;/p&gt;
+&lt;p&gt;B2S（分享式商务，或体验式商务）&lt;/p&gt;
+&lt;h1 id=&quot;问题二：O2O、C2C、B2B、B2C的区别在哪里？&quot;&gt;&lt;a href=&quot;#问题二：O2O、C2C、B2B、B2C的区别在哪里？&quot; class=&quot;headerlink&quot; title=&quot;问题二：O2O、C2C、B2B、B2C的区别在哪里？&quot;&gt;&lt;/a&gt;问题二：O2O、C2C、B2B、B2C的区别在哪里？&lt;/h1&gt;&lt;p&gt; &lt;strong&gt;1、O2O是online to offline分为四种运营模式：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; 1）online to offline是线上交易到线下消费体验&lt;/p&gt;
+&lt;p&gt; 2）offline to online是线下营销到线上交易&lt;/p&gt;
+&lt;p&gt; 3）offline to online to offline是线下营销到线上交易再到线下消费体验&lt;/p&gt;
+&lt;p&gt; 4）online to offline to online是线上交易或营销到线下消费体验再到线上消费体验&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;2、通过举例说区别。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; 1）O2O，比如：保险直购O2O，苏宁易购O2O，大众点评O2O等&lt;/p&gt;
+&lt;p&gt; 2）C2C是consumer to consumer就是个人对个人的，比如淘宝的小店铺。&lt;/p&gt;
+&lt;p&gt; 3）B2C是business to consumer是商家对个人，这个就很多了卓越、当当、京东等等都是。B2C、C2C很重要的一点是都运用了物流。&lt;/p&gt;
+&lt;p&gt; 4）B2B是business to business是企业间的，比如阿里巴巴。&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;举例通俗说明一下，就是:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; 1）C2C就是我卖东西你来买&lt;/p&gt;
+&lt;p&gt; 2）B2C就是我成立个公司卖东西，你来买&lt;/p&gt;
+&lt;p&gt; 3）O2O就是我成立个公司卖东西你来买但是要你自己来拿&lt;/p&gt;
+&lt;p&gt; 4）B2B就是你也成立了公司买我公司的东西&lt;/p&gt;
+&lt;h1 id=&quot;问题三：移动互联网最常出现的名词有哪些？（非专业慎入）&quot;&gt;&lt;a href=&quot;#问题三：移动互联网最常出现的名词有哪些？（非专业慎入）&quot; class=&quot;headerlink&quot; title=&quot;问题三：移动互联网最常出现的名词有哪些？（非专业慎入）&quot;&gt;&lt;/a&gt;问题三：移动互联网最常出现的名词有哪些？（非专业慎入）&lt;/h1&gt;&lt;p&gt; &lt;strong&gt;广告形式&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; Rich Media：(富媒体)，这种应用采取了所有适合的最先进技术，以最好的传达广告主的信息，甚至与用户进行互动！如视频、flash广告等&lt;br&gt; 植入式广告：在电影或电视剧或者其它场景插入相关的广告。如变形金刚，非诚勿扰等。&lt;/p&gt;
+&lt;p&gt; SEM：Search Engine Marketing的缩写，意即搜索引擎营销。&lt;/p&gt;
+&lt;p&gt; SEO：SearchEngineOptimization，搜索引擎优化。&lt;/p&gt;
+&lt;p&gt; EDM：Electronic Direct Marketing的缩写，就是电子邮件营销。&lt;/p&gt;
+&lt;p&gt; AdWords：Google的关键词竞价广告。&lt;/p&gt;
+&lt;p&gt; Banner：横幅广告&lt;/p&gt;
+&lt;p&gt; Button：图标广告&lt;/p&gt;
+&lt;p&gt; PR推广：软文推广&lt;/p&gt;
+&lt;p&gt; Adertorial：软文广告的一种，即付费文章，故意设计成像一篇普通的文章。&lt;/p&gt;
+&lt;p&gt; Banner Ad：（横幅广告）网页顶部、底部或者侧边的广告展示位置；&lt;/p&gt;
+&lt;p&gt; DSP展示广告：是Demand-Side Platform的缩写，即需求方平台。&lt;/p&gt;
+&lt;p&gt; POP：Point Of Purchase，意为“卖点广告”，又名「店头陈设」。本来是指商业销售中的一种店头促销工具，其型式不拘，但以摆设在店头的展示物为主，如吊牌、海报、小贴纸、纸货架、展示架、纸堆头、大招牌、实物模型、旗帜等等，都是林立在POP的范围内。&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;推广模式分类&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; CPS：Cost Per Sales的缩写,即销售分成。&lt;/p&gt;
+&lt;p&gt; CPA ：Cost Per Action，每次动作成本。&lt;/p&gt;
+&lt;p&gt; CPM：Cost Per Mille，或者Cost Per Thousand，即每千人成本。&lt;/p&gt;
+&lt;p&gt; CPC：Cost Per Click；Cost Per Thousand Click-Through，即每点击成本。&lt;/p&gt;
+&lt;p&gt; CPR：Cost Per Response，即每回应成本。&lt;/p&gt;
+&lt;p&gt; CPP：Cost Per Purchase，即每购买成本。&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;点击及转化&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; UV： Unique Vister的缩写，独立访客。&lt;/p&gt;
+&lt;p&gt; PV： page view，即网站被浏览的总次数；&lt;/p&gt;
+&lt;p&gt; IP： 即internet protocol,指独立IP数，一天内相同IP地址只被计算一次；&lt;/p&gt;
+&lt;p&gt; PR值： 全称为Pagerank（网页级别），是用于评测一个网页“重要性”的一种方法。&lt;/p&gt;
+&lt;p&gt; Alexa： Alexa.com是专门发布网站世界排名的网站，网站排名有两种：综合排名和分类排名。&lt;/p&gt;
+&lt;p&gt; Click：（点击量/点击次数）即Click through，用户点击广告的次数，评估广告效果的指标之一；&lt;/p&gt;
+&lt;p&gt; Click Rate：（点击率/点进率）即Click through-Rate;即网络广告被点击的次数与访问次数的比例，即clicks/impressions.如果这个页面被访问了100次，而页面上的广告也被点击了20次，那么CTR为20%，CTR是评估广告效果的指标之一。&lt;/p&gt;
+&lt;p&gt; ROI：Return On Investment的缩写，投资报酬率。&lt;/p&gt;
+&lt;p&gt; CR 转化率：Conversion Rate的缩写，是指访问某一网站访客中，转化的访客占全部访客的比例。&lt;/p&gt;
+&lt;p&gt; 二跳率：网站页面展开后，用户在页面上产生的首次点击被称为 “二跳”，二跳的次数即为”二跳量”，二跳量与浏览量的比值称为页面的二跳率。&lt;/p&gt;
+&lt;p&gt; 跳出率： 跳出率是指浏览了一个页面就离开的用户占一组页面或一个页面访问次数的百分比。&lt;/p&gt;
+&lt;p&gt; 人均访问页面：PV总和除以IP=人均访问页面。人均访问页面&amp;gt;=10个，才算优质用户。&lt;/p&gt;
+&lt;p&gt; 重复购买率：指消费者在网站中的重复购买次数；&lt;br&gt; 客单价：是指每一个订单的平均购买商品金额，也就是平均交易金额。&lt;/p&gt;
+&lt;h1 id=&quot;问题四：电商营销方式有哪些？&quot;&gt;&lt;a href=&quot;#问题四：电商营销方式有哪些？&quot; class=&quot;headerlink&quot; title=&quot;问题四：电商营销方式有哪些？&quot;&gt;&lt;/a&gt;问题四：电商营销方式有哪些？&lt;/h1&gt;&lt;p&gt;网络媒体：门户网站广告，客户端软件广告。&lt;/p&gt;
+&lt;p&gt;SEM： 竞价排名，联盟广告。&lt;/p&gt;
+&lt;p&gt;EDM：内部邮件群发，第三方平台，数据库整合营销等方式。&lt;/p&gt;
+&lt;p&gt;社区营销：BBS推广（发帖和活动） SNS（微博、微信、QQ群推广等）。&lt;/p&gt;
+&lt;p&gt;CPS\代销：销售分成（一起发，成果网，创盟）。&lt;/p&gt;
+&lt;p&gt;SEO：搜索引擎优化。&lt;/p&gt;
+&lt;p&gt;积分营销：积分兑换，积分打折，积分购买等。&lt;/p&gt;
+&lt;p&gt;DM目录：传统单张目录，如麦考林，红孩子，凡客。&lt;/p&gt;
+&lt;p&gt;线下活动：会展，体验店等。&lt;/p&gt;
+&lt;p&gt;传统媒体：电视电台，报刊杂志。&lt;/p&gt;
+&lt;h1 id=&quot;问题五：电商营销数字化参照标准有哪些指标？&quot;&gt;&lt;a href=&quot;#问题五：电商营销数字化参照标准有哪些指标？&quot; class=&quot;headerlink&quot; title=&quot;问题五：电商营销数字化参照标准有哪些指标？&quot;&gt;&lt;/a&gt;问题五：电商营销数字化参照标准有哪些指标？&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;[访问页面]：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;网络推广的访问者访问 &amp;gt;=5个页面以上才是有效流量。&lt;/p&gt;
+&lt;p&gt;访问&amp;gt;=10个页面以上是高质量的流量，访问2个以下页面是垃圾流量。&lt;/p&gt;
+&lt;p&gt;访问页面=70%是高质量流量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[停留时间]：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;超过3分钟才是有效流量；&lt;/p&gt;
+&lt;p&gt;超过6分钟是高质量流量；&lt;/p&gt;
+&lt;p&gt;小于1分钟的是垃圾流量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[二跳率数据]：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;推广来主页二跳率70%以上是高质量流量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[转化率数据]：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;推广购买转化率&amp;gt;=1%以上为高质量流量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[动销率]：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;商品动销率=动销品种数 ÷ 门店经营总品种数*100% 。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[动销品种数]：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;门店中所有商品种类中有销售的商品种类总数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[商品动销率]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;商品累计销售数量 ÷商品期末库存数量&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[流量需要辩别好]：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;真实流量与流量，&lt;/p&gt;
+&lt;p&gt;有效流量与流量，&lt;/p&gt;
+&lt;p&gt;自然流量与购买流量，&lt;/p&gt;
+&lt;p&gt;PV高的流量与PV低的流量，&lt;/p&gt;
+&lt;p&gt;商业流量与娱乐流量。&lt;/p&gt;
+&lt;h1 id=&quot;问题六：数字化工具汇总，我们关注的&quot;&gt;&lt;a href=&quot;#问题六：数字化工具汇总，我们关注的&quot; class=&quot;headerlink&quot; title=&quot;问题六：数字化工具汇总，我们关注的&quot;&gt;&lt;/a&gt;问题六：数字化工具汇总，我们关注的&lt;/h1&gt;&lt;p&gt;访问量查询： alexa，chinaz查询工具。&lt;/p&gt;
+&lt;p&gt;网络流行度： 搜索网站名，搜索结果越多相对来说越流行。&lt;/p&gt;
+&lt;p&gt;行业排名： 查询艾瑞的排名。&lt;/p&gt;
+&lt;p&gt;网络新闻曝光率：用baidu新闻搜索。&lt;/p&gt;
+&lt;p&gt;SEO表现： 收录与PR，排名。&lt;/p&gt;
+&lt;p&gt;百度指数： 百度指数是用以反映关键词在过去30天内的网络曝光率及用&lt;br&gt;户关注度。&lt;/p&gt;
+&lt;p&gt;每天新增注册用户数 ＝UV*1%（参考数据）&lt;/p&gt;
+&lt;p&gt;活跃用户 ＝注册用户/10（参考数据）&lt;/p&gt;
+&lt;p&gt;最高同时在线 ＝活跃用户*20%（参考数据）&lt;/p&gt;
+&lt;p&gt;收费交易客户数 ＝活跃用户*5%（参考数据）&lt;/p&gt;
+&lt;p&gt;销售额： 收费交易客户数*商品平均价格&lt;/p&gt;
+&lt;p&gt;客单价: per customer transaction 零售术语又称ATV，即每位顾客平均购买商品金额&lt;/p&gt;
+&lt;h1 id=&quot;问题七：电子商务公司职位，你想干哪个？（别想歪。。。）&quot;&gt;&lt;a href=&quot;#问题七：电子商务公司职位，你想干哪个？（别想歪。。。）&quot; class=&quot;headerlink&quot; title=&quot;问题七：电子商务公司职位，你想干哪个？（别想歪。。。）&quot;&gt;&lt;/a&gt;问题七：电子商务公司职位，你想干哪个？（别想歪。。。）&lt;/h1&gt;&lt;p&gt;UI 即User Interface（用户界面）的简称。UI设计则是指对软件的人机交互、操作逻辑、界面美观的整体设计.。&lt;/p&gt;
+&lt;p&gt;TD 即技术部研发简称TDD–Technology Development Department&lt;/p&gt;
+&lt;p&gt;JS 即JavaScript 前端开发。&lt;/p&gt;
+&lt;p&gt;DZ 即页面重构，页面制作。&lt;/p&gt;
+&lt;p&gt;PM 即项目经理。&lt;/p&gt;
+&lt;p&gt;PDM 即产品经理。&lt;/p&gt;
+&lt;p&gt;UED 即用户体验设计，交互设计。&lt;/p&gt;
+&lt;p&gt;Operation Manager 即运营经理。&lt;/p&gt;
+&lt;p&gt;问题八：商品物流及客户管理方面专业名词知多少？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;QC&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;即英文Quality Control的简称，中文意义是品质控制，又称质检，即对产品进行一个初步的检验，排除质量问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SKU&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;即英文Stock Keeping Unit的简称，即库存进出计量的单位，可以是以件，盒，托盘等为单位。保存库存控制的最小可用单位。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3PL&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;即第三方物流（Third Party Logistics），电商行业意指快递公司。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PCS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;即计量单位的简写，即pieces一块、件、片、篇、张、条、套。多见于外贸交易中，后为书写方便，延伸到其他行业，可代表个、包、袋等表示数量的产品。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;商品编码&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;企业生产商品入库的数字身份证，正规厂家都会有一个全球通用、唯一的商品编码。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;商品条码&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是由一组按一定规则排列的条、空及对应字符数字组成的用于表示上点自动销售管理系统的信息标记或者对商品分类编码进行表示的标记。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;实际库存&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;实际仓库中的实际库存量。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;虚拟库存&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;即网站前台展示的库存数量，是电商行业特定属性的产物，日常操作中，经常有消费者仙丹后可能不会付款，商品不做时间出库操作，但是前台页面库存已减少，为了不影响前台展现的库存量，因此需要设置一个虚拟库存。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;库存预警&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;库存预警是指设置一个库存警戒线，当仓库实际库存到达仓库警戒线的时候就会提醒你补货，库存警戒线设置可参考该商品平时销量情况考虑。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ITO库存周转率&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Inventory turn over，一般缩写为ITO，一种衡量材料在工厂里或是整条价值流中，流动快慢的标准。最常见的计算库存周转的方法，就是把年度销售产品的成本（不计销售的开支以及管理成本）作为分子，除以年度平均库存价值，即：库存周转率=年度销售产品成本/当年平均库存价值&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;【物流配送】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;SRM 是Supplier Relationship Management的缩写，即供应商关系管理。&lt;/p&gt;
+&lt;p&gt;ERP 是Enterprise Resource Planning的缩写，即企业资源计划。&lt;/p&gt;
+&lt;p&gt;OMS 是Order Management System的缩写，即订单管理系统。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;【客户管理】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CRM&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;是Customer Relationship Management的缩写，即客户关系管理。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RFM&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;模型是衡量客户价值和客户创利能力的重要工具和手段。该机械模型通过一个客户的近期购买行为、购买的总体频率以及花了多少钱三项指标来描述该客户的价值状况。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;【WEB产品设计】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;用户界面UI：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;User Interface（用户界面）的简称，UI设计则是指对页面的人机交互、操作逻辑、界面美观的整体设计。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;用户体验UE：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;User Experience（用户体验）的简称。它是指用户访问一个网站或者使用一个产品时的全部体验。&lt;/p&gt;
+&lt;p&gt;问题九：前方高能，你确定你数学学好了？—-数据比例换算公式&lt;/p&gt;
+&lt;p&gt;老客户 =回头率*客户数&lt;/p&gt;
+&lt;p&gt;回头率 =回头客人/店铺总访客数&lt;/p&gt;
+&lt;p&gt;新客户 =客户数-老客户&lt;/p&gt;
+&lt;p&gt;转换率 =客户数/UV&lt;/p&gt;
+&lt;p&gt;点击率 =点击数/页面展现&lt;/p&gt;
+&lt;p&gt;PV利用率 =客户数/PV&lt;/p&gt;
+&lt;p&gt;客户月增长率 =当月客户数/当月客户数— 1&lt;/p&gt;
+&lt;p&gt;客单价 =支付宝成交金额/支付宝成交笔数&lt;/p&gt;
+&lt;p&gt;页面打开率 =从首页点击进入宝贝页的次数/首页浏览量&lt;/p&gt;
+&lt;p&gt;人均访问页面数 =PV/UV（浏览人数/页面总访问人数）&lt;/p&gt;
+&lt;p&gt;人均店内停留时间 =总访问时长/UV&lt;/p&gt;
+&lt;p&gt;收藏率 =当天收藏量/UV&lt;/p&gt;
+&lt;p&gt;宝贝跳失率 =只访问了该宝贝一个页面就离开的访问次数/该宝贝总访问次数&lt;/p&gt;
+&lt;p&gt;库存周转率 =年度销售产品成本/当年平均库存价值&lt;/p&gt;
+&lt;p&gt;商品动销率 =动销品种数 ÷ 门店经营总品种数*100% 。&lt;/p&gt;
+&lt;p&gt;CPC =财务消耗/点击数&lt;/p&gt;
+&lt;p&gt;CPM =财务消耗/广告有效展现量*1000&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;前言&lt;/strong&gt;&lt;br&gt;最近发生了一些事情，不知道该怎么面对，想让自己忙起来，没有时间去想别的事情。同时，让我对过去进行了一个反思，以及对将来进行了初步的规划，我想改变，也一定会改变，借此博客，记录我成长的点点滴滴。希望我希望看到的人能看到，也希望能给大家带来点帮助。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;第一篇博客就用来记录下我搭建这个独立博客的经过吧&lt;br&gt;
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5NTk3MTc5Mw==&amp;amp;mid=216284279&amp;amp;idx=2&amp;amp;sn=9278767efdab72d87ef5bd830eddeeca&amp;amp;scene=0#rd&quot;&gt;本文原链接&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&quot;&gt;&lt;a href=&quot;#问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&quot; class=&quot;headerlink&quot; title=&quot;问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&quot;&gt;&lt;/a&gt;问题一：最常在媒体以及大牛们口中说的各种X2X指的是什么&lt;/h1&gt;
     
     </summary>
     
       <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
     
     
-      <category term="Hexo" scheme="http://igrandcloud.github.io/tags/Hexo/"/>
-    
-      <category term="Github" scheme="http://igrandcloud.github.io/tags/Github/"/>
+      <category term="Life" scheme="http://igrandcloud.github.io/tags/Life/"/>
     
   </entry>
   
