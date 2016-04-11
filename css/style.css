@@ -1431,7 +1431,7 @@ color
   color: #574c4c;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
-  text-align: left;
+  text-align: center;
 }
 .article-entry h2:hover {
   color: #88acdb;
@@ -1441,20 +1441,7 @@ color
   content: " —— ";
   font-family: Arial;
 }
-.article-entry h3 {
-  margin: 0.5em auto;
-  color: #438aac;
-  background: rgba(243,248,253,0.6);
-  border: 1px solid #d2e8fa;
-  padding: 0.2em 0.6em;
-  font-weight: normal;
-}
-.article-entry h3:hover a {
-  text-decoration: underline;
-}
-.article-entry h3::after {
-  content: " >";
-}
+.article-entry h3,
 .article-entry h4,
 .article-entry h5,
 .article-entry h6 {
@@ -1464,6 +1451,7 @@ color
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
+.article-entry h3:hover,
 .article-entry h4:hover,
 .article-entry h5:hover,
 .article-entry h6:hover {
