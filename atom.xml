@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://igrandcloud.github.io/"/>
-  <updated>2016-04-12T05:28:04.000Z</updated>
+  <updated>2016-04-12T09:01:14.000Z</updated>
   <id>http://igrandcloud.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://igrandcloud.github.io/2016/04/12/common-hexo-commands/"/>
     <id>http://igrandcloud.github.io/2016/04/12/common-hexo-commands/</id>
     <published>2016-04-12T04:12:04.000Z</published>
-    <updated>2016-04-12T05:28:04.000Z</updated>
+    <updated>2016-04-12T09:01:14.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgun2.jpg&quot; alt=&quot;电磁轨道炮&quot;&gt;&lt;br&gt;这个武器应该是印象中在各种科幻题材中的电影、小说中出现率最高的，也是最吸睛的。为什么呢?估计就因为又是电磁又是炮。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -28,7 +28,7 @@
 &lt;h2 id=&quot;基本原理和优缺点&quot;&gt;&lt;a href=&quot;#基本原理和优缺点&quot; class=&quot;headerlink&quot; title=&quot;基本原理和优缺点&quot;&gt;&lt;/a&gt;基本原理和优缺点&lt;/h2&gt;&lt;h3 id=&quot;相对于传统的火药引爆驱动的炮弹，电池轨道炮基于电池感应原理，将存储的电能通过电池感应转化为磁能，并进一步驱动炮弹&quot;&gt;&lt;a href=&quot;#相对于传统的火药引爆驱动的炮弹，电池轨道炮基于电池感应原理，将存储的电能通过电池感应转化为磁能，并进一步驱动炮弹&quot; class=&quot;headerlink&quot; title=&quot;相对于传统的火药引爆驱动的炮弹，电池轨道炮基于电池感应原理，将存储的电能通过电池感应转化为磁能，并进一步驱动炮弹&quot;&gt;&lt;/a&gt;相对于传统的火药引爆驱动的炮弹，电池轨道炮基于电池感应原理，将存储的电能通过电池感应转化为磁能，并进一步驱动炮弹&lt;/h3&gt;&lt;p&gt;在轨道上向前驱动。做一个可能不太合适的对比，电磁轨道炮相对于传统炮弹就好比Tesla相对于传统的汽油发动机的汽车。优点可能&lt;br&gt;也是类似的&lt;br&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgunhow.png&quot; alt=&quot;基本原理&quot;&gt; &lt;/p&gt;
 &lt;h3 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h3&gt;&lt;p&gt;1、高初速&lt;br&gt;2、无火光，无声响，高隐身&lt;br&gt;3、发送间隔极短，也就是冷却时间短&lt;br&gt;4、炮弹更小巧，成低&lt;/p&gt;
 &lt;h3 id=&quot;缺点，其实应该用目前的技术瓶颈&quot;&gt;&lt;a href=&quot;#缺点，其实应该用目前的技术瓶颈&quot; class=&quot;headerlink&quot; title=&quot;缺点，其实应该用目前的技术瓶颈&quot;&gt;&lt;/a&gt;缺点，其实应该用目前的技术瓶颈&lt;/h3&gt;&lt;p&gt;1、储能装置体积过大（相信不会是个大问题，想想第一代计算机还占地一个足球场）&lt;br&gt;2、各种电子器件的可靠性（有赖于电子材料的革命）&lt;/p&gt;
-&lt;h2 id=&quot;发展现状&quot;&gt;&lt;a href=&quot;#发展现状&quot; class=&quot;headerlink&quot; title=&quot;发展现状&quot;&gt;&lt;/a&gt;发展现状&lt;/h2&gt;&lt;p&gt;老美，肯定是站在了这棵科技树的顶端。目前老美已经完成了陆上5倍电子轨道炮的测试。预计在16年就测试基于海上舰艇的&lt;br&gt;电磁轨道炮测试，并计划18年定型部署。&lt;br&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgun2.png&quot; alt=&quot;American&quot;&gt; &lt;/p&gt;
+&lt;h2 id=&quot;发展现状&quot;&gt;&lt;a href=&quot;#发展现状&quot; class=&quot;headerlink&quot; title=&quot;发展现状&quot;&gt;&lt;/a&gt;发展现状&lt;/h2&gt;&lt;p&gt;老美，肯定是站在了这棵科技树的顶端。目前老美已经完成了陆上5倍电子轨道炮的测试。预计在16年就测试基于海上舰艇的&lt;br&gt;电磁轨道炮测试，并计划18年定型部署。&lt;br&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgun3.jpg&quot; alt=&quot;American&quot;&gt; &lt;/p&gt;
 &lt;p&gt;最后！我们上一张国人意淫的装备了电磁轨道炮的国产坦克&lt;br&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgun-china.jpg&quot; alt=&quot;Tank&quot;&gt; &lt;/p&gt;
 </content>
     
