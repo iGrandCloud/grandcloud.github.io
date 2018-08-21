@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://igrandcloud.github.io/"/>
-  <updated>2016-04-12T09:01:14.000Z</updated>
+  <updated>2018-08-21T11:11:11.000Z</updated>
   <id>http://igrandcloud.github.io/</id>
   
   <author>
@@ -16,11 +16,1456 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Sublime Text 3 使用配置与插件安装</title>
+    <link href="http://igrandcloud.github.io/2018/08/12/sublime-config/"/>
+    <id>http://igrandcloud.github.io/2018/08/12/sublime-config/</id>
+    <published>2018-08-12T06:12:04.000Z</published>
+    <updated>2018-08-21T11:11:11.000Z</updated>
+    
+    <content type="html">&lt;p&gt;　　记录安装配置 Sublime 的过程，同时列出所用到的插件，方便自己在新系统新电脑上快速用上熟悉的 Sublime。 &lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;开始使用&quot;&gt;&lt;a href=&quot;#开始使用&quot; class=&quot;headerlink&quot; title=&quot;开始使用&quot;&gt;&lt;/a&gt;开始使用&lt;/h2&gt;&lt;h3 id=&quot;软件下载&quot;&gt;&lt;a href=&quot;#软件下载&quot; class=&quot;headerlink&quot; title=&quot;软件下载&quot;&gt;&lt;/a&gt;软件下载&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;一直使用的是 Sublime 3，直接转到 3 的 &lt;a href=&quot;http://www.sublimetext.com/3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载页面&lt;/a&gt; 好了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;用户设置&quot;&gt;&lt;a href=&quot;#用户设置&quot; class=&quot;headerlink&quot; title=&quot;用户设置&quot;&gt;&lt;/a&gt;用户设置&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Preferences/Settings - User&lt;/code&gt;，设置字体为 &lt;a href=&quot;http://pan.baidu.com/s/1mglgkSK&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Consolas 雅黑混合体&lt;/a&gt; yx5g，字号11，tab 转空格，显示空格和制表符。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight actionscript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;font_face&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;Yahei Consolas Hybrid&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;font_size&quot;&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;translate_tabs_to_spaces&quot;&lt;/span&gt;: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;draw_white_space&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;all&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/*统一使用 UTF-8 编码和 UNIX 风格的换行符(LF, 0x0A)*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;default_line_ending&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;unix&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;default_encoding&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其他设置参考 &lt;code&gt;Preferences/Settings - Default&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;基础插件&quot;&gt;&lt;a href=&quot;#基础插件&quot; class=&quot;headerlink&quot; title=&quot;基础插件&quot;&gt;&lt;/a&gt;基础插件&lt;/h2&gt;&lt;h3 id=&quot;Package-Control&quot;&gt;&lt;a href=&quot;#Package-Control&quot; class=&quot;headerlink&quot; title=&quot;Package Control&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Package Control&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;用于管理插件的插件，基础中的基础。之后列的插件全部通过 Package Control 安装。&lt;blockquote&gt;
+&lt;p&gt;插件使用与安装: &lt;a href=&quot;https://packagecontrol.io/installation&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://packagecontrol.io/installation&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Convert​To​UTF8&quot;&gt;&lt;a href=&quot;#Convert​To​UTF8&quot; class=&quot;headerlink&quot; title=&quot;Convert​To​UTF8&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/ConvertToUTF8&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Convert​To​UTF8&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;文本编码自动转换，减少中日韩文乱码问题。&lt;blockquote&gt;
+&lt;p&gt;插件安装: Ctrl+Shift+P, Package Control: Installed Packages, 搜索 Convert​To​UTF8&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;IMESupport&quot;&gt;&lt;a href=&quot;#IMESupport&quot; class=&quot;headerlink&quot; title=&quot;IMESupport&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/IMESupport&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;IMESupport&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;解决输入法选字框不跟随问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Side​Bar​Enhancements&quot;&gt;&lt;a href=&quot;#Side​Bar​Enhancements&quot; class=&quot;headerlink&quot; title=&quot;Side​Bar​Enhancements&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/SideBarEnhancements&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Side​Bar​Enhancements&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;自带边栏功能太少，必须安装此插件增强一下。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;主题配色&quot;&gt;&lt;a href=&quot;#主题配色&quot; class=&quot;headerlink&quot; title=&quot;主题配色&quot;&gt;&lt;/a&gt;主题配色&lt;/h2&gt;&lt;h3 id=&quot;Theme-Spacegray&quot;&gt;&lt;a href=&quot;#Theme-Spacegray&quot; class=&quot;headerlink&quot; title=&quot;Theme - Spacegray&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/Theme%20-%20Spacegray&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Theme - Spacegray&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Spacegray 主题的 Base16 Eighties Dark 配色方案看着最顺眼，用着最舒服。&lt;br&gt;&lt;img src=&quot;/resources/Base16-Eighties-Dark.jpg&quot; alt=&quot;Base16 Eighties Dark color scheme&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;代码规范&quot;&gt;&lt;a href=&quot;#代码规范&quot; class=&quot;headerlink&quot; title=&quot;代码规范&quot;&gt;&lt;/a&gt;代码规范&lt;/h2&gt;&lt;h3 id=&quot;Sublime​Linter&quot;&gt;&lt;a href=&quot;#Sublime​Linter&quot; class=&quot;headerlink&quot; title=&quot;Sublime​Linter&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/SublimeLinter&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sublime​Linter&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;用于管理其他 code linting 代码规范插件。&lt;blockquote&gt;
+&lt;p&gt;使用说明: &lt;a href=&quot;http://sublimelinter.readthedocs.org/en/latest/installation.html#installing-via-pc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sublimelinter.readthedocs.org/en/latest/installation.html#installing-via-pc&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Sublime​Linter-jshint&quot;&gt;&lt;a href=&quot;#Sublime​Linter-jshint&quot; class=&quot;headerlink&quot; title=&quot;Sublime​Linter-jshint&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/SublimeLinter-jshint&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sublime​Linter-jshint&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;基于 &lt;a href=&quot;http://jshint.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JSHint&lt;/a&gt;，用于检查规范 JavaScript 代码。&lt;blockquote&gt;
+&lt;p&gt;NPM 依赖包: &lt;code&gt;npm install -g jshint&lt;/code&gt;&lt;br&gt;使用说明: &lt;a href=&quot;https://github.com/SublimeLinter/SublimeLinter-jshint&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SublimeLinter/SublimeLinter-jshint&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Sublime​Linter-csslint&quot;&gt;&lt;a href=&quot;#Sublime​Linter-csslint&quot; class=&quot;headerlink&quot; title=&quot;Sublime​Linter-csslint&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/SublimeLinter-csslint&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sublime​Linter-csslint&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;基于 &lt;a href=&quot;https://github.com/CSSLint/csslint&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CSSLint&lt;/a&gt;，用于检查规范 CSS 代码。&lt;blockquote&gt;
+&lt;p&gt;NPM 依赖包: &lt;code&gt;npm install -g csslint&lt;/code&gt;&lt;br&gt;使用说明: &lt;a href=&quot;https://github.com/SublimeLinter/SublimeLinter-csslint&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SublimeLinter/SublimeLinter-csslint&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Sublime​Linter-contrib-htmlhint&quot;&gt;&lt;a href=&quot;#Sublime​Linter-contrib-htmlhint&quot; class=&quot;headerlink&quot; title=&quot;Sublime​Linter-contrib-htmlhint&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/SublimeLinter-contrib-htmlhint&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sublime​Linter-contrib-htmlhint&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;基于 &lt;a href=&quot;http://htmlhint.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;HTMLHint&lt;/a&gt;，用于检查规范 HTML 代码。&lt;blockquote&gt;
+&lt;p&gt;NPM 依赖包: &lt;code&gt;npm install -g htmlhint@latest&lt;/code&gt;&lt;br&gt;使用说明: &lt;a href=&quot;https://github.com/mmaday/SublimeLinter-contrib-htmlhint&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/mmaday/SublimeLinter-contrib-htmlhint&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;常用插件&quot;&gt;&lt;a href=&quot;#常用插件&quot; class=&quot;headerlink&quot; title=&quot;常用插件&quot;&gt;&lt;/a&gt;常用插件&lt;/h2&gt;&lt;h3 id=&quot;HTML-CSS-JS-Prettify&quot;&gt;&lt;a href=&quot;#HTML-CSS-JS-Prettify&quot; class=&quot;headerlink&quot; title=&quot;HTML-CSS-JS Prettify&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;HTML-CSS-JS Prettify&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;格式化 HTML, CSS, JavaScript 及 JSON 代码。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Color-Highlighter&quot;&gt;&lt;a href=&quot;#Color-Highlighter&quot; class=&quot;headerlink&quot; title=&quot;Color Highlighter&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/Color%20Highlighter&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Color Highlighter&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;直接在代码中预览颜色。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Stylus&quot;&gt;&lt;a href=&quot;#Stylus&quot; class=&quot;headerlink&quot; title=&quot;Stylus&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/Stylus&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Stylus&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;使代码高亮支持 Stylus。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Stylus-Clean-Completions&quot;&gt;&lt;a href=&quot;#Stylus-Clean-Completions&quot; class=&quot;headerlink&quot; title=&quot;Stylus Clean Completions&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/Stylus%20Clean%20Completions&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Stylus Clean Completions&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Stylus 代码自动补全。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;AutoFileName&quot;&gt;&lt;a href=&quot;#AutoFileName&quot; class=&quot;headerlink&quot; title=&quot;AutoFileName&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/AutoFileName&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;AutoFileName&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;文件名自动补全。&lt;br&gt;&lt;img src=&quot;/resources/autofilename.png&quot; alt=&quot;AutoFileName&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Can-I-Use&quot;&gt;&lt;a href=&quot;#Can-I-Use&quot; class=&quot;headerlink&quot; title=&quot;Can I Use&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/Can%20I%20Use&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Can I Use&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://caniuse.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://caniuse.com/&lt;/a&gt; 的插件版，快速查询 HTML, CSS 等前端技术的浏览器兼容性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;BracketHighlighter&quot;&gt;&lt;a href=&quot;#BracketHighlighter&quot; class=&quot;headerlink&quot; title=&quot;BracketHighlighter&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://packagecontrol.io/packages/BracketHighlighter&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;BracketHighlighter&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;调整各类括号匹配的高亮样式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;To-be-added&quot;&gt;&lt;a href=&quot;#To-be-added&quot; class=&quot;headerlink&quot; title=&quot;To be added&quot;&gt;&lt;/a&gt;To be added&lt;/h3&gt;&lt;h2 id=&quot;相关链接&quot;&gt;&lt;a href=&quot;#相关链接&quot; class=&quot;headerlink&quot; title=&quot;相关链接&quot;&gt;&lt;/a&gt;相关链接&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Package Control&lt;/strong&gt;: &lt;a href=&quot;https://packagecontrol.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://packagecontrol.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SublimeLinter&lt;/strong&gt;: &lt;a href=&quot;http://sublimelinter.readthedocs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sublimelinter.readthedocs.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSHint&lt;/strong&gt;: &lt;a href=&quot;http://jshint.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jshint.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CSSLint&lt;/strong&gt;: &lt;a href=&quot;https://github.com/CSSLint/csslint&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/CSSLint/csslint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HTMLHint&lt;/strong&gt;: &lt;a href=&quot;http://htmlhint.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://htmlhint.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stylus&lt;/strong&gt;: &lt;a href=&quot;http://learnboost.github.io/stylus/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://learnboost.github.io/stylus/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　记录安装配置 Sublime 的过程，同时列出所用到的插件，方便自己在新系统新电脑上快速用上熟悉的 Sublime。 &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Note" scheme="http://igrandcloud.github.io/categories/Note/"/>
+    
+    
+      <category term="Sublime" scheme="http://igrandcloud.github.io/tags/Sublime/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 和 Mac 软件推荐</title>
+    <link href="http://igrandcloud.github.io/2018/07/12/windows-mac-software/"/>
+    <id>http://igrandcloud.github.io/2018/07/12/windows-mac-software/</id>
+    <published>2018-07-12T06:12:04.000Z</published>
+    <updated>2018-08-21T11:08:41.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;/p&gt;&lt;h2 id=&quot;intro&quot;&gt;前言&lt;/h2&gt;罗列自己正在使用的 Windows 和 Mac OS 软件，基本上都是同类中能较好满足个人需求的软件，作表记录，方便自己检索，也顺便推荐给大家。&lt;p&gt;&lt;/p&gt;
+&lt;h3 id=&quot;软件分类说明&quot;&gt;&lt;a href=&quot;#软件分类说明&quot; class=&quot;headerlink&quot; title=&quot;软件分类说明&quot;&gt;&lt;/a&gt;软件分类说明&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;编程开发:&lt;/strong&gt; 目前写代码用到的一些软件；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;网络应用:&lt;/strong&gt; 依赖于网络运行的软件，比如浏览器，聊天软件，下载工具等；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文档处理:&lt;/strong&gt; 查看和处理 Word, Excel, PDF 等文档；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;影音图像:&lt;/strong&gt; 查看和处理多媒体文件，比如看图，听歌，视频处理等；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;系统工具:&lt;/strong&gt; 增强、个性化系统或者系统自带软件的功能，比如资源管理器增强，任务栏个性化等；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;应用软件:&lt;/strong&gt; 不属于以上分类的软件；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;表格内容解释&quot;&gt;&lt;a href=&quot;#表格内容解释&quot; class=&quot;headerlink&quot; title=&quot;表格内容解释&quot;&gt;&lt;/a&gt;表格内容解释&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;表格依次列出软件名字，开发商，系统，付费，备注，默认使用软件的最新版本。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;表头英文:&lt;/strong&gt; 用不留空的英文单词表示，避免默认设置下表头被换行；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;系统栏打 √ :&lt;/strong&gt; 主要在该系统下使用该软件，少数双系统下都频繁使用；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;系统栏标 — :&lt;/strong&gt; 该软件不支持该系统；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Free 免费栏 :&lt;/strong&gt; 标 x 该软件为付费共享软件；标 — 表示提供免费版，但功能等有所限制。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;链接:&lt;/strong&gt; 点击软件名字跳转到软件主页，点开发商跳转到对其介绍页面或者对应官网。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Note 备注:&lt;/strong&gt; 软件用途简单介绍&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;编程开发&quot;&gt;&lt;a href=&quot;#编程开发&quot; class=&quot;headerlink&quot; title=&quot;编程开发&quot;&gt;&lt;/a&gt;编程开发&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;-&lt;/th&gt;
+&lt;th&gt;SoftwareName&lt;/th&gt;
+&lt;th&gt;　　Developer　　&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Mac&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Win&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Free&lt;/th&gt;
+&lt;th&gt;　　　　Note　　　　&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://desktop.github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub Desktop&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/GitHub&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub, Inc.&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;GitHub 桌面版&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.sublimetext.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sublime Text 3&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Sublime_Text&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Jon Skinner&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;代码编辑器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://brackets.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Brackets&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://is.gd/q5bGeJ&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Adobe Systems&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;Web 代码编辑器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://kapeli.com/dash&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Dash&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://kapeli.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Kapeli&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;API Snippet 代码管理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.theescapers.com/flux/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Flux V&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.theescapers.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Escapers Ltd.&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;可视化网页开发&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;6&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.apachefriends.org/zh_cn/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;XAMPP&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.apachefriends.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Apache Friends&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;PHP 开发环境，本地 WordPress&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;7&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.git-scm.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Linus_Torvalds&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Linus Torvalds&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;Distributed version control system&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://colorsnapper.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ColorSnapper&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://colorsnapper.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Koolesache&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;屏幕取色器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Node.js&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Node.js&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Joyent, Inc.&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;JavaScript runtime&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;网络应用&quot;&gt;&lt;a href=&quot;#网络应用&quot; class=&quot;headerlink&quot; title=&quot;网络应用&quot;&gt;&lt;/a&gt;网络应用&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;-&lt;/th&gt;
+&lt;th&gt;SoftwareName&lt;/th&gt;
+&lt;th&gt;　　Developer　　&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Mac&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Win&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Free&lt;/th&gt;
+&lt;th&gt;　　　　Note　　　　&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.google.com/chrome/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Chrome&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/105.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;谷歌&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;主力浏览器，插件脚本扩展&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://im.qq.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;QQ&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/1591.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;腾讯&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;万年隐身&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://shadowsocks.org/en/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ShadowsocksX&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://github.com/clowwindy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;clowwindy&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;和FQ谐&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://mac.xunlei.com/app/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Thunder Store&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/467578.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;迅雷网络&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;检查应用更新&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://wangwang.taobao.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;阿里旺旺&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/1247049.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;阿里巴巴集团&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;买买买&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;6&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://jianguoyun.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;坚果云&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/8051910.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;上海亦存网络&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;文档同步，备用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;7&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://dl.xunlei.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;迅雷&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/467578.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;迅雷网络&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;极速版，离线下载和高速通道&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.flvcd.com/index.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;FLVCD 硕鼠&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;网络视频下载&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://weixin.qq.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;微信&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/1591.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;腾讯&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;聊胜于无&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.maxthon.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Maxthon 傲游&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.maxthon.cn/company/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;傲游天下&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;备用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;11&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://pan.baidu.com/disk/download/guanjia/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;百度云管家&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/262.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;百度&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;搜集、分享资源&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;12&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.ad-safe.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ADSafe 净网大师&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.ad-safe.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;大摩网络&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;网页、视频广告屏蔽&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;13&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://music.163.com/#/download&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;网易云音乐&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/149363.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;网易公司&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;看评论听歌，发现好歌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;14&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://yunpan.360.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;360云盘&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/1458023.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;奇虎360&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;主力同步软件，容量足够，带历史版本，文件数量不限&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;15&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;www.teamviewer.com&quot;&gt;TeamViewer&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/TeamViewer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;TeamViewer GmbH&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;远程桌面控制&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;16&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://reederapp.com/mac/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Reeder 3&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/reeder-3/id880001334?ls=1&amp;amp;mt=12&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Silvio Rizzi&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;RSS 订阅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;文档处理&quot;&gt;&lt;a href=&quot;#文档处理&quot; class=&quot;headerlink&quot; title=&quot;文档处理&quot;&gt;&lt;/a&gt;文档处理&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;-&lt;/th&gt;
+&lt;th&gt;SoftwareName&lt;/th&gt;
+&lt;th&gt;　　Developer　　&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Mac&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Win&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Free&lt;/th&gt;
+&lt;th&gt;　　　　Note　　　　&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://endnote.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Endnote&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/EndNote&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Thomson Reuters&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td&gt;Reference 文献管理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://is.gd/SjAbs5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Office 2016&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/2353.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;微软公司&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;Word , Excel, PowerPoint, OneNote&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.gonitro.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Nitro PDF Pro&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Nitro_PDF&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Nitro&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;PDF编辑&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.yinxiang.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;印象笔记&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/8548200.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Evernote&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;网文搜集&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.calibre-ebook.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Calibre&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://is.gd/V4FSaf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Kovid Goyal&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;电子书管理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;6&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://25.io/mou/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mou&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://25.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;25.io Inc&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;Markdown 编辑器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;7&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://sigil-ebook.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sigil&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://is.gd/bDKF8D&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;John Schember&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;epub 电子书制作&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;www.xmind.net&quot;&gt;XMind&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/XMind&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;XMind Ltd.&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;思维导图制作&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.mythicsoft.com/filelocatorpro&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;FileLocator&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.mythicsoft.com/info/aboutus&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mythicsoft Ltd.&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;全文检索工具 支持正则表达式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.foxitsoftware.cn/products/reader/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;福昕阅读器&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.foxitsoftware.cn/company/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;福昕软件&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;PDF 阅读器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;11&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.voidtools.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Everything&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://is.gd/avswMs&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;David Carpenter&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;文件名搜索&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;12&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://code.google.com/p/psp-comic-helper/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PSP Comic Helper&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;鱼蛋&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;漫画分割转换&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;13&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://23192069.qzone.qq.com/2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;字幕转换助手&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://user.qzone.qq.com/23192069&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;poseidon&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;多格式字幕互转&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;14&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://code.google.com/p/pdfbinder/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PDFBinder&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;PDF 合并工具&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;15&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://pan.baidu.com/s/1o6EJuiA&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MoodPad&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;追月文本处理 i254&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;16&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://is.gd/11CoRf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;拖把更名器&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;批量重命名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;17&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://kuyur.info/blog/archives/1388&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ANSI2Unicode&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://kuyur.info/blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;小熏&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;CUE 乱码修复，编码转换&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;18&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://is.gd/KgzGwF&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;SrtEdit&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;袁卫国&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;字幕编辑器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://blog.csdn.net/redbirdli/article/category/182219&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Subindex&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;火鸟&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;火鸟字幕合并&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;系统工具&quot;&gt;&lt;a href=&quot;#系统工具&quot; class=&quot;headerlink&quot; title=&quot;系统工具&quot;&gt;&lt;/a&gt;系统工具&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;-&lt;/th&gt;
+&lt;th&gt;SoftwareName&lt;/th&gt;
+&lt;th&gt;Developer&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Mac&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Win&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Free&lt;/th&gt;
+&lt;th&gt;Note&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://cn.ejie.me/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Clover&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;易捷科技&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;多标签资源管理器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.listary.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Listary&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Bopsoft&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;资源管理器增强&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.tcbmi.com/strokeit/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;StrokeIt&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Jeff Doozan&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;鼠标手势&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.alfredapp.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Alfred&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Running with Crayons&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;搜索快捷键增强&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.macbartender.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Bartender&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.surteesstudios.com/about/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Surtees Studios&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;任务栏瘦身&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;6&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.bettertouchtool.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;BetterTouchTool&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://blog.boastr.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Andreas Hegenberg&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;触控板手势&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;7&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.clipmenu.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ClipMenu&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.naotaka.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Naotaka Morimoto&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;剪贴板增强&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Day-O&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.shauninman.com/pendium/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Shaun Inman&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;菜单栏日历&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://pilotmoon.com/popclip/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PopClip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://pilotmoon.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Pilotmoon&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;弹出菜单 效率 鼠标&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.totalrar.com/total-manager.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Total Manager&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;etinysoft&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;Finder 增强&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;11&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.trankynam.com/xtrafinder/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;XtraFinder&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.trankynam.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tran Ky Nam&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;Finder 增强&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;12&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://unclutterapp.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Unclutter&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Eugene Krupnov&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;临时存储，替代桌面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;13&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.xiazaiba.com/html/6081.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DirectX Repair&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;DLL 修复&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;14&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://bjango.com/mac/istatmenus/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;iStat Menus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://bjango.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Bjango Pty Ltd.&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;系统与硬件监控&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;15&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.paragon-software.com/home/ntfs-mac/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;NTFS for Mac&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.paragon-software.com/about.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Paragon Software Group&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;磁盘格式兼容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;16&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://sj.ruanmei.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;软媒时间&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.ruanmei.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;软媒&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;任务栏时间 农历 天气&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;17&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.tongyongpe.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;通用PE工具箱&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://weibo.com/uepon&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;UEPON&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;v5.0 系统安装&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;18&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/blackmagic-disk-speed-test/id425264550?mt=12&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Disk Speed Test&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.blackmagicdesign.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Blackmagic Design Inc&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;硬盘测速&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.foldersizes.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;FolderSizes&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.keymetricsoft.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Key Metric Software&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;文件夹、文件空间占用分析&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;20&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.piriform.com/recuva&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Recuva&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.piriform.com/about&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Piriform&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;数据恢复&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;21&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.goodsync.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GoodSync&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Siber Systems Inc.&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;本地文件同步&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;22&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.mediaatelier.com/CheatSheet/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CheatSheet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;快捷键显示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;23&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://freemacsoft.net/appcleaner/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;AppCleaner&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://freemacsoft.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;FreeMacSoft&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;卸载应用程序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://macpaw.com/cleanmymac&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CleanMyMac&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://macpaw.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MacPaw Inc.&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;清理优化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;影音图像&quot;&gt;&lt;a href=&quot;#影音图像&quot; class=&quot;headerlink&quot; title=&quot;影音图像&quot;&gt;&lt;/a&gt;影音图像&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;-&lt;/th&gt;
+&lt;th&gt;SoftwareName&lt;/th&gt;
+&lt;th&gt;　　Developer　　&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Mac&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Win&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Free&lt;/th&gt;
+&lt;th&gt;　　　　Note　　　　&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.babelsoft.net/products.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Media Preview&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.babelsoft.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;博语软件&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;资源管理器 视频缩略图&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.enfis.it/cue-splitter-tutorial/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CUE Splitter&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.medieval.it/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Medieval Software&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;无损音乐分割&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.mp3tag.de/en/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mp3tag&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Florian Heidenreich&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;MP3标签修改 去乱码&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/PotPlayer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PotPlayer&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Kakao&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Daum Communications&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;视频播放&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://pic.2345.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;2345看图王&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;2345.com&quot;&gt;2345.com&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;图片浏览&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;6&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.pc6.com/softview/SoftView_77375.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;魔方图标大师&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.ruanmei.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;软媒&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;图标处理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;7&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.crsky.com/soft/28076.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;全能音频转换通&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;v1.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Adobe_Photoshop&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Adobe Photoshop&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Adobe_Systems&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Adobe Systems&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;图像处理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.arcsoft.com/photoplus/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ArcSoft Photo+&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/ArcSoft&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ArcSoft&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;图片浏览&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Inpaint&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Inpaint&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.theinpaint.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Maxim Gapchenko&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;抠图，去背景&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;11&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/ScreenFlow&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ScreenFlow&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.telestream.net/company/overview.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Telestream, Inc.&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;屏幕录制&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;12&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.faststone.org/FSCaptureDetail.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;FastStone Capture&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.faststone.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;FastStone Soft&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;截图&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;13&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/2343158.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;SplitIt&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://user.qzone.qq.com/23192069&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;poseidon&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;影音剪切合并&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;14&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://xee.c3.cx/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Xee&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://wakaba.c3.cx/s/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Dag Ågren&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;图片浏览&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;15&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.shuimiao.net/info.asp?id=157&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GIF动画录制精灵&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.shuimiao.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;水淼软件&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;16&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/647184.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MangaMeeya&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Manga Underground&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;漫画阅读&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;17&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.benvista.com/photozoompro&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PhotoZoom&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.benvista.com/aboutus&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;BenVista Ltd.&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;图片无损缩放&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;18&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.snip.qq.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Snip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/1591.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;腾讯&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;截图&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;19&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/covered/id860548294?mt=12&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Covered&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://robheague.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Rob Heague&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;专辑封面下载&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;20&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://mediacoder.com.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MediaCoder&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Stanley Huang&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;音视频转码&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;21&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.bunkus.org/videotools/mkvtoolnix/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MKVToolnix&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.bunkus.org/blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Moritz Bunkus&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;视频音频字幕处理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;22&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://itunes.apple.com/app/id940107333&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;iSmartPhoto&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Chi Lin&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;图片管理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;23&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.collageitfree.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CollageIt&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;PearlMountain&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;拼图&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://itunes.apple.com/cn/app/bao-feng-ying-yin/id1035547244?mt=12&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;暴风影音&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.baofeng.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;暴风科技&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;Mac 版很简洁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;25&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://mplayerx.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MPlayerX&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://blog.mplayerx.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Zongyao Qu&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;视频播放&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;应用软件&quot;&gt;&lt;a href=&quot;#应用软件&quot; class=&quot;headerlink&quot; title=&quot;应用软件&quot;&gt;&lt;/a&gt;应用软件&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;-&lt;/th&gt;
+&lt;th&gt;SoftwareName&lt;/th&gt;
+&lt;th&gt;　　Developer　　&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Mac&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Win&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Free&lt;/th&gt;
+&lt;th&gt;　　　　Note　　　　&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.betterzip.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;BetterZip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://macitbetter.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MacItBetter&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;解压缩&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://haozip.2345.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;2345好压&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;2345.com&quot;&gt;2345.com&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;解压缩&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://us.blackberry.com/software/desktop/blackberry-blend.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;BlackBerry Blend&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://us.blackberry.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;BlackBerry&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;黑莓文件管理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.noiz.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Noizio&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;noiz.io&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;白噪音 声效&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.omnigroup.com/omnifocus/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;OmniFocus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Omni_Group&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;The Omni Group&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;GTD、任务管理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;6&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.parallelsdesktop.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Parallels Desktop&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.dwz.cn/27tepC&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Parallels&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td&gt;虚拟机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;7&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.rescuetime.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;RescueTime&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;—&lt;/td&gt;
+&lt;td&gt;时间流水记录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://github.com/xsacha/Sachesi&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sachesi&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://github.com/xsacha&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;xsacha&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;黑莓刷机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://pinyin.sogou.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;搜狗输入法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://corp.sogou.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;搜狗&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.yibei.com/software&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;易呗背单词&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.yibei.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;易呗&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;11&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.443w.com/tts/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;朗读女&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.443w.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;阿嘉&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;语音朗读&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;12&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.tongbusj.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;同步助手&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;宇通博软件&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;iOS 设备管理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;13&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://dict.youdao.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;有道词典&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://baike.baidu.com/view/149363.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;网易公司&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;14&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://ankisrs.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Anki&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://ichi2.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Damien Elmes&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;√&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;卡片辅助记忆&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;h2 id=&quot;intro&quot;&gt;前言&lt;/h2&gt;罗列自己正在使用的 Windows 和 Mac OS 软件，基本上都是同类中能较好满足个人需求的软件，作表记录，方便自己检索，也顺便推荐给大家。&lt;/p&gt;
+&lt;h3 id=&quot;软件分类说明&quot;&gt;&lt;a href=&quot;#软件分类说明&quot; class=&quot;headerlink&quot; title=&quot;软件分类说明&quot;&gt;&lt;/a&gt;软件分类说明&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;编程开发:&lt;/strong&gt; 目前写代码用到的一些软件；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;网络应用:&lt;/strong&gt; 依赖于网络运行的软件，比如浏览器，聊天软件，下载工具等；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文档处理:&lt;/strong&gt; 查看和处理 Word, Excel, PDF 等文档；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;影音图像:&lt;/strong&gt; 查看和处理多媒体文件，比如看图，听歌，视频处理等；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;系统工具:&lt;/strong&gt; 增强、个性化系统或者系统自带软件的功能，比如资源管理器增强，任务栏个性化等；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;应用软件:&lt;/strong&gt; 不属于以上分类的软件；&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
+    
+    
+      <category term="life" scheme="http://igrandcloud.github.io/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谈谈人为何会沉迷游戏？</title>
+    <link href="http://igrandcloud.github.io/2018/06/07/about-immersion/"/>
+    <id>http://igrandcloud.github.io/2018/06/07/about-immersion/</id>
+    <published>2018-06-07T03:25:44.000Z</published>
+    <updated>2018-08-21T11:05:05.000Z</updated>
+    
+    <content type="html">&lt;p&gt;为何人会沉迷？这个模型很有意思。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/blogImg/immersion.png&quot; alt=&quot;沉浸的模型&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当人在“得到技能提升”和“获得挑战后的成就感”这两者中得到一定平衡时，就会陷入沉迷，这个平衡的范围称之为“心流”（flow）。人处在心流状态下，就会陷入沉迷。              &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;##&lt;strong&gt;“lol，那是小学生玩的”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;试想一局dota为何引人专注？完成击杀或最后胜利时你会获得挑战后的成就感，而无疑你的技术又在游戏中越发娴熟。两者共同作用，人陷其中，几局dota就让一天过去了。事实上，任何成功的游戏都是这样，不会难度超大（否则人会焦虑），也不会让人得不到技能和熟练度的提升（否则人会无聊）。这也解释了为何部分dota玩家谈起lol时，会不屑的说：“那是小学生玩的”。因为dota和lol属同类型游戏，一个熟练的dota玩家的技能维度已经较高，自然在转移到lol后得不到太大的提升，因此偏离了心流通道，使人觉得无趣。如何能合适引导这批玩家呢？唯有做好差异化。只要有不同的玩法和细节，就能让人形成新的技能增长点。这点我认为lol还是做得很不错的。&lt;/p&gt;
+&lt;p&gt;再说下11平台为何会打败老牌的竞技平台，独树一帜。自然有人说，是因为匹配系统。是的，更深层次的说，是它适配了玩家的挑战水平。在浩方的时候，小白被高手虐得体无完肤的故事喜闻乐见。无疑，对任何人而言，挑战度不合适会给人带来焦虑和恐惧。匹配系统做的事情，其实是把挑战维度稳定在心流通道范围里。&lt;/p&gt;
+&lt;p&gt;##&lt;strong&gt;赌博，最伟大的游戏&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;细分起来，人的沉迷场景其实有两种：感性和认知。举个栗子，迪士尼乐园的过山车，克服心理恐惧是个挑战，而坐过几次后不再那么害怕属于技能增长，但两者存在于感性层面，是精神的主观感受；百家讲坛，许多人喜欢看，讲的东西我们可能压根不懂，可谓之挑战，而知识的渗透关系到技能，但此过程是跟过山车不一样的，人有学到东西，有认知层面的提升。&lt;/p&gt;
+&lt;p&gt;再细究一下，我们不会每周都去玩过山车，也不会说百家讲坛一集不落的都看。因为他们还不足以让人沉迷。真正能让人沉迷的，必须是“感性”和“认知”两个维度高度统一的场景。facebook上常年居首的第三方应用是德州扑克，国内用户量最大的是QQ游戏大厅，小城镇六合彩屡禁不止，打麻将俨然已冲出国门走向世界。我想说的是——赌博，是最伟大的游戏之一。无论是真实的或变相的，无论历史还是现在，不同年龄段的人都会沉浸其中。源于它扼紧了人性的弱点，又是感性和认知的高度统一。&lt;/p&gt;
+&lt;p&gt;举斗地主为例子，认知层面就是你牌技的增长，一个新手是很难对付牌场老手的。通过反复的练习，人可以对形势做出更正确的判断。有个朋友就告诉过我，他觉得斗地主是一门艺术。艺术一词，可能过于高贵，但足以概况了人对掌握了更高级技术所带来的满足感。那么感性层面怎么体现呢，就在于游戏的随机性。你给我一副绝世好牌，即使我再菜鸟也一定能赢一个高手！这跟技术无关，凭着的都是运气与人品，就在爆发的一刹那给你过山车的快感。人有了期待，就有沉浸与等待的动力，而真正赌博中跟金钱挂钩，又无疑更是个感性维度高功率的放大器。&lt;/p&gt;
+&lt;p&gt;人的一生都在沉迷赌博，事实上，从你小时候玩玻璃弹珠时就开始了。&lt;/p&gt;
+&lt;p&gt;##&lt;strong&gt;何为接地气？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;琴棋书画，作为衡量文人墨客或大家闺秀的修养标准，古之已有。而真正在能融入生活的，不是登大雅之堂的钢琴，不是分级分段的围棋，更不是象征艺术，被层层装裱的书法与油画，取而代之，是吉他，扑克，网络小说，畅销书，还有动漫。有人概况谓之&lt;strong&gt;接地气&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;快餐文化的流行，是因为它不太需要思考，不太触及上面提到的“认知”层面。信息流穿墙而过，径直流到你的面前，一耳进一耳出有何不可，图的就是一个爽快！     &lt;/p&gt;
+&lt;p&gt;所以“接地气”其实是一种偏“感性”而弃“认知”的沉浸形态。也许又会有这样的疑问，弃认知的形态岂不是不能成为“伟大的游戏”？是的，这样的形态不需要也不可能使人100%沉浸，但它的厉害之处在于持续性。比如，大家不会一遍一遍咬文嚼字像品味红楼梦一样，去阅读一本网络小说。因为它不足已让你得到技能认知方面的满足，但是，你看完了它，说不定又会去看另外的网络小说，因为另外一本，可能会给你新的感官体验。&lt;/p&gt;
+&lt;p&gt;为何中国网游层出不穷，但却缺乏精品？因为游戏公司一旦赚钱，不会把过多基金投入到二次开发，反正，你们很快就会厌烦。不如来开发新鲜而老套的网游，不是么？&lt;/p&gt;
+&lt;p&gt;The End.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;为何人会沉迷？这个模型很有意思。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/blogImg/immersion.png&quot; alt=&quot;沉浸的模型&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当人在“得到技能提升”和“获得挑战后的成就感”这两者中得到一定平衡时，就会陷入沉迷，这个平衡的范围称之为“心流”（flow）。人处在心流状态下，就会陷入沉迷。              &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
+    
+    
+      <category term="life" scheme="http://igrandcloud.github.io/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【故事】飞行家的两个魔术？</title>
+    <link href="http://igrandcloud.github.io/2018/04/12/two-magics/"/>
+    <id>http://igrandcloud.github.io/2018/04/12/two-magics/</id>
+    <published>2018-04-12T06:12:04.000Z</published>
+    <updated>2018-08-21T11:01:56.000Z</updated>
+    
+    <content type="html">&lt;p&gt;一个魔术，不足以让他成为魔术师。一个魔术，却让他成为了飞行家。&lt;/p&gt;
+&lt;p&gt;自家的木房建在悬崖边上，天堂与地狱相对望。飞行家说，住在这里，感觉自己像是传递天地信息的青鸟。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;飞机停置房顶，飞行家藏身于内，木房底下挤满了小孩。今天，又是起飞的日子。他戴上挡风眼镜，黄色镜片下的小镇犹如金色迷宫，孩子们的笑容让宝蓝的天空挂满春风。螺旋桨吱呀呀转动，他认真的数数，待转到第21圈，他果断的踩死踏板！&lt;/p&gt;
+&lt;p&gt;烟雾腾空，凭空消失。随后沉闷声响传来，一如叹息；而没人会注意到，因为孩子们已经欢呼起来。&lt;/p&gt;
+&lt;p&gt;诚然，这是一个魔术。真实情况是，飞机收缩成一个箱子，与他一并跌入了烟囱——紫色烟雾掩盖了事实的真相，以及通往天堂的路。下坠的时候，他抬头会看到天光云影，原来烟囱里这么美；他会微笑，因为孩子们喜欢。他捂着嘴不让自己开心的笑出声来，眼睛却被烟气熏得流泪不息。&lt;/p&gt;
+&lt;p&gt;几天后，他会在小镇再次出现，带来“旅行”的故事。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;女孩：月亮是硬梆梆的吗，像玻璃弹珠一样？&lt;br&gt;飞行家：软的很，上面沾满了白糖。&lt;br&gt;女孩：哇！跟我家的白糖一样吗？&lt;br&gt;飞行家：不太一样，是桂花味的糖呢。               &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;他掏出糖果送给孩子们。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;女孩：你能教我开飞机吗？&lt;br&gt;飞行家：…好吧，你想知道些什么？&lt;br&gt;女孩：嗯，你说说为什么要等螺旋桨转到第21圏，才发动呢？&lt;br&gt;飞行家：嘿嘿，这可是诀窍。多半圈少半圈，飞机都会被机关弹射出去，坠入悬崖哦！幸好我的眼睛很厉害。&lt;br&gt;女孩：眼睛…                &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;小女孩突然痛哭起来，糖果洒落满地，一如梦碎而四溅。很快，飞行家了解到，女孩将在一个月后失明。晴天里，并没有像小说情节打一个霹雳。只是南风呼呼吹来，仿佛要堵塞了他的呼吸。他想起自己会一点医术，但治不好这种病；随后他想起自己还会一个魔术…&lt;/p&gt;
+&lt;p&gt;后来的故事，我们不得而知。总之，结局是小女孩并没有失明，缘由飞行家的魔术。&lt;br&gt;是夜，他们一起表演了这个魔术。紫色的烟雾升腾，女孩沉入睡眠。短短的几分钟里，她后来却不记得所发生的事情。只听到剪刀的摩擦与机械的轰鸣。童话如梦，却越来越现实。她说自己很疼，却疼得想要笑出声来！&lt;/p&gt;
+&lt;p&gt;她流了泪，感觉泪花如潮水般哗哗地涌来。&lt;br&gt;她感觉起飞了，两侧的云烟如同蓝色的火焰在燃烧。&lt;br&gt;她看到天空上有一片死寂的海，海上有一座孤城，城上飘落的雪像是糖。&lt;br&gt;她看到流星划过，在眼睛处擦亮了一道光芒。随后她睁开了眼。                &lt;/p&gt;
+&lt;p&gt;不久后，飞行家最后一次飞行，就再也没有回来过。&lt;br&gt;人们说，飞行家的最后告别，带着墨色的挡风眼镜，回头看了一眼，城镇景致尽收眼底；&lt;br&gt;人们说，好像看到他坠入了悬崖；也有人说，他是飞向了天那边，千真万确。                &lt;/p&gt;
+&lt;p&gt;——litten 8.22 4:23&lt;br&gt;（该死怎么不肯碎去?）&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一个魔术，不足以让他成为魔术师。一个魔术，却让他成为了飞行家。&lt;/p&gt;
+&lt;p&gt;自家的木房建在悬崖边上，天堂与地狱相对望。飞行家说，住在这里，感觉自己像是传递天地信息的青鸟。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
+    
+    
+      <category term="story" scheme="http://igrandcloud.github.io/tags/story/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【故事】：花匠与候鸟</title>
+    <link href="http://igrandcloud.github.io/2018/03/12/stories-S4/"/>
+    <id>http://igrandcloud.github.io/2018/03/12/stories-S4/</id>
+    <published>2018-03-12T06:12:04.000Z</published>
+    <updated>2018-08-21T11:25:59.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-29.jpg&quot; alt=&quot;Picture by Matt Carlson&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;一、&quot;&gt;&lt;a href=&quot;#一、&quot; class=&quot;headerlink&quot; title=&quot;一、&quot;&gt;&lt;/a&gt;一、&lt;/h3&gt;&lt;p&gt;每个春天，候鸟都会来到这片花田。&lt;br&gt;每个不是春天的季节，花匠总在认真地打理花田。花匠想让一切看起来未来可期，因为他喜欢这只候鸟。喜欢，是因为他们都爱花。那些关于花的话题，他们永远聊不完。&lt;/p&gt;
+&lt;p&gt;有一个春天，候鸟跟花匠说起了她家乡的雪莲。&lt;br&gt;这种花，花匠从来没听说过。但每次说起雪莲，花匠都能注意到她眼中飞扬的光亮。是的，那是候鸟最心爱的花儿。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;二、&quot;&gt;&lt;a href=&quot;#二、&quot; class=&quot;headerlink&quot; title=&quot;二、&quot;&gt;&lt;/a&gt;二、&lt;/h3&gt;&lt;p&gt;花匠决定要去摘一朵雪莲。&lt;br&gt;他没有翅膀，需要跨过无数高山与大海。他也没有出行的经验，收拾简单的行李都会丢三落四。而且他还很擅长幻想，这是一个致命的弱点。湖泊的水怪，雪山的巨人，时长出现在梦中。&lt;br&gt;不过，他还是出发了。花匠真想看看雪莲的姿态。&lt;br&gt;他觉得自己会喜欢雪莲的，因为候鸟的喜欢。&lt;/p&gt;
+&lt;p&gt;从来没有如此漫长的旅程。花匠受了伤，留了血，靠着花茶治愈，又继续前行。后来，在与巨熊搏斗时，他滚落了山崖。眼中透着一层血雾，他看到了一朵雪莲。&lt;/p&gt;
+&lt;p&gt;他觉得需要眯起眼睛，才敢欣赏雪莲的美丽。仿佛周遭都是黑暗的，只有这朵花，散发出蛛丝一样细的光线，然后越来越浓厚，变成了纯洁的羽绒，温暖地拨开他的眼帘。然后他称赞道，好美啊。&lt;/p&gt;
+&lt;h3 id=&quot;三、&quot;&gt;&lt;a href=&quot;#三、&quot; class=&quot;headerlink&quot; title=&quot;三、&quot;&gt;&lt;/a&gt;三、&lt;/h3&gt;&lt;p&gt;就这样，在下一个春天，花匠把雪莲送给了候鸟。他微笑着，在等待她的反应。&lt;br&gt;候鸟说：“谢谢你。但我只能说谢谢，说不出其他的话来了。因为这朵花很普通，我知道它们盛开在哪个山谷，我挥一挥翅膀就能取到。虽然你很辛苦，但我理解不了你，请你原谅。”&lt;/p&gt;
+&lt;p&gt;花匠有一点点失落。他不安地摸摸自己头，还有些许尴尬。但他也开始明白一些道理。他想起《小王子》里的那朵独一无二的玫瑰。&lt;/p&gt;
+&lt;p&gt;候鸟安慰花匠说：“来年春天，我捎来一枝最好的雪莲送你，好吗？”&lt;br&gt;花匠重新露出了笑容，因为没有什么，比爱人的礼物更值得期待了。&lt;/p&gt;
+&lt;h3 id=&quot;四、&quot;&gt;&lt;a href=&quot;#四、&quot; class=&quot;headerlink&quot; title=&quot;四、&quot;&gt;&lt;/a&gt;四、&lt;/h3&gt;&lt;p&gt;候鸟离去不久，花匠就开始担心起来。因为他确实擅长幻想。&lt;br&gt;他担心这朵雪莲，会成为候鸟迁徙的累赘。夜来无眠，他脑中尽是想象候鸟照看雪莲的情景。&lt;/p&gt;
+&lt;p&gt;雪莲需要水分，她会不会在河边浇灌？那里会不会有鳄鱼？&lt;br&gt;雪莲需要阳光，她会不会登上最高的山头？那里会不会有猛禽？&lt;br&gt;雪莲的花瓣那么娇嫩，她是不是不能自由飞行？&lt;/p&gt;
+&lt;p&gt;正当花匠以为候鸟会因为不顺畅的旅途，而姗姗来迟时，候鸟给了他一个意外。这一个春天，她甚至比以往更早出现在他面前。&lt;br&gt;她嘴里叼着一朵雪莲，一朵最美的雪莲。&lt;/p&gt;
+&lt;p&gt;“谢谢你，没有什么比这更美的了！”花匠说。&lt;br&gt;候鸟回答说：“可不是吗？我听先行的朋友说，你家附近的山谷里，也开了这种花，所以我没有从家乡带，我刚刚到那儿采的！就在不远的地方。”&lt;/p&gt;
+&lt;h3 id=&quot;五、&quot;&gt;&lt;a href=&quot;#五、&quot; class=&quot;headerlink&quot; title=&quot;五、&quot;&gt;&lt;/a&gt;五、&lt;/h3&gt;&lt;p&gt;一种莫名的失落感笼罩了花匠。他觉得这朵雪莲一点都不美了。&lt;br&gt;至少，要比自己采的那朵“普通的”雪莲差得多。他甚至有点厌恶雪莲散发出的，蛛丝般的光芒，那些可恶的光芒，下一刻好像就要变成巨网，向他扑来，令人窒息。&lt;/p&gt;
+&lt;p&gt;候鸟很伤心，她叹气说：“我不懂。”&lt;br&gt;花匠也摇摇头，他也不懂自己为何悲伤。&lt;br&gt;候鸟继续说：“那是一个承诺，我没有忘记，虽然鸟儿记性都不好，对吗？”&lt;br&gt;花匠说：“是的。”&lt;br&gt;候鸟说：“雪莲开放在你的花田不远的山谷，是好事吗？”&lt;br&gt;花匠说：“太好了。”&lt;br&gt;候鸟说：“刚采的雪莲是最鲜艳的，我想你能看到它最美的样子。”&lt;br&gt;花匠说：“谢谢你。”&lt;/p&gt;
+&lt;p&gt;但花匠也只能说谢谢，说不出其他的话来了。&lt;/p&gt;
+&lt;p&gt;——Litten 2017.6.5 四点半&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-29.jpg&quot; alt=&quot;Picture by Matt Carlson&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;一、&quot;&gt;&lt;a href=&quot;#一、&quot; class=&quot;headerlink&quot; title=&quot;一、&quot;&gt;&lt;/a&gt;一、&lt;/h3&gt;&lt;p&gt;每个春天，候鸟都会来到这片花田。&lt;br&gt;每个不是春天的季节，花匠总在认真地打理花田。花匠想让一切看起来未来可期，因为他喜欢这只候鸟。喜欢，是因为他们都爱花。那些关于花的话题，他们永远聊不完。&lt;/p&gt;
+&lt;p&gt;有一个春天，候鸟跟花匠说起了她家乡的雪莲。&lt;br&gt;这种花，花匠从来没听说过。但每次说起雪莲，花匠都能注意到她眼中飞扬的光亮。是的，那是候鸟最心爱的花儿。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
+    
+    
+      <category term="stroy" scheme="http://igrandcloud.github.io/tags/stroy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【故事】：扎龙人</title>
+    <link href="http://igrandcloud.github.io/2016/04/12/stories-S3/"/>
+    <id>http://igrandcloud.github.io/2016/04/12/stories-S3/</id>
+    <published>2016-04-12T06:12:04.000Z</published>
+    <updated>2018-08-21T11:21:14.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/dragon.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h6 id=&quot;Picture-by-Peter-Nagy&quot;&gt;&lt;a href=&quot;#Picture-by-Peter-Nagy&quot; class=&quot;headerlink&quot; title=&quot;Picture by Peter Nagy&quot;&gt;&lt;/a&gt;Picture by &lt;a href=&quot;https://dribbble.com/shots/1114225-My-Dragon&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Peter Nagy&lt;/a&gt;&lt;/h6&gt;&lt;p&gt;&lt;em&gt;题记：失眠与回忆齐飞，脑洞共长天一色，既然睡不着，就写故事吧。&lt;br&gt;&lt;a href=&quot;/2014/08/22/two-magics-of-the-pilot/&quot;&gt;【故事三】&lt;/a&gt;&lt;a href=&quot;/2013/09/10/my-fairy-tale2/&quot;&gt;【故事二】&lt;/a&gt;&lt;a href=&quot;/2013/04/30/my-fairy-tale1/&quot;&gt;【故事一】&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&quot;扎龙人&quot;&gt;&lt;a href=&quot;#扎龙人&quot; class=&quot;headerlink&quot; title=&quot;扎龙人&quot;&gt;&lt;/a&gt;扎龙人&lt;/h3&gt;&lt;p&gt;年初一的这天早上，一条尾巴，从自家被窝里窜了出来…&lt;/p&gt;
+&lt;p&gt;他本以为是梦，然而事实就是如此：他自己，变成了一条龙，正窝旋床上。坚硬的鳞片摩擦着柔软的羽绒，舒服的质感让人沉醉，也让龙沉醉。不过现在并不是享受的时候。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;他开始回忆。&lt;br&gt;他是小镇的手艺人，每年春节，他扎的龙都深受大家喜爱。竹篾扎成的龙，无人自舞，无风自动，它们穿街走巷，上天入地。龙能像小狗一样，恶作剧的叼过姑娘的裙摆；也会虎视眈眈的望着一碗扣肉直流口水。外人惊以为施以了魔法，老人们笑道，这是祖上单传的机关秘术。&lt;/p&gt;
+&lt;p&gt;匠心源于天赋与耐心，扎龙人独居竹林，钻研技艺。&lt;br&gt;他曾听小镇铁匠说过，技术即艺术，炉火纯青时，铁匠们将人剑合一！当时，他觉得这说法特别的中二。&lt;br&gt;不过离群索居的他并不知道中二的意思，只能理解为一种中国特色的二。&lt;/p&gt;
+&lt;p&gt;然而，年初一，他，变成了一条龙。是不是梦？反正他已经捏过龙下巴了，疼。&lt;/p&gt;
+&lt;p&gt;扎龙人想起了父亲，他在三十多年前的春节，在一场大火中不辞而去。&lt;br&gt;释然的光芒从眼中闪过，他仿佛解开了一个谜团：是不是那时候，父亲也变成了一条龙，为了不惊吓到村民，只能选择离开？&lt;br&gt;父亲曾说，竹性乃水性，上善如水，变幻万千，竹子有了灵魂，就看不出是竹子。他的小手曾触碰过父亲扎的龙，扑通扑通，那是龙的心跳。扎龙人认为，这是大成。&lt;/p&gt;
+&lt;p&gt;不过，对于眼前该如何起床这件事，他自己倒有了一个精明的计策：用竹篾扎成自己，自己则扮演竹龙！&lt;/p&gt;
+&lt;p&gt;计划天衣无缝。门窗一开，鞭炮齐响，飞龙跟往常一样从窗户穿出，人们拍手称快，称赞着这神乎其神的手艺。竹制的扎龙人则在窗前保持着微笑，偶尔挥挥手，接受大家的祝福。真正的扎龙人翔于长空，他第一次俯瞰着这个他深爱，却又孤独的城镇。&lt;/p&gt;
+&lt;p&gt;他玩了一整天，每到之处，节日的气氛沸腾到极点。&lt;br&gt;他觉得不怎么孤独，节日不再是一个人的狂欢。&lt;br&gt;他真的去咬了两大块扣肉，逗得孩子们哈哈大笑。&lt;br&gt;他心思一转，决定去叼姑娘的裙摆。要选镇里最年轻最漂亮的姑娘，世界上没有人会去指责一条竹龙是臭流氓。&lt;/p&gt;
+&lt;p&gt;他看准了她，弓身，俯冲，大风将眼睛吹得雪亮。&lt;br&gt;一地狂风带起了裙摆，丝绸拂面轻柔似云，时间，在刹那定格 … 他却轻轻地松开了口。一丝阴云遮住了天光，他的眼中藏匿了一片晦暗深海。&lt;br&gt;他看到了姑娘，那双修长的竹制双腿！&lt;br&gt;假腿像两根竹刺，从它眼中刺入，仿佛挑走了灵魂。&lt;/p&gt;
+&lt;p&gt;风云瞬息万变，爱与谎言，往往只差一线。&lt;br&gt;也许是突然明白了这场家族童话，飞龙怒火中烧，火焰吞吐而出，一如多年前的那场莫名大火。村民们四处奔逃，衣服渐渐脱落，露出了竹制的躯干。&lt;br&gt;啪啪作响的身体，映得节日的城镇更加辉煌，飞龙却从此没了踪影。&lt;/p&gt;
+&lt;p&gt;—— litten 16.02.09 初二&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/assets/blogImg/dragon.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h6 id=&quot;Picture-by-Peter-Nagy&quot;&gt;&lt;a href=&quot;#Picture-by-Peter-Nagy&quot; class=&quot;headerlink&quot; title=&quot;Picture by Peter Nagy&quot;&gt;&lt;/a&gt;Picture by &lt;a href=&quot;https://dribbble.com/shots/1114225-My-Dragon&quot;&gt;Peter Nagy&lt;/a&gt;&lt;/h6&gt;&lt;p&gt;&lt;em&gt;题记：失眠与回忆齐飞，脑洞共长天一色，既然睡不着，就写故事吧。&lt;br&gt;&lt;a href=&quot;/2014/08/22/two-magics-of-the-pilot/&quot;&gt;【故事三】&lt;/a&gt;&lt;a href=&quot;/2013/09/10/my-fairy-tale2/&quot;&gt;【故事二】&lt;/a&gt;&lt;a href=&quot;/2013/04/30/my-fairy-tale1/&quot;&gt;【故事一】&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&quot;扎龙人&quot;&gt;&lt;a href=&quot;#扎龙人&quot; class=&quot;headerlink&quot; title=&quot;扎龙人&quot;&gt;&lt;/a&gt;扎龙人&lt;/h3&gt;&lt;p&gt;年初一的这天早上，一条尾巴，从自家被窝里窜了出来…&lt;/p&gt;
+&lt;p&gt;他本以为是梦，然而事实就是如此：他自己，变成了一条龙，正窝旋床上。坚硬的鳞片摩擦着柔软的羽绒，舒服的质感让人沉醉，也让龙沉醉。不过现在并不是享受的时候。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
+    
+    
+      <category term="story" scheme="http://igrandcloud.github.io/tags/story/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【故事】：兔子，胡萝卜与OAuth的故事</title>
+    <link href="http://igrandcloud.github.io/2016/04/12/stories-S5/"/>
+    <id>http://igrandcloud.github.io/2016/04/12/stories-S5/</id>
+    <published>2016-04-12T06:12:04.000Z</published>
+    <updated>2018-08-21T11:25:00.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/rabbit.jpg&quot; alt=&quot;来搞一记Oauth吧&quot;&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;那些简单的故事，就别用复杂的方式传诵&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;##&lt;strong&gt;【让我来讲几个故事吧】&lt;/strong&gt;     &lt;/p&gt;
+&lt;p&gt;从前，有只老兔子，在仓库里存了一万根胡萝卜，作为给小兔子的遗产。而后他就去周游世界了。小兔子有天想去把萝卜拿出来，却被仓库外的一只兔子拦住了。一问才知道，这是老兔子安排的仓库守卫。和所有故事中的守护者一样，他正直而古板，八字眉下面有着睡眠不足的熊猫眼，世人一般称他为兔门神。兔子想要拿到萝卜，就得说服兔门神呀，于是他走了上前…&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;##&lt;strong&gt;【兔子与OAuth1.0的故事】&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;兔子首先得证明自己是只兔子，不是狗熊也不是狼，于是他向兔门神出示了身份证&lt;/li&gt;
+&lt;li&gt;兔门神说：哦，你是只兔子。但你还得证明你是老兔子的兔崽子呀。兔子说我爸旅游去了，怎么证明呢？兔门神说，这样吧，我把你的身份证拍下来，发送给你爸，让他看下这是不是你。于是兔门神打开了微信……&lt;/li&gt;
+&lt;li&gt;正在休假的老兔子看了下照片，回复说证件照好难看毁三观啊，但勉强认得出这货就是我儿子&lt;/li&gt;
+&lt;li&gt;兔门神确认这信息后，说，你老爸还是认你这个儿子的&lt;/li&gt;
+&lt;li&gt;兔子问，那我可以去拿胡萝卜了没？&lt;/li&gt;
+&lt;li&gt;兔门神说，可以了，这样吧，我发你个通行证，以后拿这个来我就不用这么麻烦了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;##&lt;strong&gt;【兔子与OAuth1.0a的故事】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这种貌似天衣无缝的形式，却被一只坏兔子看出了破绽。他注意到一个细节，在最后的一步，兔门神都是习惯性的把通行证交给了面前的兔子,而不管这只兔子是不是当初的那只。于是，坏兔子趁兔门神正在和老兔子聊微信的时候，一个劲站在了兔子前面，最后兔门神居然把通行证塞给了他！这怎么可以？于是在第一步和第六步又有了修改。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;兔子出示身份证的同时，也出示了自己的私房照，说，门神大哥呀，后面你记得把通行证给照片上的帅哥！&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;li&gt;兔门神看了下面前的兔子，私房照上的明显P过嘛但勉强认得出是本人，于是才交出了通行证&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;##&lt;strong&gt;【兔子与Oauth2.0的故事】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;兔门神回家后，向他的老婆兔女神汇报了今天的工作，更安全的方案使他得意洋洋，没想到被兔女神骂了一顿。兔女神说，兔子证明自己还得带个身份证，你不知道在天朝办个身份证多麻烦吗？让小兔子跟老兔子去聊下微信就可以了干嘛要你插手？兔门神哑口无言，兔女神高贵冷艳的说我有四种方案，给你先说说最常用的一种吧。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;兔子一开始就跟他老爸聊微信了。当然他得明确告诉老爸，他需要打开哪个仓库（因为老兔子有很多儿子，每个儿子去拿萝卜的仓库不一样，兔子要指定一下具体是哪个，问他可不可以）&lt;/li&gt;
+&lt;li&gt;老兔子回复说：“just do IT”…&lt;/li&gt;
+&lt;li&gt;兔子然后去拿胡萝卜，首先被兔女神拦住了。女神告诉他，你要给我四样东西：老兔子的回复，你的私房照，身份证，还要给我一个密码。兔子愣愣的想了个密码，把这四样东西交了过去&lt;/li&gt;
+&lt;li&gt;兔女神把这四种东西混在一起，用魔法变出了两件法宝：一封情书和一撮猴子毛…然后她解释说：拿着我的情书去找我老公，他就让你进仓库了；但是这情书会过期，是出于安全考虑啦，过期后你得召唤我再写一封，召唤出我的步骤就是吹一下猴子毛，像孙悟空那样你就别在意这些细节好伐？&lt;/li&gt;
+&lt;li&gt;兔子拿着情书去找兔门神时，发现他由于被妻子分担了压力，明显睡眠好多了…&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;##&lt;strong&gt;【演员表】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;兔子&lt;/strong&gt;-消费者，也就是第三方应用&lt;br&gt;&lt;strong&gt;老兔子&lt;/strong&gt;-用户，也就是我们，记住，我们永远是第三方的亲爹&lt;br&gt;&lt;strong&gt;仓库&lt;/strong&gt;-Oauth提供者，这里有我们保存的资料，比如说新浪微博，qq空间，人人…&lt;br&gt;&lt;strong&gt;兔门神&lt;/strong&gt;-在前两个故事中，由授权服务器和资源服务器共同扮演，在最后的故事中，只由资源服务器扮演&lt;br&gt;&lt;strong&gt;兔女神&lt;/strong&gt;-授权服务器，只管授权，不管取资源                   &lt;/p&gt;
+&lt;p&gt;##&lt;strong&gt;【重要道具】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;身份证&lt;/strong&gt;-签名，将一个http请求以及相应参数字符串化&lt;br&gt;&lt;strong&gt;拍下的身份证照片&lt;/strong&gt;-Request Token，服务器进行认证&lt;br&gt;&lt;strong&gt;通行证&lt;/strong&gt;-Access Token，获取资源的凭证&lt;br&gt;&lt;strong&gt;私房照&lt;/strong&gt;-重定向地址&lt;br&gt;&lt;strong&gt;坏兔子&lt;/strong&gt;(我把它当成道具而不是演员)-重定向地址劫持&lt;br&gt;&lt;strong&gt;仓库的名称&lt;/strong&gt;-appId,即对应具体哪个第三方&lt;br&gt;&lt;strong&gt;just do it&lt;/strong&gt;-Auth code，用户授权号&lt;br&gt;&lt;strong&gt;第三个故事的身份证&lt;/strong&gt;-client id 客户端帐号&lt;br&gt;&lt;strong&gt;密码&lt;/strong&gt;-client secret 客户端密码&lt;br&gt;&lt;strong&gt;魔法&lt;/strong&gt;-将client id，client secket，重定向地址，Auth code生成Access Token&lt;br&gt;&lt;strong&gt;情书&lt;/strong&gt;-Access Token，获取资源的凭证&lt;br&gt;&lt;strong&gt;猴子毛&lt;/strong&gt;-Refresh Token，用来在Access Token过期后将其刷新，刷新需带上client id和client secret                        &lt;/p&gt;
+&lt;p&gt;##&lt;strong&gt;【说书人说】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Oauth2.0比起Oauth1.0，没有了第一步的签名，将服务器分开为授权服务器与资源服务器。这是最大的两个特征。开放平台必须得做到对第三方友好，才有利于接入。像Oauth1.0签名的操作，就难倒了许多第三方。也许你知道了Oauth2.0接入步骤简化了些，但也知道其内部实现要更复杂，抛去安全方面的考虑，我认为这是正确的方向。因为，Oauth2.0在某种意义上说，向第三方做到了——“把悲伤留给自己，你的美丽让你带走”。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/assets/blogImg/rabbit.jpg&quot; alt=&quot;来搞一记Oauth吧&quot;&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;那些简单的故事，就别用复杂的方式传诵&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;##&lt;strong&gt;【让我来讲几个故事吧】&lt;/strong&gt;     &lt;/p&gt;
+&lt;p&gt;从前，有只老兔子，在仓库里存了一万根胡萝卜，作为给小兔子的遗产。而后他就去周游世界了。小兔子有天想去把萝卜拿出来，却被仓库外的一只兔子拦住了。一问才知道，这是老兔子安排的仓库守卫。和所有故事中的守护者一样，他正直而古板，八字眉下面有着睡眠不足的熊猫眼，世人一般称他为兔门神。兔子想要拿到萝卜，就得说服兔门神呀，于是他走了上前…&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
+    
+    
+      <category term="story" scheme="http://igrandcloud.github.io/tags/story/"/>
+    
+  </entry>
+  
+  <entry>
     <title>电磁轨道炮是个什么鬼？</title>
-    <link href="http://igrandcloud.github.io/2016/04/12/common-hexo-commands/"/>
-    <id>http://igrandcloud.github.io/2016/04/12/common-hexo-commands/</id>
-    <published>2016-04-12T04:12:04.000Z</published>
-    <updated>2016-04-12T09:01:14.000Z</updated>
+    <link href="http://igrandcloud.github.io/2016/04/12/what-is-railgun/"/>
+    <id>http://igrandcloud.github.io/2016/04/12/what-is-railgun/</id>
+    <published>2016-04-12T06:12:04.000Z</published>
+    <updated>2018-08-21T08:48:57.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgun2.jpg&quot; alt=&quot;电磁轨道炮&quot;&gt;&lt;br&gt;这个武器应该是印象中在各种科幻题材中的电影、小说中出现率最高的，也是最吸睛的。为什么呢?估计就因为又是电磁又是炮。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -46,11 +1491,82 @@
   </entry>
   
   <entry>
+    <title>2015年上半年好电影</title>
+    <link href="http://igrandcloud.github.io/2016/04/12/2015-moives/"/>
+    <id>http://igrandcloud.github.io/2016/04/12/2015-moives/</id>
+    <published>2016-04-12T06:12:04.000Z</published>
+    <updated>2018-08-21T11:06:53.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;strong&gt; 海洋之歌 5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如诗如颂，如歌如梦&lt;br&gt;美好到出戏去看播放的进度条，希望它走得不要太快&lt;br&gt;就像需要重复确认起床时间的失眠夜&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 浪客剑心 3.5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;剑心最帅的不是眼花缭乱的剑技&lt;br&gt;而是抱着薰小姐说“沙扬娜拉”时&lt;br&gt;逆刃刀注定要重回杀戮，告别眼前的爱人，告别悔过的自我&lt;br&gt;这声简短的再见合适不过&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 明日边缘 3.5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;能读档真好！&lt;br&gt;阿汤哥教你for循环从入门到精通&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 辉夜姬物语 4 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;罪罚与眷恋，缘起随缘灭&lt;br&gt;仓央嘉措说：“世间之事，除却生死，哪一件事不是闲事？”&lt;br&gt;一句入世的废话，也是出世的实话&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 智取威虎山 3 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;张涵予的眼影和林更新的演技撑起了这版萌系王牌特工&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 哪啊哪啊神去村 5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;十年之计，莫如树木；终身之计，莫如树人&lt;br&gt;一切神佑，源于热爱&lt;br&gt;看《海贼王》时，船匠弗兰奇的师傅临别前的一番话动人至深：&lt;br&gt;谁都可以嫌弃你的船，唯独你，不可以。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 外形醉汉PK地球神 3.5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;任何人去探讨宗教都显得力微，来自星星的你却是个例外&lt;br&gt;旁观者的角度让人想起少年派前三十分钟&lt;br&gt;“地球是很危险的”，但同时也是有爱的&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 重返20岁 4 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;剧本精良，彩蛋满分，杨子姗的演技太惊艳&lt;br&gt;比起“奇怪的她”更喜欢这部&lt;br&gt;当我们思考重返20岁能干什么时&lt;br&gt;其实一切都还没晚&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 王牌特工 4.5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;很难再能看到如此不落俗套的表演&lt;br&gt;马修·沃恩想说，以前的谍战片都简称JB，都是狗，&lt;br&gt;看我有种一枪崩了它们&lt;br&gt;慢着，我说着逗你玩呢，是空弹啊，呵呵&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 绣春刀 4 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“起先，一家互联网公司的产品暴露了一个重大bug，&lt;br&gt;派三个程序员去排查。程序员发现啊，这bug能赚一大笔钱，&lt;br&gt;因而谎报bug已fix而导致的一系列血案。结论是改bug得认真。”&lt;br&gt;——我朋友（已拉黑）眼中的绣春刀&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 战狼 3.5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一切的槽点都可以用诚意来弥补&lt;br&gt;附：《主旋律电影如何不惹急豆瓣小清新指南》&lt;br&gt;1、主角得有痞子气&lt;br&gt;2、能泡到女上司&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 霍比特人三 五军之战 4 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;比起原著，李建军的表演更加丰满。&lt;br&gt;魔龙已死，宝石归位，情谊长传，孤山永在，&lt;br&gt;它的意义应当是开始，&lt;br&gt;而感觉却是一曲终了，恍之若别&lt;br&gt;我们也要跟中土世界说再见了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 狼图腾 3 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;小说《狼图腾》，是我自己买的书中，&lt;br&gt;为数不多看不下去的&lt;br&gt;因而没太多能说的&lt;br&gt;但就电影来看，太想说狼，但说狼是为了说人&lt;br&gt;因而敬畏与情感，在高大上的图腾与乌托邦面前略显薄弱&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 小森林 夏秋篇 5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;极致内敛和极致色欲，这两种电影估计都只有日本人能拍出来&lt;br&gt;真正无剧情无尿点的五星神作，半年最佳&lt;br&gt;但此片在电影院里看会打折扣&lt;br&gt;适合下载个1020P高清，一个人，拉窗帘，躲被窝里，&lt;br&gt;跟极致色欲那种的观影模式一个样&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 复仇者联盟二 4 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;看1时，是跟大学最好的几个朋友去，&lt;br&gt;看完后热血沸腾，我说，我们飞回寝室去！&lt;br&gt;如今复仇者再联盟，你们在哪里？&lt;br&gt;我们打一架也好哇&lt;/p&gt;
+&lt;p&gt;——litten 6.5晚&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 海洋之歌 5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如诗如颂，如歌如梦&lt;br&gt;美好到出戏去看播放的进度条，希望它走得不要太快&lt;br&gt;就像需要重复确认起床时间的失眠夜&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 浪客剑心 3.5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
+    
+    
+      <category term="life" scheme="http://igrandcloud.github.io/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
     <title>趣说南海各岛</title>
-    <link href="http://igrandcloud.github.io/2016/04/07/about-ChinaSouthSea/"/>
-    <id>http://igrandcloud.github.io/2016/04/07/about-ChinaSouthSea/</id>
-    <published>2016-04-07T01:25:44.000Z</published>
-    <updated>2016-04-07T14:11:52.000Z</updated>
+    <link href="http://igrandcloud.github.io/2016/04/07/China-south-sea/"/>
+    <id>http://igrandcloud.github.io/2016/04/07/China-south-sea/</id>
+    <published>2016-04-07T03:25:44.000Z</published>
+    <updated>2018-08-21T10:59:17.000Z</updated>
     
     <content type="html">&lt;p&gt;每次看完国内媒体报道的关于南海的新闻后，一般有两种情绪：&lt;/p&gt;
 &lt;p&gt;NO.1 丫的，这帮不要脸的东南亚小国，竟然也好意思说整个南海是他们的；什么！？外交部在抗议…… &lt;/p&gt;
@@ -94,8 +1610,8 @@
     <title>Markdown使用指南</title>
     <link href="http://igrandcloud.github.io/2015/12/24/markdown/"/>
     <id>http://igrandcloud.github.io/2015/12/24/markdown/</id>
-    <published>2015-12-24T07:29:00.000Z</published>
-    <updated>2016-04-04T13:51:43.000Z</updated>
+    <published>2015-12-24T10:29:00.000Z</published>
+    <updated>2018-08-21T11:11:47.000Z</updated>
     
     <content type="html">&lt;p&gt;　　&lt;strong&gt;自用笔记：&lt;/strong&gt;本文属于自用笔记，不做详解，仅供参考。在此记录自己已理解并开始遵循的前端代码规范。What How Why&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;Markdown使用指南&quot;&gt;&lt;a href=&quot;#Markdown使用指南&quot; class=&quot;headerlink&quot; title=&quot;Markdown使用指南&quot;&gt;&lt;/a&gt;Markdown使用指南&lt;/h2&gt;&lt;h3 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot; title=&quot;标题&quot;&gt;&lt;/a&gt;标题&lt;/h3&gt;&lt;figure class=&quot;highlight vala&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Markdown语法：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# 一级标题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;## 二级标题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;### 三级标题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#### 四级标题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;##### 五级标题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;###### 六级标题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;大标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;=&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;小标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -231,7 +1747,7 @@
 &lt;p&gt;A &lt;a href=&quot;http://www.jianshu.com/p/21d355525bdf#fn_lemma_a&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;a href=&quot;链接地址&quot;&gt;1&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;创建链接&quot;&gt;&lt;a href=&quot;#创建链接&quot; class=&quot;headerlink&quot; title=&quot;创建链接&quot;&gt;&lt;/a&gt;创建链接&lt;/h3&gt;&lt;figure class=&quot;highlight aspectj&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;为输入的URL或邮箱自动创建链接，如test&lt;span class=&quot;meta&quot;&gt;@domain&lt;/span&gt;.com。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Markdown语法：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;test&lt;span class=&quot;meta&quot;&gt;@domain&lt;/span&gt;.com&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;预览效果：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#x74;&amp;#101;&amp;#x73;&amp;#116;&amp;#x40;&amp;#x64;&amp;#111;&amp;#109;&amp;#x61;&amp;#x69;&amp;#x6e;&amp;#46;&amp;#99;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x74;&amp;#101;&amp;#x73;&amp;#116;&amp;#x40;&amp;#x64;&amp;#111;&amp;#109;&amp;#x61;&amp;#x69;&amp;#x6e;&amp;#46;&amp;#99;&amp;#x6f;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#108;&amp;#x74;&amp;#111;&amp;#58;&amp;#x74;&amp;#x65;&amp;#x73;&amp;#116;&amp;#x40;&amp;#x64;&amp;#111;&amp;#109;&amp;#x61;&amp;#105;&amp;#110;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#x74;&amp;#x65;&amp;#x73;&amp;#116;&amp;#x40;&amp;#x64;&amp;#111;&amp;#109;&amp;#x61;&amp;#105;&amp;#110;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#109;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;转义字符&quot;&gt;&lt;a href=&quot;#转义字符&quot; class=&quot;headerlink&quot; title=&quot;转义字符&quot;&gt;&lt;/a&gt;转义字符&lt;/h3&gt;&lt;figure class=&quot;highlight tex&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;在特殊字符，如*、[、&amp;gt;等前面加&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;可&lt;/span&gt;&lt;/span&gt;使特殊格式字符转换为正常字符打出（有序列表符号如1.，须在. 前加&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;）&lt;/span&gt;&lt;/span&gt;。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Markdown语法：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;\&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;*&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;_&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;[&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;(&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;#&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;!&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;预览效果：&lt;/p&gt;
 &lt;p&gt;\&lt;br&gt;`&lt;br&gt;*&lt;br&gt;_&lt;br&gt;{}&lt;br&gt;[]&lt;br&gt;()&lt;br&gt;#&lt;br&gt;+&lt;br&gt;-&lt;br&gt;.&lt;br&gt;!&lt;/p&gt;
@@ -256,12 +1772,48 @@
     
     </summary>
     
-      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
+      <category term="Note" scheme="http://igrandcloud.github.io/categories/Note/"/>
     
+    
+      <category term="Tool" scheme="http://igrandcloud.github.io/tags/Tool/"/>
     
       <category term="Markdown" scheme="http://igrandcloud.github.io/tags/Markdown/"/>
     
-      <category term="Tool" scheme="http://igrandcloud.github.io/tags/Tool/"/>
+  </entry>
+  
+  <entry>
+    <title>【故事】：裁缝的工具，天气精灵，匠人与万能胶水</title>
+    <link href="http://igrandcloud.github.io/2013/04/30/stroies-S1/"/>
+    <id>http://igrandcloud.github.io/2013/04/30/stroies-S1/</id>
+    <published>2013-04-29T17:36:00.000Z</published>
+    <updated>2018-08-21T11:18:16.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;strong&gt;【裁缝的工具】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用剪刀来裁剪，用针线来缝补是裁缝最平常的工作。来找他的客人络绎不绝，因为他拥有神乎其技的手艺。裁缝的技术，绝不仅仅体现在布料上。每天早上，在露珠尚未蒸发的时候，他都会用剪刀把最温润的阳光剪下三米，细心的捆扎好，到了晚上，他再拿出针线把阳光缝到屋顶上以供照明。裁缝说这阳光里还能听到百灵鸟的叫声。午后小憩，他习惯将两块小巧精致的布料塞在耳朵上，那是他去年旅游时裁剪下来的音乐。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;裁缝从未推三阻四过，直到他遇到了姑娘。男孩移情它芳，毅然的抛弃使姑娘痛心非常。姑娘哭着求裁缝，说道：我失恋了，请你帮帮我。裁缝知道，姑娘想借走的东西是他的针线，可以将她和心上人的心重新缝补到一起。她是小镇上开花店的姑娘，她和裁缝的女儿年纪一般大，有着露珠一般透彻的眼眸和兰草一般的清香。在看到她泪水的那一刻，裁缝就知道自己无法拒绝她。然而缝补爱情这件事，裁缝思索了再三。裁缝并不是怀疑自己的能力，而是因为一些只可意会的经验——恋人的线是一种特殊的线，是否坚韧取决于恋人双方，断了再续，有时徒添针孔，并不能长久。而男孩人品不端，这对眼前的姑娘可能并非好事。裁缝脸上阴晴不定，却被细心的妻子看出了端倪。妻子说她可以帮忙解决姑娘的困惑。&lt;/p&gt;
+&lt;p&gt;几天之后，裁缝又看到了那个花店姑娘，玫瑰般的微笑在她脸上再次得以绽放。裁缝问：“最后你把针线借给了她？”“不，是你的剪刀。”妻子说。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;【天气精灵】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;天上有一群精灵，没人见过他们的相貌，我们姑且认为他们都是些淘气的孩子。他们掌控着天气的阴晴，以特殊的方式——精灵们戴着罩耳式的大耳机，整天摇头晃脑不厌其烦地听着mp3，播放列表里面则是：下雨，大雾，多云，阴天，晴天…播放到哪一个，地上就会是相应的天气。天气精灵们其实都是名副其实的音乐发烧友。&lt;/p&gt;
+&lt;p&gt;有些地方的精灵喜欢摇滚，那么他们会喜欢在夏日听大晴天的热烈，据说重庆和南京的精灵还会叼上一只雪糕消暑，雪糕是云做的；有些精灵喜欢雨天的温润，他们一定是来自南方的小镇，兴许还会懂些吴侬软语；有些精灵把播放列表设置为“随机播放”，他们是武汉天气变化多端的罪魁祸首。&lt;/p&gt;
+&lt;p&gt;而他们的生活也并不是无忧无虑的。“我的耳机坏了…”精灵小B哭着说：“都是沙沙沙的噪音，这可怎么办？”精灵们焦急的聚集在一起，在云彩上凿开了一个小口。他么争先恐后地眺望下去，小B的城市已被雾霭和沙暴浸成昏红，这一片隐形的痛楚，仿佛是在流着现代的血…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;【匠人与万能胶水】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;南方有一位年轻的匠人，他的梦想是发明一种万能的胶水。即使他的技艺已经日趋纯熟，但极好的天赋强迫他要有更好的追求。小镇的小男孩砸坏了一只鹅蛋，蛋壳、蛋清和蛋黄瞬间洒落满地，哭泣声中匠人已将自己发明的胶水涂上，一分钟后，小男孩看着完好如初的鹅蛋破涕为笑。几天后鹅蛋居然顺利孵出了小鹅，在确认了这个消息后，匠人跪倒在师傅面前，问道：“这是不是这世上最万能的胶水？”&lt;/p&gt;
+&lt;p&gt;师傅还是像以往一样摇了摇头：“你的胶水粘得住万物，可粘不住人心…”匠人决定去北方寻找能粘住人心的胶水，狂热甚至失去理智的追求让他彻夜难眠，第二天他就决意出发。匠人对家乡并无太多的依恋，姑娘一直送他到长亭，但匠人吝惜得不说一句话，他的眼里只有前方。草草的告别不像童话故事一般的浪漫，莺飞草长的气息掩盖不住姑娘的神伤。&lt;/p&gt;
+&lt;p&gt;每天傍晚时分，干完工作的她总会站在路口张望。穿着碎花浅蓝长裙的她不想多说话，只是聆听着脚步声在时光间隙里匆匆而过。雨天里她会恼怒责怪房顶的信鸽不去工作，秋日里她不敢去碰悲秋伤情的小词篇章。匠人说他有新进展时，她欣喜万分，当知道他途遇险阻时，姑娘又禁不住日添消瘦，这其中的悲欢，不知道姑娘是在书信中知晓，还是在梦中会晤。她不时把弄着匠人送她的折扇——匠人用胶水把花香和鸟语粘到扇子上，任何时候都能扇出和煦的春风。&lt;/p&gt;
+&lt;p&gt;时间的窗棂里四季交替，养鹅的小男孩不知已经拥有过多少窝小鹅，匠人终于回来了。匠人两手空空，他的计划最后以失败告终。而他的眼神里没有半点失落，姑娘从里面甚至看得到自己的倒影。她突然记起匠人的师傅说过：“当他空着手回来找你时，他已知道什么是万能的胶水…”&lt;/p&gt;
+&lt;p&gt;——litten 4.30&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;【裁缝的工具】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用剪刀来裁剪，用针线来缝补是裁缝最平常的工作。来找他的客人络绎不绝，因为他拥有神乎其技的手艺。裁缝的技术，绝不仅仅体现在布料上。每天早上，在露珠尚未蒸发的时候，他都会用剪刀把最温润的阳光剪下三米，细心的捆扎好，到了晚上，他再拿出针线把阳光缝到屋顶上以供照明。裁缝说这阳光里还能听到百灵鸟的叫声。午后小憩，他习惯将两块小巧精致的布料塞在耳朵上，那是他去年旅游时裁剪下来的音乐。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Collection" scheme="http://igrandcloud.github.io/categories/Collection/"/>
+    
+    
+      <category term="story" scheme="http://igrandcloud.github.io/tags/story/"/>
     
   </entry>
   
