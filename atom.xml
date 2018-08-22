@@ -1352,10 +1352,11 @@
     <link href="http://igrandcloud.github.io/2016/04/12/clean-code/"/>
     <id>http://igrandcloud.github.io/2016/04/12/clean-code/</id>
     <published>2016-04-12T06:12:04.000Z</published>
-    <updated>2018-08-22T03:25:50.000Z</updated>
+    <updated>2018-08-22T06:53:50.000Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;clean-code笔记（零）：序&quot;&gt;&lt;a href=&quot;#clean-code笔记（零）：序&quot; class=&quot;headerlink&quot; title=&quot;clean code笔记（零）：序&quot;&gt;&lt;/a&gt;clean code笔记（零）：序&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;clean code这本书是程序员必读经典之一。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我相信大多数程序员都是去找过书的，网上有好多人都列了程序员必读经典，csapp，sicp，龙书，code complete是大家熟悉的几本经典。&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;strong&gt;clean code这本书是程序员必读经典之一。&lt;/strong&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;clean-code笔记（零）：序&quot;&gt;&lt;a href=&quot;#clean-code笔记（零）：序&quot; class=&quot;headerlink&quot; title=&quot;clean code笔记（零）：序&quot;&gt;&lt;/a&gt;clean code笔记（零）：序&lt;/h1&gt;&lt;p&gt;我相信大多数程序员都是去找过书的，网上有好多人都列了程序员必读经典，csapp，sicp，龙书，code complete是大家熟悉的几本经典。&lt;/p&gt;
 &lt;p&gt;我这里介绍的clean code其实被收入必读经典的频率其实也相当高，但是没有我刚列举的那些有名。但这本书对于没有好的编码风格的人来说绝对是非常重要的，并且容易习得。&lt;/p&gt;
 &lt;h3 id=&quot;适合人群&quot;&gt;&lt;a href=&quot;#适合人群&quot; class=&quot;headerlink&quot; title=&quot;适合人群&quot;&gt;&lt;/a&gt;适合人群&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;能熟练使用一门编程语言。&lt;/li&gt;
@@ -1508,7 +1509,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;clean-code笔记（零）：序&quot;&gt;&lt;a href=&quot;#clean-code笔记（零）：序&quot; class=&quot;headerlink&quot; title=&quot;clean code笔记（零）：序&quot;&gt;&lt;/a&gt;clean code笔记（零）：序&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;cl
+      &lt;p&gt;&lt;strong&gt;clean code这本书是程序员必读经典之一。&lt;/strong&gt;&lt;/p&gt;
     
     </summary>
     
@@ -1659,6 +1660,193 @@
   </entry>
   
   <entry>
+    <title>编程的几个思想</title>
+    <link href="http://igrandcloud.github.io/2016/04/12/ideas-of-programming/"/>
+    <id>http://igrandcloud.github.io/2016/04/12/ideas-of-programming/</id>
+    <published>2016-04-12T06:12:04.000Z</published>
+    <updated>2018-08-22T03:26:45.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;编程的几个思想&quot;&gt;&lt;a href=&quot;#编程的几个思想&quot; class=&quot;headerlink&quot; title=&quot;编程的几个思想&quot;&gt;&lt;/a&gt;编程的几个思想&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/142c29916dcec7a38fdcfa1a7413ccb0.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;封装&lt;/li&gt;
+&lt;li&gt;解耦&lt;/li&gt;
+&lt;li&gt;复用&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;构建 100 行以内的程序或许可以想到啥写啥，但是到了 1000 行，我们就需要多个文件来管理和组织代码。到了现代，大多商业项目的代码，都是几万甚至几十万级别，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;封装&quot;&gt;&lt;a href=&quot;#封装&quot; class=&quot;headerlink&quot; title=&quot;封装&quot;&gt;&lt;/a&gt;封装&lt;/h2&gt;&lt;p&gt;编程中，我们会遇到各种各样的复杂数据和情况，如果对此不作为，复杂度会随着代码、项目的功能的增加直线上升到无法管理。就好比一堆杂乱的事物，乱摆乱放，最后如同垃圾堆一样。&lt;/p&gt;
+&lt;p&gt;我们需要使用 &lt;strong&gt;封装&lt;/strong&gt; 的思想，将复杂的事物变得 “简单”。就像网购的快递一样，快递小哥用长方体纸盒把你买的东西装了起来 ，成千上万的盒子在城市里穿梭，不需要关心你买的东西的大小、重量、类型、收货人、收货地址、手机号，&lt;strong&gt;只用关心纸盒的类型和快递单&lt;/strong&gt;，甚至在很多地方已经有了智能、自动化的物流系统。&lt;/p&gt;
+&lt;p&gt;从上面我们可以知道，封装的好处：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;可以 &lt;strong&gt;让你不用关心任何你不需要关注的细节&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;使系统井井有条。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;当我们敲代码的时候，好的封装实际上是可以&lt;strong&gt;化腐朽为神奇的&lt;/strong&gt;，它可以将杂乱如同垃圾堆一般的成堆代码 变成一个井然有序的系统，当你调用系统时你会感受到美妙——你不用关心任何你不需要关注的细节。&lt;/p&gt;
+&lt;p&gt;但是 “将杂乱如同垃圾堆一般的成堆代码 变成一个井然有序的系统”，并不是只靠封装就可以达到，当杂乱的代码被我们封装成 一个一个的模块后，相比原来的杂乱的代码，有一定的提升，但是，假如这些 代码 互相之间的调用和依赖混乱，那只是将 &lt;strong&gt;杂乱的代码 变成 杂乱的模块&lt;/strong&gt;，当代码、功能日益增加，整个系统也会趋近于垃圾堆的样子。&lt;/p&gt;
+&lt;p&gt;这时我们就需要解耦。&lt;/p&gt;
+&lt;h2 id=&quot;解耦&quot;&gt;&lt;a href=&quot;#解耦&quot; class=&quot;headerlink&quot; title=&quot;解耦&quot;&gt;&lt;/a&gt;解耦&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;我们需要将模块之间的调用、依赖关系用更优雅的方式定义&lt;/strong&gt;，甚至我们需要通过&lt;strong&gt;拆分、合并模块来找到更优雅的模块间调用、依赖关系&lt;/strong&gt;，其实重构有的时候也就是一个&lt;strong&gt;打散重装&lt;/strong&gt;的过程，以获得更好的 模块间调用、依赖关系，以达到解耦的效果。例如我们经常将一个长达五百甚至上千行的代码，拆成上十个文件（比如7sdream 的 zhihu-py3 的第一次重构，想当年我还见过那个整个项目就一个 一千多行的 .py 文件233），其实这就是一个拆分重组文件的过程。&lt;/p&gt;
+&lt;p&gt;在现代项目中，仅仅是简单的通过拆分重组文件解耦也不够了，当模块众多到快爆炸的时候。我们需要使用系统这种级别的封装，比如框架，比如架构模式，有的时候，&lt;strong&gt;增加中间层也常常是我们解耦的有效手段之一&lt;/strong&gt;。对于 web 开发者，非常值得一说的就是通过 http 协议发送 ajax 请求，它是传统前后端分离的界限，前后端分离里 前后端交互的方式 是 前端系统通过 ajax 请求 从后端系统的 api 接口获取数据。整体上来看，前后端交互的方式 就有解耦和封装的意思，并实实在在提高了复杂应用的质量（可维护性、可变性），对于开发人员的开发效率也提高不少。如果不相信，你可以想想你大学写的 c 语言版聊天程序就知道了，总之那些就是把前后端代码彻底糅合在了一起的代码，甚至都不分前后端，编写、维护那些东西可真是灾难。&lt;strong&gt;就如同之前是揉在同一个文件的代码，现在就是糅合在同一个系统里&lt;/strong&gt;。就好比现代 GUI 程序 都有 MVC 分层，这些(简单的)架构模式既是抽象也是解耦的体现。复杂的架构模式的初衷其实也是与此相同，比如现在流行的 MVVM、react + redux、基于 node 的前后端分离 &lt;a href=&quot;https://www.zhihu.com/question/23512853&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何评价淘宝 UED 的 Midway Framework 前后端分离？ - 互联网 - 知乎&lt;/a&gt; 等等。&lt;/p&gt;
+&lt;p&gt;解耦的好处：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;高效开发。&lt;/li&gt;
+&lt;li&gt;大大提高代码的可维护性、可变性。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;复用&quot;&gt;&lt;a href=&quot;#复用&quot; class=&quot;headerlink&quot; title=&quot;复用&quot;&gt;&lt;/a&gt;复用&lt;/h2&gt;&lt;p&gt;DRY 原则：don’t repeat yourself。&lt;/p&gt;
+&lt;p&gt;我们经常会将 一些被经常使用的常量 提取出来，这么做的好处一个是避免重复，另一个就是防止 以后常量改动的时候，我们需要将 几处甚至十几处 分散到各个文件的常量改变，这绝对是灾难性的，&lt;strong&gt;你要知道少改一处或者多改都将引入新的 bug&lt;/strong&gt;，而这又是多么容易就会发生啊。&lt;/p&gt;
+&lt;p&gt;同样是这个原因，我们可以推广到 代码块、函数、模块甚至系统上。&lt;/p&gt;
+&lt;p&gt;这也是 don’t repeat yourself。 DRY 原则的一个重要原因。&lt;/p&gt;
+&lt;p&gt;其次对于代码规模更大的 复用，还有 高效开发的显著优点，从 qt、react-native、weex 等层出不穷的跨平台轮子可以看出，跨平台复用从来是我们程序员最热衷的事之一。&lt;/p&gt;
+&lt;h4 id=&quot;复用的好处：&quot;&gt;&lt;a href=&quot;#复用的好处：&quot; class=&quot;headerlink&quot; title=&quot;复用的好处：&quot;&gt;&lt;/a&gt;复用的好处：&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;保证了一致性、正确性，并且易于修改&lt;/li&gt;
+&lt;li&gt;提高了开发效率&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;从写好函数开始&quot;&gt;&lt;a href=&quot;#从写好函数开始&quot; class=&quot;headerlink&quot; title=&quot;从写好函数开始&quot;&gt;&lt;/a&gt;从写好函数开始&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;函数是封装、解耦、复用的最小单元，提高封装、解耦、复用的能力，先从写好函数开始，千里之行始于足下。&lt;/strong&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;编程的几个思想&quot;&gt;&lt;a href=&quot;#编程的几个思想&quot; class=&quot;headerlink&quot; title=&quot;编程的几个思想&quot;&gt;&lt;/a&gt;编程的几个思想&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/142c29916dcec7a38fdcfa1a7413ccb0.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;封装&lt;/li&gt;
+&lt;li&gt;解耦&lt;/li&gt;
+&lt;li&gt;复用
+    
+    </summary>
+    
+      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
+    
+    
+      <category term="编程" scheme="http://igrandcloud.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【故事】：兔子，胡萝卜与OAuth的故事</title>
+    <link href="http://igrandcloud.github.io/2016/04/12/stories-S5/"/>
+    <id>http://igrandcloud.github.io/2016/04/12/stories-S5/</id>
+    <published>2016-04-12T06:12:04.000Z</published>
+    <updated>2018-08-22T03:28:05.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/rabbit.jpg&quot; alt=&quot;来搞一记Oauth吧&quot;&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;那些简单的故事，就别用复杂的方式传诵&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;##&lt;strong&gt;【让我来讲几个故事吧】&lt;/strong&gt;     &lt;/p&gt;
+&lt;p&gt;从前，有只老兔子，在仓库里存了一万根胡萝卜，作为给小兔子的遗产。而后他就去周游世界了。小兔子有天想去把萝卜拿出来，却被仓库外的一只兔子拦住了。一问才知道，这是老兔子安排的仓库守卫。和所有故事中的守护者一样，他正直而古板，八字眉下面有着睡眠不足的熊猫眼，世人一般称他为兔门神。兔子想要拿到萝卜，就得说服兔门神呀，于是他走了上前…&lt;br&gt;&lt;!-- more --&gt;&lt;/p&gt;
+&lt;p&gt;##&lt;strong&gt;【兔子与OAuth1.0的故事】&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;兔子首先得证明自己是只兔子，不是狗熊也不是狼，于是他向兔门神出示了身份证&lt;/li&gt;
+&lt;li&gt;兔门神说：哦，你是只兔子。但你还得证明你是老兔子的兔崽子呀。兔子说我爸旅游去了，怎么证明呢？兔门神说，这样吧，我把你的身份证拍下来，发送给你爸，让他看下这是不是你。于是兔门神打开了微信……&lt;/li&gt;
+&lt;li&gt;正在休假的老兔子看了下照片，回复说证件照好难看毁三观啊，但勉强认得出这货就是我儿子&lt;/li&gt;
+&lt;li&gt;兔门神确认这信息后，说，你老爸还是认你这个儿子的&lt;/li&gt;
+&lt;li&gt;兔子问，那我可以去拿胡萝卜了没？&lt;/li&gt;
+&lt;li&gt;兔门神说，可以了，这样吧，我发你个通行证，以后拿这个来我就不用这么麻烦了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;##&lt;strong&gt;【兔子与OAuth1.0a的故事】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这种貌似天衣无缝的形式，却被一只坏兔子看出了破绽。他注意到一个细节，在最后的一步，兔门神都是习惯性的把通行证交给了面前的兔子,而不管这只兔子是不是当初的那只。于是，坏兔子趁兔门神正在和老兔子聊微信的时候，一个劲站在了兔子前面，最后兔门神居然把通行证塞给了他！这怎么可以？于是在第一步和第六步又有了修改。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;兔子出示身份证的同时，也出示了自己的私房照，说，门神大哥呀，后面你记得把通行证给照片上的帅哥！&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;li&gt;兔门神看了下面前的兔子，私房照上的明显P过嘛但勉强认得出是本人，于是才交出了通行证&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;##&lt;strong&gt;【兔子与Oauth2.0的故事】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;兔门神回家后，向他的老婆兔女神汇报了今天的工作，更安全的方案使他得意洋洋，没想到被兔女神骂了一顿。兔女神说，兔子证明自己还得带个身份证，你不知道在天朝办个身份证多麻烦吗？让小兔子跟老兔子去聊下微信就可以了干嘛要你插手？兔门神哑口无言，兔女神高贵冷艳的说我有四种方案，给你先说说最常用的一种吧。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;兔子一开始就跟他老爸聊微信了。当然他得明确告诉老爸，他需要打开哪个仓库（因为老兔子有很多儿子，每个儿子去拿萝卜的仓库不一样，兔子要指定一下具体是哪个，问他可不可以）&lt;/li&gt;
+&lt;li&gt;老兔子回复说：“just do IT”…&lt;/li&gt;
+&lt;li&gt;兔子然后去拿胡萝卜，首先被兔女神拦住了。女神告诉他，你要给我四样东西：老兔子的回复，你的私房照，身份证，还要给我一个密码。兔子愣愣的想了个密码，把这四样东西交了过去&lt;/li&gt;
+&lt;li&gt;兔女神把这四种东西混在一起，用魔法变出了两件法宝：一封情书和一撮猴子毛…然后她解释说：拿着我的情书去找我老公，他就让你进仓库了；但是这情书会过期，是出于安全考虑啦，过期后你得召唤我再写一封，召唤出我的步骤就是吹一下猴子毛，像孙悟空那样你就别在意这些细节好伐？&lt;/li&gt;
+&lt;li&gt;兔子拿着情书去找兔门神时，发现他由于被妻子分担了压力，明显睡眠好多了…&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;##&lt;strong&gt;【演员表】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;兔子&lt;/strong&gt;-消费者，也就是第三方应用&lt;br&gt;&lt;strong&gt;老兔子&lt;/strong&gt;-用户，也就是我们，记住，我们永远是第三方的亲爹&lt;br&gt;&lt;strong&gt;仓库&lt;/strong&gt;-Oauth提供者，这里有我们保存的资料，比如说新浪微博，qq空间，人人…&lt;br&gt;&lt;strong&gt;兔门神&lt;/strong&gt;-在前两个故事中，由授权服务器和资源服务器共同扮演，在最后的故事中，只由资源服务器扮演&lt;br&gt;&lt;strong&gt;兔女神&lt;/strong&gt;-授权服务器，只管授权，不管取资源                   &lt;/p&gt;
+&lt;p&gt;##&lt;strong&gt;【重要道具】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;身份证&lt;/strong&gt;-签名，将一个http请求以及相应参数字符串化&lt;br&gt;&lt;strong&gt;拍下的身份证照片&lt;/strong&gt;-Request Token，服务器进行认证&lt;br&gt;&lt;strong&gt;通行证&lt;/strong&gt;-Access Token，获取资源的凭证&lt;br&gt;&lt;strong&gt;私房照&lt;/strong&gt;-重定向地址&lt;br&gt;&lt;strong&gt;坏兔子&lt;/strong&gt;(我把它当成道具而不是演员)-重定向地址劫持&lt;br&gt;&lt;strong&gt;仓库的名称&lt;/strong&gt;-appId,即对应具体哪个第三方&lt;br&gt;&lt;strong&gt;just do it&lt;/strong&gt;-Auth code，用户授权号&lt;br&gt;&lt;strong&gt;第三个故事的身份证&lt;/strong&gt;-client id 客户端帐号&lt;br&gt;&lt;strong&gt;密码&lt;/strong&gt;-client secret 客户端密码&lt;br&gt;&lt;strong&gt;魔法&lt;/strong&gt;-将client id，client secket，重定向地址，Auth code生成Access Token&lt;br&gt;&lt;strong&gt;情书&lt;/strong&gt;-Access Token，获取资源的凭证&lt;br&gt;&lt;strong&gt;猴子毛&lt;/strong&gt;-Refresh Token，用来在Access Token过期后将其刷新，刷新需带上client id和client secret                        &lt;/p&gt;
+&lt;p&gt;##&lt;strong&gt;【说书人说】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Oauth2.0比起Oauth1.0，没有了第一步的签名，将服务器分开为授权服务器与资源服务器。这是最大的两个特征。开放平台必须得做到对第三方友好，才有利于接入。像Oauth1.0签名的操作，就难倒了许多第三方。也许你知道了Oauth2.0接入步骤简化了些，但也知道其内部实现要更复杂，抛去安全方面的考虑，我认为这是正确的方向。因为，Oauth2.0在某种意义上说，向第三方做到了——“把悲伤留给自己，你的美丽让你带走”。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/assets/blogImg/rabbit.jpg&quot; alt=&quot;来搞一记Oauth吧&quot;&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;那些简单的故事，就别用复杂的方式传诵&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
+    
+    
+      <category term="故事" scheme="http://igrandcloud.github.io/tags/%E6%95%85%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>github 的世界</title>
+    <link href="http://igrandcloud.github.io/2016/04/12/the-world-of-github/"/>
+    <id>http://igrandcloud.github.io/2016/04/12/the-world-of-github/</id>
+    <published>2016-04-12T06:12:04.000Z</published>
+    <updated>2018-08-22T06:54:32.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;github-的世界&quot;&gt;&lt;a href=&quot;#github-的世界&quot; class=&quot;headerlink&quot; title=&quot;github 的世界&quot;&gt;&lt;/a&gt;github 的世界&lt;/h1&gt;&lt;p&gt;我一直认为能熟练使用 github 是编程进步的一大标志，并且做的项目和熟知的小伙伴可以让自己飞速成长。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;经常使用-github-的好处&quot;&gt;&lt;a href=&quot;#经常使用-github-的好处&quot; class=&quot;headerlink&quot; title=&quot;经常使用 github 的好处&quot;&gt;&lt;/a&gt;经常使用 github 的好处&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;能熟练使用 git，对开发软件有了软件工程的基本认识。&lt;/li&gt;
+&lt;li&gt;能通过经常开 repo 来经常开发项目，每天 commit 增加首页绿点，来激励自己每天编程。&lt;/li&gt;
+&lt;li&gt;在 gitihub 上面找到小伙伴，相互交流，一起各种开发新的项目，这样有利于从个人开发过渡到团队开发。&lt;/li&gt;
+&lt;li&gt;找库，github 上面拥有着各种很棒的第三方库，尤其是安卓、ios、python、web，无论是使用他们的库，还是阅读高手的代码，都可以使你受益匪浅，围观大神的代码，可以受益匪浅，甚至和大神交流，通过开 issue。&lt;/li&gt;
+&lt;li&gt;提交 PR 给github 上面知名的仓库、拥有个几十个甚至上百 star 的项目都绝对是面试里巨大的加分项。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;github-的小伙伴们：&quot;&gt;&lt;a href=&quot;#github-的小伙伴们：&quot; class=&quot;headerlink&quot; title=&quot;github 的小伙伴们：&quot;&gt;&lt;/a&gt;github 的小伙伴们：&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/7sDream&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;7神&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/CodeFalling&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;蛇神&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/putiwangsheng&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我妹子&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/semprathlon&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;火腿神&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/disoul&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;凌空&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;github-的一些好帖子&quot;&gt;&lt;a href=&quot;#github-的一些好帖子&quot; class=&quot;headerlink&quot; title=&quot;github 的一些好帖子&quot;&gt;&lt;/a&gt;github 的一些好帖子&lt;/h2&gt;&lt;p&gt;收集了一堆好的在线书，几乎任何领域都可以在这里找到 &lt;a href=&quot;https://github.com/justjavac/free-programming-books-zh_CN#web&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/justjavac/free-programming-books-zh_CN#web&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;收集了很多编程资料 &lt;a href=&quot;https://github.com/CoderUnion/coderunion.github.io/issues/39&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/CoderUnion/coderunion.github.io/issues/39&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;以及如果想在来 github 上学习的话，来这里吧，中文交流，门槛低，有不少大神在，提问，学习，甚至以后一起合作做项目都行&lt;br&gt;&lt;a href=&quot;https://github.com/CoderUnion/coderunion-github-talk&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/CoderUnion/coderunion-github-talk&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;围观大神&quot;&gt;&lt;a href=&quot;#围观大神&quot; class=&quot;headerlink&quot; title=&quot;围观大神&quot;&gt;&lt;/a&gt;围观大神&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;daimajia 安卓开源界前十的大神，目前是国内研究生 &lt;a href=&quot;https://github.com/daimajia&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/daimajia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;vue.js 作者（前谷歌华人工程师） &lt;a href=&quot;https://github.com/yyx990803&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/yyx990803&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;气体大神 pyer、geeker、全能 &lt;a href=&quot;https://github.com/xen0n&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/xen0n&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其实 github 里面的大神根本数不过来，连写 linux 和 git 的 linus 都在那，对于国人最大的门槛是英语，但以过来人的身份说，github 里的英文都真的很简单，它是世界编程界的宝库，用一段时间，就可以和我一样和大牛老外在 issue 里面用英语谈笑风生了。&lt;/p&gt;
+&lt;h2 id=&quot;github-的项目&quot;&gt;&lt;a href=&quot;#github-的项目&quot; class=&quot;headerlink&quot; title=&quot;github 的项目&quot;&gt;&lt;/a&gt;github 的项目&lt;/h2&gt;&lt;p&gt;使用 github 一年多了，在上面写了很多项目，挑几个有意思的讲讲， 我个人是从 github 上学到了很多东西的。&lt;/p&gt;
+&lt;h3 id=&quot;zhihu-rss&quot;&gt;&lt;a href=&quot;#zhihu-rss&quot; class=&quot;headerlink&quot; title=&quot;zhihu-rss&quot;&gt;&lt;/a&gt;zhihu-rss&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/SimplyY/zhihu-rss&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimplyY/zhihu-rss&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我暑假用 python + pyqt 在 github 上面开发的跨平台软件, 相当于一个非官方的知乎客户端，欢迎大家使用 or 提意见（开 issue ）or 优化开 PR 。&lt;/p&gt;
+&lt;p&gt;可以将知乎的任何 user 的动态做成 rss ，只需几步操作，并且可以定制 rss 内容（回答 or 提问 or 文章等等）&lt;/p&gt;
+&lt;h3 id=&quot;cat-task&quot;&gt;&lt;a href=&quot;#cat-task&quot; class=&quot;headerlink&quot; title=&quot;cat-task&quot;&gt;&lt;/a&gt;cat-task&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/jnSimpler/KillExam&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;任务类安卓app&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用到了安卓的fragment、handler、broadcast、sqlite、Service，github 上面的第三方开源库，总共3000来行 java。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;我的博客&quot;&gt;&lt;a href=&quot;#我的博客&quot; class=&quot;headerlink&quot; title=&quot;我的博客&quot;&gt;&lt;/a&gt;我的博客&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://simplyy.space/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://simplyy.space/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我会在上面写很多精品文章，使用 django 搭的&lt;/p&gt;
+&lt;p&gt;项目地址：&lt;a href=&quot;https://github.com/SimplyY/Blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimplyY/Blog/&lt;/a&gt; 欢迎 star 或者 fork学习。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;github-的世界&quot;&gt;&lt;a href=&quot;#github-的世界&quot; class=&quot;headerlink&quot; title=&quot;github 的世界&quot;&gt;&lt;/a&gt;github 的世界&lt;/h1&gt;&lt;p&gt;我一直认为能熟练使用 github 是编程进步的一大标志，并且做的项目和熟知的小伙伴可以让自己飞速成长。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
+    
+    
+      <category term="github" scheme="http://igrandcloud.github.io/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Teach Yourself Programming in Ten Years</title>
     <link href="http://igrandcloud.github.io/2016/04/12/ten-years-programming/"/>
     <id>http://igrandcloud.github.io/2016/04/12/ten-years-programming/</id>
@@ -1772,7 +1960,7 @@
 &lt;li&gt;&lt;strong&gt;Oz&lt;/strong&gt;: &lt;a href=&quot;http://www.amazon.com/gp/product/0262220695&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Concepts, Techniques, and Models of Computer Programming (Van Roy &amp;amp; Haridi)&lt;/a&gt; is seen by some as the modern-day successor to Abelson &amp;amp; Sussman. It is a tour through the big ideas of programming, covering a wider range than Abelson &amp;amp; Sussman while being perhaps easier to read and follow. It uses a language, Oz, that is not widely known but serves as a basis for learning other languages.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;Notes&quot;&gt;&lt;a href=&quot;#Notes&quot; class=&quot;headerlink&quot; title=&quot;Notes&quot;&gt;&lt;/a&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;T. Capey points out that the &lt;a href=&quot;http://www.amazon.com/exec/obidos/ASIN/0805803092&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Complete Problem Solver&lt;/a&gt; page on Amazon now has the “Teach Yourself Bengali in 21 days” and “Teach Yourself Grammar and Style” books under the “Customers who shopped for this item also shopped for these items” section. I guess that a large portion of the people who look at that book are coming from this page. Thanks to Ross Cohen for help with Hippocrates.&lt;/p&gt;
-&lt;h2 id=&quot;文章来源&quot;&gt;&lt;a href=&quot;#文章来源&quot; class=&quot;headerlink&quot; title=&quot;文章来源&quot;&gt;&lt;/a&gt;文章来源&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://www.norvig.com/21-days.html#sc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.norvig.com/21-days.html#sc&lt;/a&gt;&lt;br&gt;如有问题请联系 &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#x3a;&amp;#x57;&amp;#x61;&amp;#121;&amp;#100;&amp;#x72;&amp;#111;&amp;#x77;&amp;#x40;&amp;#49;&amp;#x36;&amp;#x33;&amp;#46;&amp;#99;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#x57;&amp;#x61;&amp;#121;&amp;#100;&amp;#x72;&amp;#111;&amp;#x77;&amp;#x40;&amp;#49;&amp;#x36;&amp;#x33;&amp;#46;&amp;#99;&amp;#x6f;&amp;#109;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;文章来源&quot;&gt;&lt;a href=&quot;#文章来源&quot; class=&quot;headerlink&quot; title=&quot;文章来源&quot;&gt;&lt;/a&gt;文章来源&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://www.norvig.com/21-days.html#sc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.norvig.com/21-days.html#sc&lt;/a&gt;&lt;br&gt;如有问题请联系 &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#x57;&amp;#x61;&amp;#121;&amp;#100;&amp;#x72;&amp;#111;&amp;#x77;&amp;#x40;&amp;#49;&amp;#x36;&amp;#x33;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x57;&amp;#x61;&amp;#121;&amp;#100;&amp;#x72;&amp;#111;&amp;#x77;&amp;#x40;&amp;#49;&amp;#x36;&amp;#x33;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -1788,198 +1976,6 @@
     
     
       <category term="编程" scheme="http://igrandcloud.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>github 的世界</title>
-    <link href="http://igrandcloud.github.io/2016/04/12/the-world-of-github/"/>
-    <id>http://igrandcloud.github.io/2016/04/12/the-world-of-github/</id>
-    <published>2016-04-12T06:12:04.000Z</published>
-    <updated>2018-08-22T03:28:38.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;github-的世界&quot;&gt;&lt;a href=&quot;#github-的世界&quot; class=&quot;headerlink&quot; title=&quot;github 的世界&quot;&gt;&lt;/a&gt;github 的世界&lt;/h1&gt;&lt;p&gt;我一直认为能熟练使用 github 是编程进步的一大标志，并且做的项目和熟知的小伙伴可以让自己飞速成长。&lt;/p&gt;
-&lt;p&gt;我的主页： &lt;a href=&quot;https://github.com/SimplyY&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimplyY&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;经常使用-github-的好处&quot;&gt;&lt;a href=&quot;#经常使用-github-的好处&quot; class=&quot;headerlink&quot; title=&quot;经常使用 github 的好处&quot;&gt;&lt;/a&gt;经常使用 github 的好处&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;能熟练使用 git，对开发软件有了软件工程的基本认识。&lt;/li&gt;
-&lt;li&gt;能通过经常开 repo 来经常开发项目，每天 commit 增加首页绿点，来激励自己每天编程。&lt;/li&gt;
-&lt;li&gt;在 gitihub 上面找到小伙伴，相互交流，一起各种开发新的项目，这样有利于从个人开发过渡到团队开发。&lt;/li&gt;
-&lt;li&gt;找库，github 上面拥有着各种很棒的第三方库，尤其是安卓、ios、python、web，无论是使用他们的库，还是阅读高手的代码，都可以使你受益匪浅，围观大神的代码，可以受益匪浅，甚至和大神交流，通过开 issue。&lt;/li&gt;
-&lt;li&gt;提交 PR 给github 上面知名的仓库、拥有个几十个甚至上百 star 的项目都绝对是面试里巨大的加分项。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;github-的小伙伴们：&quot;&gt;&lt;a href=&quot;#github-的小伙伴们：&quot; class=&quot;headerlink&quot; title=&quot;github 的小伙伴们：&quot;&gt;&lt;/a&gt;github 的小伙伴们：&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/7sDream&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;7神&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/CodeFalling&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;蛇神&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/putiwangsheng&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我妹子&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/semprathlon&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;火腿神&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/disoul&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;凌空&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;github-的一些好帖子&quot;&gt;&lt;a href=&quot;#github-的一些好帖子&quot; class=&quot;headerlink&quot; title=&quot;github 的一些好帖子&quot;&gt;&lt;/a&gt;github 的一些好帖子&lt;/h2&gt;&lt;p&gt;收集了一堆好的在线书，几乎任何领域都可以在这里找到 &lt;a href=&quot;https://github.com/justjavac/free-programming-books-zh_CN#web&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/justjavac/free-programming-books-zh_CN#web&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;收集了很多编程资料 &lt;a href=&quot;https://github.com/CoderUnion/coderunion.github.io/issues/39&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/CoderUnion/coderunion.github.io/issues/39&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;以及如果想在来 github 上学习的话，来这里吧，中文交流，门槛低，有不少大神在，提问，学习，甚至以后一起合作做项目都行&lt;br&gt;&lt;a href=&quot;https://github.com/CoderUnion/coderunion-github-talk&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/CoderUnion/coderunion-github-talk&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;围观大神&quot;&gt;&lt;a href=&quot;#围观大神&quot; class=&quot;headerlink&quot; title=&quot;围观大神&quot;&gt;&lt;/a&gt;围观大神&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;daimajia 安卓开源界前十的大神，目前是国内研究生 &lt;a href=&quot;https://github.com/daimajia&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/daimajia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;vue.js 作者（前谷歌华人工程师） &lt;a href=&quot;https://github.com/yyx990803&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/yyx990803&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;气体大神 pyer、geeker、全能 &lt;a href=&quot;https://github.com/xen0n&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/xen0n&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;其实 github 里面的大神根本数不过来，连写 linux 和 git 的 linus 都在那，对于国人最大的门槛是英语，但以过来人的身份说，github 里的英文都真的很简单，它是世界编程界的宝库，用一段时间，就可以和我一样和大牛老外在 issue 里面用英语谈笑风生了。&lt;/p&gt;
-&lt;h2 id=&quot;github-的项目&quot;&gt;&lt;a href=&quot;#github-的项目&quot; class=&quot;headerlink&quot; title=&quot;github 的项目&quot;&gt;&lt;/a&gt;github 的项目&lt;/h2&gt;&lt;p&gt;使用 github 一年多了，在上面写了很多项目，挑几个有意思的讲讲， 我个人是从 github 上学到了很多东西的。&lt;/p&gt;
-&lt;h3 id=&quot;zhihu-rss&quot;&gt;&lt;a href=&quot;#zhihu-rss&quot; class=&quot;headerlink&quot; title=&quot;zhihu-rss&quot;&gt;&lt;/a&gt;zhihu-rss&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/SimplyY/zhihu-rss&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimplyY/zhihu-rss&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;我暑假用 python + pyqt 在 github 上面开发的跨平台软件, 相当于一个非官方的知乎客户端，欢迎大家使用 or 提意见（开 issue ）or 优化开 PR 。&lt;/p&gt;
-&lt;p&gt;可以将知乎的任何 user 的动态做成 rss ，只需几步操作，并且可以定制 rss 内容（回答 or 提问 or 文章等等）&lt;/p&gt;
-&lt;h3 id=&quot;cat-task&quot;&gt;&lt;a href=&quot;#cat-task&quot; class=&quot;headerlink&quot; title=&quot;cat-task&quot;&gt;&lt;/a&gt;cat-task&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/jnSimpler/KillExam&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;任务类安卓app&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;使用到了安卓的fragment、handler、broadcast、sqlite、Service，github 上面的第三方开源库，总共3000来行 java。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;我的博客&quot;&gt;&lt;a href=&quot;#我的博客&quot; class=&quot;headerlink&quot; title=&quot;我的博客&quot;&gt;&lt;/a&gt;我的博客&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://simplyy.space/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://simplyy.space/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;我会在上面写很多精品文章，使用 django 搭的&lt;/p&gt;
-&lt;p&gt;项目地址：&lt;a href=&quot;https://github.com/SimplyY/Blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimplyY/Blog/&lt;/a&gt; 欢迎 star 或者 fork学习。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;github-的世界&quot;&gt;&lt;a href=&quot;#github-的世界&quot; class=&quot;headerlink&quot; title=&quot;github 的世界&quot;&gt;&lt;/a&gt;github 的世界&lt;/h1&gt;&lt;p&gt;我一直认为能熟练使用 github 是编程进步的一大标志，并且做的项目和熟知
-    
-    </summary>
-    
-      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
-    
-    
-      <category term="github" scheme="http://igrandcloud.github.io/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【故事】：兔子，胡萝卜与OAuth的故事</title>
-    <link href="http://igrandcloud.github.io/2016/04/12/stories-S5/"/>
-    <id>http://igrandcloud.github.io/2016/04/12/stories-S5/</id>
-    <published>2016-04-12T06:12:04.000Z</published>
-    <updated>2018-08-22T03:28:05.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/rabbit.jpg&quot; alt=&quot;来搞一记Oauth吧&quot;&gt; &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;那些简单的故事，就别用复杂的方式传诵&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;##&lt;strong&gt;【让我来讲几个故事吧】&lt;/strong&gt;     &lt;/p&gt;
-&lt;p&gt;从前，有只老兔子，在仓库里存了一万根胡萝卜，作为给小兔子的遗产。而后他就去周游世界了。小兔子有天想去把萝卜拿出来，却被仓库外的一只兔子拦住了。一问才知道，这是老兔子安排的仓库守卫。和所有故事中的守护者一样，他正直而古板，八字眉下面有着睡眠不足的熊猫眼，世人一般称他为兔门神。兔子想要拿到萝卜，就得说服兔门神呀，于是他走了上前…&lt;br&gt;&lt;!-- more --&gt;&lt;/p&gt;
-&lt;p&gt;##&lt;strong&gt;【兔子与OAuth1.0的故事】&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;兔子首先得证明自己是只兔子，不是狗熊也不是狼，于是他向兔门神出示了身份证&lt;/li&gt;
-&lt;li&gt;兔门神说：哦，你是只兔子。但你还得证明你是老兔子的兔崽子呀。兔子说我爸旅游去了，怎么证明呢？兔门神说，这样吧，我把你的身份证拍下来，发送给你爸，让他看下这是不是你。于是兔门神打开了微信……&lt;/li&gt;
-&lt;li&gt;正在休假的老兔子看了下照片，回复说证件照好难看毁三观啊，但勉强认得出这货就是我儿子&lt;/li&gt;
-&lt;li&gt;兔门神确认这信息后，说，你老爸还是认你这个儿子的&lt;/li&gt;
-&lt;li&gt;兔子问，那我可以去拿胡萝卜了没？&lt;/li&gt;
-&lt;li&gt;兔门神说，可以了，这样吧，我发你个通行证，以后拿这个来我就不用这么麻烦了。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;##&lt;strong&gt;【兔子与OAuth1.0a的故事】&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这种貌似天衣无缝的形式，却被一只坏兔子看出了破绽。他注意到一个细节，在最后的一步，兔门神都是习惯性的把通行证交给了面前的兔子,而不管这只兔子是不是当初的那只。于是，坏兔子趁兔门神正在和老兔子聊微信的时候，一个劲站在了兔子前面，最后兔门神居然把通行证塞给了他！这怎么可以？于是在第一步和第六步又有了修改。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;兔子出示身份证的同时，也出示了自己的私房照，说，门神大哥呀，后面你记得把通行证给照片上的帅哥！&lt;/li&gt;
-&lt;li&gt;……&lt;/li&gt;
-&lt;li&gt;……&lt;/li&gt;
-&lt;li&gt;……&lt;/li&gt;
-&lt;li&gt;……&lt;/li&gt;
-&lt;li&gt;兔门神看了下面前的兔子，私房照上的明显P过嘛但勉强认得出是本人，于是才交出了通行证&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;##&lt;strong&gt;【兔子与Oauth2.0的故事】&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;兔门神回家后，向他的老婆兔女神汇报了今天的工作，更安全的方案使他得意洋洋，没想到被兔女神骂了一顿。兔女神说，兔子证明自己还得带个身份证，你不知道在天朝办个身份证多麻烦吗？让小兔子跟老兔子去聊下微信就可以了干嘛要你插手？兔门神哑口无言，兔女神高贵冷艳的说我有四种方案，给你先说说最常用的一种吧。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;兔子一开始就跟他老爸聊微信了。当然他得明确告诉老爸，他需要打开哪个仓库（因为老兔子有很多儿子，每个儿子去拿萝卜的仓库不一样，兔子要指定一下具体是哪个，问他可不可以）&lt;/li&gt;
-&lt;li&gt;老兔子回复说：“just do IT”…&lt;/li&gt;
-&lt;li&gt;兔子然后去拿胡萝卜，首先被兔女神拦住了。女神告诉他，你要给我四样东西：老兔子的回复，你的私房照，身份证，还要给我一个密码。兔子愣愣的想了个密码，把这四样东西交了过去&lt;/li&gt;
-&lt;li&gt;兔女神把这四种东西混在一起，用魔法变出了两件法宝：一封情书和一撮猴子毛…然后她解释说：拿着我的情书去找我老公，他就让你进仓库了；但是这情书会过期，是出于安全考虑啦，过期后你得召唤我再写一封，召唤出我的步骤就是吹一下猴子毛，像孙悟空那样你就别在意这些细节好伐？&lt;/li&gt;
-&lt;li&gt;兔子拿着情书去找兔门神时，发现他由于被妻子分担了压力，明显睡眠好多了…&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;##&lt;strong&gt;【演员表】&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;兔子&lt;/strong&gt;-消费者，也就是第三方应用&lt;br&gt;&lt;strong&gt;老兔子&lt;/strong&gt;-用户，也就是我们，记住，我们永远是第三方的亲爹&lt;br&gt;&lt;strong&gt;仓库&lt;/strong&gt;-Oauth提供者，这里有我们保存的资料，比如说新浪微博，qq空间，人人…&lt;br&gt;&lt;strong&gt;兔门神&lt;/strong&gt;-在前两个故事中，由授权服务器和资源服务器共同扮演，在最后的故事中，只由资源服务器扮演&lt;br&gt;&lt;strong&gt;兔女神&lt;/strong&gt;-授权服务器，只管授权，不管取资源                   &lt;/p&gt;
-&lt;p&gt;##&lt;strong&gt;【重要道具】&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;身份证&lt;/strong&gt;-签名，将一个http请求以及相应参数字符串化&lt;br&gt;&lt;strong&gt;拍下的身份证照片&lt;/strong&gt;-Request Token，服务器进行认证&lt;br&gt;&lt;strong&gt;通行证&lt;/strong&gt;-Access Token，获取资源的凭证&lt;br&gt;&lt;strong&gt;私房照&lt;/strong&gt;-重定向地址&lt;br&gt;&lt;strong&gt;坏兔子&lt;/strong&gt;(我把它当成道具而不是演员)-重定向地址劫持&lt;br&gt;&lt;strong&gt;仓库的名称&lt;/strong&gt;-appId,即对应具体哪个第三方&lt;br&gt;&lt;strong&gt;just do it&lt;/strong&gt;-Auth code，用户授权号&lt;br&gt;&lt;strong&gt;第三个故事的身份证&lt;/strong&gt;-client id 客户端帐号&lt;br&gt;&lt;strong&gt;密码&lt;/strong&gt;-client secret 客户端密码&lt;br&gt;&lt;strong&gt;魔法&lt;/strong&gt;-将client id，client secket，重定向地址，Auth code生成Access Token&lt;br&gt;&lt;strong&gt;情书&lt;/strong&gt;-Access Token，获取资源的凭证&lt;br&gt;&lt;strong&gt;猴子毛&lt;/strong&gt;-Refresh Token，用来在Access Token过期后将其刷新，刷新需带上client id和client secret                        &lt;/p&gt;
-&lt;p&gt;##&lt;strong&gt;【说书人说】&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Oauth2.0比起Oauth1.0，没有了第一步的签名，将服务器分开为授权服务器与资源服务器。这是最大的两个特征。开放平台必须得做到对第三方友好，才有利于接入。像Oauth1.0签名的操作，就难倒了许多第三方。也许你知道了Oauth2.0接入步骤简化了些，但也知道其内部实现要更复杂，抛去安全方面的考虑，我认为这是正确的方向。因为，Oauth2.0在某种意义上说，向第三方做到了——“把悲伤留给自己，你的美丽让你带走”。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/assets/blogImg/rabbit.jpg&quot; alt=&quot;来搞一记Oauth吧&quot;&gt; &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;那些简单的故事，就别用复杂的方式传诵&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
-    
-    
-      <category term="故事" scheme="http://igrandcloud.github.io/tags/%E6%95%85%E4%BA%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2015年上半年好电影</title>
-    <link href="http://igrandcloud.github.io/2016/04/12/2015-moives/"/>
-    <id>http://igrandcloud.github.io/2016/04/12/2015-moives/</id>
-    <published>2016-04-12T06:12:04.000Z</published>
-    <updated>2018-08-22T03:23:54.000Z</updated>
-    
-    <content type="html">&lt;p&gt;2015上半年的观影记录。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt; 海洋之歌 5 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如诗如颂，如歌如梦&lt;br&gt;美好到出戏去看播放的进度条，希望它走得不要太快&lt;br&gt;就像需要重复确认起床时间的失眠夜&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 浪客剑心 3.5 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;剑心最帅的不是眼花缭乱的剑技&lt;br&gt;而是抱着薰小姐说“沙扬娜拉”时&lt;br&gt;逆刃刀注定要重回杀戮，告别眼前的爱人，告别悔过的自我&lt;br&gt;这声简短的再见合适不过&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 明日边缘 3.5 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;能读档真好！&lt;br&gt;阿汤哥教你for循环从入门到精通&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 辉夜姬物语 4 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;罪罚与眷恋，缘起随缘灭&lt;br&gt;仓央嘉措说：“世间之事，除却生死，哪一件事不是闲事？”&lt;br&gt;一句入世的废话，也是出世的实话&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 智取威虎山 3 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;张涵予的眼影和林更新的演技撑起了这版萌系王牌特工&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 哪啊哪啊神去村 5 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;十年之计，莫如树木；终身之计，莫如树人&lt;br&gt;一切神佑，源于热爱&lt;br&gt;看《海贼王》时，船匠弗兰奇的师傅临别前的一番话动人至深：&lt;br&gt;谁都可以嫌弃你的船，唯独你，不可以。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 外形醉汉PK地球神 3.5 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;任何人去探讨宗教都显得力微，来自星星的你却是个例外&lt;br&gt;旁观者的角度让人想起少年派前三十分钟&lt;br&gt;“地球是很危险的”，但同时也是有爱的&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 重返20岁 4 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;剧本精良，彩蛋满分，杨子姗的演技太惊艳&lt;br&gt;比起“奇怪的她”更喜欢这部&lt;br&gt;当我们思考重返20岁能干什么时&lt;br&gt;其实一切都还没晚&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 王牌特工 4.5 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;很难再能看到如此不落俗套的表演&lt;br&gt;马修·沃恩想说，以前的谍战片都简称JB，都是狗，&lt;br&gt;看我有种一枪崩了它们&lt;br&gt;慢着，我说着逗你玩呢，是空弹啊，呵呵&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 绣春刀 4 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;“起先，一家互联网公司的产品暴露了一个重大bug，&lt;br&gt;派三个程序员去排查。程序员发现啊，这bug能赚一大笔钱，&lt;br&gt;因而谎报bug已fix而导致的一系列血案。结论是改bug得认真。”&lt;br&gt;——我朋友（已拉黑）眼中的绣春刀&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 战狼 3.5 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;一切的槽点都可以用诚意来弥补&lt;br&gt;附：《主旋律电影如何不惹急豆瓣小清新指南》&lt;br&gt;1、主角得有痞子气&lt;br&gt;2、能泡到女上司&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 霍比特人三 五军之战 4 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;比起原著，李建军的表演更加丰满。&lt;br&gt;魔龙已死，宝石归位，情谊长传，孤山永在，&lt;br&gt;它的意义应当是开始，&lt;br&gt;而感觉却是一曲终了，恍之若别&lt;br&gt;我们也要跟中土世界说再见了。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 狼图腾 3 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;小说《狼图腾》，是我自己买的书中，&lt;br&gt;为数不多看不下去的&lt;br&gt;因而没太多能说的&lt;br&gt;但就电影来看，太想说狼，但说狼是为了说人&lt;br&gt;因而敬畏与情感，在高大上的图腾与乌托邦面前略显薄弱&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 小森林 夏秋篇 5 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;极致内敛和极致色欲，这两种电影估计都只有日本人能拍出来&lt;br&gt;真正无剧情无尿点的五星神作，半年最佳&lt;br&gt;但此片在电影院里看会打折扣&lt;br&gt;适合下载个1020P高清，一个人，拉窗帘，躲被窝里，&lt;br&gt;跟极致色欲那种的观影模式一个样&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 复仇者联盟二 4 &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;看1时，是跟大学最好的几个朋友去，&lt;br&gt;看完后热血沸腾，我说，我们飞回寝室去！&lt;br&gt;如今复仇者再联盟，你们在哪里？&lt;br&gt;我们打一架也好哇&lt;/p&gt;
-&lt;p&gt;——litten 6.5晚&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;2015上半年的观影记录。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
-    
-    
-      <category term="life" scheme="http://igrandcloud.github.io/tags/life/"/>
     
   </entry>
   
@@ -2019,253 +2015,6 @@
     
     
       <category term="故事" scheme="http://igrandcloud.github.io/tags/%E6%95%85%E4%BA%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>编程的几个思想</title>
-    <link href="http://igrandcloud.github.io/2016/04/12/ideas-of-programming/"/>
-    <id>http://igrandcloud.github.io/2016/04/12/ideas-of-programming/</id>
-    <published>2016-04-12T06:12:04.000Z</published>
-    <updated>2018-08-22T03:26:45.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;编程的几个思想&quot;&gt;&lt;a href=&quot;#编程的几个思想&quot; class=&quot;headerlink&quot; title=&quot;编程的几个思想&quot;&gt;&lt;/a&gt;编程的几个思想&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/142c29916dcec7a38fdcfa1a7413ccb0.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;封装&lt;/li&gt;
-&lt;li&gt;解耦&lt;/li&gt;
-&lt;li&gt;复用&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;blockquote&gt;
-&lt;p&gt;构建 100 行以内的程序或许可以想到啥写啥，但是到了 1000 行，我们就需要多个文件来管理和组织代码。到了现代，大多商业项目的代码，都是几万甚至几十万级别，&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;封装&quot;&gt;&lt;a href=&quot;#封装&quot; class=&quot;headerlink&quot; title=&quot;封装&quot;&gt;&lt;/a&gt;封装&lt;/h2&gt;&lt;p&gt;编程中，我们会遇到各种各样的复杂数据和情况，如果对此不作为，复杂度会随着代码、项目的功能的增加直线上升到无法管理。就好比一堆杂乱的事物，乱摆乱放，最后如同垃圾堆一样。&lt;/p&gt;
-&lt;p&gt;我们需要使用 &lt;strong&gt;封装&lt;/strong&gt; 的思想，将复杂的事物变得 “简单”。就像网购的快递一样，快递小哥用长方体纸盒把你买的东西装了起来 ，成千上万的盒子在城市里穿梭，不需要关心你买的东西的大小、重量、类型、收货人、收货地址、手机号，&lt;strong&gt;只用关心纸盒的类型和快递单&lt;/strong&gt;，甚至在很多地方已经有了智能、自动化的物流系统。&lt;/p&gt;
-&lt;p&gt;从上面我们可以知道，封装的好处：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;可以 &lt;strong&gt;让你不用关心任何你不需要关注的细节&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;使系统井井有条。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;当我们敲代码的时候，好的封装实际上是可以&lt;strong&gt;化腐朽为神奇的&lt;/strong&gt;，它可以将杂乱如同垃圾堆一般的成堆代码 变成一个井然有序的系统，当你调用系统时你会感受到美妙——你不用关心任何你不需要关注的细节。&lt;/p&gt;
-&lt;p&gt;但是 “将杂乱如同垃圾堆一般的成堆代码 变成一个井然有序的系统”，并不是只靠封装就可以达到，当杂乱的代码被我们封装成 一个一个的模块后，相比原来的杂乱的代码，有一定的提升，但是，假如这些 代码 互相之间的调用和依赖混乱，那只是将 &lt;strong&gt;杂乱的代码 变成 杂乱的模块&lt;/strong&gt;，当代码、功能日益增加，整个系统也会趋近于垃圾堆的样子。&lt;/p&gt;
-&lt;p&gt;这时我们就需要解耦。&lt;/p&gt;
-&lt;h2 id=&quot;解耦&quot;&gt;&lt;a href=&quot;#解耦&quot; class=&quot;headerlink&quot; title=&quot;解耦&quot;&gt;&lt;/a&gt;解耦&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;我们需要将模块之间的调用、依赖关系用更优雅的方式定义&lt;/strong&gt;，甚至我们需要通过&lt;strong&gt;拆分、合并模块来找到更优雅的模块间调用、依赖关系&lt;/strong&gt;，其实重构有的时候也就是一个&lt;strong&gt;打散重装&lt;/strong&gt;的过程，以获得更好的 模块间调用、依赖关系，以达到解耦的效果。例如我们经常将一个长达五百甚至上千行的代码，拆成上十个文件（比如7sdream 的 zhihu-py3 的第一次重构，想当年我还见过那个整个项目就一个 一千多行的 .py 文件233），其实这就是一个拆分重组文件的过程。&lt;/p&gt;
-&lt;p&gt;在现代项目中，仅仅是简单的通过拆分重组文件解耦也不够了，当模块众多到快爆炸的时候。我们需要使用系统这种级别的封装，比如框架，比如架构模式，有的时候，&lt;strong&gt;增加中间层也常常是我们解耦的有效手段之一&lt;/strong&gt;。对于 web 开发者，非常值得一说的就是通过 http 协议发送 ajax 请求，它是传统前后端分离的界限，前后端分离里 前后端交互的方式 是 前端系统通过 ajax 请求 从后端系统的 api 接口获取数据。整体上来看，前后端交互的方式 就有解耦和封装的意思，并实实在在提高了复杂应用的质量（可维护性、可变性），对于开发人员的开发效率也提高不少。如果不相信，你可以想想你大学写的 c 语言版聊天程序就知道了，总之那些就是把前后端代码彻底糅合在了一起的代码，甚至都不分前后端，编写、维护那些东西可真是灾难。&lt;strong&gt;就如同之前是揉在同一个文件的代码，现在就是糅合在同一个系统里&lt;/strong&gt;。就好比现代 GUI 程序 都有 MVC 分层，这些(简单的)架构模式既是抽象也是解耦的体现。复杂的架构模式的初衷其实也是与此相同，比如现在流行的 MVVM、react + redux、基于 node 的前后端分离 &lt;a href=&quot;https://www.zhihu.com/question/23512853&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何评价淘宝 UED 的 Midway Framework 前后端分离？ - 互联网 - 知乎&lt;/a&gt; 等等。&lt;/p&gt;
-&lt;p&gt;解耦的好处：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;高效开发。&lt;/li&gt;
-&lt;li&gt;大大提高代码的可维护性、可变性。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;复用&quot;&gt;&lt;a href=&quot;#复用&quot; class=&quot;headerlink&quot; title=&quot;复用&quot;&gt;&lt;/a&gt;复用&lt;/h2&gt;&lt;p&gt;DRY 原则：don’t repeat yourself。&lt;/p&gt;
-&lt;p&gt;我们经常会将 一些被经常使用的常量 提取出来，这么做的好处一个是避免重复，另一个就是防止 以后常量改动的时候，我们需要将 几处甚至十几处 分散到各个文件的常量改变，这绝对是灾难性的，&lt;strong&gt;你要知道少改一处或者多改都将引入新的 bug&lt;/strong&gt;，而这又是多么容易就会发生啊。&lt;/p&gt;
-&lt;p&gt;同样是这个原因，我们可以推广到 代码块、函数、模块甚至系统上。&lt;/p&gt;
-&lt;p&gt;这也是 don’t repeat yourself。 DRY 原则的一个重要原因。&lt;/p&gt;
-&lt;p&gt;其次对于代码规模更大的 复用，还有 高效开发的显著优点，从 qt、react-native、weex 等层出不穷的跨平台轮子可以看出，跨平台复用从来是我们程序员最热衷的事之一。&lt;/p&gt;
-&lt;h4 id=&quot;复用的好处：&quot;&gt;&lt;a href=&quot;#复用的好处：&quot; class=&quot;headerlink&quot; title=&quot;复用的好处：&quot;&gt;&lt;/a&gt;复用的好处：&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;保证了一致性、正确性，并且易于修改&lt;/li&gt;
-&lt;li&gt;提高了开发效率&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;从写好函数开始&quot;&gt;&lt;a href=&quot;#从写好函数开始&quot; class=&quot;headerlink&quot; title=&quot;从写好函数开始&quot;&gt;&lt;/a&gt;从写好函数开始&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;函数是封装、解耦、复用的最小单元，提高封装、解耦、复用的能力，先从写好函数开始，千里之行始于足下。&lt;/strong&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;编程的几个思想&quot;&gt;&lt;a href=&quot;#编程的几个思想&quot; class=&quot;headerlink&quot; title=&quot;编程的几个思想&quot;&gt;&lt;/a&gt;编程的几个思想&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/142c29916dcec7a38fdcfa1a7413ccb0.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;封装&lt;/li&gt;
-&lt;li&gt;解耦&lt;/li&gt;
-&lt;li&gt;复用
-    
-    </summary>
-    
-      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
-    
-    
-      <category term="编程" scheme="http://igrandcloud.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mac使用技巧</title>
-    <link href="http://igrandcloud.github.io/2016/04/12/guide-to-mac/"/>
-    <id>http://igrandcloud.github.io/2016/04/12/guide-to-mac/</id>
-    <published>2016-04-12T06:12:04.000Z</published>
-    <updated>2018-08-22T03:26:21.000Z</updated>
-    
-    <content type="html">&lt;p&gt;想要把 mac 使用的优雅，那么一定要学会会折腾，mac 下的工具生产力工具特别棒，而且好看。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;然后觉得不错的，大家自行搜索下载吧。&lt;/p&gt;
-&lt;p&gt;有的效果演示我就直接放链接了，自己写还没他们写的好。&lt;/p&gt;
-&lt;h2 id=&quot;我所使用的我喜欢的软件&quot;&gt;&lt;a href=&quot;#我所使用的我喜欢的软件&quot; class=&quot;headerlink&quot; title=&quot;我所使用的我喜欢的软件&quot;&gt;&lt;/a&gt;我所使用的我喜欢的软件&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;zhihu-rss(我开发的知乎非官方客户端，专为 osx 适配,详情见 &lt;a href=&quot;https://github.com/SimplyY/zhihu-rss&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimplyY/zhihu-rss&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;keka&lt;/li&gt;
-&lt;li&gt;iterm2(最好用的终端)&lt;/li&gt;
-&lt;li&gt;xmind(思维导图, &lt;a href=&quot;http://www.52mac.com/soft/6452-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.52mac.com/soft/6452-1-1.html&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;dash（mac 下最棒的查文档利器, &lt;a href=&quot;http://bbs.feng.com/read-htm-tid-8661137.html）&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://bbs.feng.com/read-htm-tid-8661137.html）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;alfred（几乎无所不能的神器）&lt;br&gt;效果如图：&lt;br&gt;我的所有的 workflow&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675053/01aa0e08-52eb-11e5-9d37-1655cc12f93f.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;workflow,大家自行搜索下载吧。&lt;br&gt;查文档(要使用 dash 的 workflow)&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675073/58745d56-52eb-11e5-9fe1-f11e1325ba11.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
-&lt;li&gt;Bartender(效果如图)&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675088/aa24e1c0-52eb-11e5-9462-6204b86fef1a.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
-&lt;li&gt;moom(&lt;a href=&quot;http://www.macappbox.com/software/Moom/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.macappbox.com/software/Moom/&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;github-pluse&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675098/e888808e-52eb-11e5-85f1-a55c0b94ff99.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
-&lt;li&gt;macdown(写 markdown 用的并且支持导成 pdf)&lt;/li&gt;
-&lt;li&gt;atom(写 markdown 非常非常方便，写代码神器,尤其前端方面，只要你会用)&lt;/li&gt;
-&lt;li&gt;MPlayerX (mac 下几乎最好的视频播放软件，可以播放几乎任何格式的视频)&lt;/li&gt;
-&lt;li&gt;iStat Menus(可以在 menubar 里随时看到网速、cpu 温度、风扇转速，并且控制转速)&lt;/li&gt;
-&lt;li&gt;Snagit(电脑录屏软件)&lt;/li&gt;
-&lt;li&gt;licecap （电脑录屏软件，直接录成 gif）&lt;/li&gt;
-&lt;li&gt;Snip(比自带的截图方便，可以设置快捷键、是否保存在桌面、是否截取高清图)&lt;/li&gt;
-&lt;li&gt;Unclutter (&lt;a href=&quot;http://maoshu.cc/2923.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://maoshu.cc/2923.html&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Pocket(&lt;a href=&quot;http://sspai.com/19450&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sspai.com/19450&lt;/a&gt;) 除了浏览器插件以及它还有 mac 下的客户端，手机端&lt;/li&gt;
-&lt;li&gt;todoist&lt;/li&gt;
-&lt;li&gt;Go2Shell&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;如何优雅使用软件&quot;&gt;&lt;a href=&quot;#如何优雅使用软件&quot; class=&quot;headerlink&quot; title=&quot;如何优雅使用软件&quot;&gt;&lt;/a&gt;如何优雅使用软件&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;使用 spotlight 或者 arfred 来打开他们&lt;/li&gt;
-&lt;li&gt;每一个软件下下来后，多实验一下它的功能，熟悉一下&lt;/li&gt;
-&lt;li&gt;然后定制，改快捷键等&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;本帖汇集了mac使用指南。&lt;/p&gt;
-&lt;!-- more --&gt;
-&lt;h1 id=&quot;mac-入门教程：日常使用篇&quot;&gt;&lt;a href=&quot;#mac-入门教程：日常使用篇&quot; class=&quot;headerlink&quot; title=&quot;mac 入门教程：日常使用篇&quot;&gt;&lt;/a&gt;mac 入门教程：日常使用篇&lt;/h1&gt;&lt;p&gt;想当年被蛇神安利了 osx 后，mac 买到家的一瞬间的心情很爽，那么优雅的电脑，然后苦逼的发现一个事实&lt;/p&gt;
-&lt;p&gt;特么我不怎么会用。&lt;/p&gt;
-&lt;p&gt;比如各种快捷键都不一样了（小提示，所有复制粘贴全选之类都是 cmd + 字母，而不是 ctrl）&lt;/p&gt;
-&lt;p&gt;后来蛇神带着我折腾了两天，于是就爽了，当然日后我自己也少说也折腾过上十个小时，&lt;br&gt;也对 osx 的优雅有了自己的独特的见解，在此写此文，向蛇神学习，带着大家把 osx 用的如丝般顺滑。&lt;/p&gt;
-&lt;h2 id=&quot;入门篇&quot;&gt;&lt;a href=&quot;#入门篇&quot; class=&quot;headerlink&quot; title=&quot;入门篇&quot;&gt;&lt;/a&gt;入门篇&lt;/h2&gt;&lt;p&gt;osx 和 win 的设计很不同，不要把 osx 当 win 用。mac 机器装 win 实在是浪费。&lt;br&gt;而且 osx 基本上都有 win 的替代方案，比如 word 什么的，有免费版，ps 也可以去下破解版，，&lt;br&gt;说实话我 win 的虚拟机一开始时用来准备打游戏的，然后把它卸了。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.zhihu.com/question/30714820/answer/49149283&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.zhihu.com/question/30714820/answer/49149283&lt;/a&gt; 这里写了 mac 的一些优势。&lt;/p&gt;
-&lt;h3 id=&quot;osx-的基本知识和使用&quot;&gt;&lt;a href=&quot;#osx-的基本知识和使用&quot; class=&quot;headerlink&quot; title=&quot;osx 的基本知识和使用&quot;&gt;&lt;/a&gt;osx 的基本知识和使用&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;安装 app：将 app 拖动至 aplication 即可。而且只要几秒钟一个 1g 以内的程序就能安装好。&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;卸载：有两种方式，直接删除 app，或者使用 cleanmymac2 等卸载软件，方法2会卸载掉用户信息和缓存等。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;工作区概念（超级推荐,神器）：全屏程序（ctrl + cmd + f）即可创建一个工作区，&lt;br&gt;四指上滑可以查看所有工作区以及运行软件，这个状态下鼠标移动右上角，有神奇功能（点击即可创建新的工作区）&lt;br&gt;效果图：&lt;br&gt;&lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/9396e91896b7db477776f07c3c123fa2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;触摸板（超级推荐,神器）：先去点击左上角的苹果里的系统设置，点击触控板，轻点一定要打勾，不然太不优雅。&lt;br&gt;&lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/a06fb63897809b12b977439cca93102b.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;触摸板特别棒的手势推荐(我所有手势都打勾了，记不住不要紧，一个一个试着用，你就发现你以后除了打游戏&lt;br&gt; 看网页就不需要鼠标了，网页需要手势，当然其实也可以快捷键)，下面是一些我常用的。&lt;ul&gt;
-&lt;li&gt;四指横向滑动，切换工作区。&lt;/li&gt;
-&lt;li&gt;两指轻点，右键.&lt;/li&gt;
-&lt;li&gt;对文本，三指轻点，查字典.&lt;/li&gt;
-&lt;li&gt;显示桌面&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;spotlight（真奥义神器，也是在系统设置里面设置）&lt;ul&gt;
-&lt;li&gt;快速打开软件(输入软件名，比如优雅的打开 qq，支持缩写)&lt;/li&gt;
-&lt;li&gt;快速查找文件(输入软件名，支持缩写)&lt;/li&gt;
-&lt;li&gt;查字典（这样你再也不担心有单词不认识了，或者变量命名纠结了）等（设置里面好多）&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296716/8a0ff7f0-44c5-11e5-90fb-a49f5d23ce90.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296720/963a6722-44c5-11e5-8db2-3b707a9c243a.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;注意定义就是词典词条，默认在后面，但是这是个常用功能，所以我一般把他放到第二个&lt;br&gt;（越前面，搜索出现位置越早），大家也可以根据自己需求来定制。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;dock，我一般放一些特别常用的软件，和名字不好记的常用软件（好记得用 spotlight&lt;br&gt;打开才是真正优雅）右键 图标可以选择移出 dock 或者保留在 dock&lt;/li&gt;
-&lt;li&gt;其他的一些系统自带软件(强烈推荐)：&lt;ul&gt;
-&lt;li&gt;数码测色计(取色神器，用完记得关，不然长时间耗电大，你鼠标移到哪他就不停取色)&lt;/li&gt;
-&lt;li&gt;活动监视器(osx下的任务管理器，超级美,但是名字有点奇怪我放进 dock 里面了) &lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/928130c6f2d2086687c1a026784cf9ef.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
-&lt;li&gt;日历（优雅哭了的自带软件，win 下我找了一个多小时都没找到能和它匹敌的），邮件&lt;/li&gt;
-&lt;li&gt;预览（看 pdf 神器）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;office &lt;a href=&quot;http://www.52mac.com/soft/6615-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.52mac.com/soft/6615-1-1.html&lt;/a&gt;我用的是2011，自动破解，无需手动，然后很不错，支持 retina（或许要更新才支持）。&lt;/li&gt;
-&lt;li&gt;系统设置里面的安全和隐私的通用里下载应用程序要允许任何来源。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;入门篇到此为止，进阶篇我在聊一聊 osx 下的超级棒的非系统自带的软件们以及完爆 win 下 cmd 的&lt;br&gt;终端iterm2。&lt;/p&gt;
-&lt;h1 id=&quot;mac-使用秘诀&quot;&gt;&lt;a href=&quot;#mac-使用秘诀&quot; class=&quot;headerlink&quot; title=&quot;mac 使用秘诀&quot;&gt;&lt;/a&gt;mac 使用秘诀&lt;/h1&gt;&lt;h2 id=&quot;图&quot;&gt;&lt;a href=&quot;#图&quot; class=&quot;headerlink&quot; title=&quot;图&quot;&gt;&lt;/a&gt;图&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/mac%20%E4%BD%BF%E7%94%A8%E7%A7%98%E8%AF%80.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;思想&quot;&gt;&lt;a href=&quot;#思想&quot; class=&quot;headerlink&quot; title=&quot;思想&quot;&gt;&lt;/a&gt;思想&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;少用鼠标，多用键盘，各种快捷键，命令行（试试 1. open . ; 2. say hello ; 等等）&lt;/li&gt;
-&lt;li&gt;使用好触摸板，&lt;a href=&quot;http://simplyy.space/article/56c2d71f6ba384e02299f9ba&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt; 看使用细节&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;mac-中级教程：软件篇&quot;&gt;&lt;a href=&quot;#mac-中级教程：软件篇&quot; class=&quot;headerlink&quot; title=&quot;mac 中级教程：软件篇&quot;&gt;&lt;/a&gt;mac 中级教程：软件篇&lt;/h1&gt;&lt;p&gt;想要把 mac 使用的优雅，那么一定要学会会折腾，mac 下的工具生产力工具特别棒，而且好看。&lt;/p&gt;
-&lt;p&gt;然后觉得不错的，大家自行搜索下载吧。&lt;/p&gt;
-&lt;p&gt;有的效果演示我就直接放链接了，自己写还没他们写的好。&lt;/p&gt;
-&lt;h2 id=&quot;我所使用的我喜欢的软件-1&quot;&gt;&lt;a href=&quot;#我所使用的我喜欢的软件-1&quot; class=&quot;headerlink&quot; title=&quot;我所使用的我喜欢的软件&quot;&gt;&lt;/a&gt;我所使用的我喜欢的软件&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;zhihu-rss(我开发的知乎非官方客户端，专为 osx 适配,详情见 &lt;a href=&quot;https://github.com/SimplyY/zhihu-rss&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimplyY/zhihu-rss&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;keka&lt;/li&gt;
-&lt;li&gt;iterm2(最好用的终端)&lt;/li&gt;
-&lt;li&gt;xmind(思维导图, &lt;a href=&quot;http://www.52mac.com/soft/6452-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.52mac.com/soft/6452-1-1.html&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;dash（mac 下最棒的查文档利器, &lt;a href=&quot;http://bbs.feng.com/read-htm-tid-8661137.html）&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://bbs.feng.com/read-htm-tid-8661137.html）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;alfred（几乎无所不能的神器）&lt;br&gt;效果如图：&lt;br&gt;我的所有的 workflow&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675053/01aa0e08-52eb-11e5-9d37-1655cc12f93f.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;workflow,大家自行搜索下载吧。&lt;br&gt;查文档(要使用 dash 的 workflow)&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675073/58745d56-52eb-11e5-9fe1-f11e1325ba11.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
-&lt;li&gt;Bartender(效果如图)&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675088/aa24e1c0-52eb-11e5-9462-6204b86fef1a.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
-&lt;li&gt;moom(&lt;a href=&quot;http://www.macappbox.com/software/Moom/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.macappbox.com/software/Moom/&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;github-pluse&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675098/e888808e-52eb-11e5-85f1-a55c0b94ff99.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
-&lt;li&gt;macdown(写 markdown 用的并且支持导成 pdf)&lt;/li&gt;
-&lt;li&gt;atom(写 markdown 非常非常方便，写代码神器,尤其前端方面，只要你会用)&lt;/li&gt;
-&lt;li&gt;MPlayerX (mac 下几乎最好的视频播放软件，可以播放几乎任何格式的视频)&lt;/li&gt;
-&lt;li&gt;iStat Menus(可以在 menubar 里随时看到网速、cpu 温度、风扇转速，并且控制转速)&lt;/li&gt;
-&lt;li&gt;Snagit(电脑录屏软件)&lt;/li&gt;
-&lt;li&gt;licecap （电脑录屏软件，直接录成 gif）&lt;/li&gt;
-&lt;li&gt;Snip(比自带的截图方便，可以设置快捷键、是否保存在桌面、是否截取高清图)&lt;/li&gt;
-&lt;li&gt;Unclutter (&lt;a href=&quot;http://maoshu.cc/2923.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://maoshu.cc/2923.html&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Pocket(&lt;a href=&quot;http://sspai.com/19450&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sspai.com/19450&lt;/a&gt;) 除了浏览器插件以及它还有 mac 下的客户端，手机端&lt;/li&gt;
-&lt;li&gt;todoist&lt;/li&gt;
-&lt;li&gt;Go2Shell&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;如何优雅使用软件-1&quot;&gt;&lt;a href=&quot;#如何优雅使用软件-1&quot; class=&quot;headerlink&quot; title=&quot;如何优雅使用软件&quot;&gt;&lt;/a&gt;如何优雅使用软件&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;使用 spotlight 或者 arfred 来打开他们&lt;/li&gt;
-&lt;li&gt;每一个软件下下来后，多实验一下它的功能，熟悉一下&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;然后定制，改快捷键等&lt;br&gt;#&lt;br&gt;Mac使用操作大全&lt;/p&gt;
-&lt;p&gt;推荐：&lt;br&gt;&lt;a href=&quot;https://aaaaaashu.gitbooks.io/mac-dev-setup/content/SystemPreferences/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac开发配置配置手册&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;系统基本介绍&quot;&gt;&lt;a href=&quot;#系统基本介绍&quot; class=&quot;headerlink&quot; title=&quot;系统基本介绍&quot;&gt;&lt;/a&gt;系统基本介绍&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/smstong/article/details/15499661&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;系统目录结构介绍&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;快捷键&quot;&gt;&lt;a href=&quot;#快捷键&quot; class=&quot;headerlink&quot; title=&quot;快捷键&quot;&gt;&lt;/a&gt;快捷键&lt;/h2&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;快捷键的符号所对应的按键&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;⌥—&amp;gt; option|alt&lt;/p&gt;
-&lt;p&gt;⇧—&amp;gt;shift&lt;/p&gt;
-&lt;p&gt;⌃—&amp;gt;control&lt;/p&gt;
-&lt;p&gt;⌘—&amp;gt;command&lt;/p&gt;
-&lt;p&gt;⎋—&amp;gt;esc&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;快捷键一览&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Waylenw/GithubImg/master/Mac/keybroad.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;以下为补充&lt;/p&gt;
-&lt;figure class=&quot;highlight dockerfile&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;cmd&lt;/span&gt;+方向键上  &lt;span class=&quot;comment&quot;&gt;#返回向一级文件夹&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;cmd&lt;/span&gt;+方向键    &lt;span class=&quot;comment&quot;&gt;#进入下一级文件夹       &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;cmd&lt;/span&gt;+alt+v    &lt;span class=&quot;comment&quot;&gt;#将文件复制并移动&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;文本位置跳转快捷键：&lt;br&gt;&lt;figure class=&quot;highlight cmake&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;跳转到一行的开头：Command+左箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;跳转到一行的末尾：Command+右箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;跳转到当前单词的开头(适合英文、拼音)：&lt;span class=&quot;keyword&quot;&gt;Option&lt;/span&gt;+左箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;跳转到当前单词的末尾(适合英文、拼音)：&lt;span class=&quot;keyword&quot;&gt;Option&lt;/span&gt;+右箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;跳转到全部文本的开头：Command+上箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;跳转到全部文本的末尾：Command+下箭头&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;在以上快捷键中加入Shift，则可以扩展成为选中文本效果的快捷键：&lt;br&gt;&lt;figure class=&quot;highlight dos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;选中光标到本行开头的文本：&lt;span class=&quot;built_in&quot;&gt;Shift&lt;/span&gt;+Command+左箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中光标到本行末尾的文本：&lt;span class=&quot;built_in&quot;&gt;Shift&lt;/span&gt;+Command+右箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中光标到当前单词的开头(适合英文、拼音)：&lt;span class=&quot;built_in&quot;&gt;Shift&lt;/span&gt;+Option+左箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中光标到当前单词的末尾(适合英文、拼音)：&lt;span class=&quot;built_in&quot;&gt;Shift&lt;/span&gt;+Option+右箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中光标到全部文本的开头：&lt;span class=&quot;built_in&quot;&gt;Shift&lt;/span&gt;+Command+上箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中光标到全部文本的末尾：&lt;span class=&quot;built_in&quot;&gt;Shift&lt;/span&gt;+Command+下箭头&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h2 id=&quot;基本操作&quot;&gt;&lt;a href=&quot;#基本操作&quot; class=&quot;headerlink&quot; title=&quot;基本操作&quot;&gt;&lt;/a&gt;基本操作&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;http://sspai.com/28012/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac卸载软件的四种方法&lt;/a&gt;&lt;br&gt;  &lt;a href=&quot;http://jingyan.baidu.com/article/8cdccae965875c315413cdfe.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac修改hosts文件&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt; &lt;strong&gt;如何使用右键&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;1.两指点击触摸板&lt;br&gt;  2.⌃+单击触摸板&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt; &lt;strong&gt;手势操作&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;系统偏好设置＝》触摸板＝》里面可以查看所有相关的手势操作，有图演示非常易懂&lt;br&gt; &lt;a href=&quot;http://www.ifunmac.com/2012/11/mac-gesture/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;20个Mac用户必须掌握的触摸手势&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;软件&quot;&gt;&lt;a href=&quot;#软件&quot; class=&quot;headerlink&quot; title=&quot;软件&quot;&gt;&lt;/a&gt;软件&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/github_25928675/article/details/49179247&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;OS x yosemite jdk安装路径和环境变量配置&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;想要把 mac 使用的优雅，那么一定要学会会折腾，mac 下的工具生产力工具特别棒，而且好看。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
-    
-    
-      <category term="mac" scheme="http://igrandcloud.github.io/tags/mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>电磁轨道炮是什么？</title>
-    <link href="http://igrandcloud.github.io/2016/04/12/what-is-railgun/"/>
-    <id>http://igrandcloud.github.io/2016/04/12/what-is-railgun/</id>
-    <published>2016-04-12T06:12:04.000Z</published>
-    <updated>2018-08-22T03:16:17.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgun2.jpg&quot; alt=&quot;电磁轨道炮&quot;&gt;&lt;br&gt;这个武器应该是印象中在各种科幻题材中的电影、小说中出现率最高的，也是最吸睛的。为什么呢?估计就因为又是电磁又是炮。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;历史&quot;&gt;&lt;a href=&quot;#历史&quot; class=&quot;headerlink&quot; title=&quot;历史&quot;&gt;&lt;/a&gt;历史&lt;/h2&gt;&lt;p&gt;其实电磁轨道炮的出现并不晚，早在第二次世界大战中，作为当时集世界黑科技大全的纳粹德国就已经研制成功了电磁轨道炮。&lt;br&gt;可以讲10克的炮弹加速到每秒1080米，相当于三倍的音速。不过由于炮弹的材质不过关，炮弹在发送的过程中就融化了。&lt;br&gt;电磁轨道炮的第二春是冷战时期，里根总统的星球大战计划带动了一大批黑科技般的军事装备的上马。同时也随着苏联解体而下马。&lt;br&gt;电磁轨道炮再次回归到我们是视野是进入21世纪后，2003年美国人提出立项新一代的海上驱逐舰，提出更快更强舰上炮弹。&lt;/p&gt;
-&lt;h2 id=&quot;基本原理和优缺点&quot;&gt;&lt;a href=&quot;#基本原理和优缺点&quot; class=&quot;headerlink&quot; title=&quot;基本原理和优缺点&quot;&gt;&lt;/a&gt;基本原理和优缺点&lt;/h2&gt;&lt;h3 id=&quot;相对于传统的火药引爆驱动的炮弹，电池轨道炮基于电池感应原理，将存储的电能通过电池感应转化为磁能，并进一步驱动炮弹&quot;&gt;&lt;a href=&quot;#相对于传统的火药引爆驱动的炮弹，电池轨道炮基于电池感应原理，将存储的电能通过电池感应转化为磁能，并进一步驱动炮弹&quot; class=&quot;headerlink&quot; title=&quot;相对于传统的火药引爆驱动的炮弹，电池轨道炮基于电池感应原理，将存储的电能通过电池感应转化为磁能，并进一步驱动炮弹&quot;&gt;&lt;/a&gt;相对于传统的火药引爆驱动的炮弹，电池轨道炮基于电池感应原理，将存储的电能通过电池感应转化为磁能，并进一步驱动炮弹&lt;/h3&gt;&lt;p&gt;在轨道上向前驱动。做一个可能不太合适的对比，电磁轨道炮相对于传统炮弹就好比Tesla相对于传统的汽油发动机的汽车。优点可能&lt;br&gt;也是类似的&lt;br&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgunhow.png&quot; alt=&quot;基本原理&quot;&gt; &lt;/p&gt;
-&lt;h3 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h3&gt;&lt;p&gt;1、高初速&lt;br&gt;2、无火光，无声响，高隐身&lt;br&gt;3、发送间隔极短，也就是冷却时间短&lt;br&gt;4、炮弹更小巧，成低&lt;/p&gt;
-&lt;h3 id=&quot;缺点，其实应该用目前的技术瓶颈&quot;&gt;&lt;a href=&quot;#缺点，其实应该用目前的技术瓶颈&quot; class=&quot;headerlink&quot; title=&quot;缺点，其实应该用目前的技术瓶颈&quot;&gt;&lt;/a&gt;缺点，其实应该用目前的技术瓶颈&lt;/h3&gt;&lt;p&gt;1、储能装置体积过大（相信不会是个大问题，想想第一代计算机还占地一个足球场）&lt;br&gt;2、各种电子器件的可靠性（有赖于电子材料的革命）&lt;/p&gt;
-&lt;h2 id=&quot;发展现状&quot;&gt;&lt;a href=&quot;#发展现状&quot; class=&quot;headerlink&quot; title=&quot;发展现状&quot;&gt;&lt;/a&gt;发展现状&lt;/h2&gt;&lt;p&gt;老美，肯定是站在了这棵科技树的顶端。目前老美已经完成了陆上5倍电子轨道炮的测试。预计在16年就测试基于海上舰艇的&lt;br&gt;电磁轨道炮测试，并计划18年定型部署。&lt;br&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgun3.jpg&quot; alt=&quot;American&quot;&gt; &lt;/p&gt;
-&lt;p&gt;最后！我们上一张国人意淫的装备了电磁轨道炮的国产坦克&lt;br&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgun-china.jpg&quot; alt=&quot;Tank&quot;&gt; &lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgun2.jpg&quot; alt=&quot;电磁轨道炮&quot;&gt;&lt;br&gt;这个武器应该是印象中在各种科幻题材中的电影、小说中出现率最高的，也是最吸睛的。为什么呢?估计就因为又是电磁又是炮。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="原创" scheme="http://igrandcloud.github.io/categories/%E5%8E%9F%E5%88%9B/"/>
-    
-    
-      <category term="军事" scheme="http://igrandcloud.github.io/tags/%E5%86%9B%E4%BA%8B/"/>
     
   </entry>
   
@@ -2482,6 +2231,258 @@
   </entry>
   
   <entry>
+    <title>2015年上半年好电影</title>
+    <link href="http://igrandcloud.github.io/2016/04/12/2015-moives/"/>
+    <id>http://igrandcloud.github.io/2016/04/12/2015-moives/</id>
+    <published>2016-04-12T06:12:04.000Z</published>
+    <updated>2018-08-22T03:23:54.000Z</updated>
+    
+    <content type="html">&lt;p&gt;2015上半年的观影记录。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; 海洋之歌 5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如诗如颂，如歌如梦&lt;br&gt;美好到出戏去看播放的进度条，希望它走得不要太快&lt;br&gt;就像需要重复确认起床时间的失眠夜&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 浪客剑心 3.5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;剑心最帅的不是眼花缭乱的剑技&lt;br&gt;而是抱着薰小姐说“沙扬娜拉”时&lt;br&gt;逆刃刀注定要重回杀戮，告别眼前的爱人，告别悔过的自我&lt;br&gt;这声简短的再见合适不过&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 明日边缘 3.5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;能读档真好！&lt;br&gt;阿汤哥教你for循环从入门到精通&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 辉夜姬物语 4 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;罪罚与眷恋，缘起随缘灭&lt;br&gt;仓央嘉措说：“世间之事，除却生死，哪一件事不是闲事？”&lt;br&gt;一句入世的废话，也是出世的实话&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 智取威虎山 3 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;张涵予的眼影和林更新的演技撑起了这版萌系王牌特工&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 哪啊哪啊神去村 5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;十年之计，莫如树木；终身之计，莫如树人&lt;br&gt;一切神佑，源于热爱&lt;br&gt;看《海贼王》时，船匠弗兰奇的师傅临别前的一番话动人至深：&lt;br&gt;谁都可以嫌弃你的船，唯独你，不可以。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 外形醉汉PK地球神 3.5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;任何人去探讨宗教都显得力微，来自星星的你却是个例外&lt;br&gt;旁观者的角度让人想起少年派前三十分钟&lt;br&gt;“地球是很危险的”，但同时也是有爱的&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 重返20岁 4 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;剧本精良，彩蛋满分，杨子姗的演技太惊艳&lt;br&gt;比起“奇怪的她”更喜欢这部&lt;br&gt;当我们思考重返20岁能干什么时&lt;br&gt;其实一切都还没晚&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 王牌特工 4.5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;很难再能看到如此不落俗套的表演&lt;br&gt;马修·沃恩想说，以前的谍战片都简称JB，都是狗，&lt;br&gt;看我有种一枪崩了它们&lt;br&gt;慢着，我说着逗你玩呢，是空弹啊，呵呵&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 绣春刀 4 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“起先，一家互联网公司的产品暴露了一个重大bug，&lt;br&gt;派三个程序员去排查。程序员发现啊，这bug能赚一大笔钱，&lt;br&gt;因而谎报bug已fix而导致的一系列血案。结论是改bug得认真。”&lt;br&gt;——我朋友（已拉黑）眼中的绣春刀&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 战狼 3.5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一切的槽点都可以用诚意来弥补&lt;br&gt;附：《主旋律电影如何不惹急豆瓣小清新指南》&lt;br&gt;1、主角得有痞子气&lt;br&gt;2、能泡到女上司&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 霍比特人三 五军之战 4 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;比起原著，李建军的表演更加丰满。&lt;br&gt;魔龙已死，宝石归位，情谊长传，孤山永在，&lt;br&gt;它的意义应当是开始，&lt;br&gt;而感觉却是一曲终了，恍之若别&lt;br&gt;我们也要跟中土世界说再见了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 狼图腾 3 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;小说《狼图腾》，是我自己买的书中，&lt;br&gt;为数不多看不下去的&lt;br&gt;因而没太多能说的&lt;br&gt;但就电影来看，太想说狼，但说狼是为了说人&lt;br&gt;因而敬畏与情感，在高大上的图腾与乌托邦面前略显薄弱&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 小森林 夏秋篇 5 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;极致内敛和极致色欲，这两种电影估计都只有日本人能拍出来&lt;br&gt;真正无剧情无尿点的五星神作，半年最佳&lt;br&gt;但此片在电影院里看会打折扣&lt;br&gt;适合下载个1020P高清，一个人，拉窗帘，躲被窝里，&lt;br&gt;跟极致色欲那种的观影模式一个样&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt; 复仇者联盟二 4 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;看1时，是跟大学最好的几个朋友去，&lt;br&gt;看完后热血沸腾，我说，我们飞回寝室去！&lt;br&gt;如今复仇者再联盟，你们在哪里？&lt;br&gt;我们打一架也好哇&lt;/p&gt;
+&lt;p&gt;——litten 6.5晚&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2015上半年的观影记录。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
+    
+    
+      <category term="life" scheme="http://igrandcloud.github.io/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电磁轨道炮是什么？</title>
+    <link href="http://igrandcloud.github.io/2016/04/12/what-is-railgun/"/>
+    <id>http://igrandcloud.github.io/2016/04/12/what-is-railgun/</id>
+    <published>2016-04-12T06:12:04.000Z</published>
+    <updated>2018-08-22T03:16:17.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgun2.jpg&quot; alt=&quot;电磁轨道炮&quot;&gt;&lt;br&gt;这个武器应该是印象中在各种科幻题材中的电影、小说中出现率最高的，也是最吸睛的。为什么呢?估计就因为又是电磁又是炮。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;历史&quot;&gt;&lt;a href=&quot;#历史&quot; class=&quot;headerlink&quot; title=&quot;历史&quot;&gt;&lt;/a&gt;历史&lt;/h2&gt;&lt;p&gt;其实电磁轨道炮的出现并不晚，早在第二次世界大战中，作为当时集世界黑科技大全的纳粹德国就已经研制成功了电磁轨道炮。&lt;br&gt;可以讲10克的炮弹加速到每秒1080米，相当于三倍的音速。不过由于炮弹的材质不过关，炮弹在发送的过程中就融化了。&lt;br&gt;电磁轨道炮的第二春是冷战时期，里根总统的星球大战计划带动了一大批黑科技般的军事装备的上马。同时也随着苏联解体而下马。&lt;br&gt;电磁轨道炮再次回归到我们是视野是进入21世纪后，2003年美国人提出立项新一代的海上驱逐舰，提出更快更强舰上炮弹。&lt;/p&gt;
+&lt;h2 id=&quot;基本原理和优缺点&quot;&gt;&lt;a href=&quot;#基本原理和优缺点&quot; class=&quot;headerlink&quot; title=&quot;基本原理和优缺点&quot;&gt;&lt;/a&gt;基本原理和优缺点&lt;/h2&gt;&lt;h3 id=&quot;相对于传统的火药引爆驱动的炮弹，电池轨道炮基于电池感应原理，将存储的电能通过电池感应转化为磁能，并进一步驱动炮弹&quot;&gt;&lt;a href=&quot;#相对于传统的火药引爆驱动的炮弹，电池轨道炮基于电池感应原理，将存储的电能通过电池感应转化为磁能，并进一步驱动炮弹&quot; class=&quot;headerlink&quot; title=&quot;相对于传统的火药引爆驱动的炮弹，电池轨道炮基于电池感应原理，将存储的电能通过电池感应转化为磁能，并进一步驱动炮弹&quot;&gt;&lt;/a&gt;相对于传统的火药引爆驱动的炮弹，电池轨道炮基于电池感应原理，将存储的电能通过电池感应转化为磁能，并进一步驱动炮弹&lt;/h3&gt;&lt;p&gt;在轨道上向前驱动。做一个可能不太合适的对比，电磁轨道炮相对于传统炮弹就好比Tesla相对于传统的汽油发动机的汽车。优点可能&lt;br&gt;也是类似的&lt;br&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgunhow.png&quot; alt=&quot;基本原理&quot;&gt; &lt;/p&gt;
+&lt;h3 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h3&gt;&lt;p&gt;1、高初速&lt;br&gt;2、无火光，无声响，高隐身&lt;br&gt;3、发送间隔极短，也就是冷却时间短&lt;br&gt;4、炮弹更小巧，成低&lt;/p&gt;
+&lt;h3 id=&quot;缺点，其实应该用目前的技术瓶颈&quot;&gt;&lt;a href=&quot;#缺点，其实应该用目前的技术瓶颈&quot; class=&quot;headerlink&quot; title=&quot;缺点，其实应该用目前的技术瓶颈&quot;&gt;&lt;/a&gt;缺点，其实应该用目前的技术瓶颈&lt;/h3&gt;&lt;p&gt;1、储能装置体积过大（相信不会是个大问题，想想第一代计算机还占地一个足球场）&lt;br&gt;2、各种电子器件的可靠性（有赖于电子材料的革命）&lt;/p&gt;
+&lt;h2 id=&quot;发展现状&quot;&gt;&lt;a href=&quot;#发展现状&quot; class=&quot;headerlink&quot; title=&quot;发展现状&quot;&gt;&lt;/a&gt;发展现状&lt;/h2&gt;&lt;p&gt;老美，肯定是站在了这棵科技树的顶端。目前老美已经完成了陆上5倍电子轨道炮的测试。预计在16年就测试基于海上舰艇的&lt;br&gt;电磁轨道炮测试，并计划18年定型部署。&lt;br&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgun3.jpg&quot; alt=&quot;American&quot;&gt; &lt;/p&gt;
+&lt;p&gt;最后！我们上一张国人意淫的装备了电磁轨道炮的国产坦克&lt;br&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgun-china.jpg&quot; alt=&quot;Tank&quot;&gt; &lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/assets/blogImg/railgun/railgun2.jpg&quot; alt=&quot;电磁轨道炮&quot;&gt;&lt;br&gt;这个武器应该是印象中在各种科幻题材中的电影、小说中出现率最高的，也是最吸睛的。为什么呢?估计就因为又是电磁又是炮。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="原创" scheme="http://igrandcloud.github.io/categories/%E5%8E%9F%E5%88%9B/"/>
+    
+    
+      <category term="军事" scheme="http://igrandcloud.github.io/tags/%E5%86%9B%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mac使用技巧</title>
+    <link href="http://igrandcloud.github.io/2016/04/12/guide-to-mac/"/>
+    <id>http://igrandcloud.github.io/2016/04/12/guide-to-mac/</id>
+    <published>2016-04-12T06:12:04.000Z</published>
+    <updated>2018-08-22T03:26:21.000Z</updated>
+    
+    <content type="html">&lt;p&gt;想要把 mac 使用的优雅，那么一定要学会会折腾，mac 下的工具生产力工具特别棒，而且好看。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;然后觉得不错的，大家自行搜索下载吧。&lt;/p&gt;
+&lt;p&gt;有的效果演示我就直接放链接了，自己写还没他们写的好。&lt;/p&gt;
+&lt;h2 id=&quot;我所使用的我喜欢的软件&quot;&gt;&lt;a href=&quot;#我所使用的我喜欢的软件&quot; class=&quot;headerlink&quot; title=&quot;我所使用的我喜欢的软件&quot;&gt;&lt;/a&gt;我所使用的我喜欢的软件&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;zhihu-rss(我开发的知乎非官方客户端，专为 osx 适配,详情见 &lt;a href=&quot;https://github.com/SimplyY/zhihu-rss&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimplyY/zhihu-rss&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;keka&lt;/li&gt;
+&lt;li&gt;iterm2(最好用的终端)&lt;/li&gt;
+&lt;li&gt;xmind(思维导图, &lt;a href=&quot;http://www.52mac.com/soft/6452-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.52mac.com/soft/6452-1-1.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;dash（mac 下最棒的查文档利器, &lt;a href=&quot;http://bbs.feng.com/read-htm-tid-8661137.html）&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://bbs.feng.com/read-htm-tid-8661137.html）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;alfred（几乎无所不能的神器）&lt;br&gt;效果如图：&lt;br&gt;我的所有的 workflow&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675053/01aa0e08-52eb-11e5-9d37-1655cc12f93f.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;workflow,大家自行搜索下载吧。&lt;br&gt;查文档(要使用 dash 的 workflow)&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675073/58745d56-52eb-11e5-9fe1-f11e1325ba11.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
+&lt;li&gt;Bartender(效果如图)&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675088/aa24e1c0-52eb-11e5-9462-6204b86fef1a.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
+&lt;li&gt;moom(&lt;a href=&quot;http://www.macappbox.com/software/Moom/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.macappbox.com/software/Moom/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;github-pluse&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675098/e888808e-52eb-11e5-85f1-a55c0b94ff99.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
+&lt;li&gt;macdown(写 markdown 用的并且支持导成 pdf)&lt;/li&gt;
+&lt;li&gt;atom(写 markdown 非常非常方便，写代码神器,尤其前端方面，只要你会用)&lt;/li&gt;
+&lt;li&gt;MPlayerX (mac 下几乎最好的视频播放软件，可以播放几乎任何格式的视频)&lt;/li&gt;
+&lt;li&gt;iStat Menus(可以在 menubar 里随时看到网速、cpu 温度、风扇转速，并且控制转速)&lt;/li&gt;
+&lt;li&gt;Snagit(电脑录屏软件)&lt;/li&gt;
+&lt;li&gt;licecap （电脑录屏软件，直接录成 gif）&lt;/li&gt;
+&lt;li&gt;Snip(比自带的截图方便，可以设置快捷键、是否保存在桌面、是否截取高清图)&lt;/li&gt;
+&lt;li&gt;Unclutter (&lt;a href=&quot;http://maoshu.cc/2923.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://maoshu.cc/2923.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Pocket(&lt;a href=&quot;http://sspai.com/19450&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sspai.com/19450&lt;/a&gt;) 除了浏览器插件以及它还有 mac 下的客户端，手机端&lt;/li&gt;
+&lt;li&gt;todoist&lt;/li&gt;
+&lt;li&gt;Go2Shell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;如何优雅使用软件&quot;&gt;&lt;a href=&quot;#如何优雅使用软件&quot; class=&quot;headerlink&quot; title=&quot;如何优雅使用软件&quot;&gt;&lt;/a&gt;如何优雅使用软件&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;使用 spotlight 或者 arfred 来打开他们&lt;/li&gt;
+&lt;li&gt;每一个软件下下来后，多实验一下它的功能，熟悉一下&lt;/li&gt;
+&lt;li&gt;然后定制，改快捷键等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;本帖汇集了mac使用指南。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h1 id=&quot;mac-入门教程：日常使用篇&quot;&gt;&lt;a href=&quot;#mac-入门教程：日常使用篇&quot; class=&quot;headerlink&quot; title=&quot;mac 入门教程：日常使用篇&quot;&gt;&lt;/a&gt;mac 入门教程：日常使用篇&lt;/h1&gt;&lt;p&gt;想当年被蛇神安利了 osx 后，mac 买到家的一瞬间的心情很爽，那么优雅的电脑，然后苦逼的发现一个事实&lt;/p&gt;
+&lt;p&gt;特么我不怎么会用。&lt;/p&gt;
+&lt;p&gt;比如各种快捷键都不一样了（小提示，所有复制粘贴全选之类都是 cmd + 字母，而不是 ctrl）&lt;/p&gt;
+&lt;p&gt;后来蛇神带着我折腾了两天，于是就爽了，当然日后我自己也少说也折腾过上十个小时，&lt;br&gt;也对 osx 的优雅有了自己的独特的见解，在此写此文，向蛇神学习，带着大家把 osx 用的如丝般顺滑。&lt;/p&gt;
+&lt;h2 id=&quot;入门篇&quot;&gt;&lt;a href=&quot;#入门篇&quot; class=&quot;headerlink&quot; title=&quot;入门篇&quot;&gt;&lt;/a&gt;入门篇&lt;/h2&gt;&lt;p&gt;osx 和 win 的设计很不同，不要把 osx 当 win 用。mac 机器装 win 实在是浪费。&lt;br&gt;而且 osx 基本上都有 win 的替代方案，比如 word 什么的，有免费版，ps 也可以去下破解版，，&lt;br&gt;说实话我 win 的虚拟机一开始时用来准备打游戏的，然后把它卸了。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.zhihu.com/question/30714820/answer/49149283&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.zhihu.com/question/30714820/answer/49149283&lt;/a&gt; 这里写了 mac 的一些优势。&lt;/p&gt;
+&lt;h3 id=&quot;osx-的基本知识和使用&quot;&gt;&lt;a href=&quot;#osx-的基本知识和使用&quot; class=&quot;headerlink&quot; title=&quot;osx 的基本知识和使用&quot;&gt;&lt;/a&gt;osx 的基本知识和使用&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;安装 app：将 app 拖动至 aplication 即可。而且只要几秒钟一个 1g 以内的程序就能安装好。&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;卸载：有两种方式，直接删除 app，或者使用 cleanmymac2 等卸载软件，方法2会卸载掉用户信息和缓存等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;工作区概念（超级推荐,神器）：全屏程序（ctrl + cmd + f）即可创建一个工作区，&lt;br&gt;四指上滑可以查看所有工作区以及运行软件，这个状态下鼠标移动右上角，有神奇功能（点击即可创建新的工作区）&lt;br&gt;效果图：&lt;br&gt;&lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/9396e91896b7db477776f07c3c123fa2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;触摸板（超级推荐,神器）：先去点击左上角的苹果里的系统设置，点击触控板，轻点一定要打勾，不然太不优雅。&lt;br&gt;&lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/a06fb63897809b12b977439cca93102b.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;触摸板特别棒的手势推荐(我所有手势都打勾了，记不住不要紧，一个一个试着用，你就发现你以后除了打游戏&lt;br&gt; 看网页就不需要鼠标了，网页需要手势，当然其实也可以快捷键)，下面是一些我常用的。&lt;ul&gt;
+&lt;li&gt;四指横向滑动，切换工作区。&lt;/li&gt;
+&lt;li&gt;两指轻点，右键.&lt;/li&gt;
+&lt;li&gt;对文本，三指轻点，查字典.&lt;/li&gt;
+&lt;li&gt;显示桌面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;spotlight（真奥义神器，也是在系统设置里面设置）&lt;ul&gt;
+&lt;li&gt;快速打开软件(输入软件名，比如优雅的打开 qq，支持缩写)&lt;/li&gt;
+&lt;li&gt;快速查找文件(输入软件名，支持缩写)&lt;/li&gt;
+&lt;li&gt;查字典（这样你再也不担心有单词不认识了，或者变量命名纠结了）等（设置里面好多）&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296716/8a0ff7f0-44c5-11e5-90fb-a49f5d23ce90.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9296720/963a6722-44c5-11e5-8db2-3b707a9c243a.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;注意定义就是词典词条，默认在后面，但是这是个常用功能，所以我一般把他放到第二个&lt;br&gt;（越前面，搜索出现位置越早），大家也可以根据自己需求来定制。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;dock，我一般放一些特别常用的软件，和名字不好记的常用软件（好记得用 spotlight&lt;br&gt;打开才是真正优雅）右键 图标可以选择移出 dock 或者保留在 dock&lt;/li&gt;
+&lt;li&gt;其他的一些系统自带软件(强烈推荐)：&lt;ul&gt;
+&lt;li&gt;数码测色计(取色神器，用完记得关，不然长时间耗电大，你鼠标移到哪他就不停取色)&lt;/li&gt;
+&lt;li&gt;活动监视器(osx下的任务管理器，超级美,但是名字有点奇怪我放进 dock 里面了) &lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/928130c6f2d2086687c1a026784cf9ef.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;日历（优雅哭了的自带软件，win 下我找了一个多小时都没找到能和它匹敌的），邮件&lt;/li&gt;
+&lt;li&gt;预览（看 pdf 神器）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;office &lt;a href=&quot;http://www.52mac.com/soft/6615-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.52mac.com/soft/6615-1-1.html&lt;/a&gt;我用的是2011，自动破解，无需手动，然后很不错，支持 retina（或许要更新才支持）。&lt;/li&gt;
+&lt;li&gt;系统设置里面的安全和隐私的通用里下载应用程序要允许任何来源。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;入门篇到此为止，进阶篇我在聊一聊 osx 下的超级棒的非系统自带的软件们以及完爆 win 下 cmd 的&lt;br&gt;终端iterm2。&lt;/p&gt;
+&lt;h1 id=&quot;mac-使用秘诀&quot;&gt;&lt;a href=&quot;#mac-使用秘诀&quot; class=&quot;headerlink&quot; title=&quot;mac 使用秘诀&quot;&gt;&lt;/a&gt;mac 使用秘诀&lt;/h1&gt;&lt;h2 id=&quot;图&quot;&gt;&lt;a href=&quot;#图&quot; class=&quot;headerlink&quot; title=&quot;图&quot;&gt;&lt;/a&gt;图&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/mac%20%E4%BD%BF%E7%94%A8%E7%A7%98%E8%AF%80.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;思想&quot;&gt;&lt;a href=&quot;#思想&quot; class=&quot;headerlink&quot; title=&quot;思想&quot;&gt;&lt;/a&gt;思想&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;少用鼠标，多用键盘，各种快捷键，命令行（试试 1. open . ; 2. say hello ; 等等）&lt;/li&gt;
+&lt;li&gt;使用好触摸板，&lt;a href=&quot;http://simplyy.space/article/56c2d71f6ba384e02299f9ba&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt; 看使用细节&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;mac-中级教程：软件篇&quot;&gt;&lt;a href=&quot;#mac-中级教程：软件篇&quot; class=&quot;headerlink&quot; title=&quot;mac 中级教程：软件篇&quot;&gt;&lt;/a&gt;mac 中级教程：软件篇&lt;/h1&gt;&lt;p&gt;想要把 mac 使用的优雅，那么一定要学会会折腾，mac 下的工具生产力工具特别棒，而且好看。&lt;/p&gt;
+&lt;p&gt;然后觉得不错的，大家自行搜索下载吧。&lt;/p&gt;
+&lt;p&gt;有的效果演示我就直接放链接了，自己写还没他们写的好。&lt;/p&gt;
+&lt;h2 id=&quot;我所使用的我喜欢的软件-1&quot;&gt;&lt;a href=&quot;#我所使用的我喜欢的软件-1&quot; class=&quot;headerlink&quot; title=&quot;我所使用的我喜欢的软件&quot;&gt;&lt;/a&gt;我所使用的我喜欢的软件&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;zhihu-rss(我开发的知乎非官方客户端，专为 osx 适配,详情见 &lt;a href=&quot;https://github.com/SimplyY/zhihu-rss&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimplyY/zhihu-rss&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;keka&lt;/li&gt;
+&lt;li&gt;iterm2(最好用的终端)&lt;/li&gt;
+&lt;li&gt;xmind(思维导图, &lt;a href=&quot;http://www.52mac.com/soft/6452-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.52mac.com/soft/6452-1-1.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;dash（mac 下最棒的查文档利器, &lt;a href=&quot;http://bbs.feng.com/read-htm-tid-8661137.html）&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://bbs.feng.com/read-htm-tid-8661137.html）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;alfred（几乎无所不能的神器）&lt;br&gt;效果如图：&lt;br&gt;我的所有的 workflow&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675053/01aa0e08-52eb-11e5-9d37-1655cc12f93f.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;workflow,大家自行搜索下载吧。&lt;br&gt;查文档(要使用 dash 的 workflow)&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675073/58745d56-52eb-11e5-9fe1-f11e1325ba11.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
+&lt;li&gt;Bartender(效果如图)&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675088/aa24e1c0-52eb-11e5-9462-6204b86fef1a.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
+&lt;li&gt;moom(&lt;a href=&quot;http://www.macappbox.com/software/Moom/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.macappbox.com/software/Moom/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;github-pluse&lt;br&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/8455579/9675098/e888808e-52eb-11e5-85f1-a55c0b94ff99.png&quot; alt=&quot;image&quot;&gt;&lt;/li&gt;
+&lt;li&gt;macdown(写 markdown 用的并且支持导成 pdf)&lt;/li&gt;
+&lt;li&gt;atom(写 markdown 非常非常方便，写代码神器,尤其前端方面，只要你会用)&lt;/li&gt;
+&lt;li&gt;MPlayerX (mac 下几乎最好的视频播放软件，可以播放几乎任何格式的视频)&lt;/li&gt;
+&lt;li&gt;iStat Menus(可以在 menubar 里随时看到网速、cpu 温度、风扇转速，并且控制转速)&lt;/li&gt;
+&lt;li&gt;Snagit(电脑录屏软件)&lt;/li&gt;
+&lt;li&gt;licecap （电脑录屏软件，直接录成 gif）&lt;/li&gt;
+&lt;li&gt;Snip(比自带的截图方便，可以设置快捷键、是否保存在桌面、是否截取高清图)&lt;/li&gt;
+&lt;li&gt;Unclutter (&lt;a href=&quot;http://maoshu.cc/2923.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://maoshu.cc/2923.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Pocket(&lt;a href=&quot;http://sspai.com/19450&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sspai.com/19450&lt;/a&gt;) 除了浏览器插件以及它还有 mac 下的客户端，手机端&lt;/li&gt;
+&lt;li&gt;todoist&lt;/li&gt;
+&lt;li&gt;Go2Shell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;如何优雅使用软件-1&quot;&gt;&lt;a href=&quot;#如何优雅使用软件-1&quot; class=&quot;headerlink&quot; title=&quot;如何优雅使用软件&quot;&gt;&lt;/a&gt;如何优雅使用软件&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;使用 spotlight 或者 arfred 来打开他们&lt;/li&gt;
+&lt;li&gt;每一个软件下下来后，多实验一下它的功能，熟悉一下&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;然后定制，改快捷键等&lt;br&gt;#&lt;br&gt;Mac使用操作大全&lt;/p&gt;
+&lt;p&gt;推荐：&lt;br&gt;&lt;a href=&quot;https://aaaaaashu.gitbooks.io/mac-dev-setup/content/SystemPreferences/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac开发配置配置手册&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;系统基本介绍&quot;&gt;&lt;a href=&quot;#系统基本介绍&quot; class=&quot;headerlink&quot; title=&quot;系统基本介绍&quot;&gt;&lt;/a&gt;系统基本介绍&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/smstong/article/details/15499661&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;系统目录结构介绍&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;快捷键&quot;&gt;&lt;a href=&quot;#快捷键&quot; class=&quot;headerlink&quot; title=&quot;快捷键&quot;&gt;&lt;/a&gt;快捷键&lt;/h2&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;快捷键的符号所对应的按键&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;⌥—&amp;gt; option|alt&lt;/p&gt;
+&lt;p&gt;⇧—&amp;gt;shift&lt;/p&gt;
+&lt;p&gt;⌃—&amp;gt;control&lt;/p&gt;
+&lt;p&gt;⌘—&amp;gt;command&lt;/p&gt;
+&lt;p&gt;⎋—&amp;gt;esc&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;快捷键一览&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Waylenw/GithubImg/master/Mac/keybroad.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;以下为补充&lt;/p&gt;
+&lt;figure class=&quot;highlight dockerfile&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;cmd&lt;/span&gt;+方向键上  &lt;span class=&quot;comment&quot;&gt;#返回向一级文件夹&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;cmd&lt;/span&gt;+方向键    &lt;span class=&quot;comment&quot;&gt;#进入下一级文件夹       &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;cmd&lt;/span&gt;+alt+v    &lt;span class=&quot;comment&quot;&gt;#将文件复制并移动&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;文本位置跳转快捷键：&lt;br&gt;&lt;figure class=&quot;highlight cmake&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;跳转到一行的开头：Command+左箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;跳转到一行的末尾：Command+右箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;跳转到当前单词的开头(适合英文、拼音)：&lt;span class=&quot;keyword&quot;&gt;Option&lt;/span&gt;+左箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;跳转到当前单词的末尾(适合英文、拼音)：&lt;span class=&quot;keyword&quot;&gt;Option&lt;/span&gt;+右箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;跳转到全部文本的开头：Command+上箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;跳转到全部文本的末尾：Command+下箭头&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在以上快捷键中加入Shift，则可以扩展成为选中文本效果的快捷键：&lt;br&gt;&lt;figure class=&quot;highlight dos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;选中光标到本行开头的文本：&lt;span class=&quot;built_in&quot;&gt;Shift&lt;/span&gt;+Command+左箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中光标到本行末尾的文本：&lt;span class=&quot;built_in&quot;&gt;Shift&lt;/span&gt;+Command+右箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中光标到当前单词的开头(适合英文、拼音)：&lt;span class=&quot;built_in&quot;&gt;Shift&lt;/span&gt;+Option+左箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中光标到当前单词的末尾(适合英文、拼音)：&lt;span class=&quot;built_in&quot;&gt;Shift&lt;/span&gt;+Option+右箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中光标到全部文本的开头：&lt;span class=&quot;built_in&quot;&gt;Shift&lt;/span&gt;+Command+上箭头&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中光标到全部文本的末尾：&lt;span class=&quot;built_in&quot;&gt;Shift&lt;/span&gt;+Command+下箭头&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;基本操作&quot;&gt;&lt;a href=&quot;#基本操作&quot; class=&quot;headerlink&quot; title=&quot;基本操作&quot;&gt;&lt;/a&gt;基本操作&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://sspai.com/28012/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac卸载软件的四种方法&lt;/a&gt;&lt;br&gt;  &lt;a href=&quot;http://jingyan.baidu.com/article/8cdccae965875c315413cdfe.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac修改hosts文件&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt; &lt;strong&gt;如何使用右键&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.两指点击触摸板&lt;br&gt;  2.⌃+单击触摸板&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt; &lt;strong&gt;手势操作&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;系统偏好设置＝》触摸板＝》里面可以查看所有相关的手势操作，有图演示非常易懂&lt;br&gt; &lt;a href=&quot;http://www.ifunmac.com/2012/11/mac-gesture/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;20个Mac用户必须掌握的触摸手势&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;软件&quot;&gt;&lt;a href=&quot;#软件&quot; class=&quot;headerlink&quot; title=&quot;软件&quot;&gt;&lt;/a&gt;软件&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/github_25928675/article/details/49179247&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;OS x yosemite jdk安装路径和环境变量配置&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;想要把 mac 使用的优雅，那么一定要学会会折腾，mac 下的工具生产力工具特别棒，而且好看。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
+    
+    
+      <category term="mac" scheme="http://igrandcloud.github.io/tags/mac/"/>
+    
+  </entry>
+  
+  <entry>
     <title>趣说南海各岛</title>
     <link href="http://igrandcloud.github.io/2016/04/07/China-south-sea/"/>
     <id>http://igrandcloud.github.io/2016/04/07/China-south-sea/</id>
@@ -2640,9 +2641,9 @@
     
       <category term="效率" scheme="http://igrandcloud.github.io/tags/%E6%95%88%E7%8E%87/"/>
     
-      <category term="Chrome" scheme="http://igrandcloud.github.io/tags/Chrome/"/>
-    
       <category term="资源" scheme="http://igrandcloud.github.io/tags/%E8%B5%84%E6%BA%90/"/>
+    
+      <category term="Chrome" scheme="http://igrandcloud.github.io/tags/Chrome/"/>
     
       <category term="mac" scheme="http://igrandcloud.github.io/tags/mac/"/>
     
@@ -3522,7 +3523,7 @@ _   底线
 &lt;p&gt;A &lt;a href=&quot;http://www.jianshu.com/p/21d355525bdf#fn_lemma_a&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;a href=&quot;链接地址&quot;&gt;1&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;创建链接&quot;&gt;&lt;a href=&quot;#创建链接&quot; class=&quot;headerlink&quot; title=&quot;创建链接&quot;&gt;&lt;/a&gt;创建链接&lt;/h3&gt;&lt;figure class=&quot;highlight aspectj&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;为输入的URL或邮箱自动创建链接，如test&lt;span class=&quot;meta&quot;&gt;@domain&lt;/span&gt;.com。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Markdown语法：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;test&lt;span class=&quot;meta&quot;&gt;@domain&lt;/span&gt;.com&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;预览效果：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#108;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#116;&amp;#101;&amp;#x73;&amp;#x74;&amp;#64;&amp;#x64;&amp;#111;&amp;#109;&amp;#97;&amp;#x69;&amp;#110;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#116;&amp;#101;&amp;#x73;&amp;#x74;&amp;#64;&amp;#x64;&amp;#111;&amp;#109;&amp;#97;&amp;#x69;&amp;#110;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#111;&amp;#x3a;&amp;#x74;&amp;#101;&amp;#x73;&amp;#116;&amp;#x40;&amp;#100;&amp;#x6f;&amp;#x6d;&amp;#97;&amp;#105;&amp;#110;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#x74;&amp;#101;&amp;#x73;&amp;#116;&amp;#x40;&amp;#100;&amp;#x6f;&amp;#x6d;&amp;#97;&amp;#105;&amp;#110;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#109;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;转义字符&quot;&gt;&lt;a href=&quot;#转义字符&quot; class=&quot;headerlink&quot; title=&quot;转义字符&quot;&gt;&lt;/a&gt;转义字符&lt;/h3&gt;&lt;figure class=&quot;highlight tex&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;在特殊字符，如*、[、&amp;gt;等前面加&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;可&lt;/span&gt;&lt;/span&gt;使特殊格式字符转换为正常字符打出（有序列表符号如1.，须在. 前加&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;）&lt;/span&gt;&lt;/span&gt;。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Markdown语法：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;\&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;*&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;_&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;[&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;(&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;#&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;\&lt;span class=&quot;name&quot;&gt;!&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;预览效果：&lt;/p&gt;
 &lt;p&gt;\&lt;br&gt;`&lt;br&gt;*&lt;br&gt;_&lt;br&gt;{}&lt;br&gt;[]&lt;br&gt;()&lt;br&gt;#&lt;br&gt;+&lt;br&gt;-&lt;br&gt;.&lt;br&gt;!&lt;/p&gt;
@@ -3551,6 +3552,125 @@ _   底线
     
     
       <category term="Markdown" scheme="http://igrandcloud.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 最常用的几个命令</title>
+    <link href="http://igrandcloud.github.io/2015/12/21/common-hexo-commands/"/>
+    <id>http://igrandcloud.github.io/2015/12/21/common-hexo-commands/</id>
+    <published>2015-12-21T14:12:04.000Z</published>
+    <updated>2018-08-22T03:25:53.000Z</updated>
+    
+    <content type="html">&lt;style&gt;
+    .article-entry h2 {
+        border-bottom: none;
+    }
+&lt;/style&gt;
+
+&lt;p&gt;　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: &lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;hexo-s&quot;&gt;&lt;a href=&quot;#hexo-s&quot; class=&quot;headerlink&quot; title=&quot;hexo s&quot;&gt;&lt;/a&gt;hexo s&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo &lt;span class=&quot;keyword&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;启动本地服务器，用于预览主题。默认地址： &lt;a href=&quot;http://localhost:4000/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4000/&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hexo s&lt;/code&gt; 是 &lt;code&gt;hexo server&lt;/code&gt; 的缩写，命令效果一致；&lt;/li&gt;
+&lt;li&gt;预览的同时可以修改文章内容或主题代码，保存后刷新页面即可；&lt;/li&gt;
+&lt;li&gt;对 Hexo 根目录 &lt;code&gt;_config.yml&lt;/code&gt; 的修改，需要重启本地服务器后才能预览效果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;hexo-n&quot;&gt;&lt;a href=&quot;#hexo-n&quot; class=&quot;headerlink&quot; title=&quot;hexo n&quot;&gt;&lt;/a&gt;hexo n&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; n &lt;span class=&quot;string&quot;&gt;&quot;学习笔记  六&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;新建一篇标题为 &lt;code&gt;学习笔记  六&lt;/code&gt; 的文章，因为标题里有空格，所以加上了引号。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;文章标题可以在对应 md 文件里改，新建时标题可以写的简单些；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hexo n&lt;/code&gt; 是 &lt;code&gt;hexo new&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;hexo-d&quot;&gt;&lt;a href=&quot;#hexo-d&quot; class=&quot;headerlink&quot; title=&quot;hexo d&quot;&gt;&lt;/a&gt;hexo d&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo &lt;span class=&quot;keyword&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;自动生成网站静态文件，并部署到设定的仓库。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hexo d&lt;/code&gt; 是 &lt;code&gt;hexo deploy&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;hexo-clean&quot;&gt;&lt;a href=&quot;#hexo-clean&quot; class=&quot;headerlink&quot; title=&quot;hexo clean&quot;&gt;&lt;/a&gt;hexo clean&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; clean&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;清除缓存文件 &lt;code&gt;db.json&lt;/code&gt; 和已生成的静态文件 &lt;code&gt;public&lt;/code&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;网站显示异常时可以执行这条命令试试。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;hexo-g&quot;&gt;&lt;a href=&quot;#hexo-g&quot; class=&quot;headerlink&quot; title=&quot;hexo g&quot;&gt;&lt;/a&gt;hexo g&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;生成网站静态文件到默认设置的 &lt;code&gt;public&lt;/code&gt; 文件夹。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;便于查看网站生成的静态文件或者手动部署网站；&lt;/li&gt;
+&lt;li&gt;如果使用自动部署，不需要先执行该命令；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hexo g&lt;/code&gt; 是 &lt;code&gt;hexo generate&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;hexo-n-page&quot;&gt;&lt;a href=&quot;#hexo-n-page&quot; class=&quot;headerlink&quot; title=&quot;hexo n page&quot;&gt;&lt;/a&gt;hexo n page&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; n page aboutme&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;新建一个标题为 &lt;code&gt;aboutme&lt;/code&gt; 的页面，默认链接地址为 &lt;code&gt;主页地址/aboutme/&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;标题可以为中文，但一般习惯用英文；&lt;/li&gt;
+&lt;li&gt;页面标题和文章一样可以随意修改；&lt;/li&gt;
+&lt;li&gt;页面不会出现在首页文章列表和归档中，也不支持设置分类和标签。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;常用组合&quot;&gt;&lt;a href=&quot;#常用组合&quot; class=&quot;headerlink&quot; title=&quot;常用组合&quot;&gt;&lt;/a&gt;常用组合&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo clean &amp;amp;&amp;amp; hexo &lt;span class=&quot;keyword&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo clean &amp;amp;&amp;amp; hexo &lt;span class=&quot;keyword&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;可以用输入法等软件为这些命令设置快捷键，方便调用。&lt;/p&gt;
+&lt;h2 id=&quot;相关说明&quot;&gt;&lt;a href=&quot;#相关说明&quot; class=&quot;headerlink&quot; title=&quot;相关说明&quot;&gt;&lt;/a&gt;相关说明&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;以上命令使用基于 Hexo 3.1.1 版本；&lt;/li&gt;
+&lt;li&gt;需要删掉用命令新建的文章或页面时，只需要进入 Hexo 根目录下的 &lt;code&gt;source&lt;/code&gt; 文件夹，删除对应文件或文件夹即可；&lt;/li&gt;
+&lt;li&gt;更多命令用法请查询 &lt;a href=&quot;https://hexo.io/zh-cn/docs/commands.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;style&gt;
+    .article-entry h2 {
+        border-bottom: none;
+    }
+&lt;/style&gt;
+
+&lt;p&gt;　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
+    
+    
+      <category term="Hexo" scheme="http://igrandcloud.github.io/tags/Hexo/"/>
+    
+      <category term="资源" scheme="http://igrandcloud.github.io/tags/%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开发中常用的一些知识检索链接（Markdown、SVN、Git等）</title>
+    <link href="http://igrandcloud.github.io/2015/12/21/tools-website-for-developer/"/>
+    <id>http://igrandcloud.github.io/2015/12/21/tools-website-for-developer/</id>
+    <published>2015-12-21T14:12:04.000Z</published>
+    <updated>2018-08-22T03:24:50.000Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;Markdown：&quot;&gt;&lt;a href=&quot;#Markdown：&quot; class=&quot;headerlink&quot; title=&quot;Markdown：&quot;&gt;&lt;/a&gt;Markdown：&lt;/h3&gt;&lt;p&gt;markdown on github: &lt;a href=&quot;https://help.github.com/articles/markdown-basics/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://help.github.com/articles/markdown-basics/&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;Markdown 中文文档：&lt;a href=&quot;http://wowubuntu.com/markdown/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wowubuntu.com/markdown/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Markdown 语法概述：&lt;a href=&quot;http://blog.bihe0832.com/markdow_intrduce.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.bihe0832.com/markdow_intrduce.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;SVN：&quot;&gt;&lt;a href=&quot;#SVN：&quot; class=&quot;headerlink&quot; title=&quot;SVN：&quot;&gt;&lt;/a&gt;SVN：&lt;/h3&gt;&lt;p&gt;SVN 介绍：&lt;/p&gt;
+&lt;p&gt;SVN 语法概述：&lt;a href=&quot;http://blog.bihe0832.com/SVN.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.bihe0832.com/SVN.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Git：&quot;&gt;&lt;a href=&quot;#Git：&quot; class=&quot;headerlink&quot; title=&quot;Git：&quot;&gt;&lt;/a&gt;Git：&lt;/h3&gt;&lt;p&gt;Pro Git（中文版）&lt;strong&gt;入门强烈推荐&lt;/strong&gt;：&lt;a href=&quot;http://git.oschina.net/progit/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://git.oschina.net/progit/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;git - 简易指南：&lt;a href=&quot;http://www.bootcss.com/p/git-guide/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.bootcss.com/p/git-guide/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;git官方文档：&lt;a href=&quot;http://git-scm.com/book/en/v2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://git-scm.com/book/en/v2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;git 语法：&lt;a href=&quot;http://git-scm.com/docs&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://git-scm.com/docs&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;OAuth-2-0：&quot;&gt;&lt;a href=&quot;#OAuth-2-0：&quot; class=&quot;headerlink&quot; title=&quot;OAuth 2.0：&quot;&gt;&lt;/a&gt;OAuth 2.0：&lt;/h3&gt;&lt;p&gt;OAuth 2.0 介绍（看这个系列就够了）：&lt;a href=&quot;http://ifeve.com/oauth2-tutorial-all/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ifeve.com/oauth2-tutorial-all/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;CDN、镜像：&quot;&gt;&lt;a href=&quot;#CDN、镜像：&quot; class=&quot;headerlink&quot; title=&quot;CDN、镜像：&quot;&gt;&lt;/a&gt;CDN、镜像：&lt;/h3&gt;&lt;p&gt;新浪云：&lt;a href=&quot;http://lib.sinaapp.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://lib.sinaapp.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;网易：&lt;a href=&quot;http://mirrors.163.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://mirrors.163.com/&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Markdown：&quot;&gt;&lt;a href=&quot;#Markdown：&quot; class=&quot;headerlink&quot; title=&quot;Markdown：&quot;&gt;&lt;/a&gt;Markdown：&lt;/h3&gt;&lt;p&gt;markdown on github: &lt;a href=&quot;https://help.github.com/articles/markdown-basics/&quot;&gt;https://help.github.com/articles/markdown-basics/&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
+    
+    
+      <category term="Markdown" scheme="http://igrandcloud.github.io/tags/Markdown/"/>
+    
+      <category term="资源" scheme="http://igrandcloud.github.io/tags/%E8%B5%84%E6%BA%90/"/>
+    
+      <category term="Git" scheme="http://igrandcloud.github.io/tags/Git/"/>
     
   </entry>
   
@@ -3725,205 +3845,6 @@ _   底线
       <category term="编程" scheme="http://igrandcloud.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
     
       <category term="编程规范" scheme="http://igrandcloud.github.io/tags/%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>开发中常用的一些知识检索链接（Markdown、SVN、Git等）</title>
-    <link href="http://igrandcloud.github.io/2015/12/21/tools-website-for-developer/"/>
-    <id>http://igrandcloud.github.io/2015/12/21/tools-website-for-developer/</id>
-    <published>2015-12-21T14:12:04.000Z</published>
-    <updated>2018-08-22T03:24:50.000Z</updated>
-    
-    <content type="html">&lt;h3 id=&quot;Markdown：&quot;&gt;&lt;a href=&quot;#Markdown：&quot; class=&quot;headerlink&quot; title=&quot;Markdown：&quot;&gt;&lt;/a&gt;Markdown：&lt;/h3&gt;&lt;p&gt;markdown on github: &lt;a href=&quot;https://help.github.com/articles/markdown-basics/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://help.github.com/articles/markdown-basics/&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;Markdown 中文文档：&lt;a href=&quot;http://wowubuntu.com/markdown/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wowubuntu.com/markdown/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Markdown 语法概述：&lt;a href=&quot;http://blog.bihe0832.com/markdow_intrduce.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.bihe0832.com/markdow_intrduce.html&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;SVN：&quot;&gt;&lt;a href=&quot;#SVN：&quot; class=&quot;headerlink&quot; title=&quot;SVN：&quot;&gt;&lt;/a&gt;SVN：&lt;/h3&gt;&lt;p&gt;SVN 介绍：&lt;/p&gt;
-&lt;p&gt;SVN 语法概述：&lt;a href=&quot;http://blog.bihe0832.com/SVN.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.bihe0832.com/SVN.html&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Git：&quot;&gt;&lt;a href=&quot;#Git：&quot; class=&quot;headerlink&quot; title=&quot;Git：&quot;&gt;&lt;/a&gt;Git：&lt;/h3&gt;&lt;p&gt;Pro Git（中文版）&lt;strong&gt;入门强烈推荐&lt;/strong&gt;：&lt;a href=&quot;http://git.oschina.net/progit/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://git.oschina.net/progit/index.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;git - 简易指南：&lt;a href=&quot;http://www.bootcss.com/p/git-guide/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.bootcss.com/p/git-guide/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;git官方文档：&lt;a href=&quot;http://git-scm.com/book/en/v2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://git-scm.com/book/en/v2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;git 语法：&lt;a href=&quot;http://git-scm.com/docs&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://git-scm.com/docs&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;OAuth-2-0：&quot;&gt;&lt;a href=&quot;#OAuth-2-0：&quot; class=&quot;headerlink&quot; title=&quot;OAuth 2.0：&quot;&gt;&lt;/a&gt;OAuth 2.0：&lt;/h3&gt;&lt;p&gt;OAuth 2.0 介绍（看这个系列就够了）：&lt;a href=&quot;http://ifeve.com/oauth2-tutorial-all/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ifeve.com/oauth2-tutorial-all/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;CDN、镜像：&quot;&gt;&lt;a href=&quot;#CDN、镜像：&quot; class=&quot;headerlink&quot; title=&quot;CDN、镜像：&quot;&gt;&lt;/a&gt;CDN、镜像：&lt;/h3&gt;&lt;p&gt;新浪云：&lt;a href=&quot;http://lib.sinaapp.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://lib.sinaapp.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;网易：&lt;a href=&quot;http://mirrors.163.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://mirrors.163.com/&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Markdown：&quot;&gt;&lt;a href=&quot;#Markdown：&quot; class=&quot;headerlink&quot; title=&quot;Markdown：&quot;&gt;&lt;/a&gt;Markdown：&lt;/h3&gt;&lt;p&gt;markdown on github: &lt;a href=&quot;https://help.github.com/articles/markdown-basics/&quot;&gt;https://help.github.com/articles/markdown-basics/&lt;/a&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
-    
-    
-      <category term="Markdown" scheme="http://igrandcloud.github.io/tags/Markdown/"/>
-    
-      <category term="资源" scheme="http://igrandcloud.github.io/tags/%E8%B5%84%E6%BA%90/"/>
-    
-      <category term="Git" scheme="http://igrandcloud.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 最常用的几个命令</title>
-    <link href="http://igrandcloud.github.io/2015/12/21/common-hexo-commands/"/>
-    <id>http://igrandcloud.github.io/2015/12/21/common-hexo-commands/</id>
-    <published>2015-12-21T14:12:04.000Z</published>
-    <updated>2018-08-22T03:25:53.000Z</updated>
-    
-    <content type="html">&lt;style&gt;
-    .article-entry h2 {
-        border-bottom: none;
-    }
-&lt;/style&gt;
-
-&lt;p&gt;　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: &lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;hexo-s&quot;&gt;&lt;a href=&quot;#hexo-s&quot; class=&quot;headerlink&quot; title=&quot;hexo s&quot;&gt;&lt;/a&gt;hexo s&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo &lt;span class=&quot;keyword&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;启动本地服务器，用于预览主题。默认地址： &lt;a href=&quot;http://localhost:4000/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4000/&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hexo s&lt;/code&gt; 是 &lt;code&gt;hexo server&lt;/code&gt; 的缩写，命令效果一致；&lt;/li&gt;
-&lt;li&gt;预览的同时可以修改文章内容或主题代码，保存后刷新页面即可；&lt;/li&gt;
-&lt;li&gt;对 Hexo 根目录 &lt;code&gt;_config.yml&lt;/code&gt; 的修改，需要重启本地服务器后才能预览效果。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-n&quot;&gt;&lt;a href=&quot;#hexo-n&quot; class=&quot;headerlink&quot; title=&quot;hexo n&quot;&gt;&lt;/a&gt;hexo n&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; n &lt;span class=&quot;string&quot;&gt;&quot;学习笔记  六&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;新建一篇标题为 &lt;code&gt;学习笔记  六&lt;/code&gt; 的文章，因为标题里有空格，所以加上了引号。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;文章标题可以在对应 md 文件里改，新建时标题可以写的简单些；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo n&lt;/code&gt; 是 &lt;code&gt;hexo new&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-d&quot;&gt;&lt;a href=&quot;#hexo-d&quot; class=&quot;headerlink&quot; title=&quot;hexo d&quot;&gt;&lt;/a&gt;hexo d&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo &lt;span class=&quot;keyword&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;自动生成网站静态文件，并部署到设定的仓库。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hexo d&lt;/code&gt; 是 &lt;code&gt;hexo deploy&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-clean&quot;&gt;&lt;a href=&quot;#hexo-clean&quot; class=&quot;headerlink&quot; title=&quot;hexo clean&quot;&gt;&lt;/a&gt;hexo clean&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; clean&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;清除缓存文件 &lt;code&gt;db.json&lt;/code&gt; 和已生成的静态文件 &lt;code&gt;public&lt;/code&gt;。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;网站显示异常时可以执行这条命令试试。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-g&quot;&gt;&lt;a href=&quot;#hexo-g&quot; class=&quot;headerlink&quot; title=&quot;hexo g&quot;&gt;&lt;/a&gt;hexo g&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;生成网站静态文件到默认设置的 &lt;code&gt;public&lt;/code&gt; 文件夹。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;便于查看网站生成的静态文件或者手动部署网站；&lt;/li&gt;
-&lt;li&gt;如果使用自动部署，不需要先执行该命令；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo g&lt;/code&gt; 是 &lt;code&gt;hexo generate&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-n-page&quot;&gt;&lt;a href=&quot;#hexo-n-page&quot; class=&quot;headerlink&quot; title=&quot;hexo n page&quot;&gt;&lt;/a&gt;hexo n page&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; n page aboutme&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;新建一个标题为 &lt;code&gt;aboutme&lt;/code&gt; 的页面，默认链接地址为 &lt;code&gt;主页地址/aboutme/&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;标题可以为中文，但一般习惯用英文；&lt;/li&gt;
-&lt;li&gt;页面标题和文章一样可以随意修改；&lt;/li&gt;
-&lt;li&gt;页面不会出现在首页文章列表和归档中，也不支持设置分类和标签。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;常用组合&quot;&gt;&lt;a href=&quot;#常用组合&quot; class=&quot;headerlink&quot; title=&quot;常用组合&quot;&gt;&lt;/a&gt;常用组合&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo clean &amp;amp;&amp;amp; hexo &lt;span class=&quot;keyword&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo clean &amp;amp;&amp;amp; hexo &lt;span class=&quot;keyword&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;可以用输入法等软件为这些命令设置快捷键，方便调用。&lt;/p&gt;
-&lt;h2 id=&quot;相关说明&quot;&gt;&lt;a href=&quot;#相关说明&quot; class=&quot;headerlink&quot; title=&quot;相关说明&quot;&gt;&lt;/a&gt;相关说明&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;以上命令使用基于 Hexo 3.1.1 版本；&lt;/li&gt;
-&lt;li&gt;需要删掉用命令新建的文章或页面时，只需要进入 Hexo 根目录下的 &lt;code&gt;source&lt;/code&gt; 文件夹，删除对应文件或文件夹即可；&lt;/li&gt;
-&lt;li&gt;更多命令用法请查询 &lt;a href=&quot;https://hexo.io/zh-cn/docs/commands.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档&lt;/a&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;style&gt;
-    .article-entry h2 {
-        border-bottom: none;
-    }
-&lt;/style&gt;
-
-&lt;p&gt;　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
-    
-    
-      <category term="Hexo" scheme="http://igrandcloud.github.io/tags/Hexo/"/>
-    
-      <category term="资源" scheme="http://igrandcloud.github.io/tags/%E8%B5%84%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 最常用的几个命令</title>
-    <link href="http://igrandcloud.github.io/2015/12/21/hexo-commands/"/>
-    <id>http://igrandcloud.github.io/2015/12/21/hexo-commands/</id>
-    <published>2015-12-21T14:12:04.000Z</published>
-    <updated>2018-08-22T03:26:24.000Z</updated>
-    
-    <content type="html">&lt;style&gt;
-    .article-entry h2 {
-        border-bottom: none;
-    }
-&lt;/style&gt;
-
-&lt;p&gt;　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: &lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;hexo-s&quot;&gt;&lt;a href=&quot;#hexo-s&quot; class=&quot;headerlink&quot; title=&quot;hexo s&quot;&gt;&lt;/a&gt;hexo s&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo &lt;span class=&quot;keyword&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;启动本地服务器，用于预览主题。默认地址： &lt;a href=&quot;http://localhost:4000/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4000/&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hexo s&lt;/code&gt; 是 &lt;code&gt;hexo server&lt;/code&gt; 的缩写，命令效果一致；&lt;/li&gt;
-&lt;li&gt;预览的同时可以修改文章内容或主题代码，保存后刷新页面即可；&lt;/li&gt;
-&lt;li&gt;对 Hexo 根目录 &lt;code&gt;_config.yml&lt;/code&gt; 的修改，需要重启本地服务器后才能预览效果。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-n&quot;&gt;&lt;a href=&quot;#hexo-n&quot; class=&quot;headerlink&quot; title=&quot;hexo n&quot;&gt;&lt;/a&gt;hexo n&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; n &lt;span class=&quot;string&quot;&gt;&quot;学习笔记  六&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;新建一篇标题为 &lt;code&gt;学习笔记  六&lt;/code&gt; 的文章，因为标题里有空格，所以加上了引号。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;文章标题可以在对应 md 文件里改，新建时标题可以写的简单些；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo n&lt;/code&gt; 是 &lt;code&gt;hexo new&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-d&quot;&gt;&lt;a href=&quot;#hexo-d&quot; class=&quot;headerlink&quot; title=&quot;hexo d&quot;&gt;&lt;/a&gt;hexo d&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo &lt;span class=&quot;keyword&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;自动生成网站静态文件，并部署到设定的仓库。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hexo d&lt;/code&gt; 是 &lt;code&gt;hexo deploy&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-clean&quot;&gt;&lt;a href=&quot;#hexo-clean&quot; class=&quot;headerlink&quot; title=&quot;hexo clean&quot;&gt;&lt;/a&gt;hexo clean&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; clean&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;清除缓存文件 &lt;code&gt;db.json&lt;/code&gt; 和已生成的静态文件 &lt;code&gt;public&lt;/code&gt;。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;网站显示异常时可以执行这条命令试试。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-g&quot;&gt;&lt;a href=&quot;#hexo-g&quot; class=&quot;headerlink&quot; title=&quot;hexo g&quot;&gt;&lt;/a&gt;hexo g&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;生成网站静态文件到默认设置的 &lt;code&gt;public&lt;/code&gt; 文件夹。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;便于查看网站生成的静态文件或者手动部署网站；&lt;/li&gt;
-&lt;li&gt;如果使用自动部署，不需要先执行该命令；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hexo g&lt;/code&gt; 是 &lt;code&gt;hexo generate&lt;/code&gt; 的缩写，命令效果一致。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;hexo-n-page&quot;&gt;&lt;a href=&quot;#hexo-n-page&quot; class=&quot;headerlink&quot; title=&quot;hexo n page&quot;&gt;&lt;/a&gt;hexo n page&lt;/h2&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; n page aboutme&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;新建一个标题为 &lt;code&gt;aboutme&lt;/code&gt; 的页面，默认链接地址为 &lt;code&gt;主页地址/aboutme/&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;标题可以为中文，但一般习惯用英文；&lt;/li&gt;
-&lt;li&gt;页面标题和文章一样可以随意修改；&lt;/li&gt;
-&lt;li&gt;页面不会出现在首页文章列表和归档中，也不支持设置分类和标签。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;常用组合&quot;&gt;&lt;a href=&quot;#常用组合&quot; class=&quot;headerlink&quot; title=&quot;常用组合&quot;&gt;&lt;/a&gt;常用组合&lt;/h2&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo clean &amp;amp;&amp;amp; hexo &lt;span class=&quot;keyword&quot;&gt;s&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo clean &amp;amp;&amp;amp; hexo &lt;span class=&quot;keyword&quot;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;可以用输入法等软件为这些命令设置快捷键，方便调用。&lt;/p&gt;
-&lt;h2 id=&quot;相关说明&quot;&gt;&lt;a href=&quot;#相关说明&quot; class=&quot;headerlink&quot; title=&quot;相关说明&quot;&gt;&lt;/a&gt;相关说明&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;以上命令使用基于 Hexo 3.1.1 版本；&lt;/li&gt;
-&lt;li&gt;需要删掉用命令新建的文章或页面时，只需要进入 Hexo 根目录下的 &lt;code&gt;source&lt;/code&gt; 文件夹，删除对应文件或文件夹即可；&lt;/li&gt;
-&lt;li&gt;更多命令用法请查询 &lt;a href=&quot;https://hexo.io/zh-cn/docs/commands.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档&lt;/a&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;style&gt;
-    .article-entry h2 {
-        border-bottom: none;
-    }
-&lt;/style&gt;
-
-&lt;p&gt;　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="收集帖" scheme="http://igrandcloud.github.io/categories/%E6%94%B6%E9%9B%86%E5%B8%96/"/>
-    
-    
-      <category term="Hexo" scheme="http://igrandcloud.github.io/tags/Hexo/"/>
     
   </entry>
   
@@ -4679,7 +4600,7 @@ _   底线
 &lt;h3 id=&quot;网站图标&quot;&gt;&lt;a href=&quot;#网站图标&quot; class=&quot;headerlink&quot; title=&quot;网站图标&quot;&gt;&lt;/a&gt;网站图标&lt;/h3&gt;&lt;p&gt;将你的&lt;code&gt;favicon.ico&lt;/code&gt;放到&lt;code&gt;source&lt;/code&gt;目录下即可&lt;br&gt;图标的制作可以在 &lt;a href=&quot;http://www.bitbug.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;比特虫&lt;/a&gt;网站制作&lt;/p&gt;
 &lt;h2 id=&quot;后记&quot;&gt;&lt;a href=&quot;#后记&quot; class=&quot;headerlink&quot; title=&quot;后记&quot;&gt;&lt;/a&gt;后记&lt;/h2&gt;&lt;p&gt;因为我的博客&lt;a href=&quot;http://blog.waydrow.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.waydrow.com&lt;/a&gt;基本是免费做出来的，所以写下这篇博文，希望可以帮助到其他人，也感谢此开源项目的贡献！&lt;br&gt;&lt;strong&gt;参考资料&lt;/strong&gt;&lt;br&gt;&lt;a href=&quot;http://blog.fens.me/hexo-blog-github/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.fens.me/hexo-blog-github/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.tuicool.com/articles/AfQnQjy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.tuicool.com/articles/AfQnQjy&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://blog.lmintlcx.com/post/blog-with-hexo.html#绑定顶级域名&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.lmintlcx.com/post/blog-with-hexo.html#绑定顶级域名&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如有问题，欢迎留言或者发送邮件到&lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#108;&amp;#x74;&amp;#111;&amp;#x3a;&amp;#x57;&amp;#97;&amp;#121;&amp;#100;&amp;#x72;&amp;#x6f;&amp;#119;&amp;#x40;&amp;#x31;&amp;#54;&amp;#51;&amp;#46;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#x57;&amp;#97;&amp;#121;&amp;#100;&amp;#x72;&amp;#x6f;&amp;#119;&amp;#x40;&amp;#x31;&amp;#54;&amp;#51;&amp;#46;&amp;#x63;&amp;#111;&amp;#x6d;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如有问题，欢迎留言或者发送邮件到&lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#108;&amp;#x74;&amp;#111;&amp;#x3a;&amp;#x57;&amp;#x61;&amp;#121;&amp;#x64;&amp;#x72;&amp;#111;&amp;#x77;&amp;#64;&amp;#x31;&amp;#x36;&amp;#x33;&amp;#46;&amp;#x63;&amp;#111;&amp;#109;&quot;&gt;&amp;#x57;&amp;#x61;&amp;#121;&amp;#x64;&amp;#x72;&amp;#111;&amp;#x77;&amp;#64;&amp;#x31;&amp;#x36;&amp;#x33;&amp;#46;&amp;#x63;&amp;#111;&amp;#109;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;#教程二&lt;/p&gt;
 &lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;   Hexo是由一个台湾的大神弄出来的东东。可以使用此工具来生成个人博客。很神奇高大上的东东。&lt;br&gt;   大神的博客:&lt;a href=&quot;http://zespia.tw/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://zespia.tw/&lt;/a&gt;&lt;br&gt;   hexo官网:&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://hexo.io/&lt;/a&gt;&lt;br&gt;&lt;!-- more --&gt;&lt;/p&gt;
@@ -5097,12 +5018,12 @@ _   底线
     <link href="http://igrandcloud.github.io/2015/07/30/learning-programing/"/>
     <id>http://igrandcloud.github.io/2015/07/30/learning-programing/</id>
     <published>2015-07-30T03:25:44.000Z</published>
-    <updated>2018-08-22T03:27:06.000Z</updated>
+    <updated>2018-08-22T06:57:14.000Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/15-10-8/51111379.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
+    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;当代最伟大的发明是互联网，而互联网里最宝贵的东西是知识&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/15-10-8/51111379.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;超级丰富的在线编程知识资源&lt;br&gt;&lt;a href=&quot;https://github.com/CoderUnion/coderunion-github-talk/issues/39&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;收集贴&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;以及对于编程学习的关键就是提高解决问题的能力，学会谷歌，学会思考，敢于探索。&lt;/p&gt;
 &lt;p&gt;以上。&lt;/p&gt;
@@ -5110,8 +5031,7 @@ _   底线
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://7xkpdt.com1.z0.glb.clouddn.com/15-10-8/51111379.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;当代最伟大的发明是互联网，而互联网里最宝贵的东西是知识&lt;br&gt;
     
     </summary>
